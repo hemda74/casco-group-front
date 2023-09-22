@@ -79,6 +79,10 @@ const indexTrans: translataionContainer = {
         en:'Our Previous Clients',
         ar:'عملاؤنا السابقون'
     },
+    strategichallenges:{
+        en:'Strategi Challenges',
+        ar:'التحديات الاستراتيجية'
+    },
 
     /////////////////////////////< NavBar >/////////////////////////////////////////////
     // hero section in home page

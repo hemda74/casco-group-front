@@ -8,6 +8,8 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import Companies from '../components/Companies';
+import GridSection from '../components/GridSection';
+import StrategiChallenges from '../components/StrategiChallenges';
 const Login: NextPage = () => {
   // binding useDispatch to dispatch.
   const dispatch = useAppDispatch();
@@ -58,7 +60,9 @@ const Login: NextPage = () => {
       </Head>
       <main className={`${styles.bodyContainer}`}>
         <NavBar />
+        <GridSection />
         <Companies />
+        <StrategiChallenges />
         {/* <WhatsLink/>
           <NavBar/>
           <Hero/>
