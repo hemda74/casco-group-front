@@ -9,7 +9,7 @@ const SelectBtn = (props: Props) => {
     <a
       type="button"
       className={`btn myPrimary-outline text-decoration-none d-flex align-items-center justify-content-center ${styles.newOpHourBtn}`}>
-      <span className={`ps-1 pe-1 fw-semibold ${styles.newWord}`} data-trans="">
+      <span className={`ps-1 pe-1 fw-semibold ${styles.newWord}`} >
         Select
       </span>
     </a>

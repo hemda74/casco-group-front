@@ -1,6 +1,9 @@
 /* localication Btn at Login page */
 .localizationBtn {
-    margin-top: -1rem;
+    padding-top: 0.336rem;
+    padding-bottom: 0.336rem;
+    padding-left: 1.797rem;
+    padding-right: 1.797rem;
     color: white;
     border: 2px solid #f8f9fa !important;
     border-radius: 5px !important;
@@ -12,7 +15,4 @@
 
 .localizationBtn:hover {
     color: black;
-}
-@media (max-width:1025px){
-    
 }

@@ -7,7 +7,7 @@ import Image from 'next/image';
 const InputResetPassword = () => {
   return (
     <div className="form-group">
-      <label className="form-label">
+      <label className="form-label" data-trans="newPassword">
         New Password
       </label>
       <div className="form-floating mb-3">
@@ -24,7 +24,7 @@ const InputResetPassword = () => {
           &nbsp;*********
         </label>
       </div>
-      <label className="form-label" >
+      <label className="form-label" data-trans="confirmNewPassword">
         Confirm New Password
       </label>
       <div className="form-floating">

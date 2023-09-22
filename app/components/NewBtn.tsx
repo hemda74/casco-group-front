@@ -25,7 +25,7 @@ const NewBtn = (props: Props) => {
         />
         <span
           className={`ps-1 pe-1 text-white fw-semibold ${styles.newWord}`}
-          data-trans="new">
+          >
           New
         </span>
       </a>

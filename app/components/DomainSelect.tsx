@@ -24,12 +24,12 @@ const DomainSelect = (props: Props) => {
             />
           </label>
           <div
-            className="nav-link dropdown-toggle show me-2 ms-2 flex-grow-1 domain-select-selected "
+            className="nav-link dropdown-toggle show flex-grow-1 domain-select-selected "
             data-bs-toggle="dropdown"
             role="button"
             aria-haspopup="true"
             aria-expanded="true">
-            Account For
+            TICOSYS
           </div>
           <div
             className="dropdown-menu position-absolute w-100 domain-select-dropdown p-0"
@@ -44,7 +44,7 @@ const DomainSelect = (props: Props) => {
                   width={24}
                   height={24}
                 />
-                <span className="pe-2 ps-2">CASCO ADMIN</span>
+                <span className="pe-2 ps-2">TICOSYS</span>
               </div>
             </div>
             <div

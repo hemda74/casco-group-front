@@ -12,7 +12,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import validateEmail from '../helper/validateEmail';
 
-const Forgetpassword: NextPage = () => {
+const forgetpassword: NextPage = () => {
   // Assigning useRouter to a variable to use it.
   const router = useRouter();
   // declaring 2 states to handle post request responses.
@@ -42,25 +42,23 @@ const Forgetpassword: NextPage = () => {
   return (
     <>
       <Head>
-        <title>CASCO | Forget Password</title>
+        <title>TicoSys | Forget Password</title>
       </Head>
       <div>
         <div
           id="login-holder"
-          className={`container-fluid vh-100  overflow-hidden p-0 ${styles.otpContainer}`}>
+          className="container-fluid vh-100 overflow-hidden p-0">
           <div
             id="login-holder-backdrop"
-            className=" container  d-flex align-items-center justify-content-center mt-5 ">
-          <div className="col-xl-5 col-lg-5 col-md-8 col-sm-12 col-xs-12">
-            <div className="card mt-5 border-primary">
-              <div className="card-body  p-0">
-              <div className="d-flex align-items-center justify-content-between mt-3 me-5 ms-5">
-                  {/* width and height */}
-                  {Logo(200, 100)}
-                <div className={``}>
-                 <LocalizationBtn />
-                 </div>
-                 </div>
+            className="row align-items-center vh-100">
+            <div className="col-4 d-block"></div>
+            <div className="col-4">
+              <div className="card border-primary">
+                <div className="card-body p-0">
+                  <div className="d-flex align-items-center justify-content-center mt-3">
+                    {/* width and height */}
+                    {Logo(164.08, 66.86)}
+                  </div>
                   <div className="d-flex flex-column pe-5 ps-5 pt-3">
                     <span
                       className="fw-semibold fs-3 text-center mt-4"
@@ -80,7 +78,7 @@ const Forgetpassword: NextPage = () => {
                       data-trans="enterYourEmailAddress">
                       Enter Your Email Address
                     </span>
-                    <div className="form-group ">
+                    <div className="form-group mb-5">
                       <div>{InputEmail({ placeholder: true })}</div>
                       {isError && (
                         <span
@@ -97,7 +95,7 @@ const Forgetpassword: NextPage = () => {
                         onClick={() => handleSendVerfCode()}
                         disabled={isPending}>
                         {!isPending && (
-                          <span className='text-white' data-trans="sendVerficationCode">
+                          <span data-trans="sendVerficationCode">
                             Send Verfication Code
                           </span>
                         )}
@@ -117,6 +115,10 @@ const Forgetpassword: NextPage = () => {
                 </div>
               </div>
             </div>
+            <div className="col-2 d-block"></div>
+            <div className="col-2 d-flex justify-content-center vh-100">
+              <LocalizationBtn />
+            </div>
           </div>
         </div>
       </div>
@@ -124,4 +126,4 @@ const Forgetpassword: NextPage = () => {
   );
 };
 
-export default Forgetpassword;
+export default forgetpassword;
