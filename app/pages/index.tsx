@@ -1,5 +1,10 @@
+import type { NextPage } from 'next';
 import Head from 'next/head';
+import styles from '../styles/Main.module.css'
+import Logo from '../components/Logo';
+import logo from '../public/logo.png'
 import Link from 'next/link';
+import Image from 'next/image';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { userLogin, userDataSelector } from '../features/user';
 import LocalizationBtn from '../components/LocalizationBtn';
@@ -7,8 +12,22 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import deleteCookie from '../helper/deleteCookie';
 import getCookie from '../helper/getCookie';
-
-const Login = () => {
+import NavBar from '../components/NavBar';
+import Hero from '../components/Hero';
+import Footer from '../components/Footer';
+import ApplyAcc from '../components/ApplyAcc';
+import CoursesSectionHomePage from '../components/CoursesSectionHomePage';
+import Recogention from '../components/Recogention';
+import AssessorOrCAB from '../components/AssessorOrCAB';
+import ServicesSlider from '../components/ServicesSlider';
+import AccreditedBodiesCompaines from '../components/AccreditedBodiesCompaines'
+import AccreditedBodiesCompainesRtl from '../components/AccreditedBodiesCompainesRtl'
+import NewsHomePage from '../components/NewsHomePage';
+import Steps from '../components/Steps';
+import FlagesSection from '../components/FlagesSection';
+import WhatsLink from '../components/WhatsLink';
+import FourOhFour from '../components/OpeningSoon2';
+const Login: NextPage = () => {
   // binding useDispatch to dispatch.
   const dispatch = useAppDispatch();
   // graping user data from the store.
@@ -41,16 +60,38 @@ const Login = () => {
     // handleUserRedirect();
     // }
   }, [userData]);
+  let choise = 0;
+  useEffect(() => {
+    let lang = localStorage.getItem('lang');
+    if (lang === null || lang === undefined) {
+      localStorage.setItem('lang', 'en');
+    } else {
+      choise = 1;
+  }
+  });
 
   return (
     <>
       <Head>
-        <title>TicoSys | Login</title>
+          <title>CASCO</title>
       </Head>
-    <h2 className="m-auto" data-trans="hello">
-      hello
-    </h2>
-    </>
+      <main className={`${styles.bodyContainer}`}>
+          <WhatsLink/>
+          <NavBar/>
+          <Hero/>
+          <FlagesSection/>
+          <ServicesSlider/>
+          <ApplyAcc/> 
+          <Steps/> 
+          <AssessorOrCAB/>
+          <CoursesSectionHomePage/>
+          <Recogention/> 
+          <AccreditedBodiesCompaines/>  
+          <AccreditedBodiesCompainesRtl/>  
+          <NewsHomePage/>  
+          <Footer/>
+      </main> 
+   </>
   );
 };
 
