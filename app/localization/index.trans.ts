@@ -20,7 +20,7 @@ const indexTrans: translataionContainer = {
         ar:"الرئيسية"
     },
     AboutCascoNav:{
-        en:"About CASCO",
+        en:"About",
         ar:"عن كاسكو"
     },
     AboutUsNav:{
@@ -64,37 +64,22 @@ const indexTrans: translataionContainer = {
         ar:'الكورسات'
     },
     DocumentsNav:{
-        en:'Documents',
-        ar:'وثائق المركز'
+        en:'Industries',
+        ar:'الصناعات'
     },
     ContactUsNav:{
         en:'Contact Us',
         ar:'تواصل معنا '
     },
-    MediaCenterNav:{
-        en:'Media Center',
-        ar:'المركز الاعلامي'
-    },
     NewsNav:{
         en:'News',
         ar:'الاخبار'
     },
-    GalleryNav:{
-        en:'Gallery',
-        ar:'معرض الصور'
+    OurPreviousClients:{
+        en:'Our Previous Clients',
+        ar:'عملاؤنا السابقون'
     },
-    EducationalBookletsNav:{
-        en:'Educational Booklets',
-        ar:'منشورات توعوية'
-    },
-    VisualPresentationsNav:{
-        en:'Visual Presentations',
-        ar:'عروض مرئية'
-    },
-    EventsNav:{
-        en:'Events',
-        ar:'الفعاليات'
-    },
+
     /////////////////////////////< NavBar >/////////////////////////////////////////////
     // hero section in home page
     CompanyName:{

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import changeLang from '../helper/changeLang';
 import styles from '../styles/Localizationbtn.module.css';
-import ar from '../public/ar.svg'
+import ar from '../public/ar.svg';
 
 // Define styles as props alias.
 type Props = {
@@ -18,7 +18,7 @@ const LocalizationBtn = (props: Props) => {
           // Changing language function.
           changeLang();
         }}>
-        <span data-trans="langs">
+        <span data-trans="langs" className="fs-5">
           E
         </span>
       </button>

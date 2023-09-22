@@ -1,32 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styles from '../styles/Main.module.css'
-import Logo from '../components/Logo';
-import logo from '../public/logo.png'
-import Link from 'next/link';
-import Image from 'next/image';
+import styles from '../styles/Main.module.css';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { userLogin, userDataSelector } from '../features/user';
 import LocalizationBtn from '../components/LocalizationBtn';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import deleteCookie from '../helper/deleteCookie';
-import getCookie from '../helper/getCookie';
-import NavBar from '../components/newcomps/NavBar';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
-import ApplyAcc from '../components/ApplyAcc';
-import CoursesSectionHomePage from '../components/CoursesSectionHomePage';
-import Recogention from '../components/Recogention';
-import AssessorOrCAB from '../components/AssessorOrCAB';
-import ServicesSlider from '../components/ServicesSlider';
-import AccreditedBodiesCompaines from '../components/AccreditedBodiesCompaines'
-import AccreditedBodiesCompainesRtl from '../components/AccreditedBodiesCompainesRtl'
-import NewsHomePage from '../components/NewsHomePage';
-import Steps from '../components/Steps';
-import FlagesSection from '../components/FlagesSection';
-import WhatsLink from '../components/WhatsLink';
-import FourOhFour from '../components/OpeningSoon2';
+import NavBar from '../components/NavBar';
+import Companies from '../components/Companies';
 const Login: NextPage = () => {
   // binding useDispatch to dispatch.
   const dispatch = useAppDispatch();
@@ -67,17 +48,18 @@ const Login: NextPage = () => {
       localStorage.setItem('lang', 'en');
     } else {
       choise = 1;
-  }
+    }
   });
 
   return (
     <>
       <Head>
-          <title>CASCO</title>
+        <title>CASCO</title>
       </Head>
       <main className={`${styles.bodyContainer}`}>
-      <NavBar/>
-          {/* <WhatsLink/>
+        <NavBar />
+        <Companies />
+        {/* <WhatsLink/>
           <NavBar/>
           <Hero/>
           <FlagesSection/>
@@ -91,8 +73,8 @@ const Login: NextPage = () => {
           <AccreditedBodiesCompainesRtl/>  
           <NewsHomePage/>  
           <Footer/> */}
-      </main> 
-   </>
+      </main>
+    </>
   );
 };
 
