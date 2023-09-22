@@ -23,6 +23,10 @@ const indexTrans: translataionContainer = {
         en:"About CASCO",
         ar:"عن كاسكو"
     },
+    INDUSTRIES:{
+        en:'Industries',
+        ar:'الصناعات'
+    },
     AboutUsNav:{
         en:'About Us',
         ar:'من نحن'
@@ -59,13 +63,13 @@ const indexTrans: translataionContainer = {
         en:'Services',
         ar:'خدماتنا'
     },
-    CoursesNav:{
-        en:'Courses',
-        ar:'الكورسات'
+    newsinsights:{
+        en:'NEWS & INSIGHTS',
+        ar:'الاخبار'
     },
-    DocumentsNav:{
-        en:'Documents',
-        ar:'وثائق المركز'
+    CareersNav:{
+        en:'CAREERS',
+        ar:'وظائف'
     },
     ContactUsNav:{
         en:'Contact Us',

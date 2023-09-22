@@ -77,7 +77,7 @@ const Login: NextPage = () => {
       </Head>
       <main className={`${styles.bodyContainer}`}>
           <WhatsLink/>
-          <NavBar/>
+          <NavBar/> 
           <Hero/>
           <FlagesSection/>
           <ServicesSlider/>
