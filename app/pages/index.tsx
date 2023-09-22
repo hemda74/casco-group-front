@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import deleteCookie from '../helper/deleteCookie';
 import getCookie from '../helper/getCookie';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/newcomps/NavBar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import ApplyAcc from '../components/ApplyAcc';
@@ -76,7 +76,8 @@ const Login: NextPage = () => {
           <title>CASCO</title>
       </Head>
       <main className={`${styles.bodyContainer}`}>
-          <WhatsLink/>
+      <NavBar/>
+          {/* <WhatsLink/>
           <NavBar/>
           <Hero/>
           <FlagesSection/>
@@ -89,7 +90,7 @@ const Login: NextPage = () => {
           <AccreditedBodiesCompaines/>  
           <AccreditedBodiesCompainesRtl/>  
           <NewsHomePage/>  
-          <Footer/>
+          <Footer/> */}
       </main> 
    </>
   );
