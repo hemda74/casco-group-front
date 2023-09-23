@@ -364,8 +364,8 @@ const indexTrans: translataionContainer = {
         ar:'خدماتنا'
     },
     AccreditedBodiesFooter:{
-        en:'Our Clients',
-        ar:'عملائنا'
+        en:'About',
+        ar:'عن كاسكو'
     },
     CoursesFooter:{
         en:'Courses',

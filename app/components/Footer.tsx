@@ -67,11 +67,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mt-2">
-                  <Link className={`nav-link `} href={'/our-clients'}>
+                  <Link className={`nav-link `} href={'/about'}>
                     <a
                       className={`${styels.footerLink}`}
                       data-trans="AccreditedBodiesFooter">
-                      <small>Our Clients</small>
+                      <small></small>
                     </a>
                   </Link>
                 </li>
