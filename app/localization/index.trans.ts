@@ -372,24 +372,24 @@ const indexTrans: translataionContainer = {
         ar:'الدورات التدريبية'
     },
     DocumentsFooter:{
-        en:'Documents',
-        ar:'وثائق المركز'
+        en:'News',
+        ar:'الاخبار'
+    },
+    DocumentsFooter2:{
+        en:'Industries',
+        ar:'الصناعات'
     },
     NewsletterSubscriptionFooter:{
-        en:'Newsletter Subscription',
-        ar:'النشرة الإخبارية'
-    },
-    NewsletterSubscriptionFooterberif:{
-        en:'Join our mailing list and receive our latest updates, recent CABs, training programs and etc. straight to your inbox',
-        ar:'انضم إلى قائمتنا البريدية واحصل على آخر تحديثاتنا ، وأحدث برامج المركز، وبرامج التدريب وما إلى ذلك مباشرة إلى صندوق الوارد الخاص بك'
+        en:'Get in touch',
+        ar:'كن ع اتصال '
     },
     CreatedByFooter:{
         en:'Developed By',
         ar:'تم التطوير بواسطة'
     },
     AhmedHemdan:{
-        en:'Ahmed Hemdan',
-        ar:'احمد حمدان'
+        en:' Ahmed Hemdan',
+        ar:'احمد حمدان '
     },
     CascoCopyright:{
         en:'Copyright &copy; 2023',

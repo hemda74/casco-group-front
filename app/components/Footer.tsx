@@ -67,6 +67,15 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mt-2">
+                  <Link className={`nav-link`} href={'documents'}>
+                    <a
+                      className={`${styels.footerLink}`}
+                      data-trans="DocumentsFooter2">
+                      <small></small>
+                    </a>
+                  </Link>
+                </li>
+                <li className="mt-2">
                   <Link className={`nav-link `} href={'/about'}>
                     <a
                       className={`${styels.footerLink}`}
@@ -89,7 +98,7 @@ const Footer = () => {
                     <a
                       className={`${styels.footerLink}`}
                       data-trans="DocumentsFooter">
-                      <small>Documents</small>
+                      <small></small>
                     </a>
                   </Link>
                 </li>
@@ -101,15 +110,10 @@ const Footer = () => {
               <div className="">
                 <small
                   className="text-white fw-bold fs-5"
-                  data-trans="NewsletterSubscriptionFooter">
-                  Newsletter Subscription
-                </small>
-                <small
+                  data-trans="NewsletterSubscriptionFooter"></small>
+                <span
                   className="ln-lg text-white mt-3 mb-2 fw-semibold d-inline-block"
-                  data-trans="NewsletterSubscriptionFooterberif">
-                  Join our mailing list and receive our latest updates, recent
-                  CABs, training programs and etc. straight to your inbox
-                </small>
+                  data-trans="egyptadress"></span>
                 <div className="form-group">
                   <div className="form-group">
                     {/* <div className={`input-group mb-1 `}>
