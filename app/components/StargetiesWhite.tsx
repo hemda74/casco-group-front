@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../styles/StategiChanlenges.module.css';
+import styles from '../styles/StategiChanlengesWhite.module.css';
 import Link from 'next/link';
-const StrategiChallenges = () => {
+const StrategiChallengesWhite = () => {
   return (
     <>
       <section className={` ${styles.SectionBeCertified} ${styles.infoGraph}`}>
@@ -34,42 +34,42 @@ const StrategiChallenges = () => {
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4 ">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Operating model</a>
+                <p>Operating model</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Organisation and people</a>
+                <p>Organisation and people</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Competitiveness</a>
+                <p>Competitiveness</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Working capital improvement</a>
+                <p>Working capital improvement</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Mergers and acquisitions</a>
+                <p>Mergers and acquisitions</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Operations agility</a>
+                <p>Operations agility</p>
               </Link>
             </span>
           </div>
@@ -79,4 +79,4 @@ const StrategiChallenges = () => {
   );
 };
 
-export default StrategiChallenges;
+export default StrategiChallengesWhite;

@@ -11,4 +11,11 @@
     filter: none;
     opacity: 1;
   }
+  .spanFeature{
+    font-size: 5.8888888889rem;
+    font-weight: 700;
+    color: #1086e1;
+    text-transform: uppercase;
+    line-height: 2.6666666667rem;
+}
   

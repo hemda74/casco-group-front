@@ -10,6 +10,10 @@ import NavBar from '../components/NavBar';
 import Companies from '../components/Companies';
 import GridSection from '../components/GridSection';
 import StrategiChallenges from '../components/StrategiChallenges';
+import StrategiChallengesWhite from '../components/StargetiesWhite';
+
+import Steps from '../components/Steps';
+import Footer from '../components/Footer';
 const Login: NextPage = () => {
   // binding useDispatch to dispatch.
   const dispatch = useAppDispatch();
@@ -62,21 +66,23 @@ const Login: NextPage = () => {
         <NavBar />
         <GridSection />
         <Companies />
+        <StrategiChallengesWhite />
         <StrategiChallenges />
+        <Footer />
         {/* <WhatsLink/>
           <NavBar/>
           <Hero/>
           <FlagesSection/>
           <ServicesSlider/>
           <ApplyAcc/> 
-          <Steps/> 
+           
           <AssessorOrCAB/>
           <CoursesSectionHomePage/>
           <Recogention/> 
           <AccreditedBodiesCompaines/>  
           <AccreditedBodiesCompainesRtl/>  
           <NewsHomePage/>  
-          <Footer/> */}
+        */}
       </main>
     </>
   );

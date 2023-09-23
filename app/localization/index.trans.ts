@@ -83,6 +83,14 @@ const indexTrans: translataionContainer = {
         en:'Strategi Challenges',
         ar:'التحديات الاستراتيجية'
     },
+    Helpingwithstrategicchallenges:{
+        en:'Helping with strategic challenges',
+        ar:'المساعدة في التحديات الاستراتيجية'
+    },
+    Helpingwithstrategicchallengesnew:{
+        en:'We are a global management consultancy that specializes in operations strategy and transformation. These are a selection of the strategic challenges we regularly work on.',
+        ar:'نحن شركة استشارات إدارية عالمية متخصصة في استراتيجية العمليات والتحول. هذه مجموعة مختارة من التحديات الإستراتيجية التي نعمل عليها بانتظام.'
+    },
 
     /////////////////////////////< NavBar >/////////////////////////////////////////////
     // hero section in home page

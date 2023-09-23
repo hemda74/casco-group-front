@@ -5,7 +5,9 @@ const Companies = () => {
     // <!-- ======= Clients Section ======= -->
     <section className={` ${styles.clients}`}>
       <div className="container">
-        <h2 className="m-auto fw-bold" data-trans="OurPreviousClients"></h2>
+        <span
+          className={`${styles.spanFeature}`}
+          data-trans="OurPreviousClients"></span>
         <div className="row" data-aos="zoom-in">
           <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <img
