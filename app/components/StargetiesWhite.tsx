@@ -30,46 +30,47 @@ const StrategiChallengesWhite = () => {
             </div>
           </div>
         </div>
+
         <div className="row col-10 m-auto justify-content-center text-center">
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4 ">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <p>Operating model</p>
+                <p className="">Operating model</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <p>Organisation and people</p>
+                <p className="">Organisation and people</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <p>Competitiveness</p>
+                <p className="">Competitiveness</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <p>Working capital improvement</p>
+                <p className="">Working capital improvement</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <p>Mergers and acquisitions</p>
+                <p className="">Mergers and acquisitions</p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <p>Operations agility</p>
+                <p className="">Operations agility</p>
               </Link>
             </span>
           </div>

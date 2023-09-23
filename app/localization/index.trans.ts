@@ -139,6 +139,23 @@ const indexTrans: translataionContainer = {
     },
 
     /////////////////////////////////// services section //////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
+    Sustainabilityconsulting:{
+        en:'Sustainability consulting',
+        ar:'استشارات الاستدامة'
+    },
+    Operationalperformanceconsulting:{
+        en:'Operational performance consulting',
+        ar:'استشارات الأداء التشغيلي'
+    },
+    Newproductsconsulting:{
+        en:'New products consulting',
+        ar:'استشارات المنتجات الجديدة'
+    },
+    Procurementconsulting:{
+        en:'Procurement consulting',
+        ar:'استشارات المشتريات'
+    },
     servicesTitle:{
         en:'OUR SERVICES',
         ar:'خدماتنا'

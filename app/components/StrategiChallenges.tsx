@@ -34,46 +34,47 @@ const StrategiChallenges = () => {
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4 ">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Operating model</a>
+                <p data-trans="Sustainabilityconsulting"></p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Organisation and people</a>
+                <p data-trans="Operationalperformanceconsulting"></p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Competitiveness</a>
+                <p data-trans="Newproductsconsulting"></p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Working capital improvement</a>
+                <p data-trans="Procurementconsulting"></p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Mergers and acquisitions</a>
+                <p data-trans="Supplychainplanningconsulting"></p>
               </Link>
             </span>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <a className="text-white">Operations agility</a>
+                <p>Operations agility</p>
               </Link>
             </span>
           </div>
         </div>
+        {/* ///// */}
       </section>
     </>
   );

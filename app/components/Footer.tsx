@@ -157,7 +157,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <hr className="mt-3" />
+          <hr className="" />
           <div
             className={`mt-1 d-flex justify-content-between ${styels.footerAhmed1}`}>
             <p className={`${styels.copyRightsDiv}`}>

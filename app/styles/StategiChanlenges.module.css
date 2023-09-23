@@ -16,13 +16,13 @@
     line-height: 2.6666666667rem;
 }
 .spanFeature2{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
     line-height: 1.9777777778rem;
-    margin-bottom: 2.1111111111rem;
     display: inline-block;
-  position: relative;
+    position: relative;
+    cursor: pointer;
 }
 .spanFeature2::after{
     content: '';
@@ -30,7 +30,7 @@
   width: 100%;
   transform: scaleX(0);
   height: 4px;
-  margin-top: 2.5rem;
+  margin-top: 0rem;
   left: 0;
   background-color: #fff;
   transform-origin: bottom;
