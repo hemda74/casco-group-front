@@ -14,6 +14,7 @@ import StrategiChallengesWhite from '../components/StargetiesWhite';
 
 import Steps from '../components/Steps';
 import Footer from '../components/Footer';
+import NewHero from '../components/NewHero';
 const Login: NextPage = () => {
   // binding useDispatch to dispatch.
   const dispatch = useAppDispatch();
@@ -64,6 +65,7 @@ const Login: NextPage = () => {
       </Head>
       <main className={`${styles.bodyContainer}`}>
         <NavBar />
+        <NewHero />
         <GridSection />
         <Companies />
         <StrategiChallengesWhite />
