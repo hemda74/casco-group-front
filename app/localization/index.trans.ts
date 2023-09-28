@@ -156,6 +156,11 @@ const indexTrans: translataionContainer = {
         en:'Procurement consulting',
         ar:'استشارات المشتريات'
     },
+    Supplychainplanningconsulting:{
+        en:'Supply chainplanning consulting',
+        ar:'استشارات تخطيط سلسلة التوريد'
+    },
+    
     servicesTitle:{
         en:'OUR SERVICES',
         ar:'خدماتنا'
