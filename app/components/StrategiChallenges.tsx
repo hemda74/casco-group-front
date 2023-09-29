@@ -15,7 +15,7 @@ const StrategiChallenges = () => {
                     <div className={`${styles.sectionServicesHead} `}>
                       <span
                         className={`${styles.spanFeature}`}
-                        data-trans="Helpingwithstrategicchallenges"></span>
+                        data-trans="Helpingwithoperationalchallenges"></span>
                       <div className="row justify-content-center ">
                         <div className=" mt-4">
                           <p
@@ -69,7 +69,35 @@ const StrategiChallenges = () => {
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <span className={`${styles.spanFeature2}`}>
               <Link href={'/services'} className={``} id="link">
-                <p>Operations agility</p>
+                <p data-trans="Manufacturingconsulting"></p>
+              </Link>
+            </span>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <span className={`${styles.spanFeature2}`}>
+              <Link href={'/services'} className={``} id="link">
+                <p data-trans="Logisticsconsulting"></p>
+              </Link>
+            </span>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <span className={`${styles.spanFeature2}`}>
+              <Link href={'/services'} className={``} id="link">
+                <p data-trans="Channelstomarketconsulting"></p>
+              </Link>
+            </span>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <span className={`${styles.spanFeature2}`}>
+              <Link href={'/services'} className={``} id="link">
+                <p data-trans="Maintenanceandaftersalesconsulting"></p>
+              </Link>
+            </span>
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <span className={`${styles.spanFeature2}`}>
+              <Link href={'/services'} className={``} id="link">
+                <p data-trans="Transformationmanagementconsulting"></p>
               </Link>
             </span>
           </div>

@@ -87,6 +87,10 @@ const indexTrans: translataionContainer = {
         en:'Helping with strategic challenges',
         ar:'المساعدة في التحديات الاستراتيجية'
     },
+    Helpingwithoperationalchallenges:{
+        en:'Helping with operational challenges',
+        ar:'المساعدة في التحديات التشغيلية'
+    },
     Helpingwithstrategicchallengesnew:{
         en:'We are a global management consultancy that specializes in operations strategy and transformation. These are a selection of the strategic challenges we regularly work on.',
         ar:'نحن شركة استشارات إدارية عالمية متخصصة في استراتيجية العمليات والتحول. هذه مجموعة مختارة من التحديات الإستراتيجية التي نعمل عليها بانتظام.'
@@ -160,7 +164,26 @@ const indexTrans: translataionContainer = {
         en:'Supply chainplanning consulting',
         ar:'استشارات تخطيط سلسلة التوريد'
     },
-    
+    Manufacturingconsulting:{
+        en:'Manufacturing consulting',
+        ar:'استشارات التصنيع'
+    },
+    Logisticsconsulting:{
+        en:'Logistics consulting',
+        ar:'الاستشارات اللوجستية'
+    },
+    Channelstomarketconsulting:{
+        en:'Channels to market consulting',
+        ar:'استشارات القنوات إلى السوق'
+    },
+    Maintenanceandaftersalesconsulting:{
+        en:'Maintenance and after sales consulting',
+        ar:'الصيانة واستشارات ما بعد البيع'
+    },
+    Transformationmanagementconsulting:{
+        en:'Transformation management consulting',
+        ar:'استشارات إدارة التحول'
+    },
     servicesTitle:{
         en:'OUR SERVICES',
         ar:'خدماتنا'
