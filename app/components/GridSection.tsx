@@ -4,8 +4,8 @@ import Hero from './Hero';
 const GridSection = () => {
   return (
     <>
-      <div className="container">
-        <div className={`${styles.parent}`}>
+      <div className="row mt-5">
+        <div className={`${styles.parent} col-lg-10 m-auto`}>
           <div className={`${styles.div1}`}>
             <Hero />
           </div>
