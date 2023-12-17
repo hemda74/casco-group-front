@@ -10,7 +10,7 @@ const index = (props: Props) => {
   return (
     <>
       <Head>
-        <title>About Us | CASCO</title>
+        <title>About Usc | CASCO</title>
       </Head>
       <main>
         <About />
