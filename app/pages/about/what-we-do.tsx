@@ -9,7 +9,7 @@ const index = (props: Props) => {
   return (
     <>
       <Head>
-        <title>About Usc | CASCO</title>
+        <title>About Us | CASCO</title>
       </Head>
       <main></main>
     </>
