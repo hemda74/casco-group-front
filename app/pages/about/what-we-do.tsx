@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import About from '../../components/AboutPage1';
 import styles from '../../styles/Main.module.css';
 import { NextPageWithLayout } from '../_app';
 type Props = {};
@@ -12,9 +11,7 @@ const index = (props: Props) => {
       <Head>
         <title>About Usc | CASCO</title>
       </Head>
-      <main>
-        <About />
-      </main>
+      <main></main>
     </>
   );
 };
