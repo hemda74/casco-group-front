@@ -1,3 +1,9 @@
+.mainSpan
+    {
+        font-size: 5.625rem;
+        font-weight: 900;
+        color: var(--color-primary);
+    }
 .parent 
     {   display: grid;
         grid-template-columns: repeat(10, 1fr);

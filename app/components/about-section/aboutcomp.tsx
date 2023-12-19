@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../../styles/about.module.css';
+import styles from '../../styles/About.module.css';
 const MainAbout = () => {
   return (
     <div className="d-felx m-auto text-center">
-      <span className={`${styles.mainSpan}`}> About </span>
-      <div className=" col-10 container d-flex align-items-center justify-content-center">
+      <span className={`${styles.mainSpan}`}>About</span>
+      <div className="col-10 container d-flex align-items-center justify-content-center">
         <div className={`${styles.parent}`}>
           <div
             className={`${styles.div1} d-flex align-items-center justify-content-center`}></div>
