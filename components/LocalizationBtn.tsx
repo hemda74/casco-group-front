@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import changeLang from "../helper/changeLang";
-// import styles from "./styles/Localizationbtn.module.css";
 
 // Define styles as props alias.
 type Props = {
@@ -12,13 +11,13 @@ const LocalizationBtn = (props: Props) => {
   return (
     <div className="mt-4">
       <button
-        className={`btn btn-lg btn-outline-light `}
+        className={`btn`}
         onClick={() => {
           // Changing language function.
           changeLang();
         }}
       >
-        <span data-trans="langs">AR</span>
+        <span data-trans="langs">E</span>
       </button>
     </div>
   );
