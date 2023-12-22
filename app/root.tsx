@@ -12,14 +12,10 @@ const font = Cairo({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Store",
-  description: "Store - The place for all your purchases.",
+  description: "The place for all your purchases.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Root({ children }: { children: React.ReactNode }) {
   return (
     <html>
       <body className={font.className}>
