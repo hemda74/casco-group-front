@@ -5,7 +5,6 @@ import Logo from '../components/Logo';
 import logo from '../public/logo.png';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { userLogin, userDataSelector } from '../features/user';
 import LocalizationBtn from '../components/LocalizationBtn';
 import { useRouter } from 'next/router';
@@ -28,11 +27,6 @@ import FlagesSection from '../components/FlagesSection';
 import WhatsLink from '../components/WhatsLink';
 import FourOhFour from '../components/OpeningSoon2';
 const Login: NextPage = () => {
-  // binding useDispatch to dispatch.
-  const dispatch = useAppDispatch();
-  // graping user data from the store.
-  const { userData, pending, error } = useAppSelector(userDataSelector);
-
   // declaring next/router in variable to use it in the component.
   const router = useRouter();
 
@@ -53,13 +47,7 @@ const Login: NextPage = () => {
   const handleUserRedirect = () => {
     router.push('/tenant-admin');
   };
-  // a UseEffect hook watchs when the userData state changes it invokes handleUserRedirect func.
-  useEffect(() => {
-    // checking if userData object is not empty.
-    // if (Object.entries(userData).length !== 0) {
-    // handleUserRedirect();
-    // }
-  }, [userData]);
+
   let choise = 0;
   useEffect(() => {
     let lang = localStorage.getItem('lang');

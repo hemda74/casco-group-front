@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // impoting bootstrap.css file
 import '../styles/bootstrapClasses.css'; // impoting customized bootstrap.css file
 import { useEffect, ReactElement, ReactNode } from 'react';
 import { Provider } from 'react-redux';
-import { store } from '../app/store';
 import transScript from '../helper/transScript';
 import indexTrans from '../localization/index.trans';
 import { NextPage } from 'next';
@@ -50,14 +49,11 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           rel="stylesheet"
         />
       </Head>
-
-      <Provider store={store}>
-        {/* <AuthGard> */}
-        <LanguageProvider>
-          {getLayout(<Component {...pageProps} />)}
-        </LanguageProvider>
-        {/* </AuthGard> */}
-      </Provider>
+      {/* <AuthGard> */}
+      <LanguageProvider>
+        {getLayout(<Component {...pageProps} />)}
+      </LanguageProvider>
+      {/* </AuthGard> */}
     </>
   );
 }

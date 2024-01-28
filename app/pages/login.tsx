@@ -6,7 +6,6 @@ import InputEmail from '../components/InputEmail';
 import InputPassword from '../components/InputPassword';
 import Link from 'next/link';
 import DomainSelect from '../components/DomainSelect';
-import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { userLogin, userDataSelector } from '../features/user';
 import LocalizationBtn from '../components/LocalizationBtn';
 import { useRouter } from 'next/router';
@@ -16,11 +15,6 @@ import getCookie from '../helper/getCookie';
 import OpeningSoon from '../components/OpeningSoon';
 
 const Login: NextPage = () => {
-  // binding useDispatch to dispatch.
-  const dispatch = useAppDispatch();
-  // graping user data from the store.
-  const { userData, pending, error } = useAppSelector(userDataSelector);
-
   // declaring next/router in variable to use it in the component.
   const router = useRouter();
 
@@ -42,12 +36,6 @@ const Login: NextPage = () => {
     router.push('/tenant-admin');
   };
   // a UseEffect hook watchs when the userData state changes it invokes handleUserRedirect func.
-  useEffect(() => {
-    // checking if userData object is not empty.
-    // if (Object.entries(userData).length !== 0) {
-    // handleUserRedirect();
-    // }
-  }, [userData]);
 
   return (
     <>
@@ -146,7 +134,7 @@ const Login: NextPage = () => {
           </div>
         </div>
       </div> */}
-      <OpeningSoon/>
+      <OpeningSoon />
     </>
   );
 };
