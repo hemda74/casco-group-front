@@ -7,7 +7,7 @@ import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/New/Layout';
 type Props = {};
 // dymmy data for ui till handle working with api
-const contactus: NextPageWithLayout = (props: Props) => {
+const Contactus: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
   return (
     <>
@@ -27,7 +27,7 @@ const contactus: NextPageWithLayout = (props: Props) => {
   );
 };
 // adding Layout
-contactus.getLayout = function getLayout(contactus: ReactElement) {
+Contactus.getLayout = function getLayout(contactus: ReactElement) {
   return <ViewerLayout childern={contactus}></ViewerLayout>;
 };
-export default contactus;
+export default Contactus;
