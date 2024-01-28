@@ -10,13 +10,13 @@ const Navbar = () => {
         <button
           onClick={toggleLanguage}
           className={`btn ${styles.localizationBtn}`}>
-          ع
+          <span>ع</span>
         </button>
       ) : (
         <button
           onClick={toggleLanguage}
           className={`btn ${styles.localizationBtn}`}>
-          E
+          <span>E</span>
         </button>
       )}
     </div>
