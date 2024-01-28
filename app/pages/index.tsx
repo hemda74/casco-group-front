@@ -5,7 +5,6 @@ import Logo from '../components/Logo';
 import logo from '../public/logo.png';
 import Link from 'next/link';
 import Image from 'next/image';
-import { userLogin, userDataSelector } from '../features/user';
 import LocalizationBtn from '../components/LocalizationBtn';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';

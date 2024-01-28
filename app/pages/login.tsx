@@ -6,7 +6,6 @@ import InputEmail from '../components/InputEmail';
 import InputPassword from '../components/InputPassword';
 import Link from 'next/link';
 import DomainSelect from '../components/DomainSelect';
-import { userLogin, userDataSelector } from '../features/user';
 import LocalizationBtn from '../components/LocalizationBtn';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';

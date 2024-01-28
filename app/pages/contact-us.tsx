@@ -5,6 +5,7 @@ import { NextPageWithLayout } from './_app';
 import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/New/Layout';
+import Steps from '../components/Steps';
 type Props = {};
 // dymmy data for ui till handle working with api
 const Contactus: NextPageWithLayout = (props: Props) => {
@@ -20,7 +21,7 @@ const Contactus: NextPageWithLayout = (props: Props) => {
             <ContactUs />
           </main>
         ) : (
-          <div>Hello world</div>
+          <Steps />
         )}
       </Layout>
     </>
