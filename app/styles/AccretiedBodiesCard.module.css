@@ -1,0 +1,147 @@
+
+ .boardOfDirc {
+  background: none;
+  padding-bottom: 1rem;
+  margin-top: -10.5rem;
+}
+.teamMemberFigure{
+  position: relative;
+  overflow: hidden;
+  width: 12.5rem;
+  height: 16rem;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.cardImage{
+  position: absolute;
+  top: 5;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 5rem;
+  border: none;
+  margin: 0.5rem;
+  display: block;
+  width: 0;
+  height: 0;
+  min-width: 95%;
+  max-width: 90%;
+  min-height: 85%;
+  max-height: 85%;
+}
+.figcaptionUl{
+  visibility: visible;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.figCaption{
+  color: transparent;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 996;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.teamMember2{
+  margin-right: -2rem;
+}
+.teamMember2 .teamMemberFigure:hover figCaption{
+  visibility: visible;
+  color: #fff;
+  background: rgba(59, 60, 61, 0.523);   
+  height: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.accretiedCaption{
+  z-index: 900;
+}
+.flagImage{
+  padding-top: 13rem !important;
+  visibility: visible;
+  color: #fff ;
+  background: rgba(98, 141, 222, 0.523);   
+  z-index: 555;
+}
+.cardsContainer{
+  display: flex ;
+  margin: auto;
+}
+@media (max-width: 770px) {
+  .teamMemberFigure{
+      position: relative;
+      overflow: hidden;
+      width: 18rem;
+      height: 16rem;
+      box-shadow: 0px 20px 30px -1px #8787b2;
+      border-radius: 0.5rem;
+      margin-bottom: 3rem;
+      margin-right: 3rem;
+      margin-left: 1rem;
+  }
+  .cardImage{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      box-sizing: border-box;
+      padding: 1rem;
+      border: none;
+      margin: 2.5rem;
+      display: block;
+      width: 0;
+      height: 0;
+      min-width: 75%;
+      max-width: 75%;
+      min-height: 75%;
+      max-height: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .teamMemberFigure{
+  width: 90%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  }
+  .mainCardDiv{
+    margin: 0 -1.777rem;
+  }
+  .cardImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: none;
+    margin: 2rem;
+    display: block;
+    width: 0;
+    height: 0;
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 80%;
+    max-height: 80%;
+  }
+}

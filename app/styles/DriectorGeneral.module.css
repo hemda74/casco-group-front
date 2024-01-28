@@ -1,0 +1,68 @@
+.titleWord{
+  margin-top: -10rem;
+}
+.bookCont{
+  padding: 30px 0 25px ;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  border-radius: 3rem;
+}
+.cardImage{ 
+  background: #ffff;
+  padding: 5rem;
+  align-self: center;
+}
+.innerCont{
+  background: #ffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.8333333333rem 1.1111111111rem rgba(0,0,0,.1);
+  padding-top: 5rem;
+}
+.ethicCard3{
+  max-width: 50.2777777778rem;
+  margin-top: auto;
+  margin-bottom: 0;
+  box-shadow: 0 0.8333333333rem 1.1111111111rem rgba(0,0,0,.1);
+  padding: 1rem;
+  background: #f6f6f9;  
+  border-radius: 1rem;
+}
+.itemCheckTage{
+  margin-bottom: 0.8333333333rem;
+  display: flex;
+  position: relative;
+  font-size: .8888888889rem;
+  font-weight: 400;
+  color: #252e3e;
+  line-height: 1.6666666667rem;
+  margin-bottom: 0;
+  text-align: start;
+}
+.itemCheckTage::after{
+  content: "";
+  position: absolute;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  right: 0;
+  top: 0.5555555556rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.driectorGeneralText{
+  display: inline-flex !important;
+}
+.btnContainer{
+  padding: 0.5rem 2rem  0.5rem 2rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 978px) {
+  .cardImage {
+    padding:0;
+    width:100%;
+    margin-bottom: 5rem;
+  }
+}

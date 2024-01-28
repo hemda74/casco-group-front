@@ -1,0 +1,126 @@
+.mainDiv{
+    padding: .7777777778rem 0;
+    margin: 0;
+}
+.sectionAssessorCab{
+    position: relative;
+    padding-bottom: 3.8888888889rem;
+    margin: 1rem 0 1rem 0;
+}
+.innerAssessorCab{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.35) 50%),url('../public/images/home_page/Assessor&CAB/bg.png'),#3b4351;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3.8888888889rem 0;
+    z-index: -1;
+}
+.headAssessorCab{
+font-size: 2.6666666667rem;
+font-weight: 700;
+color: #fdf3f3;
+padding-bottom: 3.8888888889rem;
+margin-bottom: 3.8888888889rem;
+text-align: center;
+}
+.bodyAssessorCab{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+ }
+.cardCertificate{
+    position: relative;
+    border-radius: 1.1111111111rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    width: 38%;
+}
+.cardCertificate2{
+    position: relative;
+    border-radius: 1.1111111111rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    width: 38%;
+}
+.cardCertificate::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('../public/images/home_page/Assessor&CAB/assessor.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 1.1111111111rem;
+}
+.cardCertificate2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image:url('../public/images/home_page/Assessor&CAB/cab.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 1.1111111111rem;
+}
+.btnClassAssessor{
+    border: none;
+    padding: 0.5rem 2.5rem;
+    font-weight: 700;
+}
+.btnClassCab{
+    border: none;
+    padding: 0.51rem 2.5rem ;
+    font-weight: 700;
+}
+@media (max-width: 768px)
+{
+    .innerContainer {
+        max-width: 720px;
+    }
+    .cardCertificate {
+        margin-bottom: 0.6666666667rem;
+        width: 100%;
+        margin-top: 14rem;
+    }
+    .cardCertificate2 {
+        margin-bottom: 0.6666666667rem;
+        width: 100%;
+        margin-bottom: -11rem;
+    
+    }
+    .mainDivContainer{
+        flex-wrap: wrap; 
+    }  
+}
+@media (max-width: 576px)
+{
+    .sectionAssessorCab{
+        position: relative;
+        padding-bottom: 3.8888888889rem;
+        margin-bottom:15rem;
+    }
+    .mainDivContainer{
+        flex-wrap: wrap; 
+    }  
+    .innerContainer {
+        max-width: 540px;
+    }
+    .cardCertificate {
+        margin-bottom: 0.6666666667rem;   
+    }
+}

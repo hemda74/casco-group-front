@@ -1,0 +1,92 @@
+.sectionCoursesHead{
+    margin: 0rem;
+    padding:0.7777777778rem 0;
+    background: #f9f9f9;
+  }
+  .spanFeature{
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+  .cousesParageph{
+    font-size: 1.1111111111rem;
+    font-weight: 600;
+    color: #666d78;
+    line-height: 1.8333333333rem;
+    margin-top: 1rem;
+  }
+.postBox {
+    transition: 0.3s;
+    height: 100%;
+    max-width: 35rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: flex;  
+    background: #fff;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .postImage {
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+  }
+  .figCaption{
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 996;
+    color: #fff;
+    bottom: auto;
+    left: 5%;
+    top: 10%;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .postBox .postTitleFigre:hover figCaption{
+    visibility: visible;
+    color: #fff !important;
+    background: rgba(33, 30, 30, 0.603);  
+    height: 35%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .postTitle {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin: 15px 0 0 0;
+    position: relative;
+    transition: 0.3s;
+  }
+  .iconDate{
+    margin-top: 0.5rem;
+    color: var(--color-secondary);
+  }
+  .dateCourse{
+    margin-top: -0.5rem;
+  }
+  .coursesConainer{
+    margin-top: 4rem;
+  }
+  .SearchButton{
+    border-radius: 0.4rem;
+    padding: 0.7rem 1.5rem;
+    font-weight: 700;
+  }
+  @media (max-width: 480px) {
+  .courseCard{
+    display: none;
+  }
+}
