@@ -11,15 +11,17 @@ const ContactUs = () => {
       <section id="contact" className="contact">
         <div className={`text-center ${styles.titleWord}`}>
           <div className={`container mb-4`}>
-            <Link href={'/'}>
-              <a
-                className="text-white fw-semibold mb-4"
-                data-trans="homepageurl">{`Home`}</a>
+            <Link
+              href={'/'}
+              className="text-white fw-semibold mb-4"
+              data-trans="homepageurl">
+              {`Home`}
             </Link>
-            <Link href={'/contact-us'}>
-              <a
-                className="text-white fw-semibold mb-4"
-                data-trans="ContactUsHeadLink">{` > Contact Us`}</a>
+            <Link
+              href={'/contact-us'}
+              className="text-white fw-semibold mb-4"
+              data-trans="ContactUsHeadLink">
+              {` > Contact Us`}
             </Link>
           </div>
           <h2 className="text-white fw-bold mb-5" data-trans="ContactUs">

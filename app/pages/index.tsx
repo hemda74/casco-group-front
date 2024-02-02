@@ -63,17 +63,7 @@ const Login: NextPage = () => {
         <title>CASCO</title>
       </Head>
       <main className={`${styles.bodyContainer}`}>
-        <WhatsLink />
-        <NavBar />
-        <Hero />
-        <FlagesSection />
-        <ServicesSlider />
-        <Steps />
-        <CoursesSectionHomePage />
-        <Recogention />
-        <AccreditedBodiesCompaines />
-        {/* <AccreditedBodiesCompainesRtl /> */}
-        <Footer />
+        <h1>Hello</h1>
       </main>
     </>
   );

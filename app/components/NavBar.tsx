@@ -14,15 +14,13 @@ const NavBar = () => {
         <div
           className={`container-fluid d-flex justify-content-between align-items-center ms-4 `}>
           <Link href={'/'} className="navbar-brand me-5 mb-0 mt-0 ms-5">
-            <a>
-              <Image
-                className="me-0 mb-0 mt-0 ms-1"
-                alt="casco logo"
-                src={logo}
-                width={150}
-                height={70}
-              />
-            </a>
+            <Image
+              className="me-0 mb-0 mt-0 ms-1"
+              alt="casco logo"
+              src={logo}
+              width={150}
+              height={70}
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -38,12 +36,12 @@ const NavBar = () => {
             <ul className="navbar-nav m-auto ">
               <li className={`nav-item ms-3 ${styles.navItem}`}>
                 <Link href={'/'} className={`nav-link`} id="link">
-                  <a className={`${styles.navLink}`} data-trans="HomeNav">
+                  <p className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}>
                     Home
-                  </a>
+                  </p>
                 </Link>
               </li>
-              <li className={`nav-item dropdown  ms-3  ${styles.navItem2} `}>
+              {/* <li className={`nav-item dropdown  ms-3  ${styles.navItem2} `}>
                 <a
                   href="#"
                   id="navbarDropdown"
@@ -99,7 +97,7 @@ const NavBar = () => {
                       </a>
                     </Link>
                   </li>
-                  {/* commented till need  */}
+                 
                   <li
                     className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
                     <Link
@@ -283,7 +281,7 @@ const NavBar = () => {
                     Contact Us
                   </a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <div className={`d-flex me-4 ms-4`}>
               <Navbar />

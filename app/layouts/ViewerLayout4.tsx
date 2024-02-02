@@ -9,15 +9,14 @@ type LayoutProps = {
   childern: React.ReactNode;
 };
 // vieweres Layout.
-const ViewerLayout = ({ childern }:LayoutProps) => {
+const ViewerLayout = ({ childern }: LayoutProps) => {
   return (
     <>
-            <NavBar />
-            <PagesHeader/>
-            <WhatsLink/>
-            <main>{childern}</main>  
-            <Footer />
-     
+      <NavBar />
+      {/* <PagesHeader />
+      <WhatsLink /> */}
+      <main>{childern}</main>
+      {/* <Footer /> */}
     </>
   );
 };
