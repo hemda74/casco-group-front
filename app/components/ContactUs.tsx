@@ -5,6 +5,7 @@ import { FiMail } from 'react-icons/fi';
 import styles from '../styles/ContactUs.module.css';
 import Link from 'next/link';
 import { FaFax, FaMapMarkerAlt } from 'react-icons/fa';
+import getBillboard from '../actions/get-billboard';
 const ContactUs = () => {
   return (
     <>
