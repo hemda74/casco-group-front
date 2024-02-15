@@ -39,6 +39,18 @@ const NavBar = () => {
             </div>
             <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav m-auto ">
+              <li className={`nav-item ms-3 ${styles.navItem}`}>
+              </li>
+            </ul>
+            </div> <div className="collapse navbar-collapse" id="navbarColor01">
+            <ul className="navbar-nav m-auto ">
+              <li className={`nav-item ms-3 ${styles.navItem}`}>
+              </li>
+            </ul>
+            </div>
+            
+            <div className="collapse navbar-collapse" id="navbarColor01">
+            <ul className="navbar-nav m-auto ">
               <li className=  {`nav-item ms-3 ${styles.navItem}`}>
                 <Link href={'/courses'} className={`nav-link`} id="link">
                   <p className={`${styles.navLink}  fw-bold mt-1`} data-trans="CoursesNav">
@@ -69,16 +81,17 @@ const NavBar = () => {
               </li>
               <li className=  {`nav-item ms-3 ${styles.navItem}`}>
                 <Link href={'/news-insights'} className={`nav-link`} id="link">
-                  <p className={`${styles.navLink} fw-bold mt-1`}>
+                  <p className={`${styles.navLink} fw-bold `}>
                   NEWS&INSIGHTS
                   </p>
                 </Link> 
               </li>
-              <li>
-               <div className={`d-flex mt-3`}>
-              <Navbar />
-            </div>
-              </li>
+              <li className=  {`nav-item ms-3 ${styles.navItem}`}>
+                <div className={`mt-3`}>
+                <Navbar/>
+                </div>
+          
+         </li>
           </ul>
             </div>
            
