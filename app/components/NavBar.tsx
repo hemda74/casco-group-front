@@ -3,7 +3,6 @@ import styles from '../styles/NavBar.module.css';
 import Image from 'next/image';
 import logo from '../public/logo.png';
 import Link from 'next/link';
-import LocalizationBtn from './LocalizationBtn';
 import Navbar from './New/Navbar';
 const NavBar = () => {
   return (
@@ -13,7 +12,7 @@ const NavBar = () => {
         className={`navbar navbar-expand-lg sticky-top bg-white ${styles.navBar}`}>
         <div
           className={`container-fluid d-flex justify-content-between align-items-center ms-4 `}>
-          <Link href={'/'} className="navbar-brand me-5 mb-0 mt-0 ms-5">
+          <Link href={'/'} className="navbar-brand mb-0 mt-0">
             <Image
               className="me-0 mb-0 mt-0 ms-1"
               alt="casco logo"
@@ -42,44 +41,47 @@ const NavBar = () => {
             <ul className="navbar-nav m-auto ">
               <li className=  {`nav-item ms-3 ${styles.navItem}`}>
                 <Link href={'/courses'} className={`nav-link`} id="link">
-                  <p className={`${styles.navLink} me-2 ms-2 fw-bold mt-1`}>
+                  <p className={`${styles.navLink}  fw-bold mt-1`} data-trans="CoursesNav">
                     COURSES
                   </p>
                 </Link> 
               </li>
               <li className=  {`nav-item ms-3 ${styles.navItem}`}>
                 <Link href={'/about'} className={`nav-link`} id="link">
-                  <p className={`${styles.navLink} me-2 ms-2 fw-bold mt-1`}>
+                  <p className={`${styles.navLink}  fw-bold mt-1`}>
                     ABOUT
                   </p>
                 </Link> 
               </li>
               <li className=  {`nav-item ms-3 ${styles.navItem}`}>
                 <Link href={'/services'} className={`nav-link`} id="link">
-                  <p className={`${styles.navLink} me-2 ms-2 fw-bold mt-1`}>
+                  <p className={`${styles.navLink}  fw-bold mt-1`}>
                     SERVICES
                   </p>
                 </Link> 
               </li>
               <li className=  {`nav-item ms-3 ${styles.navItem}`}>
                 <Link href={'/industries'} className={`nav-link`} id="link">
-                  <p className={`${styles.navLink} me-2 ms-2 fw-bold mt-1`}>
+                  <p className={`${styles.navLink}  fw-bold mt-1`}>
                   INDUSTRIES
                   </p>
                 </Link> 
               </li>
               <li className=  {`nav-item ms-3 ${styles.navItem}`}>
                 <Link href={'/news-insights'} className={`nav-link`} id="link">
-                  <p className={`${styles.navLink} me-2 ms-lg-2 fw-bold mt-1`}>
+                  <p className={`${styles.navLink} fw-bold mt-1`}>
                   NEWS&INSIGHTS
                   </p>
                 </Link> 
               </li>
-          </ul>
-            </div>
-            <div className={`d-flex me-4 mt-3 ms-4`}>
+              <li>
+               <div className={`d-flex mt-3`}>
               <Navbar />
             </div>
+              </li>
+          </ul>
+            </div>
+           
           </div>
       </nav>
     </>

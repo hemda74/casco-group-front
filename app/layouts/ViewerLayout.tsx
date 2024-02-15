@@ -15,6 +15,7 @@ const ViewerLayout = ({ childern }: LayoutProps) => {
       <NavBar />
       {/* <PagesHeader />
       <WhatsLink /> */}
+      {/* <Newnavbar/> */}
       <main>{childern}</main>
       {/* <Footer /> */}
     </>

@@ -22,7 +22,7 @@ const Contactus: NextPageWithLayout = (props: Props) => {
             <ContactUs />
           </main>
         ) : (
-<h1>Ahmed</h1>        )}
+        <h1>Ahmed</h1>        )}
       </Layout>
     </>
   );

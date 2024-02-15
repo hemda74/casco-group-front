@@ -47,20 +47,12 @@ const indexTrans: translataionContainer = {
         en:'CASCO’s Rights And Duties',
         ar:'الحقوق و الواجبات'
     },
-    StakeholdersAdvisoryCommitteeNav:{
-        en:'Stakeholders Advisory Committee',
-        ar:'اللجنة الاستشارية للجهات ذات العلاقة'
-    },
-    AccreditedBodiesNav:{
-        en:'Our Clients',
-        ar:'عملائنا',
-    },
     ServicesNav:{
         en:'Services',
         ar:'خدماتنا'
     },
     CoursesNav:{
-        en:'Courses',
+        en:'COURSES',
         ar:'الكورسات'
     },
     DocumentsNav:{
