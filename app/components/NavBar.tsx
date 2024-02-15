@@ -35,7 +35,7 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav m-auto ">
               <li className={`nav-item ms-3 ${styles.navItem}`}>
-                <Link href={'/'} className={`nav-link`} id="link">
+              <Link href={'/'} className={`nav-link`} id="link">
                   <p className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}>
                     Home
                   </p>
@@ -283,7 +283,11 @@ const NavBar = () => {
                 </Link>
               </li> */}
             </ul>
-            <div className={`d-flex me-4 ms-4`}>
+            <Link href={'/courses'} className={`nav-link`} id="link">
+                  <p className={`${styles.navLink} me-4 ms-4 fs-4 mt-1`}>
+                    courses
+                  </p>
+                </Link>            <div className={`d-flex me-4 ms-4`}>
               <Navbar />
             </div>
           </div>
