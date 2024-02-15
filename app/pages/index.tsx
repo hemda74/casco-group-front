@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState } from 'react';
 import Head from 'next/head';
-import ViewerLayout from './../layouts/ViewerLayout4';
+import ViewerLayout from '../layouts/ViewerLayout';
 import { NextPageWithLayout } from './_app';
 import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';

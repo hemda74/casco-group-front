@@ -1,11 +1,10 @@
 import React, { ReactElement, useEffect, useState } from 'react';
 import Head from 'next/head';
-import ViewerLayout from './../layouts/ViewerLayout4';
+import ViewerLayout from '../layouts/ViewerLayout';
 import { NextPageWithLayout } from './_app';
 import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/New/Layout';
-import Steps from '../components/Steps';
 import getBillboard from '../actions/get-billboard';
 import { url } from 'inspector';
 type Props = {};
@@ -23,8 +22,7 @@ const Contactus: NextPageWithLayout = (props: Props) => {
             <ContactUs />
           </main>
         ) : (
-          <Steps />
-        )}
+<h1>Ahmed</h1>        )}
       </Layout>
     </>
   );

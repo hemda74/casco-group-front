@@ -35,263 +35,52 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav m-auto ">
               <li className={`nav-item ms-3 ${styles.navItem}`}>
-              <Link href={'/'} className={`nav-link`} id="link">
-                  <p className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}>
-                    Home
-                  </p>
-                </Link>
               </li>
-              {/* <li className={`nav-item dropdown  ms-3  ${styles.navItem2} `}>
-                <a
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  className={`nav-link dropdown-toggle ${styles.navLink2}`}
-                  data-trans="AboutCascoNav">
-                  About CASCO
-                </a>
-                <ul
-                  className={`dropdown-menu ${styles.ulDropDown}`}
-                  aria-labelledby="navbarDropdown">
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link href={'/about'} className={`nav-link`} id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}
-                          data-trans="AboutUsNav">
-                          About Us
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link
-                      href={'/about/our-team'}
-                      className={`nav-link`}
-                      id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}
-                          data-trans="BoardOfDirectorsNav">
-                          Our Team
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link
-                      href={'/about/director-general'}
-                      className={`nav-link`}
-                      id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}
-                          data-trans="DirectorMangerNav">
-                          Director Manger
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                 
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link
-                      href={'/about/our-values'}
-                      className={`nav-link `}
-                      id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}
-                          data-trans="OurValuesNav">
-                          Our Values
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link
-                      href={'/about/rights-and-duties'}
-                      className={`nav-link `}
-                      id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}
-                          data-trans="CASCORightsAndDutiesNav">
-                          CASCO’s Rights And Duties
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link
-                      href={'/about/stakeholders-advisory-committee'}
-                      className={`nav-link `}
-                      id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} d-inline me-4 ms-4 mt-2 mb-2`}
-                          data-trans="StakeholdersAdvisoryCommitteeNav">
-                          Stakeholders Advisory Committee
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className={`nav-item ms-3 ${styles.navItem}`}>
-                <Link
-                  href={'/our-clients'}
-                  className={`nav-link text-black pb-0 mb-0 ${styles.navLink}`}
-                  id="link">
-                  <a
-                    className={`${styles.navLink}`}
-                    data-trans="AccreditedBodiesNav">
-                    Our Clients
-                  </a>
-                </Link>
-              </li>
-              <li className={`nav-item ms-3 ${styles.navItem}`}>
-                <Link
-                  href={'/services'}
-                  className={`nav-link text-black pb-0 mb-0 ${styles.navLink}`}
-                  id="link">
-                  <a className={`${styles.navLink}`} data-trans="ServicesNav">
-                    Services
-                  </a>
-                </Link>
-              </li>
-              <li className={`nav-item ms-3 ${styles.navItem}`}>
-                <Link
-                  href={'/courses'}
-                  className={`nav-link text-black pb-0 mb-0 ${styles.navLink}`}
-                  id="link">
-                  <a className={`${styles.navLink}`} data-trans="CoursesNav">
-                    Courses
-                  </a>
-                </Link>
-              </li>
-              <li className={`nav-item ms-3  ${styles.navItem}`}>
-                <Link
-                  href={'/documents'}
-                  className={`nav-link text-black pb-0 mb-0 ${styles.navLink}`}
-                  id="link">
-                  <a className={`${styles.navLink}`} data-trans="DocumentsNav">
-                    Documents
-                  </a>
-                </Link>
-              </li>
-              <li className={`nav-item dropdown ms-3  ${styles.navItem2}`}>
-                <a
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  className={`nav-link dropdown-toggle ${styles.navLink2}`}
-                  data-trans="MediaCenterNav">
-                  Media Center
-                </a>
-                <ul
-                  className={`dropdown-menu ${styles.ulDropDown2}`}
-                  aria-labelledby="navbarDropdown">
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} mt-2 ms-2 me-2`}>
-                    <Link
-                      href={'/news'}
-                      className={`nav-link  ${styles.navLink}`}
-                      id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} me-4 ms-4 mt-2 mb-2 `}
-                          data-trans="NewsNav">
-                          News
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link href={'/gallery'} className={`nav-link`} id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}
-                          data-trans="GalleryNav">
-                          Gallery
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link
-                      href={'/educational-booklets'}
-                      className={`nav-link`}
-                      id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} d-inline me-4 ms-4 mt-2 mb-2`}
-                          data-trans="EducationalBookletsNav">
-                          Educational Booklets
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2`}>
-                    <Link
-                      href={'/visual-presentations'}
-                      className={`nav-link `}
-                      id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} d-inline me-4 ms-4 mt-2 mb-2`}
-                          data-trans="VisualPresentationsNav">
-                          Visual Presentations
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                  <li
-                    className={`nav-item ${styles.navItemDropDown} ms-2 me-2 mb-2`}>
-                    <Link href={'/events'} className={`nav-link `} id="link">
-                      <a className="d-flex">
-                        <p
-                          className={`${styles.navLink} me-4 ms-4 mt-2 mb-2`}
-                          data-trans="EventsNav">
-                          Events
-                        </p>
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className={`nav-item ms-3 ${styles.navItem}`}>
-                <Link
-                  href={'/contact-us'}
-                  className={`nav-link text-black pb-0 mb-0 ${styles.navLink}`}
-                  id="link">
-                  <a className={`${styles.navLink}`} data-trans="ContactUsNav">
-                    Contact Us
-                  </a>
-                </Link>
-              </li> */}
             </ul>
-            <Link href={'/courses'} className={`nav-link`} id="link">
-                  <p className={`${styles.navLink} me-4 ms-4 fs-4 mt-1`}>
-                    courses
+            </div>
+            <div className="collapse navbar-collapse" id="navbarColor01">
+            <ul className="navbar-nav m-auto ">
+              <li className=  {`nav-item ms-3 ${styles.navItem}`}>
+                <Link href={'/courses'} className={`nav-link`} id="link">
+                  <p className={`${styles.navLink} me-2 ms-2 fw-bold mt-1`}>
+                    COURSES
                   </p>
-                </Link>            <div className={`d-flex me-4 ms-4`}>
+                </Link> 
+              </li>
+              <li className=  {`nav-item ms-3 ${styles.navItem}`}>
+                <Link href={'/about'} className={`nav-link`} id="link">
+                  <p className={`${styles.navLink} me-2 ms-2 fw-bold mt-1`}>
+                    ABOUT
+                  </p>
+                </Link> 
+              </li>
+              <li className=  {`nav-item ms-3 ${styles.navItem}`}>
+                <Link href={'/services'} className={`nav-link`} id="link">
+                  <p className={`${styles.navLink} me-2 ms-2 fw-bold mt-1`}>
+                    SERVICES
+                  </p>
+                </Link> 
+              </li>
+              <li className=  {`nav-item ms-3 ${styles.navItem}`}>
+                <Link href={'/industries'} className={`nav-link`} id="link">
+                  <p className={`${styles.navLink} me-2 ms-2 fw-bold mt-1`}>
+                  INDUSTRIES
+                  </p>
+                </Link> 
+              </li>
+              <li className=  {`nav-item ms-3 ${styles.navItem}`}>
+                <Link href={'/news-insights'} className={`nav-link`} id="link">
+                  <p className={`${styles.navLink} me-2 ms-lg-2 fw-bold mt-1`}>
+                  NEWS&INSIGHTS
+                  </p>
+                </Link> 
+              </li>
+          </ul>
+            </div>
+            <div className={`d-flex me-4 mt-3 ms-4`}>
               <Navbar />
             </div>
           </div>
-        </div>
       </nav>
     </>
   );
