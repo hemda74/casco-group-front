@@ -15,77 +15,37 @@ const indexTrans: translataionContainer = {
         ar:'كاسكو'
     },
     /////////////////////////////< NavBar >/////////////////////////////////////////////
-    HomeNav:{
-        en:"Home",
-        ar:"الرئيسية"
-    },
     AboutCascoNav:{
-        en:"About CASCO",
+        en:"ABOUT CASCO",
         ar:"عن كاسكو"
-    },
-    AboutUsNav:{
-        en:'About Us',
-        ar:'من نحن'
-    },
-    BoardOfDirectorsNav:{
-        en:'Our Team',
-        ar:'فريقنا'
     },
     DirectorMangerNav:{
         en:'Managing Director',
         ar:'المدير العام'
     },
-    OurValuesNav:{
-        en:'Our Values',
-        ar:'قيمنا'
-    },
-    CASCOEstablishmentAgreementNav:{
-        en:'CASCO Establishment Agreement',
-        ar:'اتفاقية انشاء المركز'    
-    },
-    CASCORightsAndDutiesNav:{
-        en:'CASCO’s Rights And Duties',
-        ar:'الحقوق و الواجبات'
+    CareersNav:{
+        en:'CAREERS',
+        ar:'وظائف'
     },
     ServicesNav:{
-        en:'Services',
-        ar:'خدماتنا'
+        en:'SERVICES',
+        ar:'الخدمات'
     },
     CoursesNav:{
         en:'COURSES',
         ar:'الكورسات'
     },
-    DocumentsNav:{
-        en:'Documents',
-        ar:'وثائق المركز'
+    industriesNav:{
+        en:'INDUSTRIES',
+        ar:'الصناعات'
     },
     ContactUsNav:{
-        en:'Contact Us',
+        en:'CONTACT US',
         ar:'تواصل معنا '
     },
-    MediaCenterNav:{
-        en:'Media Center',
-        ar:'المركز الاعلامي'
-    },
     NewsNav:{
-        en:'News',
-        ar:'الاخبار'
-    },
-    GalleryNav:{
-        en:'Gallery',
-        ar:'معرض الصور'
-    },
-    EducationalBookletsNav:{
-        en:'Educational Booklets',
-        ar:'منشورات توعوية'
-    },
-    VisualPresentationsNav:{
-        en:'Visual Presentations',
-        ar:'عروض مرئية'
-    },
-    EventsNav:{
-        en:'Events',
-        ar:'الفعاليات'
+        en:'NEWS&INSIGHTS',
+        ar:'الأخبار والرؤى'
     },
     /////////////////////////////< NavBar >/////////////////////////////////////////////
     // hero section in home page
