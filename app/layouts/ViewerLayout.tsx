@@ -17,7 +17,7 @@ const ViewerLayout = ({ childern }: LayoutProps) => {
       <WhatsLink /> */}
       {/* <Newnavbar/> */}
       <main>{childern}</main>
-      {/* <Footer /> */}
+      <Footer /> 
     </>
   );
 };

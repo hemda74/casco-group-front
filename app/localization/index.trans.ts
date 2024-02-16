@@ -44,7 +44,7 @@ const indexTrans: translataionContainer = {
         ar:'تواصل معنا '
     },
     NewsNav:{
-        en:'NEWS&INSIGHTS',
+        en:'NEWS & INSIGHTS',
         ar:'الأخبار والرؤى'
     },
     /////////////////////////////< NavBar >/////////////////////////////////////////////
@@ -331,13 +331,10 @@ const indexTrans: translataionContainer = {
         ar:'وثائق المركز'
     },
     NewsletterSubscriptionFooter:{
-        en:'Newsletter Subscription',
-        ar:'النشرة الإخبارية'
+        en:'Get in touch',
+        ar:'كن على تواصل'
     },
-    NewsletterSubscriptionFooterberif:{
-        en:'Join our mailing list and receive our latest updates, recent CABs, training programs and etc. straight to your inbox',
-        ar:'انضم إلى قائمتنا البريدية واحصل على آخر تحديثاتنا ، وأحدث برامج المركز، وبرامج التدريب وما إلى ذلك مباشرة إلى صندوق الوارد الخاص بك'
-    },
+   
     CreatedByFooter:{
         en:'Developed By',
         ar:'تم التطوير بواسطة'
@@ -347,8 +344,8 @@ const indexTrans: translataionContainer = {
         ar:'احمد حمدان'
     },
     CascoCopyright:{
-        en:'Copyright &copy; 2023',
-        ar:'حقوق النشر 2023'
+        en:'Copyright &copy; 2024',
+        ar:'حقوق النشر 2024'
     },
     Cascocopyright:{
         en:'CASCO',
