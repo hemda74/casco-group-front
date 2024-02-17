@@ -3,7 +3,7 @@ import styles from '../styles/NavBar.module.css';
 import Image from 'next/image';
 import logo from '../public/logo.png';
 import Link from 'next/link';
-import Navbar from './New/Navbar';
+import LocalizationBtn from './New/LocaliazationBtn';
 const NavBar = () => {
   return (
     //design nav
@@ -86,7 +86,7 @@ const NavBar = () => {
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <div className={`mt-3`}>
-                <Navbar />
+                <LocalizationBtn />
               </div>
             </li>
           </ul>

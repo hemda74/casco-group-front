@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-import PagesHeader from '../components/PagesHeader4';
+import PagesHeader from '../components/PagesHeader';
 import WhatsLink from '../components/WhatsLink';
 // decaling an alias for layout childern
 // decaling an alias for layout childern
@@ -17,7 +17,7 @@ const ViewerLayout = ({ childern }: LayoutProps) => {
       <WhatsLink /> */}
       {/* <Newnavbar/> */}
       <main>{childern}</main>
-      <Footer /> 
+      <Footer />
     </>
   );
 };
