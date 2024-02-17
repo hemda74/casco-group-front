@@ -15,85 +15,37 @@ const indexTrans: translataionContainer = {
         ar:'كاسكو'
     },
     /////////////////////////////< NavBar >/////////////////////////////////////////////
-    HomeNav:{
-        en:"Home",
-        ar:"الرئيسية"
-    },
     AboutCascoNav:{
-        en:"About CASCO",
+        en:"ABOUT CASCO",
         ar:"عن كاسكو"
-    },
-    AboutUsNav:{
-        en:'About Us',
-        ar:'من نحن'
-    },
-    BoardOfDirectorsNav:{
-        en:'Our Team',
-        ar:'فريقنا'
     },
     DirectorMangerNav:{
         en:'Managing Director',
         ar:'المدير العام'
     },
-    OurValuesNav:{
-        en:'Our Values',
-        ar:'قيمنا'
-    },
-    CASCOEstablishmentAgreementNav:{
-        en:'CASCO Establishment Agreement',
-        ar:'اتفاقية انشاء المركز'    
-    },
-    CASCORightsAndDutiesNav:{
-        en:'CASCO’s Rights And Duties',
-        ar:'الحقوق و الواجبات'
-    },
-    StakeholdersAdvisoryCommitteeNav:{
-        en:'Stakeholders Advisory Committee',
-        ar:'اللجنة الاستشارية للجهات ذات العلاقة'
-    },
-    AccreditedBodiesNav:{
-        en:'Our Clients',
-        ar:'عملائنا',
+    CareersNav:{
+        en:'CAREERS',
+        ar:'وظائف'
     },
     ServicesNav:{
-        en:'Services',
-        ar:'خدماتنا'
+        en:'SERVICES',
+        ar:'الخدمات'
     },
     CoursesNav:{
-        en:'Courses',
+        en:'COURSES',
         ar:'الكورسات'
     },
-    DocumentsNav:{
-        en:'Documents',
-        ar:'وثائق المركز'
+    industriesNav:{
+        en:'INDUSTRIES',
+        ar:'الصناعات'
     },
     ContactUsNav:{
-        en:'Contact Us',
+        en:'CONTACT US',
         ar:'تواصل معنا '
     },
-    MediaCenterNav:{
-        en:'Media Center',
-        ar:'المركز الاعلامي'
-    },
     NewsNav:{
-        en:'News',
-        ar:'الاخبار'
-    },
-    GalleryNav:{
-        en:'Gallery',
-        ar:'معرض الصور'
-    },
-    EducationalBookletsNav:{
-        en:'Educational Booklets',
-        ar:'منشورات توعوية'
-    },
-    VisualPresentationsNav:{
-        en:'Visual Presentations',
-        ar:'عروض مرئية'
-    },
-    EventsNav:{
-        en:'Events',
-        ar:'الفعاليات'
+        en:'NEWS & INSIGHTS',
+        ar:'الأخبار والرؤى'
     },
     /////////////////////////////< NavBar >/////////////////////////////////////////////
     // hero section in home page
@@ -379,13 +331,10 @@ const indexTrans: translataionContainer = {
         ar:'وثائق المركز'
     },
     NewsletterSubscriptionFooter:{
-        en:'Newsletter Subscription',
-        ar:'النشرة الإخبارية'
+        en:'Get in touch',
+        ar:'كن على تواصل'
     },
-    NewsletterSubscriptionFooterberif:{
-        en:'Join our mailing list and receive our latest updates, recent CABs, training programs and etc. straight to your inbox',
-        ar:'انضم إلى قائمتنا البريدية واحصل على آخر تحديثاتنا ، وأحدث برامج المركز، وبرامج التدريب وما إلى ذلك مباشرة إلى صندوق الوارد الخاص بك'
-    },
+   
     CreatedByFooter:{
         en:'Developed By',
         ar:'تم التطوير بواسطة'
@@ -395,8 +344,8 @@ const indexTrans: translataionContainer = {
         ar:'احمد حمدان'
     },
     CascoCopyright:{
-        en:'Copyright &copy; 2023',
-        ar:'حقوق النشر 2023'
+        en:'Copyright &copy; 2024',
+        ar:'حقوق النشر 2024'
     },
     Cascocopyright:{
         en:'CASCO',
