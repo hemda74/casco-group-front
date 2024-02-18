@@ -1,6 +1,6 @@
 import React from 'react';
-import { useLanguage } from '../../Context/LanguageContext';
-import styles from '../../styles/Localizationbtn.module.css';
+import { useLanguage } from '../Context/LanguageContext';
+import styles from '../styles/Localizationbtn.module.css';
 const LocalizationBtn = () => {
   const { language, toggleLanguage } = useLanguage();
 

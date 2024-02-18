@@ -4,7 +4,7 @@ import ViewerLayout from '../layouts/ViewerLayout';
 import { NextPageWithLayout } from './_app';
 import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
-import Layout from '../components/New/Layout';
+import Layout from '../components/Layout';
 import getBillboard from '../actions/get-billboard';
 import { url } from 'inspector';
 type Props = {};
@@ -22,7 +22,8 @@ const Contactus: NextPageWithLayout = (props: Props) => {
             <ContactUs />
           </main>
         ) : (
-        <h1>Ahmed</h1>        )}
+          <h1>Ahmed</h1>
+        )}
       </Layout>
     </>
   );

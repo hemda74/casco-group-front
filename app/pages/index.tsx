@@ -4,7 +4,7 @@ import ViewerLayout from '../layouts/ViewerLayout';
 import { NextPageWithLayout } from './_app';
 import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
-import Layout from '../components/New/Layout';
+import Layout from '../components/Layout';
 type Props = {};
 const Contactus: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
@@ -19,8 +19,8 @@ const Contactus: NextPageWithLayout = (props: Props) => {
             <ContactUs />
           </main>
         ) : (
-<div className='fs-1'>hello world</div>
-)}
+          <div className="fs-1">hello world</div>
+        )}
       </Layout>
     </>
   );
