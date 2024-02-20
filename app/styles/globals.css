@@ -6735,7 +6735,6 @@ input[type='submit'] {
   border: none;
   background: #b5432c;
   color: #fff;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -6848,7 +6847,6 @@ input[type='button']:focus {
   margin-bottom: 6px;
   display: block;
   text-align: left;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.39px;
@@ -7482,13 +7480,11 @@ input.datepicker_with_icon {
 
 html {
   font-size: 16px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
 }
 
 .base-theme-padding {
@@ -7696,7 +7692,6 @@ body.tax-teamregion #menu-languages-us li a:before {
   font-size: 0.8125rem;
   line-height: 0.9230769231;
   letter-spacing: 0.93px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   position: relative;
@@ -7907,7 +7902,6 @@ body.tax-teamregion #menu-languages-us li a:before {
 }
 
 .languages {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
 }
 
@@ -8071,7 +8065,6 @@ body.tax-teamregion #menu-languages-us li a:before {
 }
 
 .site-footer {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   padding-top: 65px;
   border: solid 10px #fff;
   border-top: none;
@@ -8113,7 +8106,6 @@ body.tax-teamregion #menu-languages-us li a:before {
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 17px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
 }
 
@@ -8152,7 +8144,6 @@ body.tax-teamregion #menu-languages-us li a:before {
   font-size: 21px;
   letter-spacing: -0.5px;
   line-height: 19px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -8218,13 +8209,11 @@ body.tax-teamregion #menu-languages-us li a:before {
 }
 
 .title {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   margin: 0;
 }
 
 .title--medium-weight {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
 }
 
@@ -8388,7 +8377,6 @@ h3 {
 }
 
 .date {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.79px;
@@ -8685,12 +8673,10 @@ html.freeze-frame {
 h2,
 h3,
 h4 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
 }
 
 .the-content h2 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   font-size: 32px;
   font-size: 2rem;
@@ -8710,7 +8696,6 @@ h4 {
 }
 
 .the-content h3 {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   font-size: 28px;
   font-size: 1.75rem;
@@ -8756,7 +8741,6 @@ h4 {
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
 }
 
 .the-content blockquote {
@@ -8807,7 +8791,6 @@ p {
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
 }
 
 p:last-child {
@@ -8815,7 +8798,6 @@ p:last-child {
 }
 
 strong {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
 }
 
 .p--large {
@@ -8874,7 +8856,6 @@ ul.gallery li p {
   font-size: 11px;
   font-size: 0.6875rem;
   line-height: 1;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   margin-right: 5px;
   text-transform: uppercase;
 }
@@ -9641,7 +9622,6 @@ ul.gallery li p {
   -o-transition: transform 0.35s ease-in-out;
   transition: transform 0.35s ease-in-out;
   transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   letter-spacing: 0.79px;
   z-index: 2;
@@ -10523,7 +10503,6 @@ a .card.red-5-background:hover {
   transition-delay: 1.8s;
   cursor: pointer;
   text-align: center;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -10625,7 +10604,6 @@ a .card.red-5-background:hover {
 }
 
 .breadcrumb {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 2;
@@ -11333,7 +11311,6 @@ a .card.red-5-background:hover {
 
 .sidebar-nav a {
   color: #fff;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.375;
@@ -12221,7 +12198,6 @@ select::-ms-expand {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   text-transform: uppercase;
   color: #000;
 }
@@ -12506,7 +12482,6 @@ a.line-link.red-6-color:before,
   margin-top: 18px;
   text-align: left;
   color: #88737f;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   font-size: 15px;
   font-weight: 500;
@@ -12535,7 +12510,6 @@ a.line-link.red-6-color:before,
   letter-spacing: 0.93px;
   color: #88737f;
   cursor: pointer;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   font-size: 13px;
   font-size: 0.8125rem;
@@ -12637,7 +12611,6 @@ a.line-link.red-6-color:before,
   font-size: 1.75rem;
   line-height: 1.25;
   letter-spacing: -1.4px;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
 }
 
 .accordion__trigger h4 {
@@ -12720,7 +12693,6 @@ a.line-link.red-6-color:before,
 }
 
 .twk-notification .notification__title {
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
   font-size: 30px;
   line-height: 1;
@@ -13384,7 +13356,6 @@ input:checked + .slider:before {
   font-size: 0px;
   padding: 12px 20px 10px;
   background: #9d1a59;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   display: inline-block;
 }
 
@@ -13862,7 +13833,6 @@ input:checked + .slider:before {
   border-radius: 50%;
   color: #fff;
   font-weight: 500;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
@@ -13923,7 +13893,6 @@ input:checked + .slider:before {
   color: #88737f;
   border-bottom: solid 1px #88737f;
   cursor: pointer;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
   font-weight: 500;
 }
 
