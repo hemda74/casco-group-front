@@ -14,9 +14,7 @@ const About = () => {
                       <picture>
                         <source
                           type="image/webp"
-                          srcSet="
-															https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26-1024x732.jpg.webp
-														"
+                          srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26-1024x732.jpg.webp"
                         />
                         <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26-1024x732.jpg" />
                       </picture>
