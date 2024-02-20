@@ -5,8 +5,6 @@ import { NextPageWithLayout } from './_app';
 import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/Layout';
-import getBillboard from '../actions/get-billboard';
-import { url } from 'inspector';
 type Props = {};
 // dymmy data for ui till handle working with api
 const Contactus: NextPageWithLayout = (props: Props) => {
