@@ -1,8 +1,12 @@
 import React from 'react';
-// import '../styles/globals.css';
-const About = () => {
+const AboutMainSectionAr = () => {
   return (
     <>
+      <div className="no-image-banner text-center" dir="rtl">
+        <h1 className="title title--bold title--2xl">
+          <span className="gradient-text">عــن كـاســكـو</span>
+        </h1>
+      </div>
       <section className="off-screen off-screen--fade-up">
         <div className="container">
           <div className="row">
@@ -22,23 +26,20 @@ const About = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          What we do
+                          ماذا نعمل
                         </h3>
                         <p></p>
                       </div>
                     </div>
                   </div>
                 </a>
-
                 <a href="https://www.argonandco.com/en/about/our-culture/">
                   <div className="card card--image red-3-background white-color card--fixed-sm">
                     <div className="card__image object-fit">
                       <picture>
                         <source
                           type="image/webp"
-                          srcSet="
-															https://www.argonandco.com/wp-content/uploads/2019/12/IMG_8317-1024x995.jpg.webp
-														"
+                          srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/IMG_8317-1024x995.jpg.webp"
                         />
                         <img src="https://www.argonandco.com/wp-content/uploads/2019/12/IMG_8317-1024x995.jpg" />
                       </picture>
@@ -46,7 +47,7 @@ const About = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          Our culture
+                          ثقافتنا
                         </h3>
                       </div>
                     </div>
@@ -59,9 +60,7 @@ const About = () => {
                       <picture>
                         <source
                           type="image/webp"
-                          srcSet="
-															https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg.webp
-														"
+                          srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg.webp"
                         />
                         <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg" />
                       </picture>
@@ -69,7 +68,7 @@ const About = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          Our approach
+                          نهجنا
                         </h3>
                       </div>
                     </div>
@@ -84,4 +83,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutMainSectionAr;

@@ -5,8 +5,10 @@ import { NextPageWithLayout } from './_app';
 import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/Layout';
-import About from '../components/About-en';
+
 import { Cairo } from 'next/font/google';
+import AboutMainSectionAr from '../components/AboutMainSection-ar';
+import AboutMainSectionEn from '../components/AboutMainSection-en';
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Cairo({ subsets: ['latin'] });
@@ -21,10 +23,10 @@ const Contactus: NextPageWithLayout = (props: Props) => {
       <Layout>
         {language === 'en' ? (
           <main>
-            <ContactUs />
+            <AboutMainSectionEn />
           </main>
         ) : (
-          <About />
+          <AboutMainSectionAr />
         )}
       </Layout>
     </>
