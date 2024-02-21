@@ -1,17 +1,11 @@
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import ViewerLayout from '../layouts/ViewerLayout';
 import { NextPageWithLayout } from './_app';
-import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/Layout';
-
-import { Cairo } from 'next/font/google';
-import AboutMainSectionAr from '../components/AboutMainSection-ar';
-import AboutMainSectionEn from '../components/AboutMainSection-en';
-
-// If loading a variable font, you don't need to specify the font weight
-const inter = Cairo({ subsets: ['latin'] });
+import HeroEn from '../components/HomePage/Hero-en';
+import HeroAr from '../components/HomePage/Hero-ar';
 type Props = {};
 const Contactus: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
@@ -23,10 +17,10 @@ const Contactus: NextPageWithLayout = (props: Props) => {
       <Layout>
         {language === 'en' ? (
           <main>
-            <AboutMainSectionEn />
+            <HeroEn />
           </main>
         ) : (
-          <AboutMainSectionAr />
+          <HeroAr />
         )}
       </Layout>
     </>

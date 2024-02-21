@@ -5835,6 +5835,16 @@ a.text-dark:focus {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
+  width: 1250px;
+														position: relative;
+														left: 0px;
+														top: 0px;
+														z-index: 998;
+														opacity: 0;
+														transition: opacity
+															500ms
+															linear
+															0s;
 }
 
 .slick-list {
@@ -12407,8 +12417,12 @@ a.line-link.red-6-color:before,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
 }
-
+.slick-track{
+  opacity: 1;
+													width: 3750px;
+}
 .arrow-3-slider .slick-track .slick-slide,
 .arrow-6-slider .slick-track .slick-slide {
   height: auto;
