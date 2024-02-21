@@ -43,7 +43,7 @@ const NavBar = () => {
                   data-trans="CoursesNav"></p>
               </Link>
             </li>
-            <li className={`nav-item ms-3 ${styles.navItem}`}>
+            <li className={`nav-item ms-3 ${styles.navItem} `}>
               <Link href={'/about'} className={`nav-link`} id="link">
                 <p
                   className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
