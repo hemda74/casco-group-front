@@ -5836,15 +5836,12 @@ a.text-dark:focus {
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
   width: 1250px;
-														position: relative;
-														left: 0px;
-														top: 0px;
-														z-index: 998;
-														opacity: 0;
-														transition: opacity
-															500ms
-															linear
-															0s;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 500ms linear 0s;
 }
 
 .slick-list {
@@ -12417,11 +12414,15 @@ a.line-link.red-6-color:before,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  
 }
-.slick-track{
+.slick-track {
   opacity: 1;
-													width: 3750px;
+  width: 3750px;
+}
+.slick-track2 {
+  opacity: 1;
+  width: 5768px;
+  transform: translate3d(-1648px, 0px, 0px);
 }
 .arrow-3-slider .slick-track .slick-slide,
 .arrow-6-slider .slick-track .slick-slide {
