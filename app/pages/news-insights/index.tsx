@@ -15,6 +15,7 @@ const news: NextPageWithLayout = (props: Props) => {
   );
 };
 // adding Layout
-// news.getLayout = function getLayout(news: ReactElement) {
-// return <ViewerLayout childern={news}></ViewerLayout>;}
+news.getLayout = function getLayout(news: ReactElement) {
+  return <ViewerLayout childern={news}></ViewerLayout>;
+};
 export default news;

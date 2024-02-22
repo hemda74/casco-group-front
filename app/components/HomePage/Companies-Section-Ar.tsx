@@ -2,7 +2,7 @@ import React from 'react';
 const CompaniesSectionAr = () => {
   return (
     <>
-      <section className="static-background">
+      <section className="static-background mt-5" dir="rtl">
         <div className="d-flex align-items-center text-center">
           <div
             className="background-parallax-logos d-flex flex-column align-items-center"
@@ -85,7 +85,7 @@ const CompaniesSectionAr = () => {
                 <div
                   className="floating-logo"
                   style={{
-                    backgroundImage: 'url(./images/clients/Picture7.jpg)',
+                    backgroundImage: 'url(./images/clients/Picture15.png)',
                   }}></div>
               </div>
               <div className="col-6 col-md">
@@ -140,7 +140,7 @@ const CompaniesSectionAr = () => {
               </div>
             </div>
           </div>
-          <h2 className="title title--lg">We support global clients</h2>
+          <h2 className="title title--lg"> نحن ندعم الشركاء العالميون</h2>
         </div>
       </section>
     </>
