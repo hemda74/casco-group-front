@@ -7,6 +7,7 @@ import Layout from '../components/Layout';
 import HeroEn from '../components/HomePage/Hero-en';
 import HeroAr from '../components/HomePage/Hero-ar';
 import SecondElementEn from '../components/HomePage/SecondElementEn';
+import CompaniesSectionEn from '../components/HomePage/Companies-Section-En';
 type Props = {};
 const Contactus: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
@@ -20,6 +21,7 @@ const Contactus: NextPageWithLayout = (props: Props) => {
           <main>
             <HeroEn />
             <SecondElementEn />
+            <CompaniesSectionEn />
           </main>
         ) : (
           <HeroAr />
