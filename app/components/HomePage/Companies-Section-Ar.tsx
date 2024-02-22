@@ -1,5 +1,5 @@
 import React from 'react';
-const CompaniesSectionEn = () => {
+const CompaniesSectionAr = () => {
   return (
     <>
       <section className="static-background">
@@ -147,4 +147,4 @@ const CompaniesSectionEn = () => {
   );
 };
 
-export default CompaniesSectionEn;
+export default CompaniesSectionAr;
