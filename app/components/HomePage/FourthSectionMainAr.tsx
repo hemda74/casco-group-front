@@ -30,7 +30,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/sustainability/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   الاستدامة
                 </div>
               </a>
@@ -39,7 +39,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/operational-performance/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   الاداء العملي
                 </div>
               </a>
@@ -48,7 +48,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/new-products/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   المنتجات الجديدة{' '}
                 </div>
               </a>
@@ -57,7 +57,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/procurement/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   التحصيل
                 </div>
               </a>
@@ -66,7 +66,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/supply-chain-planning/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   تخطيط سلسلة الإمداد
                 </div>
               </a>
@@ -75,7 +75,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/manufacturing/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   التصنيع
                 </div>
               </a>
@@ -84,7 +84,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/logistics/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   الخدمات اللوجستية
                 </div>
               </a>
@@ -93,7 +93,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/channels-to-market/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   قنوات التسويق
                 </div>
               </a>
@@ -102,10 +102,8 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/maintenance-and-after-sales/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
-                  صيانة و
-                  <br />
-                  بعد البيع
+                <div className="title title--md title title--medium-weight">
+                  صيانة و بعد البيع
                 </div>
               </a>
             </div>
@@ -113,7 +111,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/transformation-management/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   إدارة التحول
                 </div>
               </a>
@@ -122,7 +120,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/digital-and-it/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   تكنولوجيا المعلومات
                 </div>
               </a>
@@ -131,7 +129,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/finance/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   الموارد المالية
                 </div>
               </a>
@@ -140,7 +138,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/sga/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   SG&amp;A
                 </div>
               </a>
@@ -149,7 +147,7 @@ const FourthSectionMainAr = () => {
               <a
                 href="https://www.argonandco.com/en/services/hr/"
                 className="d-flex align-items-center white-color">
-                <div className="title title--sm title title--medium-weight">
+                <div className="title title--md title title--medium-weight">
                   الموارد البشرية
                 </div>
               </a>

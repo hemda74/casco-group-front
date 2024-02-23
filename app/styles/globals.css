@@ -7506,7 +7506,6 @@ a:hover {
 }
 
 .langauages {
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-weight: 700;
   color: #fff;
   margin-bottom: 5px;
@@ -8233,7 +8232,6 @@ body.tax-teamregion #menu-languages-us li a:before {
 }
 
 .title--bold {
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-weight: 700;
 }
 
@@ -12083,7 +12081,6 @@ select::-ms-expand {
   padding: 20px 60px 16px 20px;
   color: transparent;
   text-transform: uppercase;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-weight: 700;
   font-size: 12px;
   font-size: 0.75rem;
@@ -12112,7 +12109,6 @@ select::-ms-expand {
 .filter-banner-overlap h4 {
   position: absolute;
   text-transform: uppercase;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-weight: 700;
   font-size: 12px;
   font-size: 0.75rem;
@@ -12144,7 +12140,6 @@ select::-ms-expand {
 .gform_wrapper #field_4_1 label {
   padding: 15px 25px;
   display: inline-block;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-weight: 700;
   font-size: 14px;
   font-size: 0.875rem;
@@ -12200,7 +12195,6 @@ select::-ms-expand {
 }
 
 .full-image-content a {
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-weight: 700;
   font-size: 14px;
   font-size: 0.875rem;
@@ -12257,7 +12251,6 @@ a.line-link,
 .gform_wrapper #field_4_1 .join-us label {
   display: inline-block;
   text-transform: uppercase;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-weight: 700;
   font-size: 14px;
   font-size: 0.875rem;
