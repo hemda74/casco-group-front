@@ -11,6 +11,7 @@ import CompaniesSectionAr from '../components/HomePage/Companies-Section-Ar';
 import SecondElementEn from '../components/HomePage/SecondElementEn';
 import SecondElementAr from '../components/HomePage/SecondElementAr';
 import ThirdSectionMainEn from '../components/HomePage/ThirdSectionMainEn';
+import FourthSectionMainEn from '../components/HomePage/FourthSectionMainEn';
 type Props = {};
 const Contactus: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
@@ -26,6 +27,7 @@ const Contactus: NextPageWithLayout = (props: Props) => {
             <SecondElementEn />
             <CompaniesSectionEn />
             <ThirdSectionMainEn />
+            <FourthSectionMainEn />
           </main>
         ) : (
           <main>
