@@ -13,12 +13,12 @@
 
   /* Defult links color */
   --color-links: #3c84ab;
-  --color-links-hover: #4797ff;
+  --color-links-hover: #3c84ab;
 
   /* Primay colors */
   --color-primary: #3c84ab;
-  --color-primary-light: #4797ff;
-  --color-primary-dark: #1c61e2;
+  --color-primary-light: #3c84ab;
+  --color-primary-dark: #3c84ab;
 
   --color-primary-rgb: 50, 121, 252;
   --color-primary-light-rgb: 71, 151, 255;
@@ -8402,7 +8402,7 @@ h3 {
   color: var(--color-primary);
   background: -webkit-linear-gradient(
     180deg,
-    #4797ff,
+    #3c84ab,
     var(--color-primary-dark)
   );
   -webkit-background-clip: text;
