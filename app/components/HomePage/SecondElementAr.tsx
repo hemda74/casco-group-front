@@ -1,7 +1,7 @@
 import React from 'react';
 import Image1 from '../../public/login-background-image.jpg';
 import Image from 'next/image';
-const SecondElementEn = () => {
+const SecondElementAr = () => {
   return (
     <>
       <section className="off-screen off-screen--fade-up">
@@ -23,7 +23,7 @@ const SecondElementEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          News{' '}
+                          اخر الاخبار
                         </h3>
                         <p></p>
                       </div>
@@ -36,15 +36,15 @@ const SecondElementEn = () => {
                       <picture>
                         <source
                           type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/IMG_8317-1024x995.jpg.webp"
+                          srcSet="https://www.argonandco.com/wp-content/uploads/2024/02/iStock-147036034-1024x683.jpg.webp"
                         />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2019/12/IMG_8317-1024x995.jpg" />
+                        <img src="https://www.argonandco.com/wp-content/uploads/2024/02/iStock-147036034-1024x683.jpg" />
                       </picture>
                     </div>
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          Article
+                          مقال
                         </h3>
                       </div>
                     </div>
@@ -66,7 +66,7 @@ const SecondElementEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          Event{' '}
+                          حدث
                         </h3>
                       </div>
                     </div>
@@ -87,7 +87,7 @@ const SecondElementEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          Article{' '}
+                          مقالة
                         </h3>
                       </div>
                     </div>
@@ -109,7 +109,7 @@ const SecondElementEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          White Papers{' '}
+                          أوراق بيضاء
                         </h3>
                       </div>
                     </div>
@@ -124,4 +124,4 @@ const SecondElementEn = () => {
   );
 };
 
-export default SecondElementEn;
+export default SecondElementAr;

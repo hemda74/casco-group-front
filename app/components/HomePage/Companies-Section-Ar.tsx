@@ -2,7 +2,7 @@ import React from 'react';
 const CompaniesSectionAr = () => {
   return (
     <>
-      <section className="static-background mt-5" dir="rtl">
+      <section className="static-background " dir="rtl">
         <div className="d-flex align-items-center text-center">
           <div
             className="background-parallax-logos d-flex flex-column align-items-center"

@@ -1,12 +1,12 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import styles from '../../styles/Main.module.css';
-import AboutMainSectionAr from '../../components/AboutMainSection-ar';
+import AboutMainSectionAr from '../../components/About/AboutMainSection-ar';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
-import AboutMainSectionEn from '../../components/AboutMainSection-en';
+import AboutMainSectionEn from '../../components/About/AboutMainSection-en';
 type Props = {};
 // dymmy data for ui till handle working with api
 

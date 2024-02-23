@@ -2,7 +2,7 @@ import React from 'react';
 const CompaniesSectionEn = () => {
   return (
     <>
-      <section className="static-background mt-5">
+      <section className="static-background">
         <div className="d-flex align-items-center text-center">
           <div
             className="background-parallax-logos d-flex flex-column align-items-center"

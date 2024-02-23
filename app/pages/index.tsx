@@ -6,9 +6,11 @@ import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/Layout';
 import HeroEn from '../components/HomePage/Hero-en';
 import HeroAr from '../components/HomePage/Hero-ar';
-import SecondElementEn from '../components/HomePage/SecondElementEn';
 import CompaniesSectionEn from '../components/HomePage/Companies-Section-En';
 import CompaniesSectionAr from '../components/HomePage/Companies-Section-Ar';
+import SecondElementEn from '../components/HomePage/SecondElementEn';
+import SecondElementAr from '../components/HomePage/SecondElementAr';
+import ThirdSectionMainEn from '../components/HomePage/ThirdSectionMainEn';
 type Props = {};
 const Contactus: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
@@ -23,10 +25,12 @@ const Contactus: NextPageWithLayout = (props: Props) => {
             <HeroEn />
             <SecondElementEn />
             <CompaniesSectionEn />
+            <ThirdSectionMainEn />
           </main>
         ) : (
           <main>
             <HeroAr />
+            <SecondElementAr />
             <CompaniesSectionAr />
           </main>
         )}
