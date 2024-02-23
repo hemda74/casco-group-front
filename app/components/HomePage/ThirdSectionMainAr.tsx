@@ -23,8 +23,8 @@ const ThirdSectionMainAr = () => {
             <div className="col-md-6 col-lg-4">
               <a
                 href="https://www.argonandco.com/en/services/operations-strategy/operating-model/"
-                className="d-flex align-items-center red-2-color">
-                <div className="title title--sm title title--medium-weight red-2-color">
+                className="d-flex align-items-center red-1-color">
+                <div className="title title--sm title title--medium-weight red-1-color">
                   نموذج التشغيل
                 </div>
               </a>
@@ -32,8 +32,8 @@ const ThirdSectionMainAr = () => {
             <div className="col-md-6 col-lg-4">
               <a
                 href="https://www.argonandco.com/en/services/operations-strategy/organisation-and-people/"
-                className="d-flex align-items-center red-3-color">
-                <div className="title title--sm title title--medium-weight red-3-color">
+                className="d-flex align-items-center red-1-color">
+                <div className="title title--sm title title--medium-weight red-1-color">
                   التنظيم والناس{' '}
                 </div>
               </a>
@@ -41,8 +41,8 @@ const ThirdSectionMainAr = () => {
             <div className="col-md-6 col-lg-4">
               <a
                 href="https://www.argonandco.com/en/services/operations-strategy/competitiveness/"
-                className="d-flex align-items-center red-4-color">
-                <div className="title title--sm title title--medium-weight red-4-color">
+                className="d-flex align-items-center red-1-color">
+                <div className="title title--sm title title--medium-weight red-1-color">
                   القدرة التنافسية
                 </div>
               </a>
@@ -50,8 +50,8 @@ const ThirdSectionMainAr = () => {
             <div className="col-md-6 col-lg-4">
               <a
                 href="https://www.argonandco.com/en/services/operations-strategy/working-capital-improvement/"
-                className="d-flex align-items-center red-5-color">
-                <div className="title title--sm title title--medium-weight red-5-color">
+                className="d-flex align-items-center red-1-color">
+                <div className="title title--sm title title--medium-weight red-1-color">
                   تحسين رأس المال العامل
                 </div>
               </a>
@@ -68,8 +68,8 @@ const ThirdSectionMainAr = () => {
             <div className="col-md-6 col-lg-4">
               <a
                 href="https://www.argonandco.com/en/services/operations-strategy/operations-agility/"
-                className="d-flex align-items-center red-2-color">
-                <div className="title title--sm title title--medium-weight red-2-color">
+                className="d-flex align-items-center red-1-color">
+                <div className="title title--sm title title--medium-weight red-1-color">
                   خفة العمليات
                 </div>
               </a>

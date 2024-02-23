@@ -59,8 +59,8 @@ const ThirdSectionMainEn = () => {
             <div className="col-md-6 col-lg-4">
               <a
                 href="https://www.argonandco.com/en/services/operations-strategy/mergers-and-acquisitions/"
-                className="d-flex align-items-center red-1-color">
-                <div className="title title--sm title title--medium-weight red-1-color">
+                className="d-flex align-items-center red-3-color">
+                <div className="title title--sm title title--medium-weight red-3-color">
                   Mergers and acquisitions
                 </div>
               </a>
@@ -68,8 +68,8 @@ const ThirdSectionMainEn = () => {
             <div className="col-md-6 col-lg-4">
               <a
                 href="https://www.argonandco.com/en/services/operations-strategy/operations-agility/"
-                className="d-flex align-items-center red-2-color">
-                <div className="title title--sm title title--medium-weight red-2-color">
+                className="d-flex align-items-center red-5-color">
+                <div className="title title--sm title title--medium-weight red-5-color">
                   Operations agility
                 </div>
               </a>

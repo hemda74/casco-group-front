@@ -14,8 +14,9 @@ const LocalizationBtn = (props: Props) => {
   return (
     <div className="mt-4">
       <button
-        className={`btn ${styles.localizationBtn}`}
-        onClick={ // Changing language function.
+        className={`myPrimary ${styles.localizationBtn}`}
+        onClick={
+          // Changing language function.
           toggleLanguage
         }>
         <span data-trans="langs">E</span>
