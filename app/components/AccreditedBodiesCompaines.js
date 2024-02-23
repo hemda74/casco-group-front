@@ -69,11 +69,18 @@ export default class SwipeToSlide extends Component {
             />
           </div>
           <div className={`${styles.bigDiv}`}>
-            <img
-              className={`${styles.imageDiv}`}
-              src="/images/clients/Picture3.png"
-              alt=" "
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+																	https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png.webp
+																"
+              />
+              <img
+                className={`${styles.imageDiv}`}
+                src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png"
+              />
+            </picture>
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
