@@ -7,9 +7,7 @@ import Layout from '../../components/Layout';
 import AboutMainSectionAr from '../../components/About/AboutMainSection-ar';
 import AboutMainSectionEn from '../../components/About/AboutMainSection-en';
 import MeetOurTeamEn from '../../components/About/MeetOurTeamEn';
-import AccreditedBodiesCompaines from '../../components/AccreditedBodiesCompaines';
-import AccreditedBodiesCompainesRtl from '../../components/AccreditedBodiesCompainesRtl';
-import Ac from '../../components/Ac';
+
 type Props = {};
 const Index: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
@@ -22,10 +20,6 @@ const Index: NextPageWithLayout = (props: Props) => {
         {language === 'en' ? (
           <main>
             <AboutMainSectionEn />
-            {/* <MeetOurTeamEn /> */}
-            <Ac />
-            <AccreditedBodiesCompaines />
-            <AccreditedBodiesCompainesRtl />
           </main>
         ) : (
           <main>

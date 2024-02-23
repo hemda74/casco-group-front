@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import styles from '../styles/AccreditedBodiesCompaines.module.css';
 import Image from 'next/image';
+import image1 from '../public/images/clients/Picture1.jpg';
 export default class SwipeToSlide extends Component {
   render() {
     const settings = {
@@ -10,7 +11,6 @@ export default class SwipeToSlide extends Component {
       centerPadding: '50px',
       swipeToSlide: true,
       dots: false,
-      infinite: true,
       slidesToShow: 8,
       speed: 10000,
       slidesToScroll: 2,
@@ -55,9 +55,11 @@ export default class SwipeToSlide extends Component {
         </div>
         <Slider {...settings}>
           <div className={`${styles.bigDiv}`}>
-            <img
+            <Image
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture1.jpg"
+              src={image1}
+              width={50}
+              height={90}
               alt=" "
             />
           </div>
@@ -72,7 +74,7 @@ export default class SwipeToSlide extends Component {
             <picture>
               <source
                 type="image/webp"
-                srcset="
+                srcSet="
 																	https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png.webp
 																"
               />
