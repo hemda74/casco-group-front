@@ -49,127 +49,128 @@ export default class SwipeToSlide extends Component {
       ],
     };
     return (
-      <div className={`${styles.mainDiv}`}>
-        <div className="fs-2 text-center fw-bold mb-4">
-          <span className={`${styles.spanNumber}`}>Our Previous Clients</span>
+      <section className="pad-100-vert off-screen off-screen--hide off-screen--fade-up">
+        <div className="container mb-5">
+          <div className="row justify-content-center">
+            <div className="col-md-8 text-center">
+              <h2 className="title title--lg red-1-color color-red-1">
+                Recognition
+              </h2>
+              <p className="intro pad-btm-mob">
+                We are proud to be recognised by some of the world's leading
+                research companies, institutes and publications.
+              </p>
+            </div>
+          </div>
         </div>
-        <Slider {...settings}>
+        <Slider {...settings} className="mt-5">
           <div className={`${styles.bigDiv}`}>
-            <Image
+            <img
               className={`${styles.imageDiv}`}
-              src={image1}
-              width={50}
-              height={90}
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture2.png"
-              alt=" "
-            />
-          </div>
-          <div className={`${styles.bigDiv}`}>
-            <picture>
-              <source
-                type="image/webp"
-                srcSet="
-																	https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png.webp
-																"
-              />
-              <img
-                className={`${styles.imageDiv}`}
-                src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png"
-              />
-            </picture>
-          </div>
-          <div className={`${styles.bigDiv}`}>
-            <img
-              className={`${styles.imageDiv}`}
-              src="/images/clients/Picture4.png"
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.34.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture5.png"
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture6.jpg"
+              src="https://www.argonandco.com/wp-content/uploads/2020/01/sig-custom-gartner-logo.jpg.imgo_.jpg"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture7.jpg"
+              src="https://www.argonandco.com/wp-content/uploads/2019/12/Great-places-to-work.png"
+              alt=" "
+            />
+          </div>{' '}
+          <div className={`${styles.bigDiv}`}>
+            <img
+              className={`${styles.imageDiv}`}
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture8.png"
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.34.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture9.png"
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture10.jpg"
+              src="https://www.argonandco.com/wp-content/uploads/2020/01/sig-custom-gartner-logo.jpg.imgo_.jpg"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture11.png"
+              src="https://www.argonandco.com/wp-content/uploads/2019/12/Great-places-to-work.png"
+              alt=" "
+            />
+          </div>{' '}
+          <div className={`${styles.bigDiv}`}>
+            <img
+              className={`${styles.imageDiv}`}
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture12.png"
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.34.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture13.jpg"
+              src="https://www.argonandco.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-11-at-14.59.14.png"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture14.png"
+              src="https://www.argonandco.com/wp-content/uploads/2020/01/sig-custom-gartner-logo.jpg.imgo_.jpg"
               alt=" "
             />
           </div>
           <div className={`${styles.bigDiv}`}>
             <img
               className={`${styles.imageDiv}`}
-              src="/images/clients/Picture15.png"
+              src="https://www.argonandco.com/wp-content/uploads/2019/12/Great-places-to-work.png"
               alt=" "
             />
           </div>
         </Slider>
-      </div>
+      </section>
     );
   }
 }
