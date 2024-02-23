@@ -6,7 +6,6 @@ import MainPageEn from '../../components/Industries/MainPageEn';
 
 type Props = {};
 // dymmy data for ui till handle working with api
-
 const services: NextPageWithLayout = (props: Props) => {
   return (
     <>
