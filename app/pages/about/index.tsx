@@ -1,21 +1,18 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import styles from '../../styles/Main.module.css';
-import AboutMainSectionAr from '../../components/About/AboutMainSection-ar';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
+import AboutMainSectionAr from '../../components/About/AboutMainSection-ar';
 import AboutMainSectionEn from '../../components/About/AboutMainSection-en';
 type Props = {};
-// dymmy data for ui till handle working with api
-
-const index: NextPageWithLayout = (props: Props) => {
+const Index: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
   return (
     <>
       <Head>
-        <title>About Us | CASCO</title>
+        <title>Home | CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (
@@ -23,14 +20,16 @@ const index: NextPageWithLayout = (props: Props) => {
             <AboutMainSectionEn />
           </main>
         ) : (
-          <AboutMainSectionAr />
+          <main>
+            <AboutMainSectionAr />
+          </main>
         )}
       </Layout>
     </>
   );
 };
 // adding Layout
-index.getLayout = function getLayout(index: ReactElement) {
-  return <ViewerLayout childern={index}></ViewerLayout>;
+Index.getLayout = function getLayout(Index: ReactElement) {
+  return <ViewerLayout childern={Index}></ViewerLayout>;
 };
-export default index;
+export default Index;

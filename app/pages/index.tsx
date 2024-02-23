@@ -15,7 +15,7 @@ import FourthSectionMainEn from '../components/HomePage/FourthSectionMainEn';
 import ThirdSectionMainAr from '../components/HomePage/ThirdSectionMainAr';
 import FourthSectionMainAr from '../components/HomePage/FourthSectionMainAr';
 type Props = {};
-const Contactus: NextPageWithLayout = (props: Props) => {
+const Index: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
   return (
     <>
@@ -45,7 +45,7 @@ const Contactus: NextPageWithLayout = (props: Props) => {
   );
 };
 // adding Layout
-Contactus.getLayout = function getLayout(contactus: ReactElement) {
-  return <ViewerLayout childern={contactus}></ViewerLayout>;
+Index.getLayout = function getLayout(Index: ReactElement) {
+  return <ViewerLayout childern={Index}></ViewerLayout>;
 };
-export default Contactus;
+export default Index;
