@@ -35,9 +35,9 @@ const Index: NextPageWithLayout = (props: Props) => {
           <main>
             <HeroAr />
             <SecondElementAr />
+            <CompaniesSectionAr />
             <ThirdSectionMainAr />
             <FourthSectionMainAr />
-            <CompaniesSectionAr />
           </main>
         )}
       </Layout>
