@@ -67,16 +67,18 @@ const SingleIndustry = () => {
             </div>
           </div>
 
-          <div className="banner__bottom text-center banner__bottom--lower">
-            <div className="breadcrumb ">
+          <div className="banner__bottom text-center banner__bottom--lower m-auto text-white">
+            <div className="breadcrumb m-auto text-white">
               <span property="itemListElement" typeof="ListItem">
                 <a
                   property="item"
                   typeof="WebPage"
                   title="Go to Home."
                   href="https://www.argonandco.com/en/"
-                  className="home">
-                  <span property="name">Home</span>
+                  className="home m-auto text-white">
+                  <span property="name" className="m-auto text-white">
+                    Home
+                  </span>
                 </a>
                 <meta property="position" content="1" />
               </span>
