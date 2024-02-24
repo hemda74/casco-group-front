@@ -19,7 +19,7 @@ const MainPageEn = () => {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    Careers{' '}
+                    Careers
                   </h1>
                   <p className="intro off-screen off-screen--rotate-up">
                     {`    We are always looking for inspirational, driven and expert
@@ -118,7 +118,7 @@ const MainPageEn = () => {
             <div className="row justify-content-center">
               <div className="col-md-8">
                 <h2 className="title title--lg red-2-color text-center">
-                  Insider's view{' '}
+                  {` Insider's view`}
                 </h2>
                 <p className="intro text-center">
                   {` Here is an insider's view of people who work for Argon &amp;
@@ -174,7 +174,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Marine</strong>
                                   </div>
-                                  Paris office{' '}
+                                  Paris office
                                 </div>
                               </div>
                             </div>
@@ -213,7 +213,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Bijoy</strong>
                                   </div>
-                                  Mumbai office{' '}
+                                  Mumbai office
                                 </div>
                               </div>
                             </div>
@@ -256,7 +256,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Jennifer</strong>
                                   </div>
-                                  London office{' '}
+                                  London office
                                 </div>
                               </div>
                             </div>
@@ -296,7 +296,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Thibault</strong>
                                   </div>
-                                  Paris office{' '}
+                                  Paris office
                                 </div>
                               </div>
                             </div>
@@ -336,7 +336,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Nick</strong>
                                   </div>
-                                  London office{' '}
+                                  London office
                                 </div>
                               </div>
                             </div>
@@ -377,7 +377,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Liz</strong>
                                   </div>
-                                  Sydney office{' '}
+                                  Sydney office
                                 </div>
                               </div>
                             </div>
@@ -415,7 +415,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Marine</strong>
                                   </div>
-                                  Paris office{' '}
+                                  Paris office
                                 </div>
                               </div>
                             </div>
@@ -452,7 +452,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Bijoy</strong>
                                   </div>
-                                  Mumbai office{' '}
+                                  Mumbai office
                                 </div>
                               </div>
                             </div>
@@ -493,7 +493,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Jennifer</strong>
                                   </div>
-                                  London office{' '}
+                                  London office
                                 </div>
                               </div>
                             </div>
@@ -534,7 +534,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Thibault</strong>
                                   </div>
-                                  Paris office{' '}
+                                  Paris office
                                 </div>
                               </div>
                             </div>
@@ -575,7 +575,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Nick</strong>
                                   </div>
-                                  London office{' '}
+                                  London office
                                 </div>
                               </div>
                             </div>
@@ -657,7 +657,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Marine</strong>
                                   </div>
-                                  Paris office{' '}
+                                  Paris office
                                 </div>
                               </div>
                             </div>
@@ -696,7 +696,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Bijoy</strong>
                                   </div>
-                                  Mumbai office{' '}
+                                  Mumbai office
                                 </div>
                               </div>
                             </div>
@@ -791,7 +791,7 @@ const MainPageEn = () => {
 
         <section className="pad-100-vert  off-screen off-screen--hide off-screen--fade-up ">
           <h2 className="title title--lg red-1-color text-center color-red-1">
-            Where next?{' '}
+            Where next?
           </h2>
           <div className="container">
             <div className="row small-gutters pad-40-vert">
