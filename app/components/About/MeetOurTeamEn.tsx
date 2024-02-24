@@ -3,7 +3,7 @@ import React from 'react';
 const MeetOurTeamEn = () => {
   return (
     <>
-      <section
+      {/* <section
         className="off-screen off-screen--hide off-screen--fade-up js-meet-the-team"
         id="meet-the-team">
         <div className="container card-grid">
@@ -17713,7 +17713,7 @@ const MeetOurTeamEn = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
