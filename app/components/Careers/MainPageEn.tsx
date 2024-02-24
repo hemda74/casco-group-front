@@ -22,8 +22,8 @@ const MainPageEn = () => {
                     Careers{' '}
                   </h1>
                   <p className="intro off-screen off-screen--rotate-up">
-                    We are always looking for inspirational, driven and expert
-                    people to join our team.
+                    {`    We are always looking for inspirational, driven and expert
+                    people to join our team.`}
                   </p>
                   <div className="down-arrow js-interact js-scroll-height "></div>
                 </div>
@@ -44,25 +44,25 @@ const MainPageEn = () => {
                 <h2>Culture</h2>
                 <p>
                   <span className="intro">
-                    Our clients and consultants say the same thing; we do things
+                    {`         Our clients and consultants say the same thing; we do things
                     differently to others. We work hard at this, recruiting the
                     best people and focusing on our culture and collaborative
-                    approach, which is unique in the industry.
+                    approach, which is unique in the industry.`}
                   </span>
                 </p>
                 <p>
-                  Our people are our business. We provide teams of highly
+                  {`          Our people are our business. We provide teams of highly
                   skilled consultants to apply a combination of technical
                   expertise, operational experience, business knowledge and
-                  common sense to deliver real change.
+                  common sense to deliver real change.`}
                 </p>
                 <p>
-                  Underpinning our approach is caring about each other and our
+                  {`        Underpinning our approach is caring about each other and our
                   clients. We are real people dealing with real people, so we
                   need to understand what the issues and concerns are that
                   clients are facing, and also allow our colleagues to develop
                   their skills on a wide range of assignments whilst achieving a
-                  sustainable work-life balance.
+                  sustainable work-life balance.`}
                 </p>
               </div>
             </div>
@@ -80,31 +80,32 @@ const MainPageEn = () => {
                 <h2>Professional development</h2>
                 <p>
                   <span className="intro">
-                    We only recruit the best people; those who we believe will
+                    {`             We only recruit the best people; those who we believe will
                     fit with our supportive and collaborative approach, and who
                     will be able to constructively challenge our clients whilst
-                    working alongside them to get the job done.
+                    working alongside them to get the job done.`}
                   </span>
                 </p>
                 <p>
-                  Once someone joins us, we believe it is essential to provide
+                  {`   Once someone joins us, we believe it is essential to provide
                   an environment in which they can continually develop and
                   expand their capabilities. Throughout your career with Argon
                   &amp; Co, our career development model will offer you the
-                  opportunity to:
+                  opportunity to:`}
                 </p>
                 <ul>
                   <li>
-                    Broaden your skills across a number of different business
-                    disciplines
+                    {`    Broaden your skills across a number of different business
+                    disciplines`}
                   </li>
                   <li>
-                    Develop deeper technical skills in your specialist areas
+                    {`Develop deeper technical skills in your specialist areas`}
                   </li>
-                  <li>Work in and learn about different industries</li>
+                  <li>{`Work in and learn about different industries`}</li>
                   <li>
-                    Work with highly professional teams, consulting to all
-                    levels of the client
+                    {` Work with highly professional teams, consulting to all
+                    levels of the clien`}
+                    t
                   </li>
                 </ul>
               </div>
@@ -120,8 +121,8 @@ const MainPageEn = () => {
                   Insider's view{' '}
                 </h2>
                 <p className="intro text-center">
-                  Here is an insider's view of people who work for Argon &amp;
-                  Co and their personal experiences.{' '}
+                  {` Here is an insider's view of people who work for Argon &amp;
+                  Co and their personal experiences.`}
                 </p>
               </div>
               <div className="col-md-12">
@@ -153,9 +154,9 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "Argon &amp; Co combines strong expertise with
+                                {`     "Argon &amp; Co combines strong expertise with
                                 an incredible atmosphere; all people matter.
-                                It’s a great combination."
+                                It’s a great combination."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -193,8 +194,8 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "Learning is never ending in this firm, and the
-                                variety of projects which we do is incredible."
+                                {`   "Learning is never ending in this firm, and the
+                                variety of projects which we do is incredible."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -232,12 +233,12 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "As a graduate, I am new to the professional
+                                {`      "As a graduate, I am new to the professional
                                 world, but the company culture has ensured a
                                 seamless and enjoyable transition. The graduate
                                 program has allowed me to experience a variety
                                 of industries and learn different skills on a
-                                daily basis – no two days are the same."
+                                daily basis – no two days are the same."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -274,10 +275,10 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "We are privileged at Argon &amp; Co to develop
+                                {`  "We are privileged at Argon &amp; Co to develop
                                 our expertise by working with different kinds of
                                 clients while growing professionally in a unique
-                                environment."
+                                environment."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -314,10 +315,10 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "The culture is one which prides itself on
+                                {`     "The culture is one which prides itself on
                                 delivering the highest possible quality of work
                                 and I feel that our professionalism stands out
-                                as a result of this."
+                                as a result of this."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -354,11 +355,11 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "Even as a relatively new Consultant, I’d worked
+                                {`    "Even as a relatively new Consultant, I’d worked
                                 on some challenging and interesting projects.
                                 The culture is one in which I am encouraged to
                                 excel and the company has great people, a really
-                                good team spirit."
+                                good team spirit."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -394,9 +395,9 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "Argon &amp; Co combines strong expertise with
+                                {` "Argon &amp; Co combines strong expertise with
                                 an incredible atmosphere; all people matter.
-                                It’s a great combination."
+                                It’s a great combination."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -432,8 +433,8 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "Learning is never ending in this firm, and the
-                                variety of projects which we do is incredible."
+                                {` "Learning is never ending in this firm, and the
+                                variety of projects which we do is incredible."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -469,12 +470,12 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "As a graduate, I am new to the professional
+                                {` "As a graduate, I am new to the professional
                                 world, but the company culture has ensured a
                                 seamless and enjoyable transition. The graduate
                                 program has allowed me to experience a variety
                                 of industries and learn different skills on a
-                                daily basis – no two days are the same."
+                                daily basis – no two days are the same."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -512,10 +513,10 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "We are privileged at Argon &amp; Co to develop
+                                {`  "We are privileged at Argon &amp; Co to develop
                                 our expertise by working with different kinds of
                                 clients while growing professionally in a unique
-                                environment."
+                                environment."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -553,10 +554,10 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "The culture is one which prides itself on
+                                {` "The culture is one which prides itself on
                                 delivering the highest possible quality of work
                                 and I feel that our professionalism stands out
-                                as a result of this."
+                                as a result of this."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -594,11 +595,11 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "Even as a relatively new Consultant, I’d worked
+                                {`  "Even as a relatively new Consultant, I’d worked
                                 on some challenging and interesting projects.
                                 The culture is one in which I am encouraged to
                                 excel and the company has great people, a really
-                                good team spirit."
+                                good team spirit."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -616,7 +617,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Liz</strong>
                                   </div>
-                                  Sydney office{' '}
+                                  Sydney office
                                 </div>
                               </div>
                             </div>
@@ -636,9 +637,9 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "Argon &amp; Co combines strong expertise with
+                                {` "Argon &amp; Co combines strong expertise with
                                 an incredible atmosphere; all people matter.
-                                It’s a great combination."
+                                It’s a great combination."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -676,8 +677,8 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "Learning is never ending in this firm, and the
-                                variety of projects which we do is incredible."
+                                {`"Learning is never ending in this firm, and the
+                                variety of projects which we do is incredible."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -715,12 +716,12 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                "As a graduate, I am new to the professional
+                                {` "As a graduate, I am new to the professional
                                 world, but the company culture has ensured a
                                 seamless and enjoyable transition. The graduate
                                 program has allowed me to experience a variety
                                 of industries and learn different skills on a
-                                daily basis – no two days are the same."
+                                daily basis – no two days are the same."`}
                               </p>
                               <div className="row align-items-center profile-block">
                                 <div className="col-auto">
@@ -738,7 +739,7 @@ const MainPageEn = () => {
                                   <div>
                                     <strong>Jennifer</strong>
                                   </div>
-                                  London office{' '}
+                                  London office
                                 </div>
                               </div>
                             </div>
@@ -773,14 +774,14 @@ const MainPageEn = () => {
                 </h2>
                 <p style={{ textAlign: 'center' }}>
                   <span className="intro">
-                    Learn more about working at Argon &amp; Co, typical projects
+                    {` Learn more about working at Argon &amp; Co, typical projects
                     we work on, regular events to get involved in, the exciting
-                    career path ahead and how to apply for a position with us.
+                    career path ahead and how to apply for a position with us.`}
                   </span>
                 </p>
                 <p style={{ textAlign: 'center' }}>
                   <a href="https://www.argonandco.com/en/careers/join-us/">
-                    Read more &amp; apply
+                    Read more & apply
                   </a>
                 </p>
               </div>

@@ -14,9 +14,9 @@ const MainPageEn = () => {
                 <div className="col-md-5 the-content">
                   <p>
                     <span className="intro text-white mt-lg-5">
-                      We work across multiple industries, with a range of
+                      {`    We work across multiple industries, with a range of
                       organisations from local mid-market companies to some of
-                      the world’s biggest brands.
+                      the world’s biggest brands.`}
                     </span>
                   </p>
                 </div>
@@ -32,7 +32,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/automotive/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Automotive{' '}
+                      Automotive
                     </div>
                   </a>
                 </div>
@@ -41,7 +41,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/aerospace-and-defence/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Aerospace and defence{' '}
+                      Aerospace and defence
                     </div>
                   </a>
                 </div>
@@ -50,7 +50,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/consumer-goods/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Consumer goods{' '}
+                      Consumer goods
                     </div>
                   </a>
                 </div>
@@ -59,7 +59,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/energy-and-utilities/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Energy and utilities{' '}
+                      Energy and utilities
                     </div>
                   </a>
                 </div>
@@ -68,7 +68,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/fashion/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Fashion{' '}
+                      Fashion
                     </div>
                   </a>
                 </div>
@@ -77,7 +77,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/food-and-drink/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Food and drink{' '}
+                      Food and drink
                     </div>
                   </a>
                 </div>
@@ -86,7 +86,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/industrial-and-chemicals/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Industrial and chemicals{' '}
+                      Industrial and chemicals
                     </div>
                   </a>
                 </div>
@@ -95,7 +95,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/life-sciences/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Life sciences{' '}
+                      Life sciences
                     </div>
                   </a>
                 </div>
@@ -104,7 +104,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/luxury-goods/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Luxury goods{' '}
+                      Luxury goods
                     </div>
                   </a>
                 </div>
@@ -113,7 +113,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/private-equity/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Private equity{' '}
+                      Private equity
                     </div>
                   </a>
                 </div>
@@ -122,7 +122,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/retail-and-e-commerce/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Retail and e-commerce{' '}
+                      Retail and e-commerce
                     </div>
                   </a>
                 </div>
@@ -131,7 +131,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/services/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Services{' '}
+                      Services
                     </div>
                   </a>
                 </div>
@@ -140,7 +140,7 @@ const MainPageEn = () => {
                     href="https://www.argonandco.com/en/industries/transport-and-logistics/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
-                      Transport and logistics{' '}
+                      Transport and logistics
                     </div>
                   </a>
                 </div>

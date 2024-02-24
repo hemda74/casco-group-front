@@ -17,8 +17,8 @@ const MainPageEn = () => {
                 <div className="col-md-5 the-content">
                   <p>
                     <span className="intro text-white">
-                      We help clients deliver operations driven transformations
-                      in a single functional area or across multiple functions.
+                      {`       We help clients deliver operations driven transformations
+                      in a single functional area or across multiple functions.`}
                     </span>
                   </p>
                 </div>

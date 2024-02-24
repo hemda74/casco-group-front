@@ -34,7 +34,7 @@ const ThirdSectionMainAr = () => {
                 href="https://www.argonandco.com/en/services/operations-strategy/organisation-and-people/"
                 className="d-flex align-items-center red-1-color">
                 <div className="title title--sm title title--medium-weight red-1-color">
-                  التنظيم والناس{' '}
+                  التنظيم والناس
                 </div>
               </a>
             </div>

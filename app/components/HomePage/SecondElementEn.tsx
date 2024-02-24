@@ -23,7 +23,7 @@ const SecondElementEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          News{' '}
+                          News
                         </h3>
                         <p></p>
                       </div>
@@ -66,7 +66,7 @@ const SecondElementEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          Event{' '}
+                          Event
                         </h3>
                       </div>
                     </div>
@@ -87,7 +87,7 @@ const SecondElementEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          Article{' '}
+                          Article
                         </h3>
                       </div>
                     </div>
@@ -109,7 +109,7 @@ const SecondElementEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight">
-                          White Papers{' '}
+                          White Papers
                         </h3>
                       </div>
                     </div>

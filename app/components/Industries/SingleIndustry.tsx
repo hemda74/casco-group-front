@@ -11,7 +11,7 @@ const SingleIndustry = () => {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    Aerospace and defence{' '}
+                    Aerospace and defence
                   </h1>
                 </div>
               </div>
@@ -79,8 +79,8 @@ const SingleIndustry = () => {
                   <span property="name">Home</span>
                 </a>
                 <meta property="position" content="1" />
-              </span>{' '}
-              ›{' '}
+              </span>
+              ›
               <span property="itemListElement" typeof="ListItem">
                 <a
                   property="item"
@@ -91,11 +91,11 @@ const SingleIndustry = () => {
                   <span property="name">Industries</span>
                 </a>
                 <meta property="position" content="2" />
-              </span>{' '}
-              ›{' '}
+              </span>
+              ›
               <span className="post post-page current-item">
                 Aerospace and defence
-              </span>{' '}
+              </span>
             </div>
           </div>
         </div>
@@ -245,7 +245,7 @@ const SingleIndustry = () => {
                   <div className="row align-items-start">
                     <div className="col-md-12">
                       <h4 className="title title--sm red-1-color">
-                        Contact our aerospace and defences experts{' '}
+                        Contact our aerospace and defences experts
                       </h4>
                     </div>
                     <div className="col-md-12">
@@ -280,7 +280,7 @@ const SingleIndustry = () => {
 
                 <div className="sidebar-nav red-4-background color-white">
                   <div className="title title--sm title--medium-weight">
-                    Explore our services{' '}
+                    Explore our services
                   </div>
                   <ul>
                     <li className="page_item page-item-42 page_item_has_children">
@@ -359,7 +359,7 @@ const SingleIndustry = () => {
                         HR
                       </a>
                     </li>
-                  </ul>{' '}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -406,7 +406,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Procurement and strategy roadmap{' '}
+                                  Procurement and strategy roadmap
                                 </h3>
                               </div>
                             </div>
@@ -415,10 +415,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Airport Group{' '}
+                                    Airport Group
                                   </div>
                                   <h2 className="title title--lg">
-                                    Procurement and strategy roadmap{' '}
+                                    Procurement and strategy roadmap
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -515,7 +515,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Digital supply chain{' '}
+                                  Digital supply chain
                                 </h3>
                               </div>
                             </div>
@@ -526,10 +526,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Aerospace and defence{' '}
+                                    Aerospace and defence
                                   </div>
                                   <h2 className="title title--lg">
-                                    Digital supply chain{' '}
+                                    Digital supply chain
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -626,7 +626,7 @@ const SingleIndustry = () => {
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
                                   Implementation approach for category
-                                  management{' '}
+                                  management
                                 </h3>
                               </div>
                             </div>
@@ -637,11 +637,11 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Aerospace and defence{' '}
+                                    Aerospace and defence
                                   </div>
                                   <h2 className="title title--lg">
                                     Implementation approach for category
-                                    management{' '}
+                                    management
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -652,17 +652,17 @@ const SingleIndustry = () => {
                                 </div>
                                 <div className="col-md-10">
                                   <p>
-                                    Safran Electrical &amp; Power is a leading
+                                    {` Safran Electrical &amp; Power is a leading
                                     global player in the design, production and
                                     installation of electrical wiring systems in
-                                    the aerospace, space and defence markets.
+                                    the aerospace, space and defence markets.`}
                                   </p>
                                   <p>
-                                    The company wanted to define a target
+                                    {`            The company wanted to define a target
                                     purchasing policy with the implementation of
                                     a Category Management approach. The
                                     categories covered included; bearings,
-                                    electronic cards and machine parts.
+                                    electronic cards and machine parts.`}
                                   </p>
                                 </div>
                               </div>
@@ -691,12 +691,12 @@ const SingleIndustry = () => {
                                     </li>
                                     <li>Consolidated spend map by segment</li>
                                     <li>
-                                      Identified supplier know-how by segment
-                                      and defined a target supplier panel
+                                      {`   Identified supplier know-how by segment
+                                      and defined a target supplier panel`}
                                     </li>
                                     <li>
-                                      Developed an action plan by entity and the
-                                      associated business case
+                                      {`     Developed an action plan by entity and the
+                                      associated business case`}
                                     </li>
                                   </ul>
                                 </div>
@@ -719,7 +719,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Supply quality management{' '}
+                                  Supply quality management
                                 </h3>
                               </div>
                             </div>
@@ -730,10 +730,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Defence industry{' '}
+                                    Defence industry
                                   </div>
                                   <h2 className="title title--lg">
-                                    Supply quality management{' '}
+                                    Supply quality management
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -832,7 +832,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Digital procurement roadmap{' '}
+                                  Digital procurement roadmap
                                 </h3>
                               </div>
                             </div>
@@ -843,10 +843,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    European leader in naval defence{' '}
+                                    European leader in naval defence
                                   </div>
                                   <h2 className="title title--lg">
-                                    Digital procurement roadmap{' '}
+                                    Digital procurement roadmap
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -945,7 +945,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Procurement and strategy roadmap{' '}
+                                  Procurement and strategy roadmap
                                 </h3>
                               </div>
                             </div>
@@ -956,10 +956,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Airport Group{' '}
+                                    Airport Group
                                   </div>
                                   <h2 className="title title--lg">
-                                    Procurement and strategy roadmap{' '}
+                                    Procurement and strategy roadmap
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -1057,7 +1057,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Digital supply chain{' '}
+                                  Digital supply chain
                                 </h3>
                               </div>
                             </div>
@@ -1066,10 +1066,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Aerospace and defence{' '}
+                                    Aerospace and defence
                                   </div>
                                   <h2 className="title title--lg">
-                                    Digital supply chain{' '}
+                                    Digital supply chain
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -1167,7 +1167,7 @@ const SingleIndustry = () => {
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
                                   Implementation approach for category
-                                  management{' '}
+                                  management
                                 </h3>
                               </div>
                             </div>
@@ -1176,11 +1176,11 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Aerospace and defence{' '}
+                                    Aerospace and defence
                                   </div>
                                   <h2 className="title title--lg">
                                     Implementation approach for category
-                                    management{' '}
+                                    management
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -1260,7 +1260,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Supply quality management{' '}
+                                  Supply quality management
                                 </h3>
                               </div>
                             </div>
@@ -1269,10 +1269,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Defence industry{' '}
+                                    Defence industry
                                   </div>
                                   <h2 className="title title--lg">
-                                    Supply quality management{' '}
+                                    Supply quality management
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -1372,7 +1372,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Digital procurement roadmap{' '}
+                                  Digital procurement roadmap
                                 </h3>
                               </div>
                             </div>
@@ -1381,10 +1381,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    European leader in naval defence{' '}
+                                    European leader in naval defence
                                   </div>
                                   <h2 className="title title--lg">
-                                    Digital procurement roadmap{' '}
+                                    Digital procurement roadmap
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">
@@ -1484,7 +1484,7 @@ const SingleIndustry = () => {
                             <div className="card red-2-background card--fixed-sm ">
                               <div className="card__content">
                                 <h3 className="title title--sm title--medium-weight">
-                                  Procurement and strategy roadmap{' '}
+                                  Procurement and strategy roadmap
                                 </h3>
                               </div>
                             </div>
@@ -1493,10 +1493,10 @@ const SingleIndustry = () => {
                               <div className="row align-items-center">
                                 <div className="col-md-10">
                                   <div className="data-label">
-                                    Airport Group{' '}
+                                    Airport Group
                                   </div>
                                   <h2 className="title title--lg">
-                                    Procurement and strategy roadmap{' '}
+                                    Procurement and strategy roadmap
                                   </h2>
                                 </div>
                                 <div className="col-md-2 col-xs-4 col-sm-6 col-8">

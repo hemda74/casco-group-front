@@ -13,9 +13,9 @@ const ThirdSectionMainEn = () => {
             </div>
             <div className="col-lg-7 col-md-9 off-screen off-screen--hide off-screen--rotate-up">
               <p className="intro">
-                We are a global management consultancy that specialises in
+                {`        We are a global management consultancy that specialises in
                 operations strategy and transformation. These are a selection of
-                the strategic challenges we regularly work on.
+                the strategic challenges we regularly work on.`}
               </p>
             </div>
           </div>

@@ -18,9 +18,9 @@ const FourthSectionMainEn = () => {
             </div>
             <div className="col-lg-7 col-md-9 off-screen off-screen--hide off-screen--rotate-up">
               <p className="intro">
-                We dig deep to identify the root of complex problems and focus
+                {` We dig deep to identify the root of complex problems and focus
                 on delivering tangible results for clients, these are a
-                selection of the operations challenges we regularly work on.
+                selection of the operations challenges we regularly work on.`}
               </p>
             </div>
           </div>
