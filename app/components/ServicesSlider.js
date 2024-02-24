@@ -588,7 +588,7 @@ export default class AsNavFor extends Component {
                       <span
                         className="fw-bold mt-3 text-center"
                         data-trans="Services11">
-                        Consultation for Obtaining BRCGS Certification{' '}
+                        Consultation for Obtaining BRCGS Certification
                       </span>
                     </div>
                     <div
@@ -602,7 +602,7 @@ export default class AsNavFor extends Component {
                         className="fw-bold mt-3 text-center"
                         data-trans="Services12">
                         Consultation for Obtaining Forest Stewardship Council
-                        (FSC) Certification{' '}
+                        (FSC) Certification
                       </span>
                     </div>
                     <div
