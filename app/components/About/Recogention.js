@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import styles from '../styles/AccreditedBodiesCompaines.module.css';
-import Image from 'next/image';
-import image1 from '../public/images/clients/Picture1.jpg';
+import styles from '../../styles/AccreditedBodiesCompaines.module.css';
 export default class SwipeToSlide extends Component {
   render() {
     const settings = {
