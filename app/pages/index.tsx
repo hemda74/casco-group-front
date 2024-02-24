@@ -14,6 +14,7 @@ import ThirdSectionMainEn from '../components/HomePage/ThirdSectionMainEn';
 import FourthSectionMainEn from '../components/HomePage/FourthSectionMainEn';
 import ThirdSectionMainAr from '../components/HomePage/ThirdSectionMainAr';
 import FourthSectionMainAr from '../components/HomePage/FourthSectionMainAr';
+import styles from '../styles/Main.module.css';
 type Props = {};
 const Index: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
@@ -24,7 +25,7 @@ const Index: NextPageWithLayout = (props: Props) => {
       </Head>
       <Layout>
         {language === 'en' ? (
-          <main>
+          <main className={`${styles.bodyContainer}`}>
             <HeroEn />
             <SecondElementEn />
             <CompaniesSectionEn />
@@ -32,7 +33,7 @@ const Index: NextPageWithLayout = (props: Props) => {
             <FourthSectionMainEn />
           </main>
         ) : (
-          <main>
+          <main className={`${styles.bodyContainer}`}>
             <HeroAr />
             <SecondElementAr />
             <CompaniesSectionAr />

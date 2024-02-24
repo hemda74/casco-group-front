@@ -5,6 +5,8 @@ import { NextPageWithLayout } from './_app';
 import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/Layout';
+import styles from '../../styles/Main.module.css';
+
 type Props = {};
 // dymmy data for ui till handle working with api
 const Contactus: NextPageWithLayout = (props: Props) => {
@@ -16,11 +18,11 @@ const Contactus: NextPageWithLayout = (props: Props) => {
       </Head>
       <Layout>
         {language === 'en' ? (
-          <main>
+          <main className={`${styles.bodyContainer}`}>
             <ContactUs />
           </main>
         ) : (
-          <h1>Ahmed</h1>
+          <main className={`${styles.bodyContainer}`}></main>
         )}
       </Layout>
     </>
