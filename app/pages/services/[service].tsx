@@ -2,9 +2,8 @@ import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../_app';
-import MainPageEn from '../../components/Services/MainPageEn';
 import Service from '../../components/Services/service';
-
+import styles from '../../styles/Main.module.css';
 type Props = {};
 // dymmy data for ui till handle working with api
 
@@ -14,7 +13,7 @@ const services: NextPageWithLayout = (props: Props) => {
       <Head>
         <title>Services | CASCO</title>
       </Head>
-      <main>
+      <main className={`${styles.bodyContainer}`}>
         <Service />
       </main>
     </>

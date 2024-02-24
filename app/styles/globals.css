@@ -10024,13 +10024,14 @@ a .card.red-5-background:hover {
 
 .contact-card__profile {
   position: absolute;
-  right: 40px;
-  bottom: 40px;
+  left: 17rem;
+  bottom: 140px;
 }
 
 @media (max-width: 769px) {
   .contact-card__profile {
     top: 8px;
+    left: 15rem;
     right: 7px;
     margin: 15px 15px 0 0;
     bottom: auto;
