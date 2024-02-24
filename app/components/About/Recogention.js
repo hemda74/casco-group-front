@@ -55,8 +55,9 @@ export default class SwipeToSlide extends Component {
                 Recognition
               </h2>
               <p className="intro pad-btm-mob">
+                {`
                 We are proud to be recognised by some of the world's leading
-                research companies, institutes and publications.
+                research companies, institutes and publications.`}
               </p>
             </div>
           </div>
