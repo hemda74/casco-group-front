@@ -240,7 +240,7 @@ a {
 }
 
 .red-1-background {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
 }
 
 .red-1-border-top {
@@ -257,7 +257,7 @@ a {
 }
 
 .red-2-background {
-  background-color: #3c84ab;
+  background-color: #3c84ab !important;
 }
 
 .red-2-border-top {
@@ -9484,7 +9484,7 @@ ul.gallery li p {
 }
 
 .card--split__hover {
-  opacity: 0;
+  opacity: 2;
   position: absolute;
   bottom: 28px;
   left: 28px;
@@ -9915,15 +9915,15 @@ a .card.red-5-background:hover {
 }
 
 .content-image-slider .red-1-background {
-  background-color: #a9131d;
+  background-color: var(--color-primary) !important;
 }
 
 .content-image-slider .red-2-background {
-  background-color: #c63e1b;
+  background-color: var(--color-primary) !important;
 }
 
 .content-image-slider .red-3-background {
-  background-color: #901237;
+  background-color: var(--color-primary) !important;
 }
 
 .content-image-slider:nth-of-type(2n) .red-2-background {
@@ -14256,12 +14256,12 @@ table td {
 }
 
 .page-template-tpl-connect .connect__banner--button:hover {
-  background-color: #901237;
+  background-color: var(--color-primary) !important;
   color: #fff;
 }
 
 .page-template-tpl-connect .connect__form .gform_wrapper label {
-  color: #901237;
+  color: var(--color-primary) !important;
 }
 
 .page-template-tpl-connect .card__content {
@@ -14288,7 +14288,7 @@ table td {
 }
 
 .page-template-tpl-connect .arrow-3-slider .slick-arrow:hover {
-  background-color: #901237;
+  background-color: var(--color-primary) !important;
 }
 
 .page-template-tpl-connect .arrow-3-slider .slick-arrow:hover:before {
