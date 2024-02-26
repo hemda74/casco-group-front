@@ -4,15 +4,11 @@ import ViewerLayout from '../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
-import AboutMainSectionAr from '../../components/About/AboutMainSection-ar';
-import AboutMainSectionEn from '../../components/About/AboutMainSection-en';
-import MeetOurTeamEn from '../../components/About/MeetOurTeamEn';
-import Recogention from '../../components/About/Recogention';
-import AccreditedBodiesCompaines from '../../components/About/Recogention';
 import styles from '../../styles/Main.module.css';
+import OurCulture from '../../components/About/OurCultureEn';
 
 type Props = {};
-const Index: NextPageWithLayout = (props: Props) => {
+const TeamMemberPage: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
   return (
     <>
@@ -22,15 +18,11 @@ const Index: NextPageWithLayout = (props: Props) => {
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
-            <AboutMainSectionEn />
-            <MeetOurTeamEn />
-            <Recogention />
+            <OurCulture />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
-            <AboutMainSectionAr />
-            <MeetOurTeamEn />
-            <Recogention />
+            <h1 className="m-auto">Wait For Arabic Content</h1>
           </main>
         )}
       </Layout>
@@ -38,7 +30,7 @@ const Index: NextPageWithLayout = (props: Props) => {
   );
 };
 // adding Layout
-Index.getLayout = function getLayout(Index: ReactElement) {
-  return <ViewerLayout childern={Index}></ViewerLayout>;
+TeamMemberPage.getLayout = function getLayout(TeamMemberPage: ReactElement) {
+  return <ViewerLayout childern={TeamMemberPage}></ViewerLayout>;
 };
-export default Index;
+export default TeamMemberPage;
