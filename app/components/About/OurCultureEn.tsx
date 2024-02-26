@@ -53,7 +53,7 @@ const OurCulture = () => {
                   <div className="red-1-background white-color card card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
-                        {`"Argon &amp; Co brings me a great deal on a daily basis.
+                        {`"Argon & Co brings me a great deal on a daily basis.
                         The list of rewards is extensive, but the two main
                         points are the constant intellectual stimulation and the
                         pleasure of team work."`}
