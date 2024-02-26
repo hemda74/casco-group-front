@@ -15,11 +15,11 @@ const OurCulture = () => {
             <div className="row">
               <div className="col-12">
                 <div className="culture-grid culture-grid--en">
-                  <div className="red-3-background white-color card card--large d-flex align-items-center">
+                  <div className="red-1-background white-color card card--large d-flex align-items-center">
                     <div className="card__content">
                       <h2>Our people are our business</h2>
                       <p>
-                        <span className="intro intro--medium">
+                        <span className="intro  intro--medium">
                           {` We care about each other and our clients. We are real
                           people, dealing with real people. Our positive,
                           flexible and personal approach, with challenge where
@@ -95,7 +95,7 @@ const OurCulture = () => {
                       backgroundImage:
                         'url(https://www.argonandco.com/wp-content/uploads/2019/11/9.png)',
                     }}></div>
-                  <div className="red-4-background white-color card card--large d-flex align-items-center">
+                  <div className="red-1-background white-color card card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
                         {` "On joining the company I was very interested in working
@@ -150,7 +150,7 @@ const OurCulture = () => {
                       backgroundImage:
                         'url(https://www.argonandco.com/wp-content/uploads/2019/11/3.png)',
                     }}></div>
-                  <div className="red-6-background white-color card card--large d-flex align-items-center">
+                  <div className="red-1-background white-color card card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
                         {`"The diversity of clients and assignments means that I'm
@@ -196,7 +196,7 @@ const OurCulture = () => {
             <div className="row small-gutters pad-40-vert">
               <div className="col-md-4">
                 <a href="https://www.argonandco.com/en/about/what-we-do/">
-                  <div className="card card--image red-3-background white-color card--fixed-sm ">
+                  <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
                         <source
@@ -219,7 +219,7 @@ const OurCulture = () => {
 
               <div className="col-md-4">
                 <a href="https://www.argonandco.com/en/careers/">
-                  <div className="card card--image red-3-background white-color card--fixed-sm ">
+                  <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
                         <source
@@ -242,7 +242,7 @@ const OurCulture = () => {
 
               <div className="col-md-4">
                 <a href="https://www.argonandco.com/en/news-insights/">
-                  <div className="card card--image red-3-background white-color card--fixed-sm ">
+                  <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
                         <source

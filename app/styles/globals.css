@@ -17,7 +17,7 @@
 
   /* Primay colors */
   --color-primary: #3c84ab;
-  --color-primary-light: #3c84ab;
+  --color-primary-light: #4aa6d7;
   --color-primary-dark: #3c84ab;
 
   --color-primary-rgb: 50, 121, 252;
@@ -240,7 +240,7 @@ a {
 }
 
 .red-1-background {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-primary-light) !important;
 }
 
 .red-1-border-top {
@@ -257,7 +257,7 @@ a {
 }
 
 .red-2-background {
-  background-color: #3c84ab !important;
+  background-color: var(--color-primary-light) !important;
 }
 
 .red-2-border-top {
@@ -291,7 +291,7 @@ a {
 }
 
 .red-4-background {
-  background-color: #3c84ab;
+  background-color: var(--color-primary-light) !important;
 }
 
 .red-4-border-top {
@@ -308,7 +308,7 @@ a {
 }
 
 .red-5-background {
-  background-color: #3c84ab;
+  background-color: var(--color-primary-light) !important;
 }
 
 .red-5-border-top {
@@ -325,7 +325,7 @@ a {
 }
 
 .red-6-background {
-  background-color: #3c84ab;
+  background-color: var(--color-primary-light) !important;
 }
 
 .red-6-border-top {
@@ -8791,6 +8791,7 @@ h4 {
   font-size: 19px;
   font-size: 1.1875rem;
   line-height: 1.4736842105;
+  color: #fff;
 }
 
 .intro--medium {
@@ -9397,7 +9398,7 @@ ul.gallery li p {
   position: relative;
   min-height: 245px;
   height: 100% !important;
-
+  border-radius: 0 !important;
   color: #fff;
   background-size: cover;
   background-position: center;
@@ -9923,7 +9924,7 @@ a .card.red-5-background:hover {
 }
 
 .content-image-slider .red-3-background {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-primary-light) !important;
 }
 
 .content-image-slider:nth-of-type(2n) .red-2-background {
