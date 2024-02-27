@@ -1,37 +1,49 @@
 import React from 'react';
-
+import Link from 'next/link';
 const MainPageEn = () => {
   return (
     <>
       <div id="content-wrap">
         <div className="no-image-banner text-center">
           <h1 className="title title--2xl title--bold">
-            <span className="gradient-text">News & insights</span>
+            <span className="gradient-text">News & Insights</span>
           </h1>
         </div>
-
-        <section className="bg-white pad-80-top" id="content">
+        <section className="off-screen off-screen--fade-up">
           <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-md-8 text-center off-screen off-screen--rotate-up">
-                <div className="col-12 text-center">
-                  <h2 className="title title--md red-1-color">Latest news </h2>
-                </div>
-              </div>
-            </div>
             <div className="row">
               <div className="col-12">
-                <div className="grid-3 off-screen off-screen--sequential-up">
-                  <div className="card card--large card-slider slick-initialized slick-slider slick-dotted"></div>
-
-                  <a href="https://www.argonandco.com/en/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
-                    <div className="card  red-2-background  card--fixed-sm ">
-                      <div className="card__category">Event </div>
+                <div className="grid-3">
+                  <a href="https://www.argonandco.com/en/news-insights/events/roundtable-the-art-of-procurement-london/">
+                    <div className="card ">
+                      <div className="card__image object-fit">
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcSet="https://www.argonandco.com/wp-content/uploads/2024/02/iStock-147036034-1024x683.jpg.webp"
+                          />
+                          <img src="https://www.argonandco.com/wp-content/uploads/2024/02/iStock-147036034-1024x683.jpg" />
+                        </picture>
+                      </div>
+                      <div className="card__category">News</div>
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
-                            Conference: EU-UK Dynamics 2025+: Jointly Achieving
-                            Net Zero, Brussels
+                            {`Roundtable: The art of Procurement, London`}
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="https://www.argonandco.com/en/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
+                    <div className="card  red-2-background  card--fixed-sm ">
+                      <div className="card__category">Event</div>
+                      <div className="position-bottom">
+                        <div className="card__content">
+                          <h3 className="title title--xs title--medium-weight ">
+                            {`  Conference: EU-UK Dynamics 2025+: Jointly Achieving
+                            Net Zero, Brussels`}
                           </h3>
                         </div>
                       </div>
@@ -39,18 +51,22 @@ const MainPageEn = () => {
                   </a>
 
                   <a href="https://www.argonandco.com/en/news-insights/events/roundtable-the-art-of-procurement-london/">
-                    <div className="card  red-2-background  card--fixed-sm ">
-                      <div className="card__category">Event </div>
+                    <div className="card red-2-background card--fixed-sm">
+                      <div className="card__category">Event</div>
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
-                            Roundtable: The art of Procurement, London
+                            {`Roundtable: The art of Procurement, London`}
                           </h3>
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
                 <div className="row justify-content-center">
                   <div className="col-xl-3 col-lg-4 col-xs-6 text-center pad-15-mob">
                     <a
@@ -71,7 +87,6 @@ const MainPageEn = () => {
             </div>
           </div>
         </section>
-
         <section className="bg-white pad-80-top">
           <div className="container card-grid">
             <div className="row">
