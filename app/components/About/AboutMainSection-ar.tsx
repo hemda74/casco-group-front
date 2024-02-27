@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 const AboutMainSectionAr = () => {
   return (
@@ -12,7 +13,7 @@ const AboutMainSectionAr = () => {
           <div className="row">
             <div className="col-12">
               <div className="grid-3">
-                <a href="https://www.argonandco.com/en/about/what-we-do/">
+                <Link href="/about/what-we-do/">
                   <div className="card card--image red-3-background white-color card--large">
                     <div className="card__image object-fit">
                       <picture>
@@ -32,8 +33,8 @@ const AboutMainSectionAr = () => {
                       </div>
                     </div>
                   </div>
-                </a>
-                <a href="https://www.argonandco.com/en/about/our-culture/">
+                </Link>
+                <Link href="/about/our-culture/">
                   <div className="card card--image red-3-background white-color card--fixed-sm">
                     <div className="card__image object-fit">
                       <picture>
@@ -52,9 +53,9 @@ const AboutMainSectionAr = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
 
-                <a href="https://www.argonandco.com/en/about/our-approach/">
+                <Link href="/about/our-approach/">
                   <div className="card card--image red-3-background white-color card--fixed-sm">
                     <div className="card__image object-fit">
                       <picture>
@@ -73,7 +74,7 @@ const AboutMainSectionAr = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
