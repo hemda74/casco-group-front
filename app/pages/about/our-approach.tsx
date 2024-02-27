@@ -5,7 +5,7 @@ import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
-import OurCulture from '../../components/About/OurCultureEn';
+import OurApproach from '../../components/About/OurApproach';
 
 type Props = {};
 const TeamMemberPage: NextPageWithLayout = (props: Props) => {
@@ -18,7 +18,7 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
-            <OurCulture />
+            <OurApproach />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
