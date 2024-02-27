@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const MeetOurTeamEn = () => {
@@ -14,25 +15,27 @@ const MeetOurTeamEn = () => {
           </div>
           <div className="row js-team-top-level">
             <div className="col-xl-4 col-md-6 order-1">
-              <div className="card card--split red-1-background">
-                <div className="row no-gutters">
-                  <div className="col-6">
-                    <div className="card__content">
-                      <div className="title title--sm">Egypt</div>
+              <Link href="/about/egy-team/">
+                <div className="card card--split red-1-background">
+                  <div className="row no-gutters">
+                    <div className="col-6">
+                      <div className="card__content">
+                        <div className="title title--sm">Egypt</div>
 
-                      <div className="card--split__hover title--medium-weight">
-                        Meet The Team
+                        <div className="card--split__hover title--medium-weight">
+                          Meet The Team
+                        </div>
                       </div>
                     </div>
+                    <div
+                      className="col-6 card--split__image grayscale"
+                      style={{
+                        backgroundImage:
+                          'url(https://www.argonandco.com/wp-content/uploads/2020/01/Picture1-1.png)',
+                      }}></div>
                   </div>
-                  <div
-                    className="col-6 card--split__image grayscale"
-                    style={{
-                      backgroundImage:
-                        'url(https://www.argonandco.com/wp-content/uploads/2020/01/Picture1-1.png)',
-                    }}></div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="col-xl-4 col-md-6 order-2">
               <div className="card card--split red-1-background">

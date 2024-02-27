@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../../layouts/ViewerLayout';
-import { NextPageWithLayout } from '../_app';
-import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
+import ViewerLayout from '../../../layouts/ViewerLayout';
+import { NextPageWithLayout } from '../../_app';
+import { useLanguage } from '../../../Context/LanguageContext';
+import Layout from '../../../components/Layout';
 import styles from '../../styles/Main.module.css';
 
 type Props = {};
