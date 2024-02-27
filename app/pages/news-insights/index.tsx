@@ -2,20 +2,24 @@ import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../_app';
+import MainPageEn from '../../components/News&Insghits/MainPage';
+
 type Props = {};
 // dymmy data for ui till handle working with api
-const news: NextPageWithLayout = (props: Props) => {
+const services: NextPageWithLayout = (props: Props) => {
   return (
     <>
       <Head>
-        <title>News | CASCO</title>
+        <title>News & Insghits | CASCO</title>
       </Head>
-      <main></main>
+      <main>
+        <MainPageEn />
+      </main>
     </>
   );
 };
 // adding Layout
-news.getLayout = function getLayout(news: ReactElement) {
-  return <ViewerLayout childern={news}></ViewerLayout>;
+services.getLayout = function getLayout(contactus: ReactElement) {
+  return <ViewerLayout childern={contactus}></ViewerLayout>;
 };
-export default news;
+export default services;
