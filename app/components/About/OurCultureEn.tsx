@@ -1,4 +1,5 @@
 import React from 'react';
+import WhereIsNextEn from './WhereIsNextEn';
 
 const OurCulture = () => {
   return (
@@ -187,84 +188,7 @@ const OurCulture = () => {
             </div>
           </div>
         </section>
-
-        <section className="pad-100-vert off-screen off-screen--fade-up">
-          <h2 className="title title--lg red-1-color text-center color-red-1">
-            Where next?
-          </h2>
-          <div className="container">
-            <div className="row small-gutters pad-40-vert">
-              <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/about/what-we-do/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26-1024x732.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26-1024x732.jpg" />
-                      </picture>
-                    </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          What we do
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/careers/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2019/11/10-1024x587.png.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2019/11/10-1024x587.png" />
-                      </picture>
-                    </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          Careers
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/news-insights/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg" />
-                      </picture>
-                    </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          News &amp; insights
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <WhereIsNextEn />
       </div>
     </>
   );
