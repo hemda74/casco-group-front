@@ -15,7 +15,7 @@ const OurCulture = () => {
             <div className="row">
               <div className="col-12">
                 <div className="culture-grid culture-grid--en">
-                  <div className="red-1-background white-color card card--large d-flex align-items-center">
+                  <div className="red-1-background white-color  card--large d-flex align-items-center">
                     <div className="card__content">
                       <h2>Our people are our business</h2>
                       <p>
@@ -50,7 +50,7 @@ const OurCulture = () => {
                       backgroundImage:
                         'url(https://www.argonandco.com/wp-content/uploads/2019/11/careers_banner-1024x635.jpg)',
                     }}></div>
-                  <div className="red-1-background white-color card card--large d-flex align-items-center">
+                  <div className="red-1-background white-color  card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
                         {`"Argon & Co brings me a great deal on a daily basis.
@@ -95,7 +95,7 @@ const OurCulture = () => {
                       backgroundImage:
                         'url(https://www.argonandco.com/wp-content/uploads/2019/11/9.png)',
                     }}></div>
-                  <div className="red-1-background white-color card card--large d-flex align-items-center">
+                  <div className="red-1-background white-color  card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
                         {` "On joining the company I was very interested in working
@@ -150,7 +150,7 @@ const OurCulture = () => {
                       backgroundImage:
                         'url(https://www.argonandco.com/wp-content/uploads/2019/11/3.png)',
                     }}></div>
-                  <div className="red-1-background white-color card card--large d-flex align-items-center">
+                  <div className="red-1-background white-color  card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
                         {`"The diversity of clients and assignments means that I'm
