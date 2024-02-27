@@ -8635,8 +8635,9 @@ h3 {
 }
 
 .profile-block {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  position: absolute;
+  bottom: 30px;
+  width: calc(100% - 60px);
 }
 
 .js-team-countries {
@@ -9548,7 +9549,6 @@ ul.gallery li p {
 }
 
 .card--quote .card__content {
-  padding: 50px 45px;
 }
 
 @media (max-width: 700px) {

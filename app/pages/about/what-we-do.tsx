@@ -5,8 +5,9 @@ import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
-import OurCulture from '../../components/About/OurCultureEn';
+import Testmonalials from '../../components/About/Testmonalials';
 import WhatWeDoEn from '../../components/About/WhatWeDoEn';
+import WhereIsNext from '../../components/About/WhereIsNextEn';
 
 type Props = {};
 const TeamMemberPage: NextPageWithLayout = (props: Props) => {
@@ -20,6 +21,8 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
             <WhatWeDoEn />
+            <Testmonalials />
+            <WhereIsNext />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
