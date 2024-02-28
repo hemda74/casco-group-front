@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import ViewerLayout from '../../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../../_app';
-import SingleNews from '../../../components/News&Insghits/SingleNews';
+import SingleNews from '../../../components/News&Insghits/SingleNewsEn';
 
 type Props = {};
 // dymmy data for ui till handle working with api

@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import React from 'react';
-
+import { BsLinkedin, BsTwitter } from 'react-icons/bs';
+import { IoMdMail } from 'react-icons/io';
 const SingleNews = () => {
   return (
     <div>
@@ -53,33 +55,21 @@ const SingleNews = () => {
                     <div className="social-sharing__links">
                       <p>Share:</p>
                       <div className="links">
-                        <a
-                          href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.argonandco.com%2Fen%2Fargon-co-partner-promotions-2023%2F&amp;title=Argon+%26%23038%3B+Co+Partner+promotions+2023"
+                        <Link
+                          href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.argonandco.com%2Fen%2Fnews-insights%2Fevents%2Froundtable-mastering-ma-integration-london%2F&title=Roundtable%3A+Mastering+M%26%23038%3BA+integration%2C+London"
                           target="_blank">
-                          <img
-                            width="32px"
-                            height="32px"
-                            src="https://www.argonandco.com/wp-content/themes/ArgonCo/assets/img/social/linkedin_red_circle.svg"
-                          />
-                        </a>
-                        <a
-                          href="https://twitter.com/intent/tweet?text=Argon+%26%23038%3B+Co+Partner+promotions+2023+https://www.argonandco.com/en/argon-co-partner-promotions-2023/"
+                          <BsLinkedin size={20} />
+                        </Link>
+                        <Link
+                          href="https://twitter.com/intent/tweet?text=Roundtable%3A+Mastering+M%26%23038%3BA+integration%2C+London+https://www.argonandco.com/en/news-insights/events/roundtable-mastering-ma-integration-london/"
                           target="_blank">
-                          <img
-                            width="32px"
-                            height="32px"
-                            src="https://www.argonandco.com/wp-content/themes/ArgonCo/assets/img/social/twitter_red_circle.svg"
-                          />
-                        </a>
-                        <a
-                          href="mailto:?subject=I wanted you to see this post&amp;body=Check out this post https://www.argonandco.com/en/argon-co-partner-promotions-2023/."
+                          <BsTwitter size={22} />
+                        </Link>
+                        <Link
+                          href="mailto:?subject=I wanted you to see this post&body=Check out this post https://www.argonandco.com/en/news-insights/events/roundtable-mastering-ma-integration-london/."
                           target="_blank">
-                          <img
-                            width="32px"
-                            height="32px"
-                            src="https://www.argonandco.com/wp-content/themes/ArgonCo/assets/img/social/email_red_circle.svg"
-                          />
-                        </a>
+                          <IoMdMail size={25} />
+                        </Link>
                       </div>
                     </div>
                     <div className="social-sharing__line"></div>
@@ -97,7 +87,7 @@ const SingleNews = () => {
           <div className="container">
             <div className="row small-gutters pad-40-vert">
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/argon-co-strengthen-presence-in-apac-with-the-appointment-of-new-partner/">
+                <Link href="/news-insights/company-news/news">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -118,11 +108,11 @@ const SingleNews = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/argon-co-apac-strengthen-its-capabilities-with-the-internal-appointment-of-three-new-partners/">
+                <Link href="/news-insights/company-news/news">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -143,11 +133,11 @@ const SingleNews = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/m3-consultancy-becomes-argon-co/">
+                <Link href="/news-insights/company-news/news">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -167,16 +157,16 @@ const SingleNews = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="text-center">
-            <a
-              href="https://www.argonandco.com/en/news-insights/company-news/"
+            <Link
+              href="/news-insights/company-news/"
               className="line-link red-3-color">
               <span className="red-3-color">Back to all News</span>
-            </a>
+            </Link>
           </div>
         </section>
       </div>
