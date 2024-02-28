@@ -104,26 +104,17 @@ const SingleEventEn = () => {
                         <a
                           href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.argonandco.com%2Fen%2Fnews-insights%2Fevents%2Froundtable-mastering-ma-integration-london%2F&title=Roundtable%3A+Mastering+M%26%23038%3BA+integration%2C+London"
                           target="_blank">
-                          <Link href={'/'} className={``}>
-                            {' '}
-                            <BsLinkedin size={20} />
-                          </Link>
+                          <BsLinkedin size={20} />
                         </a>
                         <a
                           href="https://twitter.com/intent/tweet?text=Roundtable%3A+Mastering+M%26%23038%3BA+integration%2C+London+https://www.argonandco.com/en/news-insights/events/roundtable-mastering-ma-integration-london/"
                           target="_blank">
-                          <Link href={'/'} className={``}>
-                            {' '}
-                            <BsTwitter size={22} />
-                          </Link>
+                          <BsTwitter size={22} />
                         </a>
                         <a
                           href="mailto:?subject=I wanted you to see this post&body=Check out this post https://www.argonandco.com/en/news-insights/events/roundtable-mastering-ma-integration-london/."
                           target="_blank">
-                          <Link href={'/'} className={``}>
-                            {' '}
-                            <IoMdMail size={25} />
-                          </Link>
+                          <IoMdMail size={25} />
                         </a>
                       </div>
                     </div>
@@ -142,7 +133,7 @@ const SingleEventEn = () => {
           <div className="container">
             <div className="row small-gutters pad-40-vert">
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
+                <Link href="/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
                   <div className="card  red-2-background  card--fixed-sm ">
                     <div className="card__category">Event </div>
                     <div className="position-bottom">
@@ -154,47 +145,45 @@ const SingleEventEn = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
-
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/news-insights/events/roundtable-the-art-of-procurement-london/">
+                <Link href="/news-insights/events/roundtable-the-art-of-procurement-london/">
                   <div className="card  red-2-background  card--fixed-sm ">
                     <div className="card__category">Event </div>
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          {`         Roundtable: The art of Procurement, London`}
+                          {`Roundtable: The art of Procurement, London`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/news-insights/events/virtual-roundtable-the-truth-about-sop-london/">
+                <Link href="/news-insights/events/virtual-roundtable-the-truth-about-sop-london/">
                   <div className="card  red-2-background  card--fixed-sm ">
                     <div className="card__category">Event </div>
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          {`                          Virtual roundtable: The truth about S&OP, London
-`}{' '}
+                          {`Virtual roundtable: The truth about S&OP, London`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="text-center">
-            <a
-              href="https://www.argonandco.com/en/news-insights/events/"
+            <Link
+              href="/news-insights/events/"
               className="line-link red-3-color">
               <span className="red-3-color">Back to all Events</span>
-            </a>
+            </Link>
           </div>
         </section>
       </div>

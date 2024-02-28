@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const EventsEn = () => {
@@ -30,7 +31,7 @@ const EventsEn = () => {
         <div className="container card-grid">
           <div className="row pad-40-vert">
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/roundtable-tech-and-workforce-changes-in-healthcare-london/">
+              <Link href="/news-insights/events/roundtable-tech-and-workforce-changes-in-healthcare-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -42,11 +43,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/virtual-roundtable-sales-and-operations-planning-the-truth-about-sop-london/">
+              <Link href="/news-insights/events/virtual-roundtable-sales-and-operations-planning-the-truth-about-sop-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -58,11 +59,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/workshop-communicating-change-and-organisational-storytelling-london/">
+              <Link href="/news-insights/events/workshop-communicating-change-and-organisational-storytelling-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -74,11 +75,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/argon-co-summer-mixer-2023-london/">
+              <Link href="/news-insights/events/argon-co-summer-mixer-2023-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -89,11 +90,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/webinar-embracing-the-ai-revolution-london/">
+              <Link href="/news-insights/events/webinar-embracing-the-ai-revolution-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -104,11 +105,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/virtual-roundtable-transforming-through-people-london/">
+              <Link href="/news-insights/events/virtual-roundtable-transforming-through-people-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -119,11 +120,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/pre-logipharma-dinner-lyon/">
+              <Link href="/news-insights/events/pre-logipharma-dinner-lyon/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -134,11 +135,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/conference-logipharma-2023-lyon/">
+              <Link href="/news-insights/events/conference-logipharma-2023-lyon/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -149,11 +150,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/argon-co-celebrate-growth-in-the-middle-east/">
+              <Link href="/news-insights/events/argon-co-celebrate-growth-in-the-middle-east/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -165,11 +166,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/roundtable-transforming-in-times-of-crisis-london/">
+              <Link href="/news-insights/events/roundtable-transforming-in-times-of-crisis-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -180,11 +181,11 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/conference-business-change-and-transformation-london/">
+              <Link href="/news-insights/events/conference-business-change-and-transformation-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
@@ -195,22 +196,22 @@ const EventsEn = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4">
-              <a href="https://www.argonandco.com/en/news-insights/events/bringing-value-with-stable-ops-london/">
+              <Link href="/news-insights/events/bringing-value-with-stable-ops-london/">
                 <div className="card  red-2-background  card--fixed-sm ">
                   <div className="card__category">Event </div>
                   <div className="position-bottom">
                     <div className="card__content">
                       <h3 className="title title--xs title--medium-weight ">
-                        Roundtable: Bringing value with Stable Ops™ – London
+                        {`Roundtable: Bringing value with Stable Ops™ – London`}
                       </h3>
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
