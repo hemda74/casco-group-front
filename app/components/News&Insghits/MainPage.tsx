@@ -14,7 +14,7 @@ const MainPageEn = () => {
             <div className="row">
               <div className="col-12">
                 <div className="grid-3">
-                  <a href="https://www.argonandco.com/en/news-insights/events/roundtable-the-art-of-procurement-london/">
+                  <Link href="/news-insights/events/roundtable-the-art-of-procurement-london/">
                     <div className="card ">
                       <div className="card__image object-fit">
                         <picture>
@@ -34,9 +34,9 @@ const MainPageEn = () => {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a href="https://www.argonandco.com/en/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
+                  <Link href="https://www.argonandco.com/en/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
                     <div className="card  red-2-background  card--fixed-sm ">
                       <div className="card__category">Event</div>
                       <div className="position-bottom">
@@ -48,9 +48,9 @@ const MainPageEn = () => {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a href="https://www.argonandco.com/en/news-insights/events/roundtable-the-art-of-procurement-london/">
+                  <Link href="https://www.argonandco.com/en/news-insights/events/roundtable-the-art-of-procurement-london/">
                     <div className="card red-2-background card--fixed-sm">
                       <div className="card__category">Event</div>
                       <div className="position-bottom">
@@ -61,7 +61,7 @@ const MainPageEn = () => {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -69,18 +69,18 @@ const MainPageEn = () => {
               <div className="col-12">
                 <div className="row justify-content-center">
                   <div className="col-xl-3 col-lg-4 col-xs-6 text-center pad-15-mob">
-                    <a
+                    <Link
                       href="https://www.argonandco.com/en/news-insights/company-news/"
                       className="line-link red-3-color">
                       <span className="red-3-color">View all news</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="col-xl-3 col-lg-4 col-xs-6 text-center">
-                    <a
+                    <Link
                       href="https://www.argonandco.com/en/news-insights/events/"
                       className="line-link red-3-color">
                       <span className="red-3-color">View all events</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/articles/navigating-through-uncertainty-a-2024-outlook-on-commodities-and-global-inflation/">
+                <Link href="https://www.argonandco.com/en/news-insights/articles/navigating-through-uncertainty-a-2024-outlook-on-commodities-and-global-inflation/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -110,17 +110,17 @@ const MainPageEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          Navigating Through Uncertainty: A 2024 outlook on
-                          commodities and global inflation
+                          {`   Navigating Through Uncertainty: A 2024 outlook on
+                          commodities and global inflation`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
+                <Link href="https://www.argonandco.com/en/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -136,17 +136,17 @@ const MainPageEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          Data science and data platforms: unlocking new
-                          possibilities for the supply chain
+                          {`  Data science and data platforms: unlocking new
+                          possibilities for the supply chain`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/articles/data-driven-leadership/">
+                <Link href="https://www.argonandco.com/en/news-insights/articles/data-driven-leadership/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -161,17 +161,17 @@ const MainPageEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          Data-Driven Leadership: the shortest route to
-                          performance
+                          {`Data-Driven Leadership: the shortest route to
+                          performance`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/articles/digital-manufacturing-series-are-you-ready-for-digital-transformation/">
+                <Link href="https://www.argonandco.com/en/news-insights/articles/digital-manufacturing-series-are-you-ready-for-digital-transformation/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -186,17 +186,17 @@ const MainPageEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          Digital manufacturing series: are you ready for
-                          digital transformation?
+                          {`   Digital manufacturing series: are you ready for
+                          digital transformation?`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/articles/digital-manufacturing-series-smarter-manufacturing/">
+                <Link href="https://www.argonandco.com/en/news-insights/articles/digital-manufacturing-series-smarter-manufacturing/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -211,16 +211,16 @@ const MainPageEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          Digital manufacturing series: smarter manufacturing
+                          {`   Digital manufacturing series: smarter manufacturing`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/articles/truly-sustainable-operations-what-does-it-look-like-and-how-to-make-it-happen/">
+                <Link href="https://www.argonandco.com/en/news-insights/articles/truly-sustainable-operations-what-does-it-look-like-and-how-to-make-it-happen/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -235,20 +235,20 @@ const MainPageEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          Truly sustainable operations – what does it look like
-                          and how to make it happen
+                          {` Truly sustainable operations – what does it look like
+                          and how to make it happen`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col-12 text-center">
-                <a
+                <Link
                   href="https://www.argonandco.com/en/news-insights/articles/"
                   className="line-link red-1-color">
                   <span className="red-1-color">View all articles</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -264,40 +264,40 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/whitepapers/industrial-flexibility-how-new-mathematic-optimisation-methods-can-contribute-to-better-manage-industrial-agility/">
+                <Link href="https://www.argonandco.com/en/news-insights/whitepapers/industrial-flexibility-how-new-mathematic-optimisation-methods-can-contribute-to-better-manage-industrial-agility/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--sm title--medium-weight">
-                          Industrial flexibility : How new mathematic
+                          {` Industrial flexibility : How new mathematic
                           optimisation methods can contribute to better manage
-                          Industrial Agility?{' '}
+                          Industrial Agility?`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/whitepapers/70-of-business-transformations-fail-urban-myth-or-worth-another-look/">
+                <Link href="https://www.argonandco.com/en/news-insights/whitepapers/70-of-business-transformations-fail-urban-myth-or-worth-another-look/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--sm title--medium-weight">
-                          “70% of business transformations fail” – urban myth or
-                          worth another look?{' '}
+                          {`“70% of business transformations fail” – urban myth or
+                          worth another look?`}
                         </h3>
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <a href="https://www.argonandco.com/en/news-insights/whitepapers/is-your-forecasting-adding-value/">
+                <Link href="https://www.argonandco.com/en/news-insights/whitepapers/is-your-forecasting-adding-value/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
@@ -308,15 +308,15 @@ const MainPageEn = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-12 text-center">
-                <a
+                <Link
                   href="https://www.argonandco.com/en/news-insights/whitepapers/"
                   className="line-link red-5-color">
                   <span className="red-5-color">View all whitepapers</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -349,16 +349,16 @@ const MainPageEn = () => {
                       style={{ height: '50px', marginBottom: '10px' }}
                     />
                     <p>
-                      Discover Argon & Co’s powerful improvement approach,
+                      {` Discover Argon & Co’s powerful improvement approach,
                       combining process and people capabilities to ensure that
                       the right people are in the right jobs, consistently doing
-                      the right things.
+                      the right things.`}
                     </p>
-                    <a
+                    <Link
                       href="https://www.argonandco.com/en/scprime/"
                       className="line-link red-2-color">
                       <span className="red-2-color">Learn more</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -386,11 +386,11 @@ const MainPageEn = () => {
                       Argon & Co's biannual magazine, focusing on operational
                       performance in business.
                     </p>
-                    <a
+                    <Link
                       href="https://www.argonandco.com/en/news-insights/add-magazine/"
                       className="line-link red-2-color">
                       <span className="red-2-color">LEARN MORE</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
