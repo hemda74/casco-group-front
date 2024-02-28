@@ -5,7 +5,7 @@ import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
-import OurApproach from '../../components/About/OurApproach';
+import OurApproach from '../../components/About/OurApproachEn';
 
 type Props = {};
 const TeamMemberPage: NextPageWithLayout = (props: Props) => {

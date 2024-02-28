@@ -132,10 +132,10 @@ const OurApproach = () => {
                   <div className="grid-card grid-card--testimonial white-color red-2-background">
                     <div className="grid-card__container">
                       <blockquote className="intro intro--medium">
-                        "Clients comment on how enjoyable we are to work with,
+                        {`       "Clients comment on how enjoyable we are to work with,
                         which I think is largely due to the fact that we are
                         honest and open, as well as maintaining objectivity and
-                        having a high sense of integrity."
+                        having a high sense of integrity."`}
                       </blockquote>
                       <div className="author-card">
                         <div
@@ -154,11 +154,11 @@ const OurApproach = () => {
                   <div className="grid-card grid-card--testimonial white-color red-6-background">
                     <div className="grid-card__container">
                       <blockquote className="intro intro--medium">
-                        "Feedback from clients consistently points to the value
+                        {`    "Feedback from clients consistently points to the value
                         we deliver through our knowledge, analytics and thinking
                         process. They appreciate our effort to structure highly
                         integrated client/consulting teams to blend inside and
-                        outside perspective to every project."
+                        outside perspective to every project."`}
                       </blockquote>
                       <div className="author-card">
                         <div
