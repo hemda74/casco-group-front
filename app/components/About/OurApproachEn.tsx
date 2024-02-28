@@ -34,7 +34,7 @@ const OurApproach = () => {
                       </p>
                       <ul>
                         <li>
-                          {`     We work strategically with Boards and senior
+                          {`We work strategically with Boards and senior
                           management, identifying high impact levers and
                           combining a broad vision of the issues with our deep
                           functional expertise`}
