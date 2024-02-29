@@ -303,7 +303,7 @@ const MainPageEn = () => {
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--sm title--medium-weight">
-                          Is your forecasting adding value?{' '}
+                          Is your forecasting adding value?
                         </h3>
                       </div>
                     </div>
@@ -383,8 +383,8 @@ const MainPageEn = () => {
                     </picture>
 
                     <p>
-                      Argon & Co's biannual magazine, focusing on operational
-                      performance in business.
+                      {`     Argon & Co's biannual magazine, focusing on operational
+                      performance in business.`}
                     </p>
                     <Link
                       href="https://www.argonandco.com/en/news-insights/add-magazine/"
