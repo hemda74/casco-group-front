@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import ViewerLayout from '../../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../../_app';
+import SinglePaperEn from '../../../components/News&Insghits/SinglePaperEn';
 
 type Props = {};
 // dymmy data for ui till handle working with api
@@ -11,7 +12,9 @@ const services: NextPageWithLayout = (props: Props) => {
       <Head>
         <title>WhitePapers | CASCO</title>
       </Head>
-      <main></main>
+      <main>
+        <SinglePaperEn />
+      </main>
     </>
   );
 };
