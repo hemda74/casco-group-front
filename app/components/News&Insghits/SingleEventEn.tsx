@@ -103,17 +103,20 @@ const SingleEventEn = () => {
                       <div className="links">
                         <a
                           href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.argonandco.com%2Fen%2Fnews-insights%2Fevents%2Froundtable-mastering-ma-integration-london%2F&title=Roundtable%3A+Mastering+M%26%23038%3BA+integration%2C+London"
-                          target="_blank">
+                          target="_blank"
+                          rel="noreferrer">
                           <BsLinkedin size={20} />
                         </a>
                         <a
                           href="https://twitter.com/intent/tweet?text=Roundtable%3A+Mastering+M%26%23038%3BA+integration%2C+London+https://www.argonandco.com/en/news-insights/events/roundtable-mastering-ma-integration-london/"
-                          target="_blank">
+                          target="_blank"
+                          rel="noreferrer">
                           <BsTwitter size={22} />
                         </a>
                         <a
                           href="mailto:?subject=I wanted you to see this post&body=Check out this post https://www.argonandco.com/en/news-insights/events/roundtable-mastering-ma-integration-london/."
-                          target="_blank">
+                          target="_blank"
+                          rel="noreferrer">
                           <IoMdMail size={25} />
                         </a>
                       </div>

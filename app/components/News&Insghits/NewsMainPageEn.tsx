@@ -27,7 +27,6 @@ const NewsMainPage = () => {
             </div>
           </div>
         </div>
-
         <div className="container card-grid">
           <div className="row pad-40-vert">
             <div className="col-md-4">
