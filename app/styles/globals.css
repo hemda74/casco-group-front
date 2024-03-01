@@ -14003,6 +14003,15 @@ input:checked + .slider:before {
   height: 1px;
   background-color: #fff;
 }
+.linkedin-icon2:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: calc(100% - 71px);
+  height: 1px;
+  background-color: #fff;
+}
 
 @media (max-width: 600px) {
   .page-template-tpl-contact .panel-region .card__content {

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { BsLinkedin } from 'react-icons/bs';
-import styles from '../styles/ContactUs.module.css';
-import WhereIsNextEn from './WhereIsNextEn';
+import styles from '../../styles/ContactUs.module.css';
+import WhereIsNextEn from '../WhereIsNextEn';
 interface Tab {
   id: string;
   content: React.ReactNode;
 }
-const Tabs: React.FC = () => {
+const ContactUsEn: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('Egypt');
 
   const handleTabClick = (tabId: string) => {
@@ -153,7 +153,7 @@ const Tabs: React.FC = () => {
             <div className="row justify-content-center">
               <div className="col-md-8">
                 <div className="intro text-black-50 mt-5">
-                  {`Thank you for your interest in Argon & Co, please contact
+                  {`Thank you for your interest in CASCO Group, please contact
                   us for more information. We have offices in `}{' '}
                   <br />
                   Egypt, Saudi Arabia & United Arab Emirates
@@ -204,4 +204,4 @@ const Tabs: React.FC = () => {
   );
 };
 
-export default Tabs;
+export default ContactUsEn;
