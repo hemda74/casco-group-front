@@ -48,7 +48,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThe IEMA Environmental Sustainability Skills for
                   the Workforce course is a one-day awareness course developed
                   to upskill all workers with an elemental understanding of
@@ -101,7 +101,7 @@ const test = () => {
                   assessment. Delegates successfully taking the course and
                   passing the course assessment will be awarded an IEMA
                   Sustainable Skills for the Workforce certificate.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -158,7 +158,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis intensive one-day course is designed to equip
                   delegates with an appreciation and understanding of the basics
                   of carbon footprints and carbon accounting, how to calculate
@@ -214,7 +214,7 @@ const test = () => {
                   Middle East, Asia and the Americas.CertificationAll delegates
                   will be awarded a certificate verifying attendance and
                   completion of the course.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -269,7 +269,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis one-day course is designed to give delegates
                   an introduction to energy management principles and practical
                   skills which can be applied in a business setting. This course
@@ -321,7 +321,7 @@ const test = () => {
                   Africa, the Middle East, Asia and the
                   Americas.CertificationAll delegates will be awarded a
                   certificate verifying attendance and completion of the course.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -378,7 +378,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionWith a minefield of legislation on waste, rising
                   waste costs and customer and other stakeholders demanding
                   improvements on environmental performance, this course is part
@@ -437,7 +437,7 @@ const test = () => {
                   including food manufacturing, catering and
                   retail.CertificationAll delegates will be awarded a
                   certificate verifying attendance and completion of the course.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -492,7 +492,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionA one-day awareness course designed to provide
                   attendees with an introduction to environmental management
                   systems based on the requirements of the ISO 14001:2015
@@ -556,7 +556,7 @@ const test = () => {
                   Americas.CertificationDelegates successfully completing the
                   course will be awarded a CQI and IRCA Certified training
                   accredited certificate. (2353).
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -613,7 +613,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis intensive one-day course is designed to equip
                   delegates with an appreciation and understanding of the
                   legislative structure across the UK, key areas of
@@ -657,7 +657,7 @@ const test = () => {
                   Europe, Africa, the Middle East, Asia and the
                   Americas.CertificationAll delegates will be awarded a
                   certificate verifying attendance and completion of the course.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -712,7 +712,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis one-day CQI and IRCA certified training
                   course is for those wanting an introduction to the new
                   international occupational health and safety management system
@@ -770,7 +770,7 @@ const test = () => {
                   East, Asia and the Americas.Certification Delegates
                   successfully completing the course will be awarded a CQI and
                   IRCA Certified training accredited certificate. (2336). &nbsp;
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -825,7 +825,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionA one-day CQI and IRCA Certified training
                   awareness programme for those requiring an introduction to the
                   ISO 9001:2015 standard and how it can be used to develop and
@@ -881,7 +881,7 @@ const test = () => {
                   Americas.Certification Delegates successfully completing the
                   course will be awarded a CQI and IRCA Certified training
                   accredited certificate. (2350).
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -936,7 +936,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis three-day IOSH Managing Safely course is a
                   risk management course designed to provide supervisors and
                   managers with a step-by-step approach to managing health and
@@ -983,7 +983,7 @@ const test = () => {
                   successfully taking the course and passing the course
                   assessment will be awarded an IOSH Managing Safely issued
                   certificate.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1038,7 +1038,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis two-day IEMA certified Environmental
                   Sustainability Skills for Managers is designed to provide
                   supervisors and managers with a strategic and operational
@@ -1094,7 +1094,7 @@ const test = () => {
                   registration to the assessment. Delegates successfully taking
                   the course and passing the course assessment will be awarded
                   an IEMA issued certificate.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1147,7 +1147,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThe course is delivered through a mixture of a
                   workshop led discussions, practical activities and PowerPoint
                   presentations. On day two delegates are required to undertake
@@ -1178,7 +1178,7 @@ const test = () => {
                   manufacturing and retail.CertificationDelegates successfully
                   completing the course and assignment will be awarded a BRCGS
                   certificate issued by the BRCGS.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1233,7 +1233,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThe principals of HACCP qualification is aimed at
                   those responsible for assisting in the development and
                   maintenance of HACCP systems in a food manufacturing
@@ -1279,7 +1279,7 @@ const test = () => {
                   Number: 603/2231/7 The RQF is a qualification framework
                   regulated by Ofqual. It is also suitable for delivery in Wales
                   and is regulated by Qualifications Wales.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1332,7 +1332,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis 2-day course is designed to equip delegates
                   with the knowledge and practical skills to create your own
                   Quality Management System (QMS). Discover the actions, tools
@@ -1378,7 +1378,7 @@ const test = () => {
                   Americas.CertificationDelegates successfully completing the
                   course will be awarded an iqms Learning certificate of
                   Attainment
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1431,7 +1431,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionBuild the practical skills and knowledge you need
                   to develop an Environmental Management System (EMS) with this
                   training course. Discover the actions, tools and techniques
@@ -1476,7 +1476,7 @@ const test = () => {
                   their work in Europe, Africa, the Middle East, Asia and the
                   Americas.CertificationDelegates will receive a Certificate of
                   Attainment
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1529,7 +1529,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionBuild the practical skills and knowledge you need
                   to develop an Occupational Health &amp; Safety Management
                   System (OHSMS) with this training course. Discover the
@@ -1575,7 +1575,7 @@ const test = () => {
                   Middle East, Asia and the Americas.CertificationAll delegates
                   will be awarded a certificate verifying attendance and
                   completion of the course.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1628,7 +1628,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis highly interactive two-day CQI and IRCA
                   Certified training programme is designed for those people who
                   require a sound understanding of the techniques and principles
@@ -1695,7 +1695,7 @@ const test = () => {
                   IRCA Certified training accredited certificate. (2351) &nbsp;
                   If you're looking for the&nbsp;ISO 9001:2015 Lead
                   Auditor&nbsp;course, please&nbsp;click here
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1748,7 +1748,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis interactive CQI and IRCA Certified two-day
                   training programme aims to help delegates to understand and
                   apply the principles and techniques that are required for
@@ -1812,7 +1812,7 @@ const test = () => {
                   Americas.CertificationDelegates successfully completing the
                   course will be awarded a CQI and IRCA Certified training
                   certificate (2354).
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1865,7 +1865,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionBased on the leading global food safety standard,
                   this highly interactive two-day training programme is designed
                   for those people who require a sound understanding of the
@@ -1926,7 +1926,7 @@ const test = () => {
                   Middle East, Asia and the AmericasCertificationDelegates
                   successfully completing the course will be awarded a CQI and
                   IRCA Certified training accredited certificate. (2340)
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -1979,7 +1979,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis highly interactive two-day CQI and IRCA
                   Certified training course teaches the principles and
                   techniques that are required to effectively audit occupational
@@ -2026,7 +2026,7 @@ const test = () => {
                   the AmericasCertification Delegates completing the course will
                   be awarded a CQI and IRCA Certified training accredited
                   certificate. (2337) &nbsp; &nbsp;
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -2079,7 +2079,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis integrated management systems internal
                   auditor programme combines the disciplines of quality,
                   environmental and health &amp; safety management auditing
@@ -2147,7 +2147,7 @@ const test = () => {
                   with a responsibility for delivering real quality
                   improvements.CertificationDelegates completing the course will
                   be awarded an iqms Learning certificate.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -2200,7 +2200,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis course trains delegates in Third-Party Audit
                   requirements against the BRCGS Global Standard for Food Safety
                   Issue 9. In addition, the course includes the relevant aspects
@@ -2238,7 +2238,7 @@ const test = () => {
                   retail.CertificationDelegates successfully completing the
                   course and examination will be awarded a BRCGS Lead Auditor
                   certificate issued by the BRCGS.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -2294,7 +2294,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThe Highfields Level 4 award course is designed to
                   allow the learner to understand the importance of how to
                   develop, implement and evaluate CODEX based HACCP food safety
@@ -2332,7 +2332,7 @@ const test = () => {
                   qualification framework regulated by Ofqual. It is also
                   suitable for delivery in Wales and is regulated by
                   Qualifications Wales.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -2385,7 +2385,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis five-day highly interactive CQI and IRCA
                   Certified Lead Auditor training course will enable you to
                   understand the new international occupational health and
@@ -2446,7 +2446,7 @@ const test = () => {
                   attend our CQI and IRCA Certified ISO 45001 Foundation
                   training course at a&nbsp;discounted price&nbsp;to help you
                   prepare for this Lead Auditor course please contact us.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
@@ -2499,7 +2499,7 @@ const test = () => {
                     </h2>
                   </a>
                 </div>
-                <p className="description | shave">
+                <p className="description | shave">{`
                   IntroductionThis highly interactive, intensive and challenging
                   5-day&nbsp;environmental management systems training
                   course&nbsp;is designed for those people who require an
@@ -2579,7 +2579,7 @@ const test = () => {
                   including examination, will be awarded both a CQI and IRCA
                   Certified training certificate (2355) and an IEMA Certified
                   training certificate.
-                </p>
+                `}</p>
                 <div className="priceBook">
                   <div className="price">
                     <span className="text-primary-100">
