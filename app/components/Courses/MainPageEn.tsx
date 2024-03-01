@@ -1,4 +1,5 @@
 import React from 'react';
+import Test from '../test';
 
 const MainPageEn = () => {
   return (
@@ -136,6 +137,7 @@ const MainPageEn = () => {
           </ul>
         </div>
       </div>
+      <Test />
     </>
   );
 };
