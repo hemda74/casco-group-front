@@ -36,7 +36,7 @@ const MainPageEn = () => {
                     </div>
                   </Link>
 
-                  <Link href="https://www.argonandco.com/en/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
+                  <Link href="/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
                     <div className="card  red-2-background  card--fixed-sm ">
                       <div className="card__category">Event</div>
                       <div className="position-bottom">
@@ -50,7 +50,7 @@ const MainPageEn = () => {
                     </div>
                   </Link>
 
-                  <Link href="https://www.argonandco.com/en/news-insights/events/roundtable-the-art-of-procurement-london/">
+                  <Link href="/news-insights/events/roundtable-the-art-of-procurement-london/">
                     <div className="card red-2-background card--fixed-sm">
                       <div className="card__category">Event</div>
                       <div className="position-bottom">
@@ -70,14 +70,14 @@ const MainPageEn = () => {
                 <div className="row justify-content-center">
                   <div className="col-xl-3 col-lg-4 col-xs-6 text-center pad-15-mob">
                     <Link
-                      href="https://www.argonandco.com/en/news-insights/company-news/"
+                      href="/news-insights/company-news/"
                       className="line-link red-3-color">
                       <span className="red-3-color">View all news</span>
                     </Link>
                   </div>
                   <div className="col-xl-3 col-lg-4 col-xs-6 text-center">
                     <Link
-                      href="https://www.argonandco.com/en/news-insights/events/"
+                      href="/news-insights/events/"
                       className="line-link red-3-color">
                       <span className="red-3-color">View all events</span>
                     </Link>
@@ -95,7 +95,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/articles/navigating-through-uncertainty-a-2024-outlook-on-commodities-and-global-inflation/">
+                <Link href="/news-insights/articles/navigating-through-uncertainty-a-2024-outlook-on-commodities-and-global-inflation/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -120,7 +120,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
+                <Link href="/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -146,7 +146,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/articles/data-driven-leadership/">
+                <Link href="/news-insights/articles/data-driven-leadership/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -171,7 +171,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/articles/digital-manufacturing-series-are-you-ready-for-digital-transformation/">
+                <Link href="/news-insights/articles/digital-manufacturing-series-are-you-ready-for-digital-transformation/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -196,7 +196,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/articles/digital-manufacturing-series-smarter-manufacturing/">
+                <Link href="/news-insights/articles/digital-manufacturing-series-smarter-manufacturing/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -220,7 +220,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/articles/truly-sustainable-operations-what-does-it-look-like-and-how-to-make-it-happen/">
+                <Link href="/news-insights/articles/truly-sustainable-operations-what-does-it-look-like-and-how-to-make-it-happen/">
                   <div className="card card--image red-1-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -245,7 +245,7 @@ const MainPageEn = () => {
               </div>
               <div className="col-12 text-center">
                 <Link
-                  href="https://www.argonandco.com/en/news-insights/articles/"
+                  href="/news-insights/articles/"
                   className="line-link red-1-color">
                   <span className="red-1-color">View all articles</span>
                 </Link>
@@ -264,7 +264,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/whitepapers/industrial-flexibility-how-new-mathematic-optimisation-methods-can-contribute-to-better-manage-industrial-agility/">
+                <Link href="/news-insights/whitepapers/industrial-flexibility-how-new-mathematic-optimisation-methods-can-contribute-to-better-manage-industrial-agility/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
@@ -281,7 +281,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/whitepapers/70-of-business-transformations-fail-urban-myth-or-worth-another-look/">
+                <Link href="/news-insights/whitepapers/70-of-business-transformations-fail-urban-myth-or-worth-another-look/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
@@ -297,7 +297,7 @@ const MainPageEn = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="https://www.argonandco.com/en/news-insights/whitepapers/is-your-forecasting-adding-value/">
+                <Link href="/news-insights/whitepapers/is-your-forecasting-adding-value/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
@@ -313,7 +313,7 @@ const MainPageEn = () => {
 
               <div className="col-12 text-center">
                 <Link
-                  href="https://www.argonandco.com/en/news-insights/whitepapers/"
+                  href="/news-insights/whitepapers/"
                   className="line-link red-5-color">
                   <span className="red-5-color">View all whitepapers</span>
                 </Link>
@@ -354,9 +354,7 @@ const MainPageEn = () => {
                       the right people are in the right jobs, consistently doing
                       the right things.`}
                     </p>
-                    <Link
-                      href="https://www.argonandco.com/en/scprime/"
-                      className="line-link red-2-color">
+                    <Link href="/scprime/" className="line-link red-2-color">
                       <span className="red-2-color">Learn more</span>
                     </Link>
                   </div>
@@ -387,7 +385,7 @@ const MainPageEn = () => {
                       performance in business.`}
                     </p>
                     <Link
-                      href="https://www.argonandco.com/en/news-insights/add-magazine/"
+                      href="/news-insights/add-magazine/"
                       className="line-link red-2-color">
                       <span className="red-2-color">LEARN MORE</span>
                     </Link>

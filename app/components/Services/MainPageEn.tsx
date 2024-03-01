@@ -31,7 +31,7 @@ const MainPageEn = () => {
               <div className="row link-list off-screen off-screen--link-list">
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/operations-strategy/"
+                    href="/services/operations-strategy/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Operations strategy{' '}
@@ -40,7 +40,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/sustainability/"
+                    href="/services/sustainability/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Sustainability{' '}
@@ -49,7 +49,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/operational-performance/"
+                    href="/services/operational-performance/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Operational performance{' '}
@@ -58,7 +58,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/new-products/"
+                    href="/services/new-products/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       New products{' '}
@@ -67,7 +67,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/procurement/"
+                    href="/services/procurement/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Procurement{' '}
@@ -76,7 +76,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/supply-chain-planning/"
+                    href="/services/supply-chain-planning/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Supply chain planning{' '}
@@ -85,7 +85,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/manufacturing/"
+                    href="/services/manufacturing/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Manufacturing{' '}
@@ -94,7 +94,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/logistics/"
+                    href="/services/logistics/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Logistics{' '}
@@ -103,7 +103,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/channels-to-market/"
+                    href="/services/channels-to-market/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Channels to market{' '}
@@ -112,7 +112,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/maintenance-and-after-sales/"
+                    href="/services/maintenance-and-after-sales/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Maintenance and <br />
@@ -122,7 +122,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/transformation-management/"
+                    href="/services/transformation-management/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Transformation management{' '}
@@ -131,7 +131,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/digital-and-it/"
+                    href="/services/digital-and-it/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Digital and IT{' '}
@@ -140,7 +140,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/finance/"
+                    href="/services/finance/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Finance{' '}
@@ -149,7 +149,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/sga/"
+                    href="/services/sga/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       SG&amp;A{' '}
@@ -158,7 +158,7 @@ const MainPageEn = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <Link
-                    href="https://www.argonandco.com/en/services/hr/"
+                    href="/services/hr/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       HR{' '}
