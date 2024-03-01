@@ -13994,7 +13994,7 @@ input:checked + .slider:before {
   margin-top: 50px;
 }
 
-.page-template-tpl-contact .panel-region .card__content .linkedin-icon:before {
+.linkedin-icon:before {
   content: '';
   position: absolute;
   top: 15px;
@@ -17286,91 +17286,91 @@ select:focus {
     grid-column-start: 4;
   }
 }
-.courses{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .courses .course{
-            display: inline-flex;
-            width: 23%;
-            margin: 0 1% 15px 1%;
-            flex-direction: column;
-            flex: auto;
-            max-width: 23%;
-        }
-        .courses .course .content{
-            height: 100%;
-            border: 1px solid rgb(236, 244, 254);
-            border-radius: 5px;
-        }
-        .courses .course .image img{
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
-        .courses .course .text{
-            padding: 15px;
-        }
-        .courses .course .text .title{
-            font-size: 18px;
-            font-weight: 700;
-            margin: 0 0 10px 0;
-        }
-        .courses .course .text .description{
-            font-size: 14px;
-            font-weight: 300;
-        }
-        .courses .course .priceBook{
-            display: flex;
-            flex-direction: row;
-            margin: 15px 0;
-            align-items: center;
-        }
-        .courses .course .priceBook .price{
-            display: flex;
-            width: 40%;
-        }
-        .courses .course .priceBook .book{
-            display: flex;
-            width: 60%;
-            justify-content: flex-end;
-        }
-        .courses .course .priceBook .book .view-btn{
-            color: #fff;
-            background-color: #932a33;
-            border-radius: 5px;
-            padding: 10px;
-        }
-        @media(max-width: 1637px){
-            .courses .course .priceBook{
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-            }
-            .courses .course .priceBook .price{
-                width: 100%;
-                margin: 0 0 10px 0;
-            }
-            .courses .course .priceBook .book{
-                display: flex;
-                width: 100%;
-                justify-content: flex-start;
-            }
-        }
-        @media(max-width: 1279px){
-            .courses .course{
-                width: 31%;
-                max-width: 31%;
-            }
-        }
-        @media(max-width: 767px){
-            .courses .course{
-                width: 48%;
-                max-width: 48%;
-            }
-        }
-        @media(max-width: 560px){
-            .courses .course{
-                width: 98%;
-                max-width: 98%;
-            }
-        }
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+}
+.courses .course {
+  display: inline-flex;
+  width: 23%;
+  margin: 0 1% 15px 1%;
+  flex-direction: column;
+  flex: auto;
+  max-width: 23%;
+}
+.courses .course .content {
+  height: 100%;
+  border: 1px solid rgb(236, 244, 254);
+  border-radius: 5px;
+}
+.courses .course .image img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.courses .course .text {
+  padding: 15px;
+}
+.courses .course .text .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+.courses .course .text .description {
+  font-size: 14px;
+  font-weight: 300;
+}
+.courses .course .priceBook {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+  align-items: center;
+}
+.courses .course .priceBook .price {
+  display: flex;
+  width: 40%;
+}
+.courses .course .priceBook .book {
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+}
+.courses .course .priceBook .book .view-btn {
+  color: #fff;
+  background-color: #932a33;
+  border-radius: 5px;
+  padding: 10px;
+}
+@media (max-width: 1637px) {
+  .courses .course .priceBook {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .courses .course .priceBook .price {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .courses .course .priceBook .book {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 1279px) {
+  .courses .course {
+    width: 31%;
+    max-width: 31%;
+  }
+}
+@media (max-width: 767px) {
+  .courses .course {
+    width: 48%;
+    max-width: 48%;
+  }
+}
+@media (max-width: 560px) {
+  .courses .course {
+    width: 98%;
+    max-width: 98%;
+  }
+}

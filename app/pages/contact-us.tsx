@@ -6,7 +6,7 @@ import ContactUs from '../components/ContactUs';
 import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/Layout';
 import styles from '../styles/Main.module.css';
-import StackHolders from '../components/test';
+import StackHolders from '../components/ContactUsEn';
 
 type Props = {};
 // dymmy data for ui till handle working with api
