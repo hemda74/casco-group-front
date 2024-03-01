@@ -1,5 +1,5 @@
 import React from 'react';
-import WhereIsNextEn from './WhereIsNextEn';
+import WhereIsNextEn from '../WhereIsNextEn';
 
 const OurCulture = () => {
   return (

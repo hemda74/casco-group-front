@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BsLinkedin } from 'react-icons/bs';
 import styles from '../styles/ContactUs.module.css';
+import WhereIsNextEn from './WhereIsNextEn';
 interface Tab {
   id: string;
   content: React.ReactNode;
@@ -197,6 +198,7 @@ const Tabs: React.FC = () => {
             </div>
           </div>
         </section>
+        <WhereIsNextEn />
       </div>
     </>
   );

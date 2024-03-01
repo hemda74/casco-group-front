@@ -7,7 +7,7 @@ import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import Testmonalials from '../../components/About/Testmonalials';
 import WhatWeDoEn from '../../components/About/WhatWeDoEn';
-import WhereIsNext from '../../components/About/WhereIsNextEn';
+import WhereIsNext from '../../components/WhereIsNextEn';
 
 type Props = {};
 const TeamMemberPage: NextPageWithLayout = (props: Props) => {
