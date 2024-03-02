@@ -24,7 +24,7 @@ const FooterAr = () => {
                 id="s"
                 name="s"
                 value=""
-                placeholder="Search..."
+                placeholder="بحث ..."
               />
             </form>
           </div>
