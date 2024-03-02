@@ -145,7 +145,7 @@ const ContactUsEn: React.FC = () => {
   return (
     <>
       <div id="content-wrap">
-        <div className=" text-center">
+        <div className="no-image-banner text-center">
           <h1 className="title title--2xl title--bold">
             <span className="gradient-text">Contact us</span>
           </h1>

@@ -4,7 +4,7 @@ import styles from '../../styles/Hero.module.css';
 const HeroEn = () => {
   return (
     <>
-      <div className={`${styles.firstSection}`}>
+      <div className={` ${styles.firstSection}`}>
         <div
           id="carouselExampleInterval"
           className="carousel slide"
@@ -16,9 +16,9 @@ const HeroEn = () => {
                 autoPlay
                 muted
                 loop
-                className={`d-block w-100 `}></video>
+                className={` w-100 `}></video>
               <div
-                className={`carousel-caption text-white d-md-block ${styles.carouselCaption}`}>
+                className={`carousel-caption carousel-caption2 text-white d-md-block ${styles.carouselCaption}`}>
                 <h1 data-trans="ServicesNav"></h1>
                 <p
                   className="fw-semibold text-white fs-4"
@@ -36,8 +36,8 @@ const HeroEn = () => {
                 autoPlay
                 muted
                 loop
-                className={`d-block w-100 `}></video>
-              <div className="carousel-caption text-white d-md-block">
+                className={` w-100 `}></video>
+              <div className="carousel-caption carousel-caption2 text-white d-md-block">
                 <h1 data-trans="AboutUsTitle"></h1>
                 <p
                   className="fw-semibold text-white fs-4"
@@ -55,8 +55,8 @@ const HeroEn = () => {
                 autoPlay
                 muted
                 loop
-                className={`d-block w-100 `}></video>
-              <div className="carousel-caption text-white d-md-block">
+                className={` w-100 `}></video>
+              <div className="carousel-caption carousel-caption2 text-white d-md-block">
                 <h1 data-trans="Courses"></h1>
                 <p
                   className="fw-semibold text-white fs-4"

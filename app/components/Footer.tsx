@@ -262,7 +262,7 @@ const Footer = () => {
             <ul id="menu-privacy" className="menu">
               <li
                 id="menu-item-4272"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4272">
+                className="menu-item menu-item-type-post_type menu-item-object-page">
                 <Link href="/privacy-policy/" className="">
                   Privacy Policy
                 </Link>
@@ -272,7 +272,7 @@ const Footer = () => {
           <div className="col-md-5 text-right">
             {' '}
             <Link className="" href="https://portoflio-drab.vercel.app/">
-              Web Design by{' '}
+              Web Development by{' '}
             </Link>{' '}
             <Link className="" href="https://portoflio-drab.vercel.app/">
               Ahmed Hemdan

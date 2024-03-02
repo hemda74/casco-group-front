@@ -1,8 +1,11 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-import PagesHeader from '../components/PagesHeader';
 import WhatsLink from '../components/WhatsLink';
+import { useLanguage } from '../Context/LanguageContext';
+import styles from '../styles/Main.module.css';
+import FooterAr from '../components/FooterAr';
+
 // decaling an alias for layout childern
 // decaling an alias for layout childern
 type LayoutProps = {
@@ -10,14 +13,28 @@ type LayoutProps = {
 };
 // vieweres Layout.
 const ViewerLayout = ({ childern }: LayoutProps) => {
+  const { language } = useLanguage();
   return (
     <>
-      <NavBar />
-      {/* <PagesHeader />
-      <WhatsLink /> */}
-      {/* <Newnavbar/> */}
-      <main>{childern}</main>
-      <Footer />
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <NavBar />
+          {/* <PagesHeader />*/}
+          <WhatsLink />
+          {/* <Newnavbar/> */}
+          <main>{childern}</main>
+          <Footer />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <NavBar />
+          {/* <PagesHeader />*/}
+          <WhatsLink />
+          {/* <Newnavbar/> */}
+          <main>{childern}</main>
+          <FooterAr />
+        </main>
+      )}
     </>
   );
 };

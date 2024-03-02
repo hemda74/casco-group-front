@@ -8087,7 +8087,6 @@ body.tax-teamregion #menu-languages-us li a:before {
   font-size: 15px;
 }
 
-
 .site-footer img {
   width: 100%;
 }
@@ -8154,7 +8153,6 @@ body.tax-teamregion #menu-languages-us li a:before {
 }
 
 @media (max-width: 767px) {
- 
   .site-footer input {
     margin-bottom: 35px;
   }
@@ -17363,4 +17361,7 @@ select:focus {
     width: 98%;
     max-width: 98%;
   }
+}
+.carousel-caption2 {
+  margin-top: -15rem !important;
 }

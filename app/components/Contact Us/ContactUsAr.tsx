@@ -142,7 +142,7 @@ const ContactUsAr: React.FC = () => {
   return (
     <>
       <div id="content-wrap" dir="rtl">
-        <div className=" text-center">
+        <div className="no-image-banner text-center">
           <h1 className="title title--2xl title--bold">
             <span className="gradient-text">تواصل معنا</span>
           </h1>
