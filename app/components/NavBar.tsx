@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../styles/NavBar.module.css';
 import Image from 'next/image';
 import logo from '../public/logo.png';
 import Link from 'next/link';
 import LocalizationBtn from './LocaliazationBtn';
 const NavBar = () => {
+  const [navbarColor, setNavbarColor] = useState<string>('bg-transparent');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setNavbarColor(currentScrollPos > 500 ? 'bg-light' : 'bg-transparent');
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    //design nav
     <>
-      <nav
-        className={`navbar navbar-expand-lg sticky-top bg-white  ${styles.navBar}`}>
+      <nav className={`navbar p-0 navbar-expand-lg fixed-top ${navbarColor}`}>
         <div
           className={`container-fluid d-flex justify-content-between align-items-center ms-xl-4 ms-lg-4 ms-md-4 `}>
           <Link href={'/'} className="navbar-brand mb-0 mt-0">
@@ -35,7 +47,7 @@ const NavBar = () => {
         <div
           className="collapse navbar-collapse ms-md-3 ms-lg-4 ms-xl-4 me-md-3 me-lg-4 me-xl-4"
           id="navbarColor01">
-          <ul className="navbar-nav m-auto ">
+          <ul className="navbar-nav m-auto mb-2 ">
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/courses'} className={`nav-link`} id="link">
                 <p
@@ -57,7 +69,8 @@ const NavBar = () => {
                   data-trans="ServicesNav"></p>
               </Link>
             </li>
-            <li className={`nav-item ms-3 ${styles.navItem}`}>
+            <li
+              className={`nav-item ms-3 ${styles.navItem} menu-item menu-item-type-post_type menu-item-object-page menu-item-89`}>
               <Link href={'/industries'} className={`nav-link`} id="link">
                 <p
                   className={`${styles.navLink}  fw-bold mt-1 text-nowrap`}

@@ -8087,22 +8087,6 @@ body.tax-teamregion #menu-languages-us li a:before {
   font-size: 15px;
 }
 
-.site-footer svg {
-  width: 280px;
-  height: auto;
-  max-height: 77px;
-  margin-bottom: 90px;
-}
-
-.site-footer svg path {
-  fill: #fff;
-}
-
-@media (max-width: 600px) {
-  .site-footer svg {
-    width: 80%;
-  }
-}
 
 .site-footer img {
   width: 100%;
@@ -8170,10 +8154,7 @@ body.tax-teamregion #menu-languages-us li a:before {
 }
 
 @media (max-width: 767px) {
-  .site-footer svg {
-    margin-bottom: 35px;
-  }
-
+ 
   .site-footer input {
     margin-bottom: 35px;
   }
