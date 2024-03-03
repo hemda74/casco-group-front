@@ -3,7 +3,7 @@ import styles from '../../styles/ContactUs.module.css';
 const ApplicationJobEn = () => {
   return (
     <>
-      <div className={` bg-cyan apply-section`}>
+      <div className={` ${styles.mainApplication} apply-section`}>
         <div className="container">
           <div className={`row justify-content-center `}>
             <div className="col-md-8">

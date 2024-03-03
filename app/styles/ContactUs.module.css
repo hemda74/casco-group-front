@@ -1,10 +1,6 @@
 /* Contact Section*/
-.titleWord {
-  margin-top: -10rem;
-  margin-bottom: 10rem;
-}
-.mapContact {
-  margin-bottom: 0px;
+.mainApplication {
+  background: #76cfff8a;
 }
 .iconsColor {
   color: #0f8eef;

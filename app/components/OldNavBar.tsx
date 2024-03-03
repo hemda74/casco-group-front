@@ -9,7 +9,7 @@ const NavBar = () => {
     //design nav
     <>
       <nav
-        className={`navbar navbar-expand-lg sticky-top bg-white  ${styles.navBar}`}>
+        className={`navbar navbar-expand-lg fixed-top bg-white  ${styles.navBar}`}>
         <div
           className={`container-fluid d-flex justify-content-between align-items-center ms-xl-4 ms-lg-4 ms-md-4 `}>
           <Link href={'/'} className="navbar-brand mb-0 mt-0">
