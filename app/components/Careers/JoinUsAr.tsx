@@ -1,10 +1,10 @@
 import React from 'react';
 import ApplyLink from '../ApplyLink';
 
-const JoinUs = () => {
+const JoinUsAr = () => {
   return (
     <>
-      <div id="content-wrap">
+      <div id="content-wrap" dir="rtl">
         <div
           className="full-page-scroller fullpage fullpage-wrapper"
           style={{
@@ -26,21 +26,23 @@ const JoinUs = () => {
                     backgroundImage:
                       'url(https://www.argonandco.com/wp-content/uploads/2019/12/who-we-look-for.jpg)',
                   }}>
-                  <div className="title title--xl title--bold ">Join us</div>
+                  <span className=" title title--xl title--bold ms-auto ">
+                    Join us
+                  </span>
                 </div>
                 <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
                   <div className="full-page-scroller__content">
                     <h2 className="title title--lg accent-color">
                       1. Who we look for{' '}
                     </h2>
-                    <p>
+                    <p>{`
                       <span className="intro">
                         To be part of our talented team you need to be a high
                         achiever with clarity of thought, integrity and the
                         ability to get on with people.
                       </span>
-                    </p>
-                    <p>
+                    `}</p>
+                    <p>{`
                       You will have an excellent academic record and typically a
                       minimum of three years working experience either in
                       operations or consulting. You should be able to
@@ -49,7 +51,7 @@ const JoinUs = () => {
                       structured approach to resolving issues and the desire to
                       develop your own capabilities and those of your
                       colleagues.
-                    </p>
+                    `}</p>
                     <a
                       href="#popup_1"
                       className="line-link red-1-color magnific-inline">
@@ -59,12 +61,12 @@ const JoinUs = () => {
                       <div className="the-content">
                         <p>
                           <span className="intro">
-                            To be part of our talented team you need to be a
+                            {`To be part of our talented team you need to be a
                             high achiever with clarity of thought, integrity and
-                            the ability to get on with people.
+                            the ability to get on with people. `}
                           </span>
                         </p>
-                        <p>
+                        <p>{`
                           You will have an excellent academic record and
                           typically a minimum of three years working experience
                           either in operations or consulting. You should be able
@@ -73,17 +75,17 @@ const JoinUs = () => {
                           structured approach to resolving issues and the desire
                           to develop your own capabilities and those of your
                           colleagues.
-                        </p>
-                        <p>
+                        `}</p>
+                        <p>{`
                           Challenges drive us and we are obsessed with answering
                           the questions that keep our clients awake at night.
                           Our people are confident but not arrogant, assertive
                           but not aggressive. We look for courage, realism and a
                           desire to roll up your sleeves when something needs
                           doing.
-                        </p>
+                        `}</p>
                         <h2>Graduates</h2>
-                        <p>
+                        <p>{`
                           We look for graduates with an interest in business
                           operations underpinned by an excellent academic
                           record. If you enjoy solving complex problems through
@@ -92,7 +94,7 @@ const JoinUs = () => {
                           improve companies’ operations, then we’d love to hear
                           from you. Most importantly, we hire graduates who will
                           contribute positively to our culture.
-                        </p>
+                        `}</p>
                       </div>
                     </div>
                   </div>
@@ -131,7 +133,7 @@ const JoinUs = () => {
                     <h2 className="title title--lg accent-color">
                       2. Why join us?{' '}
                     </h2>
-                    <p>
+                    <p>{`
                       <span className="intro">
                         We are a tight-knit team, like a family. We care about
                         each other and our clients. We enjoy working together
@@ -139,15 +141,15 @@ const JoinUs = () => {
                         meet up regularly to catch up, learn and share best
                         practice.
                       </span>
-                    </p>
-                    <p>
+                    `}</p>
+                    <p>{`
                       Our environment provides our consultants with the chance
                       to excel and our continuing expansion opens up
                       opportunities across the globe. We recognise that people
                       are different and we embrace those differences,
                       encouraging our consultants to pursue the right career
                       path for themselves.
-                    </p>
+                    `}</p>
                   </div>
                 </div>
               </div>
@@ -184,13 +186,13 @@ const JoinUs = () => {
                     <h2 className="title title--lg accent-color">
                       3. Typical projects{' '}
                     </h2>
-                    <p>
+                    <p>{`
                       <span className="intro">
                         The majority of our clients are major organisations and
                         market leaders in their particular industry.
                       </span>
-                    </p>
-                    <p>
+                    `}</p>
+                    <p>{`
                       On client projects you will be part of a team which,
                       depending on the nature of the project, could be based
                       either at the client’s site or in our offices, and you
@@ -199,7 +201,7 @@ const JoinUs = () => {
                       carrying out specific tasks within a stream, and your role
                       is likely to vary project by project as you develop your
                       confidence and capabilities.
-                    </p>
+                    `}</p>
                     <a
                       href="#popup_3"
                       className="line-link red-3-color magnific-inline">
@@ -207,13 +209,13 @@ const JoinUs = () => {
                     </a>
                     <div className="mfp-hide" id="popup_3">
                       <div className="the-content">
-                        <p>
+                        <p>{`
                           <span className="intro" style={{ fontWeight: 400 }}>
                             The majority of our clients are major organisations
                             and market leaders in their particular industry.{' '}
                           </span>
-                        </p>
-                        <p>
+                        `}</p>
+                        <p>{`
                           <span style={{ fontWeight: 400 }}>
                             On client projects you will be part of a team which,
                             depending on the nature of the project, could be
@@ -225,8 +227,8 @@ const JoinUs = () => {
                             project by project as you develop your confidence
                             and capabilities.&nbsp;
                           </span>
-                        </p>
-                        <p>
+                        `}</p>
+                        <p>{`
                           <span style={{ fontWeight: 400 }}>
                             As well as working on client projects, you may also
                             be involved in some internal initiatives, such as
@@ -243,8 +245,8 @@ const JoinUs = () => {
                             who you may not normally come across in your
                             day-to-day client work.&nbsp;
                           </span>
-                        </p>
-                        <p>
+                        `}</p>
+                        <p>{`
                           <span style={{ fontWeight: 400 }}>
                             When we agree the members of each project team, we
                             look at both the skills required for the assignment
@@ -253,14 +255,14 @@ const JoinUs = () => {
                             positive work/life balance, so we take into account
                             an individual’s recent assignments and their impact.
                           </span>
-                        </p>
+                        `}</p>
                         <h2>Graduates</h2>
-                        <p className="p1">
+                        <p className="p1">{`
                           Graduates are an integral part of client projects.
                           They work alongside consultants and are exposed to a
                           variety of industries and business areas where they
                           gain the skills required to become consultants.
-                        </p>
+                        `}</p>
                       </div>
                     </div>
                   </div>
@@ -307,15 +309,15 @@ const JoinUs = () => {
                         <h2 className="title title--lg accent-color">
                           4. Events{' '}
                         </h2>
-                        <p>
+                        <p>{`
                           <span className="intro">
                             It is vital that we act as a team when with the
                             client, as well as when we work together internally.
                             We work hard to make sure this happens, getting to
                             know each other and keeping in touch day by day.
                           </span>
-                        </p>
-                        <p>
+                        `}</p>
+                        <p>{`
                           We have an internal social platform which we use
                           globally, sharing interesting information, project
                           updates and opportunities, but we also spend a lot of
@@ -326,7 +328,7 @@ const JoinUs = () => {
                           undertake training. And, of course, these occasions
                           allow us to catch-up with our friends who we might not
                           have seen recently.
-                        </p>
+                        `}</p>
                         <a
                           href="#popup_4"
                           className="line-link red-4-color magnific-inline">
@@ -334,7 +336,7 @@ const JoinUs = () => {
                         </a>
                         <div className="mfp-hide" id="popup_4">
                           <div className="the-content">
-                            <p>
+                            <p>{`
                               <span
                                 className="intro"
                                 style={{ fontWeight: 400 }}>
@@ -344,8 +346,8 @@ const JoinUs = () => {
                                 happens, getting to know each other and keeping
                                 in touch day by day.
                               </span>
-                            </p>
-                            <p>
+                            `}</p>
+                            <p>{`
                               <span style={{ fontWeight: 400 }}>
                                 {' '}
                                 We have an internal social platform which we use
@@ -360,12 +362,12 @@ const JoinUs = () => {
                                 us to catch-up with our friends who we might not
                                 have seen recently.
                               </span>
-                            </p>
+                            `}</p>
                             <h2>
                               <span style={{ fontWeight: 400 }}>Argon </span>
                               <span style={{ fontWeight: 400 }}>Challenge</span>
                             </h2>
-                            <p>
+                            <p>{`
                               <span style={{ fontWeight: 400 }}>
                                 Several internal events are arranged throughout
                                 the year to promote our values, team-working and
@@ -383,11 +385,11 @@ const JoinUs = () => {
                                 global 5km run and a photography
                                 competition.&nbsp;
                               </span>
-                            </p>
+                            `}</p>
                             <h2>
                               <span style={{ fontWeight: 400 }}>Academy</span>
                             </h2>
-                            <p>
+                            <p>{`
                               <span style={{ fontWeight: 400 }}>
                                 We take advantage of our global reach to provide
                                 learning opportunities throughout our offices.
@@ -406,7 +408,7 @@ const JoinUs = () => {
                                 skills and experience and strengthen
                                 relationships across the business.
                               </span>
-                            </p>
+                            `}</p>
                           </div>
                         </div>
                       </div>
@@ -482,7 +484,7 @@ const JoinUs = () => {
                         <h2 className="title title--lg accent-color">
                           5. Career path{' '}
                         </h2>
-                        <p>
+                        <p>{`
                           <span className="intro">
                             Our consultant development model allows individuals
                             to identify development areas and plot their career
@@ -490,8 +492,8 @@ const JoinUs = () => {
                             all levels and experience can use to understand the
                             skills required at each grade.
                           </span>
-                        </p>
-                        <p>
+                        `}</p>
+                        <p>{`
                           These skills are detailed in our professional
                           standards and core skills framework. This covers hard
                           skills (such as analytics, process mapping), soft
@@ -499,7 +501,7 @@ const JoinUs = () => {
                           influencing people) and technical skills, and everyone
                           is trained in these areas to ensure they have the
                           capabilities to meet our clients’ needs.
-                        </p>
+                        `}</p>
                         <a
                           href="#popup_5"
                           className="line-link red-5-color magnific-inline">
@@ -507,7 +509,7 @@ const JoinUs = () => {
                         </a>
                         <div className="mfp-hide" id="popup_5">
                           <div className="the-content">
-                            <p>
+                            <p>{`
                               <span
                                 className="intro"
                                 style={{ fontWeight: 400 }}>
@@ -518,8 +520,8 @@ const JoinUs = () => {
                                 can use to understand the skills required at
                                 each grade.
                               </span>
-                            </p>
-                            <p>
+                            `}</p>
+                            <p>{`
                               <span style={{ fontWeight: 400 }}>
                                 These skills are detailed in our professional
                                 standards and core skills framework. This covers
@@ -530,8 +532,8 @@ const JoinUs = () => {
                                 these areas to ensure they have the capabilities
                                 to meet our clients’ needs.
                               </span>
-                            </p>
-                            <p>
+                            `}</p>
+                            <p>{`
                               <span style={{ fontWeight: 400 }}>
                                 We have a first-year training programme for all
                                 new recruits which includes ‘core consultancy’
@@ -541,8 +543,8 @@ const JoinUs = () => {
                                 through external training or working alongside
                                 experienced colleagues.
                               </span>
-                            </p>
-                            <p>
+                            `}</p>
+                            <p>{`
                               <span style={{ fontWeight: 400 }}>
                                 As part of our commitment to ensuring we are
                                 meeting our consultants’ needs, career
@@ -550,9 +552,9 @@ const JoinUs = () => {
                                 annual staff survey which measures staff
                                 satisfaction across a range of areas.
                               </span>
-                            </p>
+                            `}</p>
                             <h2>Graduates</h2>
-                            <p>
+                            <p>{`
                               For graduates, we offer an accelerated career path
                               to becoming a consultant, with a strong focus on
                               training on the job. This approach gives exposure
@@ -565,7 +567,7 @@ const JoinUs = () => {
                               and elective modules based on individual needs,
                               but when our graduates are ready, they get
                               promoted to consultants.
-                            </p>
+                            `}</p>
                           </div>
                         </div>
                       </div>
@@ -581,4 +583,4 @@ const JoinUs = () => {
   );
 };
 
-export default JoinUs;
+export default JoinUsAr;

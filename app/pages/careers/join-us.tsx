@@ -1,16 +1,20 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../../layouts/ViewerLayout';
-import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
-import JoinUs from '../../components/Careers/JoinUs';
-import ApplicationJob from '../../components/Careers/ApplicationJob';
-
+import ApplicationJobEn from '../../components/Careers/ApplicationJobEn';
+import ApplicationJobAr from '../../components/Careers/ApplicationJobAr';
+import WhereIsNextEn from '../../components/WhereIsNextEn';
+import WhereIsNextAr from '../../components/WhereIsNextAr';
+import JoinUsEn from '../../components/Careers/JoinUsEn';
+import JoinUsAr from '../../components/Careers/JoinUsAr';
+import OldNavBar from '../../components/OldNavBar';
+import Footer from '../../components/Footer';
+import FooterAr from '../../components/FooterAr';
 type Props = {};
 // dymmy data for ui till handle working with api
-const Contactus: NextPageWithLayout = (props: Props) => {
+const Contactus = (props: Props) => {
   const { language } = useLanguage();
   return (
     <>
@@ -20,20 +24,24 @@ const Contactus: NextPageWithLayout = (props: Props) => {
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
-            <JoinUs />
-            <ApplicationJob />
+            <OldNavBar />
+            <JoinUsEn />
+            <ApplicationJobEn />
+            <WhereIsNextEn />
+            <Footer />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
-            <JoinUs />
+            <OldNavBar />
+            <JoinUsAr />
+            <ApplicationJobAr />
+            <WhereIsNextAr />
+            <FooterAr />
           </main>
         )}
       </Layout>
     </>
   );
 };
-// adding Layout
-Contactus.getLayout = function getLayout(contactus: ReactElement) {
-  return <ViewerLayout childern={contactus}></ViewerLayout>;
-};
+
 export default Contactus;

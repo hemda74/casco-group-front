@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../styles/ContactUs.module.css';
-const ApplicationJob = () => {
+const ApplicationJobEn = () => {
   return (
     <>
       <div className={` bg-cyan apply-section`}>
@@ -104,7 +104,6 @@ const ApplicationJob = () => {
                         <input
                           type="text"
                           name="phone"
-                          data-trans="Subject"
                           className={`form-control ${styles.formControl}`}
                           id="phone"
                           required
@@ -205,4 +204,4 @@ const ApplicationJob = () => {
   );
 };
 
-export default ApplicationJob;
+export default ApplicationJobEn;
