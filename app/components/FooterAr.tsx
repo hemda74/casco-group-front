@@ -13,7 +13,7 @@ import {
 // footer Component design
 const FooterAr = () => {
   return (
-    <footer className="site-footer" dir="rtl">
+    <footer className="site-footer  mt-5" dir="rtl">
       <div className="container">
         <div className="row mb-5">
           <div className="col-md-3 offset-md-2">
