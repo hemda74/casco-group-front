@@ -26,22 +26,23 @@ const JoinUsAr = () => {
                     backgroundImage:
                       'url(https://www.argonandco.com/wp-content/uploads/2019/12/who-we-look-for.jpg)',
                   }}>
-                  <span className=" title title--xl title--bold ms-auto ">
+                  <span className=" title title--xl title--bold text-start">
                     Join us
                   </span>
                 </div>
                 <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
                   <div className="full-page-scroller__content">
                     <h2 className="title title--lg accent-color">
-                      1. Who we look for{' '}
+                      1.من نبحث عنه
                     </h2>
-                    <p>{`
+                    <p>
                       <span className="intro">
+                        {`
                         To be part of our talented team you need to be a high
                         achiever with clarity of thought, integrity and the
-                        ability to get on with people.
+                        ability to get on with people. `}
                       </span>
-                    `}</p>
+                    </p>
                     <p>{`
                       You will have an excellent academic record and typically a
                       minimum of three years working experience either in
@@ -104,7 +105,7 @@ const JoinUsAr = () => {
                 <div className="col-md-8">
                   <div className="js-move-slider-down ">
                     <div className="arrow arrow--right accent-color">
-                      <span>Why join us?</span>
+                      <span>لماذا الانضمام الينا?</span>
                     </div>
                   </div>
                 </div>
@@ -131,17 +132,18 @@ const JoinUsAr = () => {
                 <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
                   <div className="full-page-scroller__content">
                     <h2 className="title title--lg accent-color">
-                      2. Why join us?{' '}
+                      2. لماذا الانضمام الينا ؟
                     </h2>
-                    <p>{`
+                    <p>
                       <span className="intro">
+                        {`
                         We are a tight-knit team, like a family. We care about
                         each other and our clients. We enjoy working together
                         and our business is founded on a supportive culture. We
                         meet up regularly to catch up, learn and share best
-                        practice.
+                        practice.`}
                       </span>
-                    `}</p>
+                    </p>
                     <p>{`
                       Our environment provides our consultants with the chance
                       to excel and our continuing expansion opens up
@@ -186,12 +188,13 @@ const JoinUsAr = () => {
                     <h2 className="title title--lg accent-color">
                       3. Typical projects{' '}
                     </h2>
-                    <p>{`
+                    <p>
                       <span className="intro">
+                        {`
                         The majority of our clients are major organisations and
-                        market leaders in their particular industry.
+                        market leaders in their particular industry.`}
                       </span>
-                    `}</p>
+                    </p>
                     <p>{`
                       On client projects you will be part of a team which,
                       depending on the nature of the project, could be based
@@ -209,14 +212,16 @@ const JoinUsAr = () => {
                     </a>
                     <div className="mfp-hide" id="popup_3">
                       <div className="the-content">
-                        <p>{`
+                        <p>
                           <span className="intro" style={{ fontWeight: 400 }}>
+                            {`
                             The majority of our clients are major organisations
-                            and market leaders in their particular industry.{' '}
+                            and market leaders in their particular industry.`}
                           </span>
-                        `}</p>
-                        <p>{`
+                        </p>
+                        <p>
                           <span style={{ fontWeight: 400 }}>
+                            {`
                             On client projects you will be part of a team which,
                             depending on the nature of the project, could be
                             based either at the client’s site or in our offices,
@@ -225,11 +230,12 @@ const JoinUsAr = () => {
                             certain streams, or carrying out specific tasks
                             within a stream, and your role is likely to vary
                             project by project as you develop your confidence
-                            and capabilities.&nbsp;
+                            and capabilities.& `}
                           </span>
-                        `}</p>
-                        <p>{`
+                        </p>
+                        <p>
                           <span style={{ fontWeight: 400 }}>
+                            {`
                             As well as working on client projects, you may also
                             be involved in some internal initiatives, such as
                             helping to develop internal methodologies and
@@ -243,19 +249,20 @@ const JoinUsAr = () => {
                             interests you most, and allows you to stretch
                             outside your comfort zone and work with colleagues
                             who you may not normally come across in your
-                            day-to-day client work.&nbsp;
+                            day-to-day client work `}
                           </span>
-                        `}</p>
-                        <p>{`
+                        </p>
+                        <p>
                           <span style={{ fontWeight: 400 }}>
+                            {`
                             When we agree the members of each project team, we
                             look at both the skills required for the assignment
                             and the development objectives of the individuals.
                             We also aim to ensure that our staff maintain a
                             positive work/life balance, so we take into account
-                            an individual’s recent assignments and their impact.
+                            an individual’s recent assignments and their impact. `}
                           </span>
-                        `}</p>
+                        </p>
                         <h2>Graduates</h2>
                         <p className="p1">{`
                           Graduates are an integral part of client projects.
@@ -309,14 +316,15 @@ const JoinUsAr = () => {
                         <h2 className="title title--lg accent-color">
                           4. Events{' '}
                         </h2>
-                        <p>{`
+                        <p>
                           <span className="intro">
+                            {`
                             It is vital that we act as a team when with the
                             client, as well as when we work together internally.
                             We work hard to make sure this happens, getting to
-                            know each other and keeping in touch day by day.
+                            know each other and keeping in touch day by day.`}
                           </span>
-                        `}</p>
+                        </p>
                         <p>{`
                           We have an internal social platform which we use
                           globally, sharing interesting information, project
@@ -336,20 +344,22 @@ const JoinUsAr = () => {
                         </a>
                         <div className="mfp-hide" id="popup_4">
                           <div className="the-content">
-                            <p>{`
+                            <p>
                               <span
                                 className="intro"
                                 style={{ fontWeight: 400 }}>
+                                {`
                                 It is vital that we act as a team when with the
                                 client, as well as when we work together
                                 internally. We work hard to make sure this
                                 happens, getting to know each other and keeping
-                                in touch day by day.
+                                in touch day by day. `}
                               </span>
-                            `}</p>
-                            <p>{`
+                            </p>
+                            <p>
                               <span style={{ fontWeight: 400 }}>
-                                {' '}
+                                {`
+                            
                                 We have an internal social platform which we use
                                 globally, sharing interesting information,
                                 project updates and opportunities, but we also
@@ -360,15 +370,16 @@ const JoinUsAr = () => {
                                 clients and our colleagues, and undertake
                                 training. And, of course, these occasions allow
                                 us to catch-up with our friends who we might not
-                                have seen recently.
+                                have seen recently. `}
                               </span>
-                            `}</p>
+                            </p>
                             <h2>
                               <span style={{ fontWeight: 400 }}>Argon </span>
                               <span style={{ fontWeight: 400 }}>Challenge</span>
                             </h2>
-                            <p>{`
+                            <p>
                               <span style={{ fontWeight: 400 }}>
+                                {`
                                 Several internal events are arranged throughout
                                 the year to promote our values, team-working and
                                 personal development, known collectively as the
@@ -383,14 +394,15 @@ const JoinUsAr = () => {
                                 organised, encompassing all of our offices
                                 worldwide, with recent examples including a
                                 global 5km run and a photography
-                                competition.&nbsp;
+                                competition.&`}
                               </span>
-                            `}</p>
+                            </p>
                             <h2>
                               <span style={{ fontWeight: 400 }}>Academy</span>
                             </h2>
-                            <p>{`
+                            <p>
                               <span style={{ fontWeight: 400 }}>
+                                {`
                                 We take advantage of our global reach to provide
                                 learning opportunities throughout our offices.
                                 The Academy is our bi-annual two-day learning
@@ -406,9 +418,9 @@ const JoinUsAr = () => {
                                 business games and external keynote speakers.
                                 The Academy allows us to leverage our global
                                 skills and experience and strengthen
-                                relationships across the business.
+                                relationships across the business. `}
                               </span>
-                            `}</p>
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -484,15 +496,16 @@ const JoinUsAr = () => {
                         <h2 className="title title--lg accent-color">
                           5. Career path{' '}
                         </h2>
-                        <p>{`
+                        <p>
                           <span className="intro">
+                            {`
                             Our consultant development model allows individuals
                             to identify development areas and plot their career
                             path. It provides a framework that consultants of
                             all levels and experience can use to understand the
-                            skills required at each grade.
+                            skills required at each grade. `}
                           </span>
-                        `}</p>
+                        </p>
                         <p>{`
                           These skills are detailed in our professional
                           standards and core skills framework. This covers hard
@@ -509,20 +522,22 @@ const JoinUsAr = () => {
                         </a>
                         <div className="mfp-hide" id="popup_5">
                           <div className="the-content">
-                            <p>{`
+                            <p>
                               <span
                                 className="intro"
                                 style={{ fontWeight: 400 }}>
+                                {`
                                 Our consultant development model allows
                                 individuals to identify development areas and
                                 plot their career path. It provides a framework
                                 that consultants of all levels and experience
                                 can use to understand the skills required at
-                                each grade.
+                                each grade. `}
                               </span>
-                            `}</p>
-                            <p>{`
+                            </p>
+                            <p>
                               <span style={{ fontWeight: 400 }}>
+                                {`
                                 These skills are detailed in our professional
                                 standards and core skills framework. This covers
                                 hard skills (such as analytics, process
@@ -530,29 +545,31 @@ const JoinUsAr = () => {
                                 skills, impact and influencing people) and
                                 technical skills, and everyone is trained in
                                 these areas to ensure they have the capabilities
-                                to meet our clients’ needs.
+                                to meet our clients’ needs. `}
                               </span>
-                            `}</p>
-                            <p>{`
+                            </p>
+                            <p>
                               <span style={{ fontWeight: 400 }}>
+                                {`
                                 We have a first-year training programme for all
                                 new recruits which includes ‘core consultancy’
                                 and ‘project management skills’. Further
                                 training and development needs are identified as
                                 part of the appraisal process and are addressed
                                 through external training or working alongside
-                                experienced colleagues.
+                                experienced colleagues. `}
                               </span>
-                            `}</p>
-                            <p>{`
+                            </p>
+                            <p>
                               <span style={{ fontWeight: 400 }}>
+                                {`
                                 As part of our commitment to ensuring we are
                                 meeting our consultants’ needs, career
                                 development forms a major component of the
                                 annual staff survey which measures staff
-                                satisfaction across a range of areas.
+                                satisfaction across a range of areas. `}
                               </span>
-                            `}</p>
+                            </p>
                             <h2>Graduates</h2>
                             <p>{`
                               For graduates, we offer an accelerated career path
