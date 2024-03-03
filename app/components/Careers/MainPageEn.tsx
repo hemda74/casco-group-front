@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const MainPageEn = () => {
   return (
     <>
@@ -780,9 +780,7 @@ const MainPageEn = () => {
                   </span>
                 </p>
                 <p style={{ textAlign: 'center' }}>
-                  <a href="https://www.argonandco.com/en/careers/join-us/">
-                    Read more & apply
-                  </a>
+                  <Link href="/careers/join-us/">Read more & apply</Link>
                 </p>
               </div>
             </div>
