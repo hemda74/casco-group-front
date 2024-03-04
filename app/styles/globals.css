@@ -17351,3 +17351,16 @@ select:focus {
 .carousel-caption2 {
   margin-top: -15rem !important;
 }
+.dropdown-menu {
+  border: none !important;
+  padding: 0 !important;
+}
+.dropdown-menu li {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dropdown-item {
+  padding: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
