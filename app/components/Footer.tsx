@@ -89,12 +89,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="row copyright-footer no-gutters">
-          <div className="col-md-7  from-sky-600">
-            © CASCO Co 2024
+          <div className="col-md-7 from-sky-600">
+            <Link href="/"> © CASCO Co 2024</Link>
+
             <ul id="menu-privacy" className="menu">
-              <li
-                id="menu-item-4272"
-                className="menu-item menu-item-type-post_type menu-item-object-page">
+              <li id="" className="">
                 <Link href="/privacy-policy/" className="">
                   Privacy Policy
                 </Link>

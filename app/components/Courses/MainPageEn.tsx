@@ -8,7 +8,7 @@ const MainPageEn = () => {
         <div className="flex flex-wrap items-center col-span-9">
           <div className="p-4 | lg:p-12">
             <h1 className="text-4xl text-gray-700 font-normal mb-1 | lg:mb-2">
-              Courses | iqms Learning |
+              Courses | CASCO Learning |
             </h1>
           </div>
         </div>
@@ -28,7 +28,7 @@ const MainPageEn = () => {
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false">
-              <div className=" relative flex items-center  mb-3 border-b-2 border-primary-100 cursor-pointer | accordion__header--open">
+              <div className="relative flex items-center mb-3 border-b-2 border-primary-100 cursor-pointer | accordion__header--open">
                 Categories
               </div>
             </button>
@@ -36,42 +36,42 @@ const MainPageEn = () => {
             <ul className="facets hidden dropdown-menu">
               <li className="">
                 <Link
-                  href="/courses/environmental"
-                  className="dropdown-item block w-full text-sm  truncate accordion__header--open">
+                  href="/coursess/environmental"
+                  className="dropdown-item block w-full text-sm truncate accordion__header--open">
                   Environmental
                 </Link>
               </li>
               <li className="">
                 <Link
-                  href="/courses/food-safety"
-                  className="dropdown-item block w-full text-sm  truncate accordion__header--open">
+                  href="/coursess/food-safety"
+                  className="dropdown-item block w-full text-sm truncate accordion__header--open">
                   Food Safety
                 </Link>
               </li>
               <li className="">
                 <Link
-                  href="/courses/brcgs"
+                  href="/coursess/brcgs"
                   className="dropdown-item block w-full text-sm  truncate accordion__header--open">
                   BRCGS
                 </Link>
               </li>
               <li className="">
                 <Link
-                  href="/courses/health-and-safety"
+                  href="/coursess/health-and-safety"
                   className="dropdown-item block w-full text-sm  truncate accordion__header--open">
                   Health And Safety
                 </Link>
               </li>
               <li className="">
                 <Link
-                  href="/courses/quality"
+                  href="/coursess/quality"
                   className="dropdown-item block w-full text-sm  truncate accordion__header--open">
                   Quality
                 </Link>
               </li>
               <li className="">
                 <Link
-                  href="/courses/business-improvement"
+                  href="/coursess/business-improvement"
                   className="dropdown-item block w-full text-sm  truncate accordion__header--open">
                   Business Improvement
                 </Link>
@@ -92,7 +92,7 @@ const MainPageEn = () => {
             <ul className="facets hidden dropdown-menu">
               <li className="">
                 <Link
-                  href="/courses/foundation"
+                  href="/coursess/foundation"
                   className="dropdown-item block w-full text-sm  truncate accordion__header--open">
                   <span className="inline-block w-5 h-5 mr-2 border border-gray-300 rounded"></span>{' '}
                   Foundation{' '}
@@ -103,7 +103,7 @@ const MainPageEn = () => {
               </li>
               <li className="">
                 <Link
-                  href="/courses/practitioner"
+                  href="/coursess/practitioner"
                   className="dropdown-item block w-full text-sm  truncate accordion__header--open">
                   <span className="inline-block w-5 h-5 mr-2 border border-gray-300 rounded"></span>{' '}
                   Practitioner{' '}
@@ -114,7 +114,7 @@ const MainPageEn = () => {
               </li>
               <li className="">
                 <Link
-                  href="/courses/professional"
+                  href="/coursess/professional"
                   className="dropdown-item block w-full text-sm  truncate accordion__header--open">
                   <span className="inline-block w-5 h-5 mr-2 border border-gray-300 rounded"></span>{' '}
                   Professional{' '}
@@ -142,7 +142,7 @@ const MainPageEn = () => {
                 className="content">
                 <div className="image">
                   <a
-                    href="/course/environmental-sustainability-skills-for-the-workforce-41"
+                    href="/courses/environmental-sustainability-skills-for-the-workforce-41"
                     className="block w-full text-primary text-xs relative">
                     <picture>
                       <source
@@ -164,7 +164,7 @@ const MainPageEn = () => {
                 <div className="text">
                   <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
                     <a
-                      href="/course/environmental-sustainability-skills-for-the-workforce-41"
+                      href="/courses/environmental-sustainability-skills-for-the-workforce-41"
                       className="inline-block">
                       <h2 className="title">
                         Environmental Sustainability Skills for the Workforce
@@ -187,7 +187,7 @@ const MainPageEn = () => {
                     </div>
                     <div className="book">
                       <a
-                        href="/course/environmental-sustainability-skills-for-the-workforce-41"
+                        href="/courses/environmental-sustainability-skills-for-the-workforce-41"
                         className="view-btn">
                         View Course <i className="fas fa-arrow-right"></i>
                       </a>
@@ -202,7 +202,7 @@ const MainPageEn = () => {
                 className="content">
                 <div className="image">
                   <a
-                    href="/course/understand-manage-your-carbon-footprint-58"
+                    href="/courses/understand-manage-your-carbon-footprint-58"
                     className="block w-full text-primary text-xs relative">
                     <picture>
                       <source
@@ -224,7 +224,7 @@ const MainPageEn = () => {
                 <div className="text">
                   <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
                     <a
-                      href="/course/understand-manage-your-carbon-footprint-58"
+                      href="/courses/understand-manage-your-carbon-footprint-58"
                       className="inline-block">
                       <h2 className="title">
                         Understand &amp; Manage your Carbon Footprint
@@ -248,7 +248,7 @@ const MainPageEn = () => {
                     </div>
                     <div className="book">
                       <a
-                        href="/course/understand-manage-your-carbon-footprint-58"
+                        href="/courses/understand-manage-your-carbon-footprint-58"
                         className="view-btn">
                         View Course <i className="fas fa-arrow-right"></i>
                       </a>
@@ -263,7 +263,7 @@ const MainPageEn = () => {
                 className="content">
                 <div className="image">
                   <a
-                    href="/course/introduction-to-energy-management-57"
+                    href="/courses/introduction-to-energy-management-57"
                     className="block w-full text-primary text-xs relative">
                     <picture>
                       <source
@@ -285,7 +285,7 @@ const MainPageEn = () => {
                 <div className="text">
                   <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
                     <a
-                      href="/course/introduction-to-energy-management-57"
+                      href="/courses/introduction-to-energy-management-57"
                       className="inline-block">
                       <h2 className="title">
                         Introduction to Energy Management
@@ -309,7 +309,7 @@ const MainPageEn = () => {
                     </div>
                     <div className="book">
                       <a
-                        href="/course/introduction-to-energy-management-57"
+                        href="/courses/introduction-to-energy-management-57"
                         className="view-btn">
                         View Course <i className="fas fa-arrow-right"></i>
                       </a>
@@ -324,7 +324,7 @@ const MainPageEn = () => {
                 className="content">
                 <div className="image">
                   <a
-                    href="/course/practical-waste-management-waste-minimisation-55"
+                    href="/courses/practical-waste-management-waste-minimisation-55"
                     className="block w-full text-primary text-xs relative">
                     <picture>
                       <source
@@ -346,7 +346,7 @@ const MainPageEn = () => {
                 <div className="text">
                   <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
                     <a
-                      href="/course/practical-waste-management-waste-minimisation-55"
+                      href="/courses/practical-waste-management-waste-minimisation-55"
                       className="inline-block">
                       <h2 className="title">
                         Practical Waste Management &amp; Waste Minimisation
@@ -370,7 +370,7 @@ const MainPageEn = () => {
                     </div>
                     <div className="book">
                       <a
-                        href="/course/practical-waste-management-waste-minimisation-55"
+                        href="/courses/practical-waste-management-waste-minimisation-55"
                         className="view-btn">
                         View Course <i className="fas fa-arrow-right"></i>
                       </a>
@@ -383,7 +383,7 @@ const MainPageEn = () => {
               <div title="ISO 14001:2015 Foundation" className="content">
                 <div className="image">
                   <a
-                    href="/course/iso-140012015-foundation-7"
+                    href="/courses/iso-140012015-foundation-7"
                     className="block w-full text-primary text-xs relative">
                     <picture>
                       <source
@@ -405,7 +405,7 @@ const MainPageEn = () => {
                 <div className="text">
                   <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
                     <a
-                      href="/course/iso-140012015-foundation-7"
+                      href="/courses/iso-140012015-foundation-7"
                       className="inline-block">
                       <h2 className="title">
                         ISO 14001:2015 Foundation
@@ -429,7 +429,7 @@ const MainPageEn = () => {
                     </div>
                     <div className="book">
                       <a
-                        href="/course/iso-140012015-foundation-7"
+                        href="/courses/iso-140012015-foundation-7"
                         className="view-btn">
                         View Course <i className="fas fa-arrow-right"></i>
                       </a>
@@ -444,7 +444,7 @@ const MainPageEn = () => {
                 className="content">
                 <div className="image">
                   <a
-                    href="/course/environmental-legislation-awareness-34"
+                    href="/courses/environmental-legislation-awareness-34"
                     className="block w-full text-primary text-xs relative">
                     <picture>
                       <source
@@ -466,7 +466,7 @@ const MainPageEn = () => {
                 <div className="text">
                   <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
                     <a
-                      href="/course/environmental-legislation-awareness-34"
+                      href="/courses/environmental-legislation-awareness-34"
                       className="inline-block">
                       <h2 className="title">
                         Environmental Legislation Awareness
@@ -490,7 +490,7 @@ const MainPageEn = () => {
                     </div>
                     <div className="book">
                       <a
-                        href="/course/environmental-legislation-awareness-34"
+                        href="/courses/environmental-legislation-awareness-34"
                         className="view-btn">
                         View Course <i className="fas fa-arrow-right"></i>
                       </a>
@@ -504,7 +504,7 @@ const MainPageEn = () => {
               <div title="IOSH Managing Safely" className="content">
                 <div className="image">
                   <a
-                    href="/course/iosh-managing-safely-63"
+                    href="/courses/iosh-managing-safely-63"
                     className="block w-full text-primary text-xs relative">
                     <picture>
                       <source
@@ -526,7 +526,7 @@ const MainPageEn = () => {
                 <div className="text">
                   <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
                     <a
-                      href="/course/iosh-managing-safely-63"
+                      href="/courses/iosh-managing-safely-63"
                       className="inline-block">
                       <h2 className="title">
                         IOSH Managing Safely
@@ -549,7 +549,7 @@ const MainPageEn = () => {
                     </div>
                     <div className="book">
                       <a
-                        href="/course/iosh-managing-safely-63"
+                        href="/courses/iosh-managing-safely-63"
                         className="view-btn">
                         View Course <i className="fas fa-arrow-right"></i>
                       </a>
