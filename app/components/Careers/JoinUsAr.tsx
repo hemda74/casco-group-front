@@ -1,6 +1,4 @@
 import React from 'react';
-import ApplyLink from '../ApplyLink';
-
 const JoinUsAr = () => {
   return (
     <>
