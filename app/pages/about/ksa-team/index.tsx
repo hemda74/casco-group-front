@@ -13,7 +13,7 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
   return (
     <>
       <Head>
-        <title>EGY TEAM | CASCO</title>
+        <title>KAS TEAM| CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (

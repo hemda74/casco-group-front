@@ -38,46 +38,49 @@ const MeetOurTeamEn = () => {
               </Link>
             </div>
             <div className="col-xl-4 col-md-6 order-2">
-              <div className="card card--split red-1-background">
-                <div className="row no-gutters">
-                  <div className="col-6">
-                    <div className="card__content">
-                      <div className="title title--sm">UAE</div>
-
-                      <div className="card--split__hover title--medium-weight">
-                        Meet the Team
+              <Link href="/about/uae-team/">
+                <div className="card card--split red-1-background">
+                  <div className="row no-gutters">
+                    <div className="col-6">
+                      <div className="card__content">
+                        <div className="title title--sm">UAE</div>
+                        <div className="card--split__hover title--medium-weight">
+                          Meet the Team
+                        </div>
                       </div>
                     </div>
+                    <div
+                      className="col-6 card--split__image grayscale"
+                      style={{
+                        backgroundImage:
+                          'url(https://www.argonandco.com/wp-content/uploads/2020/01/Picture1.png)',
+                      }}></div>
                   </div>
-                  <div
-                    className="col-6 card--split__image grayscale"
-                    style={{
-                      backgroundImage:
-                        'url(https://www.argonandco.com/wp-content/uploads/2020/01/Picture1.png)',
-                    }}></div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="col-xl-4 col-md-6 order-4">
-              <div className="card card--split red-1-background">
-                <div className="row no-gutters">
-                  <div className="col-6">
-                    <div className="card__content">
-                      <div className="title title--sm">KSA</div>
+              <Link href="/about/ksa-team/">
+                <div className="card card--split red-1-background">
+                  <div className="row no-gutters">
+                    <div className="col-6">
+                      <div className="card__content">
+                        <div className="title title--sm">KSA</div>
 
-                      <div className="card--split__hover title--medium-weight">
-                        Meet the team
+                        <div className="card--split__hover title--medium-weight">
+                          Meet the team
+                        </div>
                       </div>
                     </div>
+                    <div
+                      className="col-6 card--split__image grayscale"
+                      style={{
+                        backgroundImage:
+                          'url(https://www.argonandco.com/wp-content/uploads/2021/07/IMG_0128-683x1024.jpg)',
+                      }}></div>
                   </div>
-                  <div
-                    className="col-6 card--split__image grayscale"
-                    style={{
-                      backgroundImage:
-                        'url(https://www.argonandco.com/wp-content/uploads/2021/07/IMG_0128-683x1024.jpg)',
-                    }}></div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

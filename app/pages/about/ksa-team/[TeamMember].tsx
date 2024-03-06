@@ -5,7 +5,6 @@ import { NextPageWithLayout } from '../../_app';
 import { useLanguage } from '../../../Context/LanguageContext';
 import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
-import MainTeamPageEn from '../../../components/About/Team/MainTeamPageEn';
 
 type Props = {};
 const TeamMemberPage: NextPageWithLayout = (props: Props) => {
@@ -13,13 +12,11 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
   return (
     <>
       <Head>
-        <title>EGY TEAM | CASCO</title>
+        <title>Team Member | CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <MainTeamPageEn />
-          </main>
+          <main className={`${styles.bodyContainer}`}></main>
         ) : (
           <main className={`${styles.bodyContainer}`}></main>
         )}
