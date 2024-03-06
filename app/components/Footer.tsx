@@ -82,7 +82,8 @@ const Footer = () => {
             <div className="social-links">
               <a
                 href="https://www.linkedin.com/company/cascogroup/"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 <BsLinkedin size={20} />
               </a>{' '}
             </div>

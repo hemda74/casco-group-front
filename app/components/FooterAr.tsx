@@ -82,7 +82,8 @@ const FooterAr = () => {
             <div className="social-links">
               <a
                 href="https://www.linkedin.com/company/cascogroup/"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 <BsLinkedin size={20} />
               </a>
             </div>
@@ -94,7 +95,7 @@ const FooterAr = () => {
             <ul id="menu-privacy" className="menu">
               <li
                 id="menu-item-4272"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4272">
+                className="menu-item menu-item-type-post_type menu-item-object-page">
                 <Link href="/privacy-policy/" className="">
                   سياسة الخصوصية
                 </Link>
