@@ -142,7 +142,7 @@ const MainPageAr = () => {
                   title="Environmental Sustainability Skills for the Workforce"
                   className="content">
                   <div className="image">
-                    <a
+                    <Link
                       href="/courses/environmental-sustainability-skills-for-the-workforce-41"
                       className="block w-full text-primary text-xs relative">
                       <picture>
@@ -160,17 +160,17 @@ const MainPageAr = () => {
                           srcSet="https://iqmslearning.co.uk/image-factory/b83a302ab03e1b5f33a6d33462a69869580b9c0f~225x300/images/products/PsBXQouPXWYAi2rWH7MOmyaIOMbWOxjt8ILAfwso.jpeg 1x,https://iqmslearning.co.uk/image-factory/dd6c3f2062c7b99c9cf892559f54ce20af226a77~225x300@2x/images/products/PsBXQouPXWYAi2rWH7MOmyaIOMbWOxjt8ILAfwso.jpeg 2x"
                         />
                       </picture>
-                    </a>
+                    </Link>
                   </div>
                   <div className="text">
                     <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
-                      <a
+                      <Link
                         href="/courses/environmental-sustainability-skills-for-the-workforce-41"
                         className="inline-block">
                         <h2 className="title text-primary-100">
                           Environmental Sustainability Skills for the Workforce
                         </h2>
-                      </a>
+                      </Link>
                     </div>
                     <p className="description | shave">{`
                   IntroductionThe IEMA Environmental Sustainability Skills for
@@ -186,11 +186,11 @@ const MainPageAr = () => {
                         </span>
                       </div>
                       <div className="book">
-                        <a
+                        <Link
                           href="/courses/environmental-sustainability-skills-for-the-workforce-41"
                           className="view-btn">
                           View Course <i className="fas fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -201,7 +201,7 @@ const MainPageAr = () => {
                   title="Understand &amp; Manage your Carbon Footprint"
                   className="content">
                   <div className="image">
-                    <a
+                    <Link
                       href="/courses/understand-manage-your-carbon-footprint-58"
                       className="block w-full text-primary text-xs relative">
                       <picture>
@@ -219,17 +219,17 @@ const MainPageAr = () => {
                           srcSet="https://iqmslearning.co.uk/image-factory/b83a302ab03e1b5f33a6d33462a69869580b9c0f~225x300/images/products/zpLSPaexp2CPRPufdWe7rYo35I2DIWYONis1sXgt.jpeg 1x,https://iqmslearning.co.uk/image-factory/dd6c3f2062c7b99c9cf892559f54ce20af226a77~225x300@2x/images/products/zpLSPaexp2CPRPufdWe7rYo35I2DIWYONis1sXgt.jpeg 2x"
                         />
                       </picture>
-                    </a>
+                    </Link>
                   </div>
                   <div className="text">
                     <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
-                      <a
+                      <Link
                         href="/courses/understand-manage-your-carbon-footprint-58"
                         className="inline-block">
                         <h2 className="title text-primary-100">
                           Understand &amp; Manage your Carbon Footprint
                         </h2>
-                      </a>
+                      </Link>
                     </div>
                     <p className="description | shave">{`
                   IntroductionThis intensive one-day course is designed to equip
@@ -246,11 +246,11 @@ const MainPageAr = () => {
                         </span>
                       </div>
                       <div className="book">
-                        <a
+                        <Link
                           href="/courses/understand-manage-your-carbon-footprint-58"
                           className="view-btn">
                           View Course <i className="fas fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -261,7 +261,7 @@ const MainPageAr = () => {
                   title="Introduction to Energy Management"
                   className="content">
                   <div className="image">
-                    <a
+                    <Link
                       href="/courses/introduction-to-energy-management-57"
                       className="block w-full text-primary text-xs relative">
                       <picture>
@@ -279,17 +279,17 @@ const MainPageAr = () => {
                           srcSet="https://iqmslearning.co.uk/image-factory/b83a302ab03e1b5f33a6d33462a69869580b9c0f~225x300/images/products/u9zQ04JTCCzx8EVmtrBXS48n8GkbQUfFGVVSZmxD.jpeg 1x,https://iqmslearning.co.uk/image-factory/dd6c3f2062c7b99c9cf892559f54ce20af226a77~225x300@2x/images/products/u9zQ04JTCCzx8EVmtrBXS48n8GkbQUfFGVVSZmxD.jpeg 2x"
                         />
                       </picture>
-                    </a>
+                    </Link>
                   </div>
                   <div className="text">
                     <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
-                      <a
+                      <Link
                         href="/courses/introduction-to-energy-management-57"
                         className="inline-block">
                         <h2 className="title text-primary-100">
                           Introduction to Energy Management
                         </h2>
-                      </a>
+                      </Link>
                     </div>
                     <p className="description | shave">{`
                   IntroductionThis one-day course is designed to give delegates
@@ -306,11 +306,11 @@ const MainPageAr = () => {
                         </span>
                       </div>
                       <div className="book">
-                        <a
+                        <Link
                           href="/courses/introduction-to-energy-management-57"
                           className="view-btn">
                           View Course <i className="fas fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -321,7 +321,7 @@ const MainPageAr = () => {
                   title="Practical Waste Management &amp; Waste Minimisation"
                   className="content">
                   <div className="image">
-                    <a
+                    <Link
                       href="/courses/practical-waste-management-waste-minimisation-55"
                       className="block w-full text-primary text-xs relative">
                       <picture>
@@ -339,17 +339,17 @@ const MainPageAr = () => {
                           srcSet="https://iqmslearning.co.uk/image-factory/b83a302ab03e1b5f33a6d33462a69869580b9c0f~225x300/images/products/NYyYIA69nADq3WtrmVT8D8mIcU4PJKvFqFSHIdos.jpeg 1x,https://iqmslearning.co.uk/image-factory/dd6c3f2062c7b99c9cf892559f54ce20af226a77~225x300@2x/images/products/NYyYIA69nADq3WtrmVT8D8mIcU4PJKvFqFSHIdos.jpeg 2x"
                         />
                       </picture>
-                    </a>
+                    </Link>
                   </div>
                   <div className="text">
                     <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
-                      <a
+                      <Link
                         href="/courses/practical-waste-management-waste-minimisation-55"
                         className="inline-block">
                         <h2 className="title text-primary-100">
                           Practical Waste Management &amp; Waste Minimisation
                         </h2>
-                      </a>
+                      </Link>
                     </div>
                     <p className="description | shave">{`
                   IntroductionWith a minefield of legislation on waste, rising
@@ -366,11 +366,11 @@ const MainPageAr = () => {
                         </span>
                       </div>
                       <div className="book">
-                        <a
+                        <Link
                           href="/courses/practical-waste-management-waste-minimisation-55"
                           className="view-btn">
                           View Course <i className="fas fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -379,7 +379,7 @@ const MainPageAr = () => {
               <div className="course">
                 <div title="ISO 14001:2015 Foundation" className="content">
                   <div className="image">
-                    <a
+                    <Link
                       href="/courses/iso-140012015-foundation-7"
                       className="block w-full text-primary text-xs relative">
                       <picture>
@@ -397,17 +397,17 @@ const MainPageAr = () => {
                           srcSet="https://iqmslearning.co.uk/image-factory/b83a302ab03e1b5f33a6d33462a69869580b9c0f~225x300/images/products/NU2Dew6CEHQ1RE3DGEGdBCOMZiDsnkkPP00Jv18E.jpeg 1x,https://iqmslearning.co.uk/image-factory/dd6c3f2062c7b99c9cf892559f54ce20af226a77~225x300@2x/images/products/NU2Dew6CEHQ1RE3DGEGdBCOMZiDsnkkPP00Jv18E.jpeg 2x"
                         />
                       </picture>
-                    </a>
+                    </Link>
                   </div>
                   <div className="text">
                     <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
-                      <a
+                      <Link
                         href="/courses/iso-140012015-foundation-7"
                         className="inline-block">
                         <h2 className="title text-primary-100">
                           ISO 14001:2015 Foundation
                         </h2>
-                      </a>
+                      </Link>
                     </div>
                     <p className="description | shave">{`
                   IntroductionA one-day awareness course designed to provide
@@ -424,11 +424,11 @@ const MainPageAr = () => {
                         </span>
                       </div>
                       <div className="book">
-                        <a
+                        <Link
                           href="/courses/iso-140012015-foundation-7"
                           className="view-btn">
                           View Course <i className="fas fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -439,7 +439,7 @@ const MainPageAr = () => {
                   title="Environmental Legislation Awareness"
                   className="content">
                   <div className="image">
-                    <a
+                    <Link
                       href="/courses/environmental-legislation-awareness-34"
                       className="block w-full text-primary text-xs relative">
                       <picture>
@@ -457,17 +457,17 @@ const MainPageAr = () => {
                           srcSet="https://iqmslearning.co.uk/image-factory/b83a302ab03e1b5f33a6d33462a69869580b9c0f~225x300/images/products/jXAAFqUGdMirWcXH9WisVbGI2hOdM0VbEiGDQgI0.jpeg 1x,https://iqmslearning.co.uk/image-factory/dd6c3f2062c7b99c9cf892559f54ce20af226a77~225x300@2x/images/products/jXAAFqUGdMirWcXH9WisVbGI2hOdM0VbEiGDQgI0.jpeg 2x"
                         />
                       </picture>
-                    </a>
+                    </Link>
                   </div>
                   <div className="text">
                     <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
-                      <a
+                      <Link
                         href="/courses/environmental-legislation-awareness-34"
                         className="inline-block">
                         <h2 className="title text-primary-100">
                           Environmental Legislation Awareness
                         </h2>
-                      </a>
+                      </Link>
                     </div>
                     <p className="description | shave">{`
                   IntroductionThis intensive one-day course is designed to equip
@@ -484,11 +484,11 @@ const MainPageAr = () => {
                         </span>
                       </div>
                       <div className="book">
-                        <a
+                        <Link
                           href="/courses/environmental-legislation-awareness-34"
                           className="view-btn">
                           View Course <i className="fas fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -498,7 +498,7 @@ const MainPageAr = () => {
               <div className="course">
                 <div title="IOSH Managing Safely" className="content">
                   <div className="image">
-                    <a
+                    <Link
                       href="/courses/iosh-managing-safely-63"
                       className="block w-full text-primary text-xs relative">
                       <picture>
@@ -516,17 +516,17 @@ const MainPageAr = () => {
                           srcSet="https://iqmslearning.co.uk/image-factory/b83a302ab03e1b5f33a6d33462a69869580b9c0f~225x300/images/products/eMByt7iJ4dfHF0k4UjQJaZaO3rNXitxoJh2cdDRL.jpeg 1x,https://iqmslearning.co.uk/image-factory/dd6c3f2062c7b99c9cf892559f54ce20af226a77~225x300@2x/images/products/eMByt7iJ4dfHF0k4UjQJaZaO3rNXitxoJh2cdDRL.jpeg 2x"
                         />
                       </picture>
-                    </a>
+                    </Link>
                   </div>
                   <div className="text">
                     <div className="flex flex-wrap items-center text-2xl | lg:flex-row">
-                      <a
+                      <Link
                         href="/courses/iosh-managing-safely-63"
                         className="inline-block">
                         <h2 className="title text-primary-100">
                           IOSH Managing Safely
                         </h2>
-                      </a>
+                      </Link>
                     </div>
                     <p className="description | shave">{`
                   IntroductionThis three-day IOSH Managing Safely course is a
@@ -542,11 +542,11 @@ const MainPageAr = () => {
                         </span>
                       </div>
                       <div className="book">
-                        <a
+                        <Link
                           href="/courses/iosh-managing-safely-63"
                           className="view-btn">
                           View Course <i className="fas fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
