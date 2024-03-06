@@ -189,7 +189,7 @@ const MainPageAr = () => {
                         <Link
                           href="/courses/environmental-sustainability-skills-for-the-workforce-41"
                           className="view-btn">
-                          View Course <i className="fas fa-arrow-right"></i>
+                          View Course
                         </Link>
                       </div>
                     </div>
@@ -249,7 +249,7 @@ const MainPageAr = () => {
                         <Link
                           href="/courses/understand-manage-your-carbon-footprint-58"
                           className="view-btn">
-                          View Course <i className="fas fa-arrow-right"></i>
+                          View Course
                         </Link>
                       </div>
                     </div>
@@ -309,7 +309,7 @@ const MainPageAr = () => {
                         <Link
                           href="/courses/introduction-to-energy-management-57"
                           className="view-btn">
-                          View Course <i className="fas fa-arrow-right"></i>
+                          View Course
                         </Link>
                       </div>
                     </div>
@@ -369,7 +369,7 @@ const MainPageAr = () => {
                         <Link
                           href="/courses/practical-waste-management-waste-minimisation-55"
                           className="view-btn">
-                          View Course <i className="fas fa-arrow-right"></i>
+                          View Course
                         </Link>
                       </div>
                     </div>
@@ -427,7 +427,7 @@ const MainPageAr = () => {
                         <Link
                           href="/courses/iso-140012015-foundation-7"
                           className="view-btn">
-                          View Course <i className="fas fa-arrow-right"></i>
+                          View Course
                         </Link>
                       </div>
                     </div>
@@ -487,7 +487,7 @@ const MainPageAr = () => {
                         <Link
                           href="/courses/environmental-legislation-awareness-34"
                           className="view-btn">
-                          View Course <i className="fas fa-arrow-right"></i>
+                          View Course
                         </Link>
                       </div>
                     </div>
@@ -545,7 +545,7 @@ const MainPageAr = () => {
                         <Link
                           href="/courses/iosh-managing-safely-63"
                           className="view-btn">
-                          View Course <i className="fas fa-arrow-right"></i>
+                          View Course
                         </Link>
                       </div>
                     </div>
