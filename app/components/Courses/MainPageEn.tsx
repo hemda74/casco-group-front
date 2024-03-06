@@ -166,9 +166,8 @@ const MainPageEn = () => {
                     <a
                       href="/courses/environmental-sustainability-skills-for-the-workforce-41"
                       className="inline-block">
-                      <h2 className="title">
+                      <h2 className="title text-primary-100">
                         Environmental Sustainability Skills for the Workforce
-                        <span className="inline-block">&nbsp;–&nbsp;</span>
                       </h2>
                     </a>
                   </div>
@@ -226,9 +225,8 @@ const MainPageEn = () => {
                     <a
                       href="/courses/understand-manage-your-carbon-footprint-58"
                       className="inline-block">
-                      <h2 className="title">
+                      <h2 className="title text-primary-100">
                         Understand &amp; Manage your Carbon Footprint
-                        <span className="inline-block">&nbsp;–&nbsp;</span>
                       </h2>
                     </a>
                   </div>
@@ -287,9 +285,8 @@ const MainPageEn = () => {
                     <a
                       href="/courses/introduction-to-energy-management-57"
                       className="inline-block">
-                      <h2 className="title">
+                      <h2 className="title text-primary-100">
                         Introduction to Energy Management
-                        <span className="inline-block">&nbsp;–&nbsp;</span>
                       </h2>
                     </a>
                   </div>
@@ -348,9 +345,8 @@ const MainPageEn = () => {
                     <a
                       href="/courses/practical-waste-management-waste-minimisation-55"
                       className="inline-block">
-                      <h2 className="title">
+                      <h2 className="title text-primary-100">
                         Practical Waste Management &amp; Waste Minimisation
-                        <span className="inline-block">&nbsp;–&nbsp;</span>
                       </h2>
                     </a>
                   </div>
@@ -407,9 +403,8 @@ const MainPageEn = () => {
                     <a
                       href="/courses/iso-140012015-foundation-7"
                       className="inline-block">
-                      <h2 className="title">
+                      <h2 className="title text-primary-100">
                         ISO 14001:2015 Foundation
-                        <span className="inline-block">&nbsp;–&nbsp;</span>
                       </h2>
                     </a>
                   </div>
@@ -468,9 +463,8 @@ const MainPageEn = () => {
                     <a
                       href="/courses/environmental-legislation-awareness-34"
                       className="inline-block">
-                      <h2 className="title">
+                      <h2 className="title text-primary-100">
                         Environmental Legislation Awareness
-                        <span className="inline-block">&nbsp;–&nbsp;</span>
                       </h2>
                     </a>
                   </div>
@@ -528,9 +522,8 @@ const MainPageEn = () => {
                     <a
                       href="/courses/iosh-managing-safely-63"
                       className="inline-block">
-                      <h2 className="title">
+                      <h2 className="title text-primary-100">
                         IOSH Managing Safely
-                        <span className="inline-block">&nbsp;–&nbsp;</span>
                       </h2>
                     </a>
                   </div>

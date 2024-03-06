@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 
-const CourseEn = () => {
+const CourseAr = () => {
   return (
     <>
-      <div className="max-w-content mx-auto px-4 | lg:px-12">
+      <div className="max-w-content mx-auto px-4 | lg:px-12" dir="rtl">
         <div className="w-full bg-transparent py-4 | lg:py-6">
           <ul className="list-reset">
             <li className="hidden text-sm | lg:inline-block">
@@ -791,4 +791,4 @@ const CourseEn = () => {
   );
 };
 
-export default CourseEn;
+export default CourseAr;

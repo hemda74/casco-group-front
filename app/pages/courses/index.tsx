@@ -7,6 +7,7 @@ import OldNavBar from '../../components/OldNavBar';
 import Footer from '../../components/Footer';
 import FooterAr from '../../components/FooterAr';
 import MainPageEn from '../../components/Courses/MainPageEn';
+import MainPageAr from '../../components/Courses/MainPageAr';
 type Props = {};
 // dymmy data for ui till handle working with api
 const Contactus = (props: Props) => {
@@ -26,7 +27,7 @@ const Contactus = (props: Props) => {
         ) : (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-
+            <MainPageAr />
             <FooterAr />
           </main>
         )}
