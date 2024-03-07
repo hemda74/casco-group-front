@@ -754,13 +754,13 @@ const CourseAr = () => {
                     Other courses you may be interested in
                   </h3>
                   <a href="/course/iso-90012015-foundation-1" className="block">
-                    <span className="mr-2">›</span>
+                    <span className="ml-2">›</span>
                     <span className="underline">ISO 9001:2015 Foundation</span>
                   </a>
                   <a
                     href="/course/iso-90012015-internal-auditor-3"
                     className="block mt-2">
-                    <span className="mr-2">›</span>
+                    <span className="ml-2">›</span>
                     <span className="underline">
                       ISO 9001:2015 Internal Auditor
                     </span>
@@ -768,19 +768,19 @@ const CourseAr = () => {
                   <a
                     href="/course/ims-auditor-qualityenvironment-18"
                     className="block mt-2">
-                    <span className="mr-2">›</span>
+                    <span className="ml-2">›</span>
                     <span className="underline">
                       IMS Auditor (Quality/Environment)
                     </span>
                   </a>
                   <a href="/course/ims-auditor-qhse-19" className="block mt-2">
-                    <span className="mr-2">›</span>
+                    <span className="ml-2">›</span>
                     <span className="underline">IMS Auditor (QHSE)</span>
                   </a>
                   <a
                     href="/course/design-build-a-qms-20"
                     className="block mt-2">
-                    <span className="mr-2">›</span>
+                    <span className="ml-2">›</span>
                     <span className="underline">Design &amp; Build a QMS</span>
                   </a>
                 </div>
