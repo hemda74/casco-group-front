@@ -124,7 +124,7 @@ const MainTeamPageEn = () => {
                     aria-hidden="true">
                     <div className="modal-dialog">
                       <div className="modal-content w-full h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
-                        <div className="relative bg-white  lg:p-12 lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
+                        <div className="relative bg-white   lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
                           <div className="absolute top-0 right-0 text-lg  cursor-pointer">
                             <button
                               type="button"
@@ -207,7 +207,7 @@ const MainTeamPageEn = () => {
                     aria-hidden="true">
                     <div className="modal-dialog">
                       <div className="modal-content w-full h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
-                        <div className="relative bg-white  lg:p-12 lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
+                        <div className="relative bg-white   lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
                           <div className="absolute top-0 right-0 text-lg  cursor-pointer">
                             <button
                               type="button"
@@ -290,7 +290,7 @@ const MainTeamPageEn = () => {
                     aria-hidden="true">
                     <div className="modal-dialog">
                       <div className="modal-content w-full h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
-                        <div className="relative bg-white  lg:p-12 lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
+                        <div className="relative bg-white   lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
                           <div className="absolute top-0 right-0 text-lg  cursor-pointer">
                             <button
                               type="button"
@@ -373,7 +373,7 @@ const MainTeamPageEn = () => {
                     aria-hidden="true">
                     <div className="modal-dialog">
                       <div className="modal-content w-full h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
-                        <div className="relative bg-white  lg:p-12 lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
+                        <div className="relative bg-white   lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
                           <div className="absolute top-0  right-0 text-lg  cursor-pointer">
                             <button
                               type="button"
