@@ -43,8 +43,8 @@ const CourseAr = () => {
                 /
               </span>
             </li>
-            <li className="text-sm hidden lg:inline-block align-middle">
-              <span className="disabled inline-block align-middle">
+            <li className="text-sm hidden   lg:inline-block align-middle">
+              <span className="disabled  lg:inline-block inline-block align-middle">
                 ISO 9001:2015 Lead Auditor
               </span>
             </li>
@@ -95,7 +95,7 @@ const CourseAr = () => {
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          Introduction
+                          المقدمة
                         </span>
                       </b>
                     </h1>
@@ -110,7 +110,7 @@ const CourseAr = () => {
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          Duration
+                          المدة
                         </span>
                       </b>
                     </h1>
@@ -283,7 +283,7 @@ const CourseAr = () => {
               </div>
               <div className="md:col-span-6 | lg:col-start-9 lg:col-span-4">
                 <div className="relative w-full bg-gray-200 rounded-lg p-4 | md:text-left | lg:p-8">
-                  <h1 className="text-xl font-bold mb-1 | lg:text-2xl">
+                  <h1 className="text-xl font-bold mb-1 | lg:text-2xl text-end">
                     ISO 9001:2015 Lead Auditor
                   </h1>
                   <div className="w-1/2 blend-multiply py-4">
@@ -309,27 +309,35 @@ const CourseAr = () => {
                       />
                     </noscript>
                   </div>
-                  <div className="text-xl text-primary-100 | lg:text-2xl">
+                  <div className="text-xl text-primary-100 | lg:text-2xl text-end">
                     <div>
                       <span className="font-bold">£1,445.00</span>
                       <span className="ml-2">ex vat</span>
                     </div>
                   </div>
-                  <noscript></noscript>
+
                   <div className="w-full xl:w-10/12 mt-6">
                     <div
                       id="product-attributes"
                       className="grid grid-cols-1 gap-4">
-                      <div className="product-attribute">
+                      <div className="product-attribute text-end">
                         <div className="text-lg font-bold mb-2">
-                          Course Date:
+                          موعد الكورس:
                         </div>
-                        <div className="w-full relative flex items-center justify-end">
+                        <div
+                          className="w-full relative flex items-center justify-start"
+                          dir="rtl">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 250 250"
+                            className="inline-block absolute h-4 w-4 left-0 ml-4 pointer-events-none">
+                            <path d="M241.4 69.7c1.1 1.4 1.6 3 1.6 4.8 0 1.8-.5 3.2-1.6 4.3L129.8 190.9c-1.4 1.1-3 1.6-4.8 1.6s-3.2-.5-4.3-1.6L8.6 78.8C7.5 77.7 7 76.3 7 74.5c0-1.8.5-3.4 1.6-4.8L19.3 59c1.1-1.1 2.5-1.6 4.3-1.6s3.4.5 4.8 1.6l96.6 96.6L221.6 59c1.4-1.1 3-1.6 4.8-1.6s3.2.5 4.3 1.6l10.7 10.7z"></path>
+                          </svg>
                           <select
                             id="id-course-date-select"
                             aria-label="Select Course Date"
                             className="w-full h-full border border-gray-400 bg-white p-4 pr-12 rounded">
-                            <option value="">Select Course Date</option>
+                            <option value="">اختيار موعد الكورس</option>
                             <option
                               data-title="Course Date: 18th-22nd March 2024 - Sunderland"
                               dante-shedule-id="157491"
@@ -367,19 +375,13 @@ const CourseAr = () => {
                               11th-15th November 2024 - Sunderland
                             </option>
                           </select>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 250 250"
-                            className="inline-block absolute h-4 w-4 right-0 mr-4 pointer-events-none">
-                            <path d="M241.4 69.7c1.1 1.4 1.6 3 1.6 4.8 0 1.8-.5 3.2-1.6 4.3L129.8 190.9c-1.4 1.1-3 1.6-4.8 1.6s-3.2-.5-4.3-1.6L8.6 78.8C7.5 77.7 7 76.3 7 74.5c0-1.8.5-3.4 1.6-4.8L19.3 59c1.1-1.1 2.5-1.6 4.3-1.6s3.4.5 4.8 1.6l96.6 96.6L221.6 59c1.4-1.1 3-1.6 4.8-1.6s3.2.5 4.3 1.6l10.7 10.7z"></path>
-                          </svg>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="w-full xl:w-10/12 mt-6 | lg:mt-8">
                     <div className="w-full">
-                      <div>
+                      <div className="text-end">
                         <button
                           type="button"
                           className="btn block p-5 fs-6 rounded-lg mt-2  uppercase font-light tracking-wide text-center bg-gray myPrimary cursor-pointer  lg:mt-8 "
@@ -661,12 +663,12 @@ const CourseAr = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative w-full border border-gray-400 rounded-lg mt-8 p-4 | md:text-left | lg:p-8">
+                <div className="relative w-full border border-gray-400 rounded-lg mt-8 p-4 | md:text-left | lg:p-8 text-end">
                   <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
                     Dates and Venues
                   </h3>
                   <div className="flex items-center mt-4">
-                    <div className="flex-1 text-sm text-gray-800">
+                    <div className="flex-1 text-sm me-2 text-gray-800">
                       <ul>
                         <li>18th-22nd March 2024 - Sunderland</li>
                         <li>13th-17th May 2024 - Virtual</li>
@@ -678,7 +680,7 @@ const CourseAr = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative w-full border border-gray-400 rounded-lg mt-8 p-4 | md:text-left | lg:p-8">
+                <div className="text-end  relative w-full border border-gray-400 rounded-lg mt-8 p-4 | md:text-left | lg:p-8 ">
                   <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
                     Why train with CASCO
                   </h3>
@@ -694,8 +696,8 @@ const CourseAr = () => {
                         fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                     </svg>
-                    <div className="flex-1 text-sm text-gray-800">
-                      Accelerated Learning techniques
+                    <div className="flex-1 text-sm me-2 text-gray-800">
+                      تسريع اليه التعلم
                     </div>
                   </div>
                   <div className="flex items-center mt-4">
@@ -710,7 +712,7 @@ const CourseAr = () => {
                         fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                     </svg>
-                    <div className="flex-1 text-sm text-gray-800">
+                    <div className="flex-1 text-sm me-2 text-gray-800">
                       Flexible training options: classroom, in-house, and online
                     </div>
                   </div>
@@ -726,7 +728,7 @@ const CourseAr = () => {
                         fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                     </svg>
-                    <div className="flex-1 text-sm text-gray-800">
+                    <div className="flex-1 text-sm me-2 text-gray-800">
                       Learn from top auditing and quality practitioners
                     </div>
                   </div>
@@ -742,12 +744,12 @@ const CourseAr = () => {
                         fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                     </svg>
-                    <div className="flex-1 text-sm text-gray-800">
+                    <div className="flex-1 text-sm me-2 text-gray-800">
                       Internationally accredited courses
                     </div>
                   </div>
                 </div>
-                <div className="relative w-full bg-gray-200 rounded-lg p-4 mt-8 | md:text-left | lg:p-8">
+                <div className="relative w-full bg-gray-200 rounded-lg p-4 mt-8 | md:text-left | lg:p-8 text-end">
                   <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
                     Other courses you may be interested in
                   </h3>
