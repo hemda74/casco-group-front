@@ -12,7 +12,7 @@ const ThirdSectionMainAr = () => {
               </h2>
             </div>
             <div className="col-lg-7 col-md-9 off-screen off-screen--hide off-screen--rotate-up">
-              <p className="intro">
+              <p className="intro text-black">
                 نحن شركة استشارات إدارية عالمية متخصصة في استراتيجية العمليات
                 والتحول. هذه مجموعة مختارة من التحديات الاستراتيجية التي نعمل
                 عليها بانتظام.
