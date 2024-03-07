@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const PraivacyPolicyAr = () => {
@@ -23,7 +24,7 @@ const PraivacyPolicyAr = () => {
             <div className="row off-screen off-screen--fade-up justify-content-center">
               <div className="col-lg-7">
                 <div className="the-content">
-                  <h2>Legal</h2>
+                  <h2>القانون</h2>
                   <p>{`
                     Argon &amp; Co is the trading name of Argon Consulting
                     S.A.S, which is incorporated in France under company number
@@ -53,9 +54,9 @@ const PraivacyPolicyAr = () => {
                     to ensure that you are happy with any changes. This policy
                     was last updated August 22.
                   `}</p>
-                  <h2>Data Collection</h2>
+                  <h2>جمع البيانات</h2>
                   <p>
-                    <span className="intro">Personal data</span>
+                    <span className="intro">البيانات الشخصية</span>
                   </p>
                   <p>{`
                     Argon &amp; Co offer operations strategy and transformation
@@ -99,9 +100,9 @@ const PraivacyPolicyAr = () => {
                     `}</li>
                     <li>{`Search terms`}</li>
                   </ul>
-                  <p>{`
+                  <p>
                     <span className="intro">Why we collect personal data</span>
-                  `}</p>
+                  </p>
                   <p>{`
                     Data we use is collected directly from you and is collected
                     for the purposes of:
@@ -111,7 +112,7 @@ const PraivacyPolicyAr = () => {
                     <li>
                       {`
                       To provide you with services that you may request from us
-                       `}{' '}
+                       `}
                     </li>
                     <li>{`
                       For our legitimate interests in making you aware of areas
@@ -147,12 +148,11 @@ const PraivacyPolicyAr = () => {
                     Data Protection Act and the General Data Protection
                     Regulations.
                   `}</p>
-                  <p>{`
+                  <p>
                     <span className="intro">
-                      {' '}
                       How long we retain your personal data
                     </span>
-                  `}</p>
+                  </p>
                   <p>{`
                     We will retain a record of your personal information. This
                     is done to provide you with a high quality and consistent
@@ -160,13 +160,12 @@ const PraivacyPolicyAr = () => {
                     accordance with law and regulation and never retain your
                     information for longer than is necessary.
                   `}</p>
-                  <p>{`&nbsp;`}</p>
-                  <h2>Data security</h2>
-                  <p>{`
+                  <h2>امن البيانات</h2>
+                  <p>
                     <span className="intro">
                       Keeping your information safe and secure
                     </span>
-                  `}</p>
+                  </p>
                   <p>{`
                     We are committed to ensuring that your personal information
                     is secure and protecting it from being inappropriately or
@@ -201,9 +200,9 @@ const PraivacyPolicyAr = () => {
                     iThemes.com. For privacy policy details, please see the
                     iThemes privacy policy.
                   `}</p>
-                  <p>{`
+                  <p>
                     <span className="intro">International data transfers</span>
-                  `}</p>
+                  </p>
                   <p>{`
                     In our normal business activities, we do not share data
                     outside the EEA unless necessary within our own Group
@@ -226,11 +225,12 @@ const PraivacyPolicyAr = () => {
                     appropriate safeguards and security measures are in
                     existence or where we have consent from you.
                   `}</p>
-                  <p>{`&nbsp;`}</p>
                   <h2>Cookies</h2>
-                  <p>{`
-                    <span className="intro">Definition and why they are used </span>
-                  `}</p>
+                  <p>
+                    <span className="intro">
+                      Definition and why they are used{' '}
+                    </span>
+                  </p>
                   <p>{`
                     Cookies are small data files that allow a website to collect
                     and store a range of data on your desktop computer, laptop
@@ -248,9 +248,9 @@ const PraivacyPolicyAr = () => {
                     website. This information is then used to personalise and
                     improve the way you interact with our site.
                   `}</p>
-                  <p>{`
+                  <p>
                     <span className="intro">How we use cookies</span>
-                  `}</p>
+                  </p>
                   <p>{`We use cookies to do the following:`}</p>
                   <ul>
                     <li>{`
@@ -269,9 +269,9 @@ const PraivacyPolicyAr = () => {
                       have sent you.
                     `}</li>
                   </ul>
-                  <p>{`
+                  <p>
                     <span className="intro"> Google analytics and cookies</span>
-                  `}</p>
+                  </p>
                   <p>{`
                     Google analytics is a web analytics service provided by
                     Google, Inc., which uses cookies to help analyse how users
@@ -288,49 +288,52 @@ const PraivacyPolicyAr = () => {
                     behalf. Our Google analytics data is deleted every 26
                     months.
                   `}</p>
-                  <p>{`
+                  <p>
+                    {`
                     For more information about Google’s privacy policy in
-                    respect of Google analytics, please refer to{' '}
+                    respect of Google analytics, please refer to`}
                     <a
                       href="http://www.google.com/analytics/learn/privacy.html"
                       target="_blank"
                       rel="noopener noreferrer">
                       http://www.google.com/analytics/learn/privacy.html
                     </a>
-                  `}</p>
-                  <p>{`
-                    You may opt out of Google analytics by visiting{' '}
+                  </p>
+                  <p>
+                    {`
+                    You may opt out of Google analytics by visiting`}
                     <a
                       href="https://tools.google.com/dlpage/gaoptout?hl+en=GB"
                       target="_blank"
                       rel="noopener noreferrer">
                       https://tools.google.com/dlpage/gaoptout?hl+en=GB
                     </a>
-                  `}</p>
-                  <p>{`
+                  </p>
+                  <p>
                     <span className="intro">How to manage your cookies</span>
-                  `}</p>
-                  <p>{`
+                  </p>
+                  <p>
+                    {`
                     You may stop or restrict the placement of cookies on your
                     computer by adjusting your settings in your web browsers.
                     However, this may interfere with some of the functionality
                     of the site. You can find more detailed information about
-                    how you can manage cookies at the{' '}
+                    how you can manage cookies at the`}
                     <a
                       href="https://www.allaboutcookies.org/"
                       target="_blank"
                       rel="noopener noreferrer">
                       all about cookies
-                    </a>{' '}
-                    and{' '}
+                    </a>
+                    and
                     <a
                       href="https://www.youronlinechoices.com/uk/"
                       target="_blank"
                       rel="noopener noreferrer">
                       your online choices
-                    </a>{' '}
+                    </a>
                     websites.
-                  `}</p>
+                  </p>
                   <p>{`&nbsp;`}</p>
                   <h2>Sharing your data with third parties</h2>
                   <p>{`
@@ -361,9 +364,9 @@ const PraivacyPolicyAr = () => {
                     <li>{`For the provision of CCTV`}</li>
                   </ul>
                   <h2>General</h2>
-                  <p>{`
+                  <p>
                     <span className="intro">Links to other sites</span>
-                  `}</p>
+                  </p>
                   <p>{`
                     We sometimes provide you with links to other websites, but
                     these websites are not under our control. Therefore, we will
@@ -374,9 +377,12 @@ const PraivacyPolicyAr = () => {
                     each website to see how each supplier may process your
                     information
                   `}</p>
-                  <p>{`
-                    <span className="intro"> Access to collected information</span>
-                  `}</p>
+                  <p>
+                    <span className="intro">
+                      {' '}
+                      Access to collected information
+                    </span>
+                  </p>
                   <p>{`
                     It is important that the personal information we hold about
                     you is accurate and current. If you believe that any
@@ -430,21 +436,20 @@ const PraivacyPolicyAr = () => {
                       Levallois-Perret, France`}
                     </li>
                   </ul>
-                  <p>{`
+                  <p>
+                    {`
                     You also have the right to make a complaint at any time to
                     the National Commission on Informatics and Liberty (CNIL),
                     the supervisory authority for data protection issues
                     (www.cnil.fr). We would, however, appreciate the chance to
                     deal with your concerns before you approach the CNIL, so
-                    please{' '}
-                    <a href="https://www.argonandco.com/en/contact-us/">
-                      contact us
-                    </a>{' '}
+                    please`}
+                    <Link href="/contact-us/">contact us</Link>
                     in the first instance.
-                  `}</p>
-                  <p>{`
+                  </p>
+                  <p>
                     <span className="intro">Changes to our privacy policy</span>
-                  `}</p>
+                  </p>
                   <p>{`
                     We may change our privacy policy from time to time. Any
                     changes will be published on our website which can be
