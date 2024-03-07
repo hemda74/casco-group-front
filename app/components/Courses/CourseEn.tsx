@@ -255,7 +255,7 @@ const CourseEn = () => {
                         </span>
                       </b>
                     </h1>
-                    Our course leaders are quality management professionals, as
+                    {`    Our course leaders are quality management professionals, as
                     well as being qualified, registered and experienced
                     auditors. They have extensive knowledge across a wide range
                     of sectors including manufacturing, finance,
@@ -264,7 +264,7 @@ const CourseEn = () => {
                     profile organisations, and fully understand the range of
                     technical, legislative and people challenges that face those
                     with a responsibility for delivering real quality
-                    improvements.
+                    improvements.`}
                     <div style={{ height: '22px' }}></div>
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
@@ -275,9 +275,9 @@ const CourseEn = () => {
                         </span>
                       </b>
                     </h1>
-                    Delegates successfully completing the course, including
+                    {`      Delegates successfully completing the course, including
                     examination, will be awarded a CQI and IRCA Certified
-                    training accredited certificate. (2352).
+                    training accredited certificate. (2352).`}
                   </div>
                 </div>
               </div>
