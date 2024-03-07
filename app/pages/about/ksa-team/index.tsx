@@ -5,7 +5,8 @@ import { NextPageWithLayout } from '../../_app';
 import { useLanguage } from '../../../Context/LanguageContext';
 import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
-import MainTeamPageEn from '../../../components/About/Team/MainTeamPageEn';
+import MainTeamPageEn from '../../../components/About/Team/KsaTeamEn';
+import MainTeamPageAr from '../../../components/About/Team/KsaTeamAr';
 
 type Props = {};
 const TeamMemberPage: NextPageWithLayout = (props: Props) => {
@@ -21,7 +22,9 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
             <MainTeamPageEn />
           </main>
         ) : (
-          <main className={`${styles.bodyContainer}`}></main>
+          <main className={`${styles.bodyContainer}`}>
+            <MainTeamPageAr />
+          </main>
         )}
       </Layout>
     </>

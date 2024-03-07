@@ -92,7 +92,9 @@ const MainTeamPageEn = () => {
         <div className="container card-grid">
           <div className="row">
             <div className="col-12 text-center">
-              <h2 className="title title--lg red-1-color">Meet Egypt Team</h2>
+              <h2 className="title title--lg red-1-color">
+                Meet Saudi Arabia Team
+              </h2>
             </div>
           </div>
           <div className="row js-team-top-level p-4">
