@@ -54,7 +54,7 @@ export default class SwipeToSlide extends Component {
               <h2 className="title title--lg red-1-color color-red-1">
                 Recognition
               </h2>
-              <p className="intro pad-btm-mob">
+              <p className="intro pad-btm-mob text-black">
                 {`
                 We are proud to be recognised by some of the world's leading
                 research companies, institutes and publications.`}

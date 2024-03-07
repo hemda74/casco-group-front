@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Recogention from '../Recogention';
 const MainTeamPageEn = () => {
   return (
     <>
@@ -94,24 +95,22 @@ const MainTeamPageEn = () => {
               <h2 className="title title--lg red-1-color">Meet The Team</h2>
             </div>
           </div>
-          <div className="row js-team-top-level">
-            <div className="col-xl-4 col-md-6 order-1">
+          <div className="row js-team-top-level p-4">
+            <div className="col-xl-3 col-md-6 order-1">
               <div className="">
-                <a href="#person_0_london" className="magnific-inline">
-                  <div className="card card--person">
-                    <div className="card--person__image grayscale">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
-                      </picture>
-                    </div>
-                    <strong className="notranslate">Ben Wright</strong>
-                    Partner{' '}
+                <div className=" card--person">
+                  <div className="card--person__image grayscale">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
+                      />
+                      <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
+                    </picture>
                   </div>
-                </a>
+                  <strong className="notranslate">Ben Wright</strong>
+                </div>
+
                 <div className="casestudy-popup mfp-hide" id="person_0_london">
                   <div className="row">
                     <div className="col-md-8">
@@ -121,24 +120,24 @@ const MainTeamPageEn = () => {
                       </h2>
                       <ul>
                         <li>
-                          Board level operational experience in management
+                          {`       Board level operational experience in management
                           consultancy focusing on logistics and supply chain
-                          functions within the retail and FMCG sectors
+                          functions within the retail and FMCG sectors`}
                         </li>
                         <li>
-                          Particular expertise in automated warehouse design,
+                          {`    Particular expertise in automated warehouse design,
                           distribution network strategies, last mile logistics,
                           warehouse management systems (WMS) and multi-channel
-                          logistics operations
+                          logistics operations`}
                         </li>
                         <li>
-                          With significant experience across the UK, Europe,
+                          {`    With significant experience across the UK, Europe,
                           Asia, USA and Australia, previous projects include
                           design and tendering for the worlds largest automated
                           multi-channel grocery warehouse, global network
                           rationalisations, Brexit-driven European distribution
                           strategies and grocery home shopping operational
-                          improvements
+                          improvements`}
                         </li>
                       </ul>
                     </div>
@@ -157,51 +156,281 @@ const MainTeamPageEn = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6 order-2">
-              <div className="card card--split red-1-background">
-                <div className="row no-gutters">
-                  <div className="col-6">
-                    <div className="card__content">
-                      <div className="title title--sm">UAE</div>
+            <div className="col-xl-3 col-md-6 order-1">
+              <div className="">
+                <div className=" card--person">
+                  <div className="card--person__image grayscale">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
+                      />
+                      <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
+                    </picture>
+                  </div>
+                  <strong className="notranslate">Ben Wright</strong>
+                </div>
 
-                      <div className="card--split__hover title--medium-weight">
-                        Meet the Team
+                <div className="casestudy-popup mfp-hide" id="person_0_london">
+                  <div className="row">
+                    <div className="col-md-8">
+                      <div className="data-label">Partner </div>
+                      <h2 className="title title--lg notranslate">
+                        Ben Wright{' '}
+                      </h2>
+                      <ul>
+                        <li>
+                          {`       Board level operational experience in management
+                          consultancy focusing on logistics and supply chain
+                          functions within the retail and FMCG sectors`}
+                        </li>
+                        <li>
+                          {`    Particular expertise in automated warehouse design,
+                          distribution network strategies, last mile logistics,
+                          warehouse management systems (WMS) and multi-channel
+                          logistics operations`}
+                        </li>
+                        <li>
+                          {`    With significant experience across the UK, Europe,
+                          Asia, USA and Australia, previous projects include
+                          design and tendering for the worlds largest automated
+                          multi-channel grocery warehouse, global network
+                          rationalisations, Brexit-driven European distribution
+                          strategies and grocery home shopping operational
+                          improvements`}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="card--person__image ">
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
+                          />
+                          <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
+                        </picture>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="col-6 card--split__image grayscale"
-                    style={{
-                      backgroundImage:
-                        'url(https://www.argonandco.com/wp-content/uploads/2020/01/Picture1.png)',
-                    }}></div>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-4 col-md-6 order-4">
-              <div className="card card--split red-1-background">
-                <div className="row no-gutters">
-                  <div className="col-6">
-                    <div className="card__content">
-                      <div className="title title--sm">KSA</div>
+            </div>{' '}
+            <div className="col-xl-3 col-md-6 order-1">
+              <div className="">
+                <div className=" card--person">
+                  <div className="card--person__image grayscale">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
+                      />
+                      <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
+                    </picture>
+                  </div>
+                  <strong className="notranslate">Ben Wright</strong>
+                </div>
 
-                      <div className="card--split__hover title--medium-weight">
-                        Meet the team
+                <div className="casestudy-popup mfp-hide" id="person_0_london">
+                  <div className="row">
+                    <div className="col-md-8">
+                      <div className="data-label">Partner </div>
+                      <h2 className="title title--lg notranslate">
+                        Ben Wright{' '}
+                      </h2>
+                      <ul>
+                        <li>
+                          {`       Board level operational experience in management
+                          consultancy focusing on logistics and supply chain
+                          functions within the retail and FMCG sectors`}
+                        </li>
+                        <li>
+                          {`    Particular expertise in automated warehouse design,
+                          distribution network strategies, last mile logistics,
+                          warehouse management systems (WMS) and multi-channel
+                          logistics operations`}
+                        </li>
+                        <li>
+                          {`    With significant experience across the UK, Europe,
+                          Asia, USA and Australia, previous projects include
+                          design and tendering for the worlds largest automated
+                          multi-channel grocery warehouse, global network
+                          rationalisations, Brexit-driven European distribution
+                          strategies and grocery home shopping operational
+                          improvements`}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="card--person__image ">
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
+                          />
+                          <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
+                        </picture>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="col-6 card--split__image grayscale"
-                    style={{
-                      backgroundImage:
-                        'url(https://www.argonandco.com/wp-content/uploads/2021/07/IMG_0128-683x1024.jpg)',
-                    }}></div>
+                </div>
+              </div>
+            </div>{' '}
+            <div className="col-xl-3 col-md-6 order-1">
+              <div className="">
+                <div className=" card--person">
+                  <div className="card--person__image grayscale">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
+                      />
+                      <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
+                    </picture>
+                  </div>
+                  <strong className="notranslate">Ben Wright</strong>
+                </div>
+
+                <div className="casestudy-popup mfp-hide" id="person_0_london">
+                  <div className="row">
+                    <div className="col-md-8">
+                      <div className="data-label">Partner </div>
+                      <h2 className="title title--lg notranslate">
+                        Ben Wright{' '}
+                      </h2>
+                      <ul>
+                        <li>
+                          {`       Board level operational experience in management
+                          consultancy focusing on logistics and supply chain
+                          functions within the retail and FMCG sectors`}
+                        </li>
+                        <li>
+                          {`    Particular expertise in automated warehouse design,
+                          distribution network strategies, last mile logistics,
+                          warehouse management systems (WMS) and multi-channel
+                          logistics operations`}
+                        </li>
+                        <li>
+                          {`    With significant experience across the UK, Europe,
+                          Asia, USA and Australia, previous projects include
+                          design and tendering for the worlds largest automated
+                          multi-channel grocery warehouse, global network
+                          rationalisations, Brexit-driven European distribution
+                          strategies and grocery home shopping operational
+                          improvements`}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="card--person__image ">
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
+                          />
+                          <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        {/* <!-- Button trigger modal --> */}
+        <button
+          type="button"
+          className="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModalCenter">
+          Launch demo modal
+        </button>
+        {/* <!-- Modal --> */}
+        <div
+          className="modal fade"
+          id="exampleModalCenter"
+          tabIndex={-1}
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div className="modal-dialog modal-dialog-centered" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLongTitle">
+                  Modal title
+                </h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">...</div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  data-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" className="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      {/* <!-- Button trigger modal --> */}
+      <button
+        type="button"
+        className="btn btn-primary"
+        data-toggle="modal"
+        data-target="#exampleModal">
+        Launch demo modal
+      </button>
+      {/* 
+<!-- Modal --> */}
+      <div
+        className="modal fade"
+        id="exampleModal"
+        tabIndex={0}
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+                Modal title
+              </h5>
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">...</div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-dismiss="modal">
+                Close
+              </button>
+              <button type="button" className="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Recogention />
     </>
   );
 };

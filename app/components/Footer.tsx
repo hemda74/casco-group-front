@@ -19,13 +19,7 @@ const Footer = () => {
           <div className="col-md-3">
             <Image alt="casco logo" src={logo} width={200} height={100} />
             <form action="/" id="searchform" method="get">
-              <input
-                type="search"
-                id="s"
-                name="s"
-                value=""
-                placeholder="Search..."
-              />
+              <input type="search" id="s" name="s" placeholder="Search..." />
             </form>
           </div>
           <div className="col-md-4 offset-md-2">
