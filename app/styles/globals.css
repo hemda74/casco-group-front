@@ -17311,6 +17311,3 @@ text-primary .dropdown-menu {
 .modal-dialog {
   max-width: 100% !important;
 }
-.modal-backdrop {
-  position: inherit !important;
-}
