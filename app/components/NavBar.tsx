@@ -6,11 +6,13 @@ import Link from 'next/link';
 import LocalizationBtn from './LocaliazationBtn';
 const NavBar = () => {
   const [navbarColor, setNavbarColor] = useState<string>('bg-transparent');
+  const [navlinkColor, setnavlinkColor] = useState<string>('text-white');
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       setNavbarColor(currentScrollPos > 500 ? 'bg-light' : 'bg-transparent');
+      setnavlinkColor(currentScrollPos > 500 ? 'text-black' : 'text-white');
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -51,21 +53,21 @@ const NavBar = () => {
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/courses'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink}  fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink} ${navlinkColor}  fw-bold mt-1 text-nowrap`}
                   data-trans="CoursesNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem} `}>
               <Link href={'/about'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink} ${navlinkColor} fw-bold mt-1 text-nowrap`}
                   data-trans="AboutCascoNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/services'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink} ${navlinkColor}  fw-bold mt-1 text-nowrap`}
                   data-trans="ServicesNav"></p>
               </Link>
             </li>
@@ -73,28 +75,28 @@ const NavBar = () => {
               className={`nav-item ms-3 ${styles.navItem} menu-item menu-item-type-post_type menu-item-object-page menu-item-89`}>
               <Link href={'/industries'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink}  fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink} ${navlinkColor}  fw-bold mt-1 text-nowrap`}
                   data-trans="industriesNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/news-insights'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink} ${navlinkColor} fw-bold mt-1 text-nowrap`}
                   data-trans="NewsNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/careers'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink} ${navlinkColor} fw-bold mt-1 text-nowrap`}
                   data-trans="CareersNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/contact-us'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap `}
+                  className={`${styles.navLink} ${navlinkColor} fw-bold mt-1 text-nowrap `}
                   data-trans="ContactUsNav"></p>
               </Link>
             </li>
