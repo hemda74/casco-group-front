@@ -4,44 +4,35 @@ const JoinUsAr = () => {
     <>
       <div id="content-wrap" dir="rtl">
         <div
-          className="full-page-scroller fullpage fullpage-wrapper"
-          style={{
-            height: '100%',
-            position: 'relative',
-            touchAction: 'none',
-            transform: 'translate3d(0px, 0px, 0px)',
-            transition: 'all 700ms ease 0s',
-          }}>
-          <div
-            className="section accent-color-red-1 fp-section fp-table active fp-completely"
-            data-fp-styles="null"
-            style={{ height: '695px' }}>
-            <div className="fp-tableCell" style={{ height: '695px' }}>
-              <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
-                <div
-                  className="col-md-4 accent-background full-page-scroller__image"
-                  style={{
-                    backgroundImage:
-                      'url(https://www.argonandco.com/wp-content/uploads/2019/12/who-we-look-for.jpg)',
-                  }}>
-                  <span className=" title title--xl title--bold text-start">
-                    Join us
-                  </span>
-                </div>
-                <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
-                  <div className="full-page-scroller__content">
-                    <h2 className="title title--lg accent-color">
-                      1.من نبحث عنه
-                    </h2>
-                    <p>
-                      <span className="intro join-us-sub-title">
-                        {`
+          className="section accent-color-red-1 fp-section fp-table active fp-completely"
+          data-fp-styles="null"
+          style={{ height: '695px' }}>
+          <div className="fp-tableCell" style={{ height: '695px' }}>
+            <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
+              <div
+                className="col-md-4 accent-background full-page-scroller__image"
+                style={{
+                  backgroundImage:
+                    'url(https://www.argonandco.com/wp-content/uploads/2019/12/who-we-look-for.jpg)',
+                }}>
+                <span className=" title title--xl title--bold text-start">
+                  Join us
+                </span>
+              </div>
+              <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
+                <div className="full-page-scroller__content">
+                  <h2 className="title title--lg accent-color">
+                    1.من نبحث عنه
+                  </h2>
+                  <p>
+                    <span className="intro join-us-sub-title">
+                      {`
                         To be part of our talented team you need to be a high
                         achiever with clarity of thought, integrity and the
                         ability to get on with people. `}
-                      </span>
-                    </p>
-                    <p>{`
+                    </span>
+                  </p>
+                  <p>{`
                       You will have an excellent academic record and typically a
                       minimum of three years working experience either in
                       operations or consulting. You should be able to
@@ -51,21 +42,21 @@ const JoinUsAr = () => {
                       develop your own capabilities and those of your
                       colleagues.
                     `}</p>
-                    <a
-                      href="#popup_1"
-                      className="line-link red-1-color magnific-inline">
-                      <span className="red-1-color">Read more</span>
-                    </a>
-                    <div className="mfp-hide" id="popup_1">
-                      <div className="the-content">
-                        <p>
-                          <span className="intro join-us-sub-title">
-                            {`To be part of our talented team you need to be a
+                  <a
+                    href="#popup_1"
+                    className="line-link red-1-color magnific-inline">
+                    <span className="red-1-color">Read more</span>
+                  </a>
+                  <div className="mfp-hide" id="popup_1">
+                    <div className="the-content">
+                      <p>
+                        <span className="intro join-us-sub-title">
+                          {`To be part of our talented team you need to be a
                             high achiever with clarity of thought, integrity and
                             the ability to get on with people. `}
-                          </span>
-                        </p>
-                        <p>{`
+                        </span>
+                      </p>
+                      <p>{`
                           You will have an excellent academic record and
                           typically a minimum of three years working experience
                           either in operations or consulting. You should be able
@@ -75,7 +66,7 @@ const JoinUsAr = () => {
                           to develop your own capabilities and those of your
                           colleagues.
                         `}</p>
-                        <p>{`
+                      <p>{`
                           Challenges drive us and we are obsessed with answering
                           the questions that keep our clients awake at night.
                           Our people are confident but not arrogant, assertive
@@ -83,8 +74,8 @@ const JoinUsAr = () => {
                           desire to roll up your sleeves when something needs
                           doing.
                         `}</p>
-                        <h2>Graduates</h2>
-                        <p>{`
+                      <h2>Graduates</h2>
+                      <p>{`
                           We look for graduates with an interest in business
                           operations underpinned by an excellent academic
                           record. If you enjoy solving complex problems through
@@ -94,55 +85,55 @@ const JoinUsAr = () => {
                           from you. Most importantly, we hire graduates who will
                           contribute positively to our culture.
                         `}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="row  justify-content-end full-page-scroller__next d-none d-md-block">
-                <div className="col-md-8">
-                  <div className="js-move-slider-down ">
-                    <div className="arrow arrow--right accent-color">
-                      <span>لماذا الانضمام الينا?</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div
-            className="section accent-color-red-2 fp-section fp-table"
-            data-fp-styles="null"
-            style={{ height: '695px' }}>
-            <div className="fp-tableCell" style={{ height: '695px' }}>
-              <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
-                <div
-                  className="col-md-4 accent-background full-page-scroller__image"
-                  style={{
-                    backgroundImage:
-                      'url(https://www.argonandco.com/wp-content/uploads/2019/12/join-us.jpg)',
-                  }}>
-                  <div className="title title--xl title--bold d-none d-md-block">
-                    Join us
+            <div className="row  justify-content-end full-page-scroller__next d-none d-md-block">
+              <div className="col-md-8">
+                <div className="js-move-slider-down ">
+                  <div className="arrow arrow--right accent-color">
+                    <span>لماذا الانضمام الينا?</span>
                   </div>
                 </div>
-                <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
-                  <div className="full-page-scroller__content">
-                    <h2 className="title title--lg accent-color">
-                      2. لماذا الانضمام الينا ؟
-                    </h2>
-                    <p>
-                      <span className="intro join-us-sub-title">
-                        {`
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="section accent-color-red-2 fp-section fp-table"
+          data-fp-styles="null"
+          style={{ height: '695px' }}>
+          <div className="fp-tableCell" style={{ height: '695px' }}>
+            <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
+              <div
+                className="col-md-4 accent-background full-page-scroller__image"
+                style={{
+                  backgroundImage:
+                    'url(https://www.argonandco.com/wp-content/uploads/2019/12/join-us.jpg)',
+                }}>
+                <div className="title title--xl title--bold d-none d-md-block">
+                  Join us
+                </div>
+              </div>
+              <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
+                <div className="full-page-scroller__content">
+                  <h2 className="title title--lg accent-color">
+                    2. لماذا الانضمام الينا ؟
+                  </h2>
+                  <p>
+                    <span className="intro join-us-sub-title">
+                      {`
                         We are a tight-knit team, like a family. We care about
                         each other and our clients. We enjoy working together
                         and our business is founded on a supportive culture. We
                         meet up regularly to catch up, learn and share best
                         practice.`}
-                      </span>
-                    </p>
-                    <p>{`
+                    </span>
+                  </p>
+                  <p>{`
                       Our environment provides our consultants with the chance
                       to excel and our continuing expansion opens up
                       opportunities across the globe. We recognise that people
@@ -150,50 +141,50 @@ const JoinUsAr = () => {
                       encouraging our consultants to pursue the right career
                       path for themselves.
                     `}</p>
-                  </div>
                 </div>
               </div>
-              <div className="row  justify-content-end full-page-scroller__next d-none d-md-block">
-                <div className="col-md-8">
-                  <div className="js-move-slider-down ">
-                    <div className="arrow arrow--right accent-color">
-                      <span>Typical projects</span>
-                    </div>
+            </div>
+            <div className="row  justify-content-end full-page-scroller__next d-none d-md-block">
+              <div className="col-md-8">
+                <div className="js-move-slider-down ">
+                  <div className="arrow arrow--right accent-color">
+                    <span>Typical projects</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            className="section accent-color-red-3 fp-section fp-table"
-            data-fp-styles="null"
-            style={{ height: '695px' }}>
-            <div className="fp-tableCell" style={{ height: '695px' }}>
-              <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
-                <div
-                  className="col-md-4 accent-background full-page-scroller__image"
-                  style={{
-                    backgroundImage:
-                      'url(https://www.argonandco.com/wp-content/uploads/2019/12/typical-projects.jpg)',
-                  }}>
-                  <div className="title title--xl title--bold d-none d-md-block">
-                    Join us
-                  </div>
+        <div
+          className="section accent-color-red-3 fp-section fp-table"
+          data-fp-styles="null"
+          style={{ height: '695px' }}>
+          <div className="fp-tableCell" style={{ height: '695px' }}>
+            <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
+              <div
+                className="col-md-4 accent-background full-page-scroller__image"
+                style={{
+                  backgroundImage:
+                    'url(https://www.argonandco.com/wp-content/uploads/2019/12/typical-projects.jpg)',
+                }}>
+                <div className="title title--xl title--bold d-none d-md-block">
+                  Join us
                 </div>
-                <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
-                  <div className="full-page-scroller__content">
-                    <h2 className="title title--lg accent-color">
-                      3. Typical projects{' '}
-                    </h2>
-                    <p>
-                      <span className="intro join-us-sub-title">
-                        {`
+              </div>
+              <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
+                <div className="full-page-scroller__content">
+                  <h2 className="title title--lg accent-color">
+                    3. Typical projects{' '}
+                  </h2>
+                  <p>
+                    <span className="intro join-us-sub-title">
+                      {`
                         The majority of our clients are major organisations and
                         market leaders in their particular industry.`}
-                      </span>
-                    </p>
-                    <p>{`
+                    </span>
+                  </p>
+                  <p>{`
                       On client projects you will be part of a team which,
                       depending on the nature of the project, could be based
                       either at the client’s site or in our offices, and you
@@ -203,23 +194,23 @@ const JoinUsAr = () => {
                       is likely to vary project by project as you develop your
                       confidence and capabilities.
                     `}</p>
-                    <a
-                      href="#popup_3"
-                      className="line-link red-3-color magnific-inline">
-                      <span className="red-3-color">Read more</span>
-                    </a>
-                    <div className="mfp-hide" id="popup_3">
-                      <div className="the-content">
-                        <p>
-                          <span className="intro" style={{ fontWeight: 400 }}>
-                            {`
+                  <a
+                    href="#popup_3"
+                    className="line-link red-3-color magnific-inline">
+                    <span className="red-3-color">Read more</span>
+                  </a>
+                  <div className="mfp-hide" id="popup_3">
+                    <div className="the-content">
+                      <p>
+                        <span className="intro" style={{ fontWeight: 400 }}>
+                          {`
                             The majority of our clients are major organisations
                             and market leaders in their particular industry.`}
-                          </span>
-                        </p>
-                        <p>
-                          <span style={{ fontWeight: 400 }}>
-                            {`
+                        </span>
+                      </p>
+                      <p>
+                        <span style={{ fontWeight: 400 }}>
+                          {`
                             On client projects you will be part of a team which,
                             depending on the nature of the project, could be
                             based either at the client’s site or in our offices,
@@ -229,11 +220,11 @@ const JoinUsAr = () => {
                             within a stream, and your role is likely to vary
                             project by project as you develop your confidence
                             and capabilities.& `}
-                          </span>
-                        </p>
-                        <p>
-                          <span style={{ fontWeight: 400 }}>
-                            {`
+                        </span>
+                      </p>
+                      <p>
+                        <span style={{ fontWeight: 400 }}>
+                          {`
                             As well as working on client projects, you may also
                             be involved in some internal initiatives, such as
                             helping to develop internal methodologies and
@@ -248,82 +239,82 @@ const JoinUsAr = () => {
                             outside your comfort zone and work with colleagues
                             who you may not normally come across in your
                             day-to-day client work `}
-                          </span>
-                        </p>
-                        <p>
-                          <span style={{ fontWeight: 400 }}>
-                            {`
+                        </span>
+                      </p>
+                      <p>
+                        <span style={{ fontWeight: 400 }}>
+                          {`
                             When we agree the members of each project team, we
                             look at both the skills required for the assignment
                             and the development objectives of the individuals.
                             We also aim to ensure that our staff maintain a
                             positive work/life balance, so we take into account
                             an individual’s recent assignments and their impact. `}
-                          </span>
-                        </p>
-                        <h2>Graduates</h2>
-                        <p className="p1">{`
+                        </span>
+                      </p>
+                      <h2>Graduates</h2>
+                      <p className="p1">{`
                           Graduates are an integral part of client projects.
                           They work alongside consultants and are exposed to a
                           variety of industries and business areas where they
                           gain the skills required to become consultants.
                         `}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="row  justify-content-end full-page-scroller__next d-none d-md-block">
-                <div className="col-md-8">
-                  <div className="js-move-slider-down ">
-                    <div className="arrow arrow--right accent-color">
-                      <span>Events</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="row  justify-content-end full-page-scroller__next d-none d-md-block">
+              <div className="col-md-8">
+                <div className="js-move-slider-down ">
+                  <div className="arrow arrow--right accent-color">
+                    <span>Events</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <div
-            className="section accent-color-red-4 fp-section fp-table"
-            data-fp-styles="null"
-            style={{ height: '695px' }}>
-            <div className="fp-tableCell" style={{ height: '695px' }}>
-              <div className="fp-scrollable" style={{ height: '695px' }}>
-                <div
-                  className="fp-scroller"
-                  style={{
-                    transitionTimingFunction: 'cubic-bezier(0.1, 0.57, 0.1, 1)',
-                    transitionDuration: '0ms',
-                    transform: 'translate(0px, 0px) translateZ(0px)',
-                  }}>
-                  <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
-                    <div
-                      className="col-md-4 accent-background full-page-scroller__image"
-                      style={{
-                        backgroundImage:
-                          'url(https://www.argonandco.com/wp-content/uploads/2019/12/events.jpg)',
-                      }}>
-                      <div className="title title--xl title--bold d-none d-md-block">
-                        Join us
-                      </div>
+        <div
+          className="section accent-color-red-4 fp-section fp-table"
+          data-fp-styles="null"
+          style={{ height: '695px' }}>
+          <div className="fp-tableCell" style={{ height: '695px' }}>
+            <div className="fp-scrollable" style={{ height: '695px' }}>
+              <div
+                className="fp-scroller"
+                style={{
+                  transitionTimingFunction: 'cubic-bezier(0.1, 0.57, 0.1, 1)',
+                  transitionDuration: '0ms',
+                  transform: 'translate(0px, 0px) translateZ(0px)',
+                }}>
+                <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
+                  <div
+                    className="col-md-4 accent-background full-page-scroller__image"
+                    style={{
+                      backgroundImage:
+                        'url(https://www.argonandco.com/wp-content/uploads/2019/12/events.jpg)',
+                    }}>
+                    <div className="title title--xl title--bold d-none d-md-block">
+                      Join us
                     </div>
-                    <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
-                      <div className="full-page-scroller__content">
-                        <h2 className="title title--lg accent-color">
-                          4. Events{' '}
-                        </h2>
-                        <p>
-                          <span className="intro join-us-sub-title">
-                            {`
+                  </div>
+                  <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
+                    <div className="full-page-scroller__content">
+                      <h2 className="title title--lg accent-color">
+                        4. Events{' '}
+                      </h2>
+                      <p>
+                        <span className="intro join-us-sub-title">
+                          {`
                             It is vital that we act as a team when with the
                             client, as well as when we work together internally.
                             We work hard to make sure this happens, getting to
                             know each other and keeping in touch day by day.`}
-                          </span>
-                        </p>
-                        <p>{`
+                        </span>
+                      </p>
+                      <p>{`
                           We have an internal social platform which we use
                           globally, sharing interesting information, project
                           updates and opportunities, but we also spend a lot of
@@ -335,28 +326,26 @@ const JoinUsAr = () => {
                           allow us to catch-up with our friends who we might not
                           have seen recently.
                         `}</p>
-                        <a
-                          href="#popup_4"
-                          className="line-link red-4-color magnific-inline">
-                          <span className="red-4-color">Read more</span>
-                        </a>
-                        <div className="mfp-hide" id="popup_4">
-                          <div className="the-content">
-                            <p>
-                              <span
-                                className="intro"
-                                style={{ fontWeight: 400 }}>
-                                {`
+                      <a
+                        href="#popup_4"
+                        className="line-link red-4-color magnific-inline">
+                        <span className="red-4-color">Read more</span>
+                      </a>
+                      <div className="mfp-hide" id="popup_4">
+                        <div className="the-content">
+                          <p>
+                            <span className="intro" style={{ fontWeight: 400 }}>
+                              {`
                                 It is vital that we act as a team when with the
                                 client, as well as when we work together
                                 internally. We work hard to make sure this
                                 happens, getting to know each other and keeping
                                 in touch day by day. `}
-                              </span>
-                            </p>
-                            <p>
-                              <span style={{ fontWeight: 400 }}>
-                                {`
+                            </span>
+                          </p>
+                          <p>
+                            <span style={{ fontWeight: 400 }}>
+                              {`
                             
                                 We have an internal social platform which we use
                                 globally, sharing interesting information,
@@ -369,15 +358,15 @@ const JoinUsAr = () => {
                                 training. And, of course, these occasions allow
                                 us to catch-up with our friends who we might not
                                 have seen recently. `}
-                              </span>
-                            </p>
-                            <h2>
-                              <span style={{ fontWeight: 400 }}>Argon </span>
-                              <span style={{ fontWeight: 400 }}>Challenge</span>
-                            </h2>
-                            <p>
-                              <span style={{ fontWeight: 400 }}>
-                                {`
+                            </span>
+                          </p>
+                          <h2>
+                            <span style={{ fontWeight: 400 }}>Argon </span>
+                            <span style={{ fontWeight: 400 }}>Challenge</span>
+                          </h2>
+                          <p>
+                            <span style={{ fontWeight: 400 }}>
+                              {`
                                 Several internal events are arranged throughout
                                 the year to promote our values, team-working and
                                 personal development, known collectively as the
@@ -393,14 +382,14 @@ const JoinUsAr = () => {
                                 worldwide, with recent examples including a
                                 global 5km run and a photography
                                 competition.&`}
-                              </span>
-                            </p>
-                            <h2>
-                              <span style={{ fontWeight: 400 }}>Academy</span>
-                            </h2>
-                            <p>
-                              <span style={{ fontWeight: 400 }}>
-                                {`
+                            </span>
+                          </p>
+                          <h2>
+                            <span style={{ fontWeight: 400 }}>Academy</span>
+                          </h2>
+                          <p>
+                            <span style={{ fontWeight: 400 }}>
+                              {`
                                 We take advantage of our global reach to provide
                                 learning opportunities throughout our offices.
                                 The Academy is our bi-annual two-day learning
@@ -417,94 +406,93 @@ const JoinUsAr = () => {
                                 The Academy allows us to leverage our global
                                 skills and experience and strengthen
                                 relationships across the business. `}
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row  justify-content-end full-page-scroller__next d-none d-md-block">
-                    <div className="col-md-8">
-                      <div className="js-move-slider-down ">
-                        <div className="arrow arrow--right accent-color">
-                          <span>Career path</span>
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div className="row  justify-content-end full-page-scroller__next d-none d-md-block">
+                  <div className="col-md-8">
+                    <div className="js-move-slider-down ">
+                      <div className="arrow arrow--right accent-color">
+                        <span>Career path</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="iScrollVerticalScrollbar iScrollLoneScrollbar"
+                style={{
+                  position: 'absolute',
+                  width: '7px',
+                  bottom: '2px',
+                  top: '2px',
+                  right: '1px',
+                  overflow: 'hidden',
+                }}>
                 <div
-                  className="iScrollVerticalScrollbar iScrollLoneScrollbar"
+                  className="iScrollIndicator"
                   style={{
+                    boxSizing: 'border-box',
                     position: 'absolute',
-                    width: '7px',
-                    bottom: '2px',
-                    top: '2px',
-                    right: '1px',
-                    overflow: 'hidden',
-                  }}>
-                  <div
-                    className="iScrollIndicator"
-                    style={{
-                      boxSizing: 'border-box',
-                      position: 'absolute',
-                      background:
-                        'rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.9)',
-                      borderRadius: '3px',
-                      width: '100%',
-                      transitionDuration: '0ms',
-                      display: 'block',
-                      height: '658px',
-                      transform: 'translate(0px, 0px) translateZ(0px)',
-                      transitionTimingFunction:
-                        'cubic-bezier(0.1, 0.57, 0.1, 1)',
-                    }}></div>
-                </div>
+                    background:
+                      'rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.9)',
+                    borderRadius: '3px',
+                    width: '100%',
+                    transitionDuration: '0ms',
+                    display: 'block',
+                    height: '658px',
+                    transform: 'translate(0px, 0px) translateZ(0px)',
+                    transitionTimingFunction: 'cubic-bezier(0.1, 0.57, 0.1, 1)',
+                  }}></div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            className="section accent-color-red-5 fp-section fp-table"
-            data-fp-styles="null"
-            style={{ height: '695px' }}>
-            <div className="fp-tableCell" style={{ height: '695px' }}>
-              <div className="fp-scrollable" style={{ height: '695px' }}>
-                <div
-                  className="fp-scroller"
-                  style={{
-                    transitionTimingFunction: 'cubic-bezier(0.1, 0.57, 0.1, 1)',
-                    transitionDuration: '0ms',
-                    transform: 'translate(0px, 0px) translateZ(0px)',
-                  }}>
-                  <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
-                    <div
-                      className="col-md-4 accent-background full-page-scroller__image"
-                      style={{
-                        backgroundImage:
-                          'url(https://www.argonandco.com/wp-content/uploads/2019/12/career-path.jpg)',
-                      }}>
-                      <div className="title title--xl title--bold d-none d-md-block">
-                        Join us
-                      </div>
+        <div
+          className="section accent-color-red-5 fp-section fp-table"
+          data-fp-styles="null"
+          style={{ height: '695px' }}>
+          <div className="fp-tableCell" style={{ height: '695px' }}>
+            <div className="fp-scrollable" style={{ height: '695px' }}>
+              <div
+                className="fp-scroller"
+                style={{
+                  transitionTimingFunction: 'cubic-bezier(0.1, 0.57, 0.1, 1)',
+                  transitionDuration: '0ms',
+                  transform: 'translate(0px, 0px) translateZ(0px)',
+                }}>
+                <div className="row full-page-scroller__row no-gutters align-items-center justify-content-center">
+                  <div
+                    className="col-md-4 accent-background full-page-scroller__image"
+                    style={{
+                      backgroundImage:
+                        'url(https://www.argonandco.com/wp-content/uploads/2019/12/career-path.jpg)',
+                    }}>
+                    <div className="title title--xl title--bold d-none d-md-block">
+                      Join us
                     </div>
-                    <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
-                      <div className="full-page-scroller__content">
-                        <h2 className="title title--lg accent-color">
-                          5. Career path{' '}
-                        </h2>
-                        <p>
-                          <span className="intro join-us-sub-title">
-                            {`
+                  </div>
+                  <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
+                    <div className="full-page-scroller__content">
+                      <h2 className="title title--lg accent-color">
+                        5. Career path{' '}
+                      </h2>
+                      <p>
+                        <span className="intro join-us-sub-title">
+                          {`
                             Our consultant development model allows individuals
                             to identify development areas and plot their career
                             path. It provides a framework that consultants of
                             all levels and experience can use to understand the
                             skills required at each grade. `}
-                          </span>
-                        </p>
-                        <p>{`
+                        </span>
+                      </p>
+                      <p>{`
                           These skills are detailed in our professional
                           standards and core skills framework. This covers hard
                           skills (such as analytics, process mapping), soft
@@ -513,29 +501,27 @@ const JoinUsAr = () => {
                           is trained in these areas to ensure they have the
                           capabilities to meet our clients’ needs.
                         `}</p>
-                        <a
-                          href="#popup_5"
-                          className="line-link red-5-color magnific-inline">
-                          <span className="red-5-color">Read more</span>
-                        </a>
-                        <div className="mfp-hide" id="popup_5">
-                          <div className="the-content">
-                            <p>
-                              <span
-                                className="intro"
-                                style={{ fontWeight: 400 }}>
-                                {`
+                      <a
+                        href="#popup_5"
+                        className="line-link red-5-color magnific-inline">
+                        <span className="red-5-color">Read more</span>
+                      </a>
+                      <div className="mfp-hide" id="popup_5">
+                        <div className="the-content">
+                          <p>
+                            <span className="intro" style={{ fontWeight: 400 }}>
+                              {`
                                 Our consultant development model allows
                                 individuals to identify development areas and
                                 plot their career path. It provides a framework
                                 that consultants of all levels and experience
                                 can use to understand the skills required at
                                 each grade. `}
-                              </span>
-                            </p>
-                            <p>
-                              <span style={{ fontWeight: 400 }}>
-                                {`
+                            </span>
+                          </p>
+                          <p>
+                            <span style={{ fontWeight: 400 }}>
+                              {`
                                 These skills are detailed in our professional
                                 standards and core skills framework. This covers
                                 hard skills (such as analytics, process
@@ -544,11 +530,11 @@ const JoinUsAr = () => {
                                 technical skills, and everyone is trained in
                                 these areas to ensure they have the capabilities
                                 to meet our clients’ needs. `}
-                              </span>
-                            </p>
-                            <p>
-                              <span style={{ fontWeight: 400 }}>
-                                {`
+                            </span>
+                          </p>
+                          <p>
+                            <span style={{ fontWeight: 400 }}>
+                              {`
                                 We have a first-year training programme for all
                                 new recruits which includes ‘core consultancy’
                                 and ‘project management skills’. Further
@@ -556,20 +542,20 @@ const JoinUsAr = () => {
                                 part of the appraisal process and are addressed
                                 through external training or working alongside
                                 experienced colleagues. `}
-                              </span>
-                            </p>
-                            <p>
-                              <span style={{ fontWeight: 400 }}>
-                                {`
+                            </span>
+                          </p>
+                          <p>
+                            <span style={{ fontWeight: 400 }}>
+                              {`
                                 As part of our commitment to ensuring we are
                                 meeting our consultants’ needs, career
                                 development forms a major component of the
                                 annual staff survey which measures staff
                                 satisfaction across a range of areas. `}
-                              </span>
-                            </p>
-                            <h2>Graduates</h2>
-                            <p>{`
+                            </span>
+                          </p>
+                          <h2>Graduates</h2>
+                          <p>{`
                               For graduates, we offer an accelerated career path
                               to becoming a consultant, with a strong focus on
                               training on the job. This approach gives exposure
@@ -583,7 +569,6 @@ const JoinUsAr = () => {
                               but when our graduates are ready, they get
                               promoted to consultants.
                             `}</p>
-                          </div>
                         </div>
                       </div>
                     </div>

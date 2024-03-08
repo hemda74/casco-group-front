@@ -48,7 +48,7 @@ const JoinUsEn = () => {
                       data-bs-target="#exampleModal">
                       <span className="red-1-color">Read more</span>
                     </a>
-                    <div className="w-full">
+                    <div className="">
                       <div
                         className="modal fade contact w-screen fixed inset-0 mx-auto align-center scrolling-touch overflow-y-auto | lg:h-screen lg:px-8"
                         id="exampleModal"
@@ -56,8 +56,8 @@ const JoinUsEn = () => {
                         aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div className="modal-dialog">
-                          <div className="modal-content w-full h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
-                            <div className="relative bg-white   lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
+                          <div className="modal-content h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
+                            <div className="relative bg-white  min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
                               <div className="absolute top-0 right-0 text-lg  cursor-pointer">
                                 <button
                                   type="button"
@@ -66,43 +66,67 @@ const JoinUsEn = () => {
                                   aria-label="Close"></button>
                               </div>
                               <div className="row mt-5">
-                                <div className="col-md-8">
-                                  <h2 className="title title--lg p-2 text-primary-100 ">
-                                    Ben Wright
-                                  </h2>
-                                  <ul>
-                                    <li>
-                                      {`       Board level operational experience in management
-                          consultancy focusing on logistics and supply chain
-                          functions within the retail and FMCG sectors`}
-                                    </li>
-                                    <li>
-                                      {`    Particular expertise in automated warehouse design,
-                          distribution network strategies, last mile logistics,
-                          warehouse management systems (WMS) and multi-channel
-                          logistics operations`}
-                                    </li>
-                                    <li>
-                                      {`    With significant experience across the UK, Europe,
-                          Asia, USA and Australia, previous projects include
-                          design and tendering for the worlds largest automated
-                          multi-channel grocery warehouse, global network
-                          rationalisations, Brexit-driven European distribution
-                          strategies and grocery home shopping operational
-                          improvements`}
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div className="col-md-4">
-                                  <div className="card--person__image ">
-                                    <picture>
-                                      <source
-                                        type="image/webp"
-                                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
-                                      />
-                                      <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
-                                    </picture>
-                                  </div>
+                                <div className="the-content">
+                                  <p>
+                                    <span
+                                      className="intro join-us-sub-title"
+                                      style={{ fontWeight: 400 }}>
+                                      {`
+                            The majority of our clients are major organisations
+                            and market leaders in their particular industry. `}
+                                    </span>
+                                  </p>
+                                  <p>
+                                    <span style={{ fontWeight: 400 }}>
+                                      {`
+                            On client projects you will be part of a team which,
+                            depending on the nature of the project, could be
+                            based either at the client’s site or in our offices,
+                            and you will sometimes have the opportunity to work
+                            from home. You could be leading the project, leading
+                            certain streams, or carrying out specific tasks
+                            within a stream, and your role is likely to vary
+                            project by project as you develop your confidence
+                            and capabilities.&nbsp; `}
+                                    </span>
+                                  </p>
+                                  <p>
+                                    <span style={{ fontWeight: 400 }}>
+                                      {`
+                            As well as working on client projects, you may also
+                            be involved in some internal initiatives, such as
+                            helping to develop internal methodologies and
+                            training materials and organising internal events.
+                            As you progress in the company, you are likely to
+                            take on&nbsp; specific internal areas of
+                            responsibility, such as staff management,
+                            recruitment, training delivery and proposition
+                            development, amongst others. This helps you to
+                            develop your general business skills based on what
+                            interests you most, and allows you to stretch
+                            outside your comfort zone and work with colleagues
+                            who you may not normally come across in your
+                            day-to-day client work.&nbsp;`}
+                                    </span>
+                                  </p>
+                                  <p>
+                                    <span style={{ fontWeight: 400 }}>
+                                      {`
+                            When we agree the members of each project team, we
+                            look at both the skills required for the assignment
+                            and the development objectives of the individuals.
+                            We also aim to ensure that our staff maintain a
+                            positive work/life balance, so we take into account
+                            an individual’s recent assignments and their impact. `}
+                                    </span>
+                                  </p>
+                                  <h2>Graduates</h2>
+                                  <p className="p1">{`
+                          Graduates are an integral part of client projects.
+                          They work alongside consultants and are exposed to a
+                          variety of industries and business areas where they
+                          gain the skills required to become consultants.
+                        `}</p>
                                 </div>
                               </div>
                             </div>
