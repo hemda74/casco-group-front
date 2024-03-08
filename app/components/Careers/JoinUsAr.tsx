@@ -34,7 +34,7 @@ const JoinUsAr = () => {
                       1.من نبحث عنه
                     </h2>
                     <p>
-                      <span className="intro">
+                      <span className="intro join-us-sub-title">
                         {`
                         To be part of our talented team you need to be a high
                         achiever with clarity of thought, integrity and the
@@ -59,7 +59,7 @@ const JoinUsAr = () => {
                     <div className="mfp-hide" id="popup_1">
                       <div className="the-content">
                         <p>
-                          <span className="intro">
+                          <span className="intro join-us-sub-title">
                             {`To be part of our talented team you need to be a
                             high achiever with clarity of thought, integrity and
                             the ability to get on with people. `}
@@ -133,7 +133,7 @@ const JoinUsAr = () => {
                       2. لماذا الانضمام الينا ؟
                     </h2>
                     <p>
-                      <span className="intro">
+                      <span className="intro join-us-sub-title">
                         {`
                         We are a tight-knit team, like a family. We care about
                         each other and our clients. We enjoy working together
@@ -187,7 +187,7 @@ const JoinUsAr = () => {
                       3. Typical projects{' '}
                     </h2>
                     <p>
-                      <span className="intro">
+                      <span className="intro join-us-sub-title">
                         {`
                         The majority of our clients are major organisations and
                         market leaders in their particular industry.`}
@@ -315,7 +315,7 @@ const JoinUsAr = () => {
                           4. Events{' '}
                         </h2>
                         <p>
-                          <span className="intro">
+                          <span className="intro join-us-sub-title">
                             {`
                             It is vital that we act as a team when with the
                             client, as well as when we work together internally.
@@ -495,7 +495,7 @@ const JoinUsAr = () => {
                           5. Career path{' '}
                         </h2>
                         <p>
-                          <span className="intro">
+                          <span className="intro join-us-sub-title">
                             {`
                             Our consultant development model allows individuals
                             to identify development areas and plot their career
