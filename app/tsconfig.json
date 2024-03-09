@@ -30,7 +30,7 @@
     "components/Services Forms/Ser1Modal.jsx",
     "components/Footer.jsx",
     "../types.ts",
-    "components/Industries/SingleIndustry.js"
+    "components/Industries/SingleIndustryEn.js"
   ],
   "exclude": ["node_modules"]
 }
