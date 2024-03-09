@@ -3,7 +3,7 @@ import Head from 'next/head';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../_app';
 import MainPageEn from '../../components/Industries/MainPageEn';
-import SingleIndustry from '../../components/Industries/SingleIndustry';
+import SingleIndustry from '../../components/Industries/SingleIndustryEn';
 
 type Props = {};
 // dymmy data for ui till handle working with api

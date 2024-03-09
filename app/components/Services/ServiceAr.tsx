@@ -1,5 +1,6 @@
 import React from 'react';
 import MainPageEn from './MainPageEn';
+import Link from 'next/link';
 
 const Service = () => {
   return (
@@ -72,56 +73,71 @@ const Service = () => {
                 <div className="the-content">
                   <h2>Sustainability</h2>
                   <p>
+                    {`
                     Driven by increasing regulation and more environmentally
                     conscious consumer behaviour, sustainability is moving up
                     the agenda for business leaders. Industries where reputation
                     is critical, such as luxury goods, are making this their
                     number one priority.
+                 `}{' '}
                   </p>
                   <p>
+                    {`
                     While awareness is growing, there are still gaps. Businesses
                     may lack breadth of understanding, with a focus mainly on
                     carbon footprint, depth of understanding, with analysis only
                     concerning ‘direct’ impacts, excluding ‘indirect’ impacts
                     like raw materials, or both.
+                 `}{' '}
                   </p>
                   <h2>First steps to sustainability</h2>
                   <p>
+                    {`
                     The first step is therefore to ensure that the business has
                     full end-to-end visibility of the impact of their operations
                     on all the major indicators like CO2, pollution, and water,
                     from the extraction of raw materials to the sale of the
                     finished product, to identify where to focus efforts
+                 `}{' '}
                   </p>
                   <p>
+                    {`
                     Modelling capability and understanding of source data allow
                     businesses to conduct Life Cycle Analysis, which is
                     essential to identify and prioritise improvement levers like
                     eco-design, supplier selection, reduction of impacts in
                     production, transport optimisation, financial reporting, and
                     many more.
+                 `}{' '}
                   </p>
                   <h2>Sustainability transformation</h2>
                   <p>
+                    {`
                     The second step is actually transforming the business’
                     operations to reduce their environmental impact by
                     activating the improvement levers identified – cost,
                     inventory, and service.
+                 `}{' '}
                   </p>
                   <p>
+                    {`
                     Like any ambitious and complex transformation, it requires
                     strong technical and business expertise to drive the
                     changes, and to maintain and improve performance.
+                 `}{' '}
                   </p>
                   <h2>Helping with sustainability challenges</h2>
                   <p>
+                    {`
                     Our team of experts in sustainability consultancy dig deep
                     to identify the root of complex problems and focus on
                     delivering tangible results for clients. The menu bar on
                     this page provides more detail on a selection of the
                     sustainability challenges we regularly work on.
+                 `}{' '}
                   </p>
                   <p>
+                    {`
                     We apply a combination of technical expertise, operational
                     experience, business knowledge and common sense to help our
                     clients understand and address sustainability impacts,
@@ -129,9 +145,10 @@ const Service = () => {
                     positive, flexible and personal approach, with challenge
                     where needed, ensures buy-in at all levels of our clients’
                     businesses and a positive outcome.{' '}
-                    <a href="https://www.argonandco.com/en/about/">
+                    <Link href="/about/">
                       Learn more about us here.
                     </a>
+                 `}{' '}
                   </p>
                 </div>
               </div>
@@ -148,14 +165,13 @@ const Service = () => {
                       <p className="p--large">
                         <strong>Yannick Migotto</strong>
                       </p>
-                      <p>Partner </p>
+                      <p>{`Partner`} </p>
                     </div>
                     <div className="col-md-12 contact-details">
                       <p className="no-wrap">
                         <span className="data-label red-1-color">Phone</span>
                       </p>
-                      <div></div>
-                      <p></p>
+
                       {/* <!--            <p><span className="data-label red-1-color">Email</span>sustainability@argonandco.com</p>--> */}
 
                       <p className="no-wrap">
@@ -188,7 +204,7 @@ const Service = () => {
                       <p className="p--large">
                         <strong>Judith Richardson</strong>
                       </p>
-                      <p>Managing Principal </p>
+                      <p>{`Managing Principal`} </p>
                     </div>
                     <div className="col-md-12 contact-details">
                       <p>
@@ -218,44 +234,44 @@ const Service = () => {
                   </div>
                   <ul>
                     <li className="">
-                      <a href="https://www.argonandco.com/en/services/sustainability/green-operations-strategy/">
+                      <Link href="/services/sustainability/green-operations-strategy/">
                         Green operations strategy
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="https://www.argonandco.com/en/services/sustainability/environmental-impact-maturity-analysis/">
+                      <Link href="/services/sustainability/environmental-impact-maturity-analysis/">
                         Environmental impact &amp; maturity analysis
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="https://www.argonandco.com/en/services/sustainability/sustainable-operations-transformation/">
+                      <Link href="/services/sustainability/sustainable-operations-transformation/">
                         Sustainable operations transformation
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="https://www.argonandco.com/en/services/sustainability/design-for-sustainability/">
+                      <Link href="/services/sustainability/design-for-sustainability/">
                         Design for sustainability
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="https://www.argonandco.com/en/services/sustainability/sustainable-sourcing-strategy/">
+                      <Link href="/services/sustainability/sustainable-sourcing-strategy/">
                         Sustainable sourcing strategy
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="https://www.argonandco.com/en/services/sustainability/sustainable-manufacturing/">
+                      <Link href="/services/sustainability/sustainable-manufacturing/">
                         Sustainable manufacturing
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="https://www.argonandco.com/en/services/sustainability/sustainable-distribution/">
+                      <Link href="/services/sustainability/sustainable-distribution/">
                         Sustainable distribution
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="https://www.argonandco.com/en/services/sustainability/sustainable-finance/">
+                      <Link href="/services/sustainability/sustainable-finance/">
                         Sustainable finance
-                      </a>
+                      </Link>
                     </li>
                   </ul>{' '}
                 </div>
