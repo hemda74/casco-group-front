@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const MainPageEn = () => {
@@ -28,121 +29,121 @@ const MainPageEn = () => {
             <div className="container">
               <div className="row link-list off-screen off-screen--link-list">
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/automotive/"
+                  <Link
+                    href="/industries/automotive/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Automotive
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/aerospace-and-defence/"
+                  <Link
+                    href="/industries/aerospace-and-defence/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Aerospace and defence
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/consumer-goods/"
+                  <Link
+                    href="/industries/consumer-goods/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Consumer goods
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/energy-and-utilities/"
+                  <Link
+                    href="/industries/energy-and-utilities/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Energy and utilities
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/fashion/"
+                  <Link
+                    href="/industries/fashion/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Fashion
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/food-and-drink/"
+                  <Link
+                    href="/industries/food-and-drink/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Food and drink
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/industrial-and-chemicals/"
+                  <Link
+                    href="/industries/industrial-and-chemicals/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Industrial and chemicals
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/life-sciences/"
+                  <Link
+                    href="/industries/life-sciences/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Life sciences
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/luxury-goods/"
+                  <Link
+                    href="/industries/luxury-goods/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Luxury goods
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/private-equity/"
+                  <Link
+                    href="/industries/private-equity/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Private equity
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/retail-and-e-commerce/"
+                  <Link
+                    href="/industries/retail-and-e-commerce/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Retail and e-commerce
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/services/"
+                  <Link
+                    href="/industries/services/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Services
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <a
-                    href="https://www.argonandco.com/en/industries/transport-and-logistics/"
+                  <Link
+                    href="/industries/transport-and-logistics/"
                     className="d-flex align-items-center">
                     <div className="title title--sm title title--medium-weight">
                       Transport and logistics
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
