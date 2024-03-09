@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import MainPageEn from './MainPageEn';
 const SingleIndustry = () => {
   var settings = {
     dots: true,
@@ -623,6 +624,7 @@ const SingleIndustry = () => {
           </div>
         </div>
       </div>
+      <MainPageEn />
     </>
   );
 };
