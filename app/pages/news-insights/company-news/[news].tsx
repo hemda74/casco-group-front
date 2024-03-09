@@ -1,25 +1,38 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../../../layouts/ViewerLayout';
+import { useLanguage } from '../../../Context/LanguageContext';
+import Layout from '../../../components/Layout';
+import styles from '../../../styles/Main.module.css';
 import { NextPageWithLayout } from '../../_app';
-import SingleNews from '../../../components/News&Insghits/SingleNewsEn';
-
+import ViewerLayout from '../../../layouts/ViewerLayout';
+import SingleNewsEn from '../../../components/News&Insghits/SingleNewsEn';
+import SingleNewsAr from '../../../components/News&Insghits/SingleNewsAr';
 type Props = {};
 // dymmy data for ui till handle working with api
-const services: NextPageWithLayout = (props: Props) => {
+const Contactus: NextPageWithLayout = (props: Props) => {
+  const { language } = useLanguage();
   return (
     <>
       <Head>
-        <title>News | CASCO</title>
+        <title>Industries | CASCO</title>
       </Head>
-      <main>
-        <SingleNews />
-      </main>
+      <Layout>
+        {language === 'en' ? (
+          <main className={`${styles.bodyContainer}`}>
+            <SingleNewsEn />
+          </main>
+        ) : (
+          <main className={`${styles.bodyContainer}`}>
+            <SingleNewsAr />
+          </main>
+        )}
+      </Layout>
     </>
   );
 };
 // adding Layout
-services.getLayout = function getLayout(contactus: ReactElement) {
+Contactus.getLayout = function getLayout(contactus: ReactElement) {
   return <ViewerLayout childern={contactus}></ViewerLayout>;
 };
-export default services;
+
+export default Contactus;

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { BsLinkedin, BsTwitter } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
-const SingleNewsEn = () => {
+const SingleNewsAr = () => {
   return (
     <div>
       <div id="content-wrap">
@@ -174,4 +174,4 @@ const SingleNewsEn = () => {
   );
 };
 
-export default SingleNewsEn;
+export default SingleNewsAr;
