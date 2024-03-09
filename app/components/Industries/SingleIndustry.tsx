@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Aerospace from './Aerospace';
 const SingleIndustry = () => {
   return (
     <>
@@ -108,7 +108,7 @@ const SingleIndustry = () => {
                 <div className="the-content">
                   <h2>Aerospace and defence</h2>
                   <p>
-                    The defence and aerospace industries are currently going
+                    {`             The defence and aerospace industries are currently going
                     through profound and longstanding transformations. The
                     aerospace industry is still in rapid growth mode driven by
                     the demand of emerging countries and new
@@ -116,28 +116,28 @@ const SingleIndustry = () => {
                     the victim of a decrease in state demand, linked in
                     particular to the reduction of European countries’ defence
                     budgets. This calls into question the global economic model
-                    of big defence projects that drive research and innovation.
+                    of big defence projects that drive research and innovation.`}
                   </p>
                   <h2>Challenges in the aerospace and defence industry</h2>
                   <p>
-                    In general, the competitive pressure, the arrival of new
+                    {`   In general, the competitive pressure, the arrival of new
                     entrants, the transfer of technologies and the importance of
                     local plants make it mandatory to enforce a globalised
                     supply chain, collaboration within the company and with
                     suppliers as well as end to end program management along the
-                    product lifecycle.
+                    product lifecycle.`}
                   </p>
                   <p>
-                    In the aerospace industry, the entire chain, from suppliers
+                    {`  In the aerospace industry, the entire chain, from suppliers
                     to manufacturers, should not only guarantee the ramp-up of
                     the supply chain but also the conception of new models that
-                    are cheaper to use.
+                    are cheaper to use.`}
                   </p>
                   <h2>How we can help with aerospace and defence</h2>
                   <p>
-                    We assist our clients in their transformation programs, from
+                    {` We assist our clients in their transformation programs, from
                     the identification of opportunities to the implementation of
-                    all operational performance levers;
+                    all operational performance levers;`}
                   </p>
 
                   <div className="accordion" id="accordion">
@@ -153,10 +153,10 @@ const SingleIndustry = () => {
                         style={{ display: 'none' }}>
                         <ul>
                           <li>
-                            Definition of plants and evolution of the
+                            {`     Definition of plants and evolution of the
                             operational organisation to anticipate or face
                             business model issues, growth, PMI, and
-                            harmonisation of functioning methods
+                            harmonisation of functioning methods`}
                           </li>
                         </ul>
                       </div>
@@ -201,20 +201,20 @@ const SingleIndustry = () => {
                         style={{ display: 'none' }}>
                         <ul>
                           <li>
-                            Optimisation of the upstream supply chain: sourcing
+                            {`         Optimisation of the upstream supply chain: sourcing
                             and offset strategy, cycle reduction, inventory and
                             WIP reduction, master supplier economic performance,
                             adaptability to demand variations, global supply
-                            chain control tower
+                            chain control tower`}
                           </li>
                           <li>
-                            Maintain optimal operational conditions (reduction
+                            {`     Maintain optimal operational conditions (reduction
                             of lead times, planning and forecasting of MRO
-                            flows, stock optimisation etc.)
+                            flows, stock optimisation etc.)`}
                           </li>
                           <li>
-                            Optimisation of spare parts distribution (forecasts,
-                            sourcing and distribution networks, stock policies)
+                            {`              Optimisation of spare parts distribution (forecasts,
+                            sourcing and distribution networks, stock policies)`}
                           </li>
                         </ul>
                       </div>
@@ -223,7 +223,7 @@ const SingleIndustry = () => {
 
                   <h2>Our approach</h2>
                   <p>
-                    We apply a combination of technical expertise, operational
+                    {`          We apply a combination of technical expertise, operational
                     experience and business knowledge to help our clients solve
                     aerospace and defence issues and deliver lasting results.
                     Our personal and pragmatic approach, with challenge where
@@ -232,7 +232,7 @@ const SingleIndustry = () => {
                     wide range of organisations in the aerospace and defence
                     industry including Thales, Safran Electrical &amp; Power,
                     Nexter Systems, Naval Group, Manchester Airports Group Plc,
-                    Airbus Helicopters, MBDA, Latécoère and Eutelsat.&nbsp;
+                    Airbus Helicopters, MBDA, Latécoère and Eutelsat.&nbsp;`}
                     <u>
                       <a href="https://www.argonandco.com/en/about/">
                         Learn more about us here.
@@ -367,14 +367,11 @@ const SingleIndustry = () => {
             </div>
           </div>
         </section>
-
-        <div className="section section--std light-grey-background pad-80 section-divide off-screen off-screen--fade-up">
+        <Aerospace />
+        {/* <div className="section section--std light-grey-background pad-80 section-divide off-screen off-screen--fade-up">
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <h2 className="title title--lg red-2-color text-center">
-                  Aerospace and defence case studies
-                </h2>
                 <div className="arrow-3-slider slick-initialized slick-slider">
                   <button
                     className="slick-prev slick-arrow"
@@ -392,116 +389,6 @@ const SingleIndustry = () => {
                         width: '3872px',
                         transform: 'translate3d(-1056px, 0px, 0px)',
                       }}>
-                      <div
-                        className="slick-slide slick-cloned"
-                        data-slick-index="-1"
-                        id=""
-                        aria-hidden="true"
-                        tabIndex={-1}
-                        style={{ width: '342px' }}>
-                        <div>
-                          <a
-                            href="#case_study_5"
-                            className="magnific-inline"
-                            tabIndex={-1}
-                            style={{ width: '100%', display: 'inline-block' }}>
-                            <div className="card red-2-background card--fixed-sm ">
-                              <div className="card__content">
-                                <h3 className="title title--sm title--medium-weight">
-                                  Procurement and strategy roadmap
-                                </h3>
-                              </div>
-                            </div>
-
-                            <div className="mfp-hide casestudy-popup" id="">
-                              <div className="row align-items-center">
-                                <div className="col-md-10">
-                                  <div className="data-label">
-                                    Airport Group
-                                  </div>
-                                  <h2 className="title title--lg">
-                                    Procurement and strategy roadmap
-                                  </h2>
-                                </div>
-                                <div className="col-md-2 col-xs-4 col-sm-6 col-8">
-                                  <picture>
-                                    <source srcSet="https://www.argonandco.com/wp-content/uploads/2020/09/Manchester_Airports_Group_logo-grey-1024x646.png.webp" />
-                                    <img src="https://www.argonandco.com/wp-content/uploads/2020/09/Manchester_Airports_Group_logo-grey-1024x646.png" />
-                                  </picture>
-                                </div>
-                                <div className="col-md-10">
-                                  <p>
-                                    <span className="intro">
-                                      The Manchester Airports Group Plc is the
-                                      largest UK-owned airport operator. Its
-                                      four airports – Stansted, Bournemouth,
-                                      East Midlands and Manchester serve around
-                                      42 million passengers every year.
-                                    </span>
-                                  </p>
-                                  <p>
-                                    <span className="intro">
-                                      It had an opportunity for future expansion
-                                      which drove a need to become ‘world
-                                      class’. The procurement function had
-                                      limited presence in the business which
-                                      needed enhancement. The company needed
-                                      support to determine the function’s
-                                      current (‘as is’) and required (‘to be’)
-                                      skills and capabilities.
-                                    </span>
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="row columns">
-                                <div className="col-md-6">
-                                  <h3>Our role</h3>
-                                  <ul>
-                                    <li>
-                                      Establish the ‘as-is’ and ‘to-be’
-                                      capabilities through workshops, data
-                                      analysis and input from stakeholders
-                                    </li>
-                                    <li>
-                                      Review the functional structure and
-                                      clarity of procurement’s role
-                                    </li>
-                                    <li>
-                                      Identify key milestones, timings and
-                                      category approach
-                                    </li>
-                                    <li>
-                                      Generate a one-page blueprint to support
-                                      implementation
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div className="col-md-6">
-                                  <h3>Results</h3>
-                                  <ul>
-                                    <li>
-                                      Defined the business case with benefits of
-                                      £25m over five years
-                                    </li>
-                                    <li>
-                                      Clarity on procurement’s role in the
-                                      business
-                                    </li>
-                                    <li>
-                                      Identified category management
-                                      opportunities
-                                    </li>
-                                    <li>
-                                      Identified soft benefits to procurement
-                                      and the business
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
                       <div
                         className="slick-slide"
                         data-slick-index="0"
@@ -831,14 +718,6 @@ const SingleIndustry = () => {
                             className="magnific-inline"
                             tabIndex={-1}
                             style={{ width: '100%', display: 'inline-block' }}>
-                            <div className="card red-2-background card--fixed-sm ">
-                              <div className="card__content">
-                                <h3 className="title title--sm title--medium-weight">
-                                  Digital procurement roadmap
-                                </h3>
-                              </div>
-                            </div>
-
                             <div
                               className="mfp-hide casestudy-popup"
                               id="case_study_4">
@@ -1592,7 +1471,7 @@ const SingleIndustry = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
