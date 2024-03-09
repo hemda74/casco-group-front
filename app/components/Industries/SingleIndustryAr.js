@@ -53,7 +53,7 @@ const SingleIndustry = () => {
             </div>
           </div>
 
-          <div className="banner__bottom banner__bottom--higher">
+          <div className="banner__bottom banner__bottom--higher" dir="rtl">
             <div className="container">
               <div className="row cycling-logos off-screen off-screen--link-list text-center">
                 <div className="col">

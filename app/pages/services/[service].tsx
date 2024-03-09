@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../_app';
-import Service from '../../components/Services/Service';
+import Service from '../../components/Services/ServiceEn';
 import styles from '../../styles/Main.module.css';
 type Props = {};
 // dymmy data for ui till handle working with api

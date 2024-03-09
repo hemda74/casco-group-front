@@ -6,7 +6,7 @@ const Service = () => {
   return (
     <>
       <div id="content-wrap">
-        <div className="banner  banner--ar banner--full-overlay ">
+        <div className="banner banner--ar banner--full-overlay ">
           <div className="banner__background">
             <picture>
               <source
