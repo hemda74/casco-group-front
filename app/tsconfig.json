@@ -29,7 +29,8 @@
     "components/Courses Forms/Course1Email.jsx",
     "components/Services Forms/Ser1Modal.jsx",
     "components/Footer.jsx",
-    "../types.ts"
+    "../types.ts",
+    "components/Industries/SingleIndustry.js"
   ],
   "exclude": ["node_modules"]
 }
