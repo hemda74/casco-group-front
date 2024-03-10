@@ -551,7 +551,7 @@ const SingleIndustry = () => {
                           <picture>
                             <source
                               type="image/webp"
-                              srcset="https://www.argonandco.com/wp-content/uploads/2020/11/Swire-grey.png.webp"
+                              srcSet="https://www.argonandco.com/wp-content/uploads/2020/11/Swire-grey.png.webp"
                             />
                             <img src="https://www.argonandco.com/wp-content/uploads/2020/11/Swire-grey.png" />
                           </picture>
