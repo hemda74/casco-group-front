@@ -209,16 +209,17 @@ const SingleIndustry = () => {
                         style={{ display: 'none' }}>
                         <ul>
                           <li>
-                            Structuration of technological roadmaps and
+                            {`   Structuration of technological roadmaps and
                             improving cooperative research and development
-                            program management
+                            program management`}
                           </li>
                           <li>
-                            Design-to-value on programmes between partners
+                            {`                            Design-to-value on programmes between partners
+`}{' '}
                           </li>
                           <li>
-                            Supply chain digitalisation and collaboration with
-                            suppliers along the entire product life cycle
+                            {`     Supply chain digitalisation and collaboration with
+                            suppliers along the entire product life cycle`}
                           </li>
                         </ul>
                       </div>
@@ -297,8 +298,6 @@ const SingleIndustry = () => {
                       </p>
                       <div>+33 (0)1 55 46 13 00</div>
                       <p></p>
-                      {/* <!--            <p><span className="data-label red-1-color">Email</span>aerospace-and-defence@argonandco.com</p>--> */}
-
                       <p className="no-wrap">
                         <span className="data-label red-1-color">Email</span>
                         <a href="mailto: aerospace-and-defence.france@argonandco.com">
