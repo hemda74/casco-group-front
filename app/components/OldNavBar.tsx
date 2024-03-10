@@ -39,49 +39,49 @@ const NavBar = () => {
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/courses'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink}  fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink2}  fw-bold mt-1 text-nowrap`}
                   data-trans="CoursesNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem} `}>
               <Link href={'/about'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink2} fw-bold mt-1 text-nowrap`}
                   data-trans="AboutCascoNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/services'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink2} fw-bold mt-1 text-nowrap`}
                   data-trans="ServicesNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/industries'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink}  fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink2}  fw-bold mt-1 text-nowrap`}
                   data-trans="industriesNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/news-insights'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink2} fw-bold mt-1 text-nowrap`}
                   data-trans="NewsNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/careers'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap`}
+                  className={`${styles.navLink2} fw-bold mt-1 text-nowrap`}
                   data-trans="CareersNav"></p>
               </Link>
             </li>
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/contact-us'} className={`nav-link`} id="link">
                 <p
-                  className={`${styles.navLink} fw-bold mt-1 text-nowrap `}
+                  className={`${styles.navLink2} fw-bold mt-1 text-nowrap `}
                   data-trans="ContactUsNav"></p>
               </Link>
             </li>

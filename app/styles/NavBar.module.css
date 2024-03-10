@@ -7,7 +7,16 @@
   font-weight: 500;
   font-size: 0.9rem;
 }
+.navLink2 {
+  display: block;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #000;
+}
 .navLink:hover {
+  color: #1086d5;
+}
+.navLink2:hover {
   color: #1086d5;
 }
 .navItemDropDown {

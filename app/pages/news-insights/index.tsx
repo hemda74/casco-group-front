@@ -1,25 +1,37 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import ViewerLayout from '../../layouts/ViewerLayout';
-import { NextPageWithLayout } from '../_app';
+import { useLanguage } from '../../Context/LanguageContext';
+import Layout from '../../components/Layout';
+import MainPageAr from '../../components/News&Insghits/MainPageAr';
+import styles from '../../styles/Main.module.css';
 import MainPageEn from '../../components/News&Insghits/MainPageEn';
-
+import OldNavBar from '../../components/OldNavBar';
+import FooterAr from '../../components/FooterAr';
 type Props = {};
-// dymmy data for ui till handle working with api
-const services: NextPageWithLayout = (props: Props) => {
+const Index = (props: Props) => {
+  const { language } = useLanguage();
   return (
     <>
       <Head>
-        <title>News & Insghits | CASCO</title>
+        <title>NEWS & INSIGITHS | CASCO</title>
       </Head>
-      <main>
-        <MainPageEn />
-      </main>
+      <Layout>
+        {language === 'en' ? (
+          <main className={`${styles.bodyContainer}`}>
+            <OldNavBar />
+            <MainPageEn />
+            <FooterAr />
+          </main>
+        ) : (
+          <main className={`${styles.bodyContainer}`}>
+            <OldNavBar />
+            <MainPageAr />
+            <FooterAr />
+          </main>
+        )}
+      </Layout>
     </>
   );
 };
-// adding Layout
-services.getLayout = function getLayout(contactus: ReactElement) {
-  return <ViewerLayout childern={contactus}></ViewerLayout>;
-};
-export default services;
+export default Index;
