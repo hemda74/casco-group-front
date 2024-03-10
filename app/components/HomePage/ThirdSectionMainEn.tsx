@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const ThirdSectionMainEn = () => {
@@ -21,58 +22,58 @@ const ThirdSectionMainEn = () => {
           </div>
           <div className="row link-list off-screen off-screen--hide off-screen--link-list">
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/operations-strategy/operating-model/"
+              <Link
+                href="/services/operations-strategy/operating-model/"
                 className="d-flex align-items-center red-2-color">
                 <div className="title title--sm title title--medium-weight red-2-color">
                   Operating model
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/operations-strategy/organisation-and-people/"
+              <Link
+                href="/services/operations-strategy/organisation-and-people/"
                 className="d-flex align-items-center red-3-color">
                 <div className="title title--sm title title--medium-weight red-3-color">
                   Organisation and people
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/operations-strategy/competitiveness/"
+              <Link
+                href="/services/operations-strategy/competitiveness/"
                 className="d-flex align-items-center red-4-color">
                 <div className="title title--sm title title--medium-weight red-4-color">
                   Competitiveness
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/operations-strategy/working-capital-improvement/"
+              <Link
+                href="/services/operations-strategy/working-capital-improvement/"
                 className="d-flex align-items-center red-5-color">
                 <div className="title title--sm title title--medium-weight red-5-color">
                   Working capital improvement
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/operations-strategy/mergers-and-acquisitions/"
+              <Link
+                href="/services/operations-strategy/mergers-and-acquisitions/"
                 className="d-flex align-items-center red-3-color">
                 <div className="title title--sm title title--medium-weight red-3-color">
                   Mergers and acquisitions
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/operations-strategy/operations-agility/"
+              <Link
+                href="/services/operations-strategy/operations-agility/"
                 className="d-flex align-items-center red-5-color">
                 <div className="title title--sm title title--medium-weight red-5-color">
                   Operations agility
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const FourthSectionMainAr = () => {
@@ -27,130 +28,130 @@ const FourthSectionMainAr = () => {
           </div>
           <div className="row link-list off-screen off-screen--hide off-screen--link-list">
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/sustainability/"
+              <Link
+                href="/services/sustainability/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   الاستدامة
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/operational-performance/"
+              <Link
+                href="/services/operational-performance/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   الاداء العملي
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/new-products/"
+              <Link
+                href="/services/new-products/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   المنتجات الجديدة{' '}
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/procurement/"
+              <Link
+                href="/services/procurement/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   التحصيل
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/supply-chain-planning/"
+              <Link
+                href="/services/supply-chain-planning/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   تخطيط سلسلة الإمداد
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/manufacturing/"
+              <Link
+                href="/services/manufacturing/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   التصنيع
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/logistics/"
+              <Link
+                href="/services/logistics/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   الخدمات اللوجستية
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/channels-to-market/"
+              <Link
+                href="/services/channels-to-market/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   قنوات التسويق
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/maintenance-and-after-sales/"
+              <Link
+                href="/services/maintenance-and-after-sales/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   صيانة و بعد البيع
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/transformation-management/"
+              <Link
+                href="/services/transformation-management/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   إدارة التحول
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/digital-and-it/"
+              <Link
+                href="/services/digital-and-it/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   تكنولوجيا المعلومات
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/finance/"
+              <Link
+                href="/services/finance/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   الموارد المالية
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/sga/"
+              <Link
+                href="/services/sga/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   SG&amp;A
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
-                href="https://www.argonandco.com/en/services/hr/"
+              <Link
+                href="/services/hr/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--md title title--medium-weight">
                   الموارد البشرية
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

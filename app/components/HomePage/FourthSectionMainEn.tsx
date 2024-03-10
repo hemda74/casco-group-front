@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const FourthSectionMainEn = () => {
@@ -26,79 +27,79 @@ const FourthSectionMainEn = () => {
           </div>
           <div className="row link-list off-screen off-screen--hide off-screen--link-list">
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/sustainability/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Sustainability
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/operational-performance/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Operational performance
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/new-products/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   New products
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/procurement/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Procurement
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/supply-chain-planning/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Supply chain planning
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/manufacturing/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Manufacturing
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/logistics/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Logistics
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/channels-to-market/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Channels to market
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/maintenance-and-after-sales/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
@@ -106,52 +107,52 @@ const FourthSectionMainEn = () => {
                   <br />
                   after sales
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/transformation-management/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Transformation management
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/digital-and-it/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Digital and IT
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/finance/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   Finance
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/sga/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   SG&amp;A
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 col-lg-4">
-              <a
+              <Link
                 href="/services/hr/"
                 className="d-flex align-items-center white-color">
                 <div className="title title--sm title title--medium-weight">
                   HR
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
