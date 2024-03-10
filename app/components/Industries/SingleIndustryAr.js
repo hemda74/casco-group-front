@@ -42,15 +42,14 @@ const SingleIndustryAr = () => {
     <>
       <div id="content-wrap" dir="rtl">
         <div className="banner  banner--no-image  banner--ar banner--full-overlay ">
-          <div className="banner__background">
-            <div className="banner__center text-center ">
-              <div className="container">
-                <div className="row justify-content-center">
-                  <div className="col-md-11">
-                    <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                      Aerospace and defence
-                    </h1>
-                  </div>
+          <div className="banner__background"> </div>
+          <div className="banner__center text-center ">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-11">
+                  <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
+                    الفضاء الجوي والدفاع
+                  </h1>
                 </div>
               </div>
             </div>
