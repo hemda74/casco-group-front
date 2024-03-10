@@ -714,8 +714,6 @@ select {
   text-transform: none;
 }
 
-
-
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
@@ -8776,7 +8774,6 @@ p:last-child {
   margin-bottom: 0;
 }
 
-
 .p--large {
   font-size: 17px;
   font-size: 1.0625rem;
@@ -9505,8 +9502,6 @@ ul.gallery li p {
   margin-bottom: 5px;
 }
 
-
-
 @media (max-width: 700px) {
   .card--quote .card__content {
     padding: 30px 20px;
@@ -10017,7 +10012,9 @@ a .card.red-5-background:hover {
 .contact-card > .row {
   padding-right: 100px;
 }
-
+.contact-card2 > .row {
+  padding-left: 100px;
+}
 .contact-card--author > .row {
   padding-right: 0;
 }
@@ -10030,6 +10027,13 @@ a .card.red-5-background:hover {
 
 .sidebar .contact-card__profile {
   top: 40px;
+  bottom: auto;
+}
+.contact-card__profile2 {
+  position: absolute;
+  top: 40px;
+  right: 65%;
+  left: auto;
   bottom: auto;
 }
 
@@ -17322,4 +17326,15 @@ text-primary .dropdown-menu {
   top: 0.5555555556rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: '';
+  background-image: none !important;
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
 }

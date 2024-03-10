@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import MainPageEn from './MainPageEn';
 import { FaCircle } from 'react-icons/fa6';
 import Link from 'next/link';
-const SingleIndustry = () => {
+const SingleIndustryEn = () => {
   var settings = {
     dots: false,
     infinite: true,
@@ -656,4 +656,4 @@ const SingleIndustry = () => {
   );
 };
 
-export default SingleIndustry;
+export default SingleIndustryEn;
