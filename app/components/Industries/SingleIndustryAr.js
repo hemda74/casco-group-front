@@ -143,36 +143,36 @@ const SingleIndustry = () => {
                 <div className="the-content">
                   <h2>Aerospace and defence</h2>
                   <p>
-                    {`             The defence and aerospace industries are currently going
-                    through profound and longstanding transformations. The
-                    aerospace industry is still in rapid growth mode driven by
-                    the demand of emerging countries and new
-                    low-consumption-aircrafts. The defence industry however, is
-                    the victim of a decrease in state demand, linked in
-                    particular to the reduction of European countries’ defence
-                    budgets. This calls into question the global economic model
-                    of big defence projects that drive research and innovation.`}
+                    {`The defence and aerospace industries are currently going
+       through profound and longstanding transformations. The
+       aerospace industry is still in rapid growth mode driven by
+       the demand of emerging countries and new
+       low-consumption-aircrafts. The defence industry however, is
+       the victim of a decrease in state demand, linked in
+       particular to the reduction of European countries’ defence
+       budgets. This calls into question the global economic model
+       of big defence projects that drive research and innovation.`}
                   </p>
                   <h2>Challenges in the aerospace and defence industry</h2>
                   <p>
-                    {`   In general, the competitive pressure, the arrival of new
-                    entrants, the transfer of technologies and the importance of
-                    local plants make it mandatory to enforce a globalised
-                    supply chain, collaboration within the company and with
-                    suppliers as well as end to end program management along the
-                    product lifecycle.`}
+                    {`In general, the competitive pressure, the arrival of new
+       entrants, the transfer of technologies and the importance of
+       local plants make it mandatory to enforce a globalised
+       supply chain, collaboration within the company and with
+       suppliers as well as end to end program management along the
+       product lifecycle.`}
                   </p>
                   <p>
-                    {`  In the aerospace industry, the entire chain, from suppliers
-                    to manufacturers, should not only guarantee the ramp-up of
-                    the supply chain but also the conception of new models that
-                    are cheaper to use.`}
+                    {`In the aerospace industry, the entire chain, from suppliers
+       to manufacturers, should not only guarantee the ramp-up of
+       the supply chain but also the conception of new models that
+       are cheaper to use.`}
                   </p>
                   <h2>How we can help with aerospace and defence</h2>
                   <p>
                     {` We assist our clients in their transformation programs, from
-                    the identification of opportunities to the implementation of
-                    all operational performance levers;`}
+       the identification of opportunities to the implementation of
+       all operational performance levers;`}
                   </p>
 
                   <div className="accordion" id="accordion">
@@ -188,10 +188,10 @@ const SingleIndustry = () => {
                         style={{ display: 'none' }}>
                         <ul>
                           <li>
-                            {`     Definition of plants and evolution of the
-                            operational organisation to anticipate or face
-                            business model issues, growth, PMI, and
-                            harmonisation of functioning methods`}
+                            {`Definition of plants and evolution of the
+  operational organisation to anticipate or face
+  business model issues, growth, PMI, and
+  harmonisation of functioning methods`}
                           </li>
                         </ul>
                       </div>
@@ -236,20 +236,20 @@ const SingleIndustry = () => {
                         style={{ display: 'none' }}>
                         <ul>
                           <li>
-                            {`         Optimisation of the upstream supply chain: sourcing
-                            and offset strategy, cycle reduction, inventory and
-                            WIP reduction, master supplier economic performance,
-                            adaptability to demand variations, global supply
-                            chain control tower`}
+                            {`    Optimisation of the upstream supply chain: sourcing
+  and offset strategy, cycle reduction, inventory and
+  WIP reduction, master supplier economic performance,
+  adaptability to demand variations, global supply
+  chain control tower`}
                           </li>
                           <li>
-                            {`     Maintain optimal operational conditions (reduction
-                            of lead times, planning and forecasting of MRO
-                            flows, stock optimisation etc.)`}
+                            {`Maintain optimal operational conditions (reduction
+  of lead times, planning and forecasting of MRO
+  flows, stock optimisation etc.)`}
                           </li>
                           <li>
-                            {`              Optimisation of spare parts distribution (forecasts,
-                            sourcing and distribution networks, stock policies)`}
+                            {` Optimisation of spare parts distribution (forecasts,
+  sourcing and distribution networks, stock policies)`}
                           </li>
                         </ul>
                       </div>
@@ -258,16 +258,16 @@ const SingleIndustry = () => {
 
                   <h2>Our approach</h2>
                   <p>
-                    {`          We apply a combination of technical expertise, operational
-                    experience and business knowledge to help our clients solve
-                    aerospace and defence issues and deliver lasting results.
-                    Our personal and pragmatic approach, with challenge where
-                    needed, ensures buy-in at all levels of our clients’
-                    businesses and a successful outcome. We have worked with a
-                    wide range of organisations in the aerospace and defence
-                    industry including Thales, Safran Electrical &amp; Power,
-                    Nexter Systems, Naval Group, Manchester Airports Group Plc,
-                    Airbus Helicopters, MBDA, Latécoère and Eutelsat.&nbsp;`}
+                    {`     We apply a combination of technical expertise, operational
+       experience and business knowledge to help our clients solve
+       aerospace and defence issues and deliver lasting results.
+       Our personal and pragmatic approach, with challenge where
+       needed, ensures buy-in at all levels of our clients’
+       businesses and a successful outcome. We have worked with a
+       wide range of organisations in the aerospace and defence
+       industry including Thales, Safran Electrical &amp; Power,
+       Nexter Systems, Naval Group, Manchester Airports Group Plc,
+       Airbus Helicopters, MBDA, Latécoère and Eutelsat.&nbsp;`}
                     <u>
                       <a href="https://www.argonandco.com/en/about/">
                         Learn more about us here.
@@ -558,17 +558,17 @@ const SingleIndustry = () => {
                         </div>
                         <div className="col-md-10">
                           <p>
-                            Swire Cold Storage is a leading Australian provider
-                            of cold chain logistics services and supply chain
-                            solutions, offering temperature-controlled
-                            warehousing, refrigerated transport and distribution
-                            services to a broad range of businesses.
+                            {`Swire Cold Storage is a leading Australian provider
+  of cold chain logistics services and supply chain
+  solutions, offering temperature-controlled
+  warehousing, refrigerated transport and distribution
+  services to a broad range of businesses.`}
                           </p>
                           <p>
-                            A previous in-house WMS implementation had not been
-                            completed. The impact of the part implementation was
-                            a deterioration of performance from the warehouse
-                            and cost impacts.
+                            {`A previous in-house WMS implementation had not been
+  completed. The impact of the part implementation was
+  a deterioration of performance from the warehouse
+  and cost impacts.`}
                           </p>
                           <p>&nbsp;</p>
                         </div>
@@ -577,22 +577,22 @@ const SingleIndustry = () => {
                         <div className="col-md-6">
                           <ul>
                             <li>
-                              Identify the key issues driving poor warehouse
-                              performance
+                              {` Identify the key issues driving poor warehouse
+    performance`}
                             </li>
                             <li>
-                              Work with the DC management team to prioritise and
-                              resolve issues whilst improving business as usual
+                              {`Work with the DC management team to prioritise and
+      resolve issues whilst improving business as usual`}
                             </li>
                             <li>
-                              Project manage the re-implementation of the WMS
-                              with the IT systems supplier (in Canada)
+                              {`Project manage the re-implementation of the WMS
+      with the IT systems supplier (in Canada)`}
                             </li>
                             <li>
-                              Change manage the implementation of the system,
-                              improve capability via training, reduce process
-                              blockages and improve performance to a developed
-                              schedule
+                              {`  Change manage the implementation of the system,
+      improve capability via training, reduce process
+      blockages and improve performance to a developed
+      schedule`}
                             </li>
                           </ul>
                           <p>&nbsp;</p>
@@ -600,17 +600,17 @@ const SingleIndustry = () => {
                         <div className="col-md-6">
                           <ul>
                             <li>
-                              Full process re-write and all SCS employees
-                              trained
+                              {` Full process re-write and all SCS employees
+      trained`}
                             </li>
                             <li>
-                              Increased productivity from warehouse staff and
-                              increased space availability within the warehouse
+                              {`Increased productivity from warehouse staff and
+      increased space availability within the warehouse`}
                             </li>
                             <li>
-                              Improved relationship management with the software
-                              provider, allowing for further system enhancements
-                              moving forward
+                              {` Improved relationship management with the software
+      provider, allowing for further system enhancements
+      moving forward`}
                             </li>
                             <li>Delivered a reduced cost base warehouse</li>
                           </ul>

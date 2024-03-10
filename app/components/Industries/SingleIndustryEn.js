@@ -1,9 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
 import MainPageEn from './MainPageEn';
+import { FaCircle } from 'react-icons/fa6';
+import Link from 'next/link';
 const SingleIndustry = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -16,7 +18,7 @@ const SingleIndustry = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -174,92 +176,134 @@ const SingleIndustry = () => {
                     the identification of opportunities to the implementation of
                     all operational performance levers;`}
                   </p>
-
-                  <div className="accordion" id="accordion">
-                    <div className="accordion__item">
-                      <div className="accordion__trigger js-accordion-trigger">
-                        <h4 className="accordion__title">
-                          Operational organisation
-                        </h4>
-                        <div className="accordion__plus js-accordion-plus"></div>
-                      </div>
+                  <div
+                    className="accordion accordion-flush"
+                    id="accordionFlushExample">
+                    <div className="accordion-item">
+                      <h2 className="accordion-header">
+                        <button
+                          className="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne">
+                          <h4 className="accordion__title fw-semibold text-primary-100">
+                            Supply chain optimisation
+                          </h4>
+                        </button>
+                      </h2>
                       <div
-                        className="accordion__content js-accordion-target"
-                        style={{ display: 'none' }}>
-                        <ul>
-                          <li>
-                            {`     Definition of plants and evolution of the
+                        id="flush-collapseOne"
+                        className="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div className="accordion-body">
+                          <ul className="list-unstyled">
+                            <li className={`itemCheckTage mt-2 d-flex`}>
+                              <p className="text-primary-100">
+                                <FaCircle className="mt-2" size={8} />
+                              </p>
+                              <span className="me-2 ms-2">{`Structuration of technological roadmaps and improving cooperative research and development program management`}</span>
+                            </li>
+
+                            <li className={`itemCheckTage mt-2 mb-0 d-flex`}>
+                              <p className="text-primary-100">
+                                <FaCircle className="mt-2" size={8} />
+                              </p>
+                              <span className="me-2 ms-2">{`Design-to-value on programmes between partners`}</span>
+                            </li>
+                            <li className={`itemCheckTage mt-2 d-flex`}>
+                              <p className="text-primary-100">
+                                <FaCircle className="mt-2" size={8} />
+                              </p>
+                              <span className="me-2 ms-2">{`Supply chain digitalisation and collaboration with suppliers along the entire product life cycle`}</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header">
+                        <button
+                          className="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo">
+                          <h4 className="accordion__title fw-semibold text-primary-100">
+                            Technology, design and collaboration
+                          </h4>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        className="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div className="accordion-body js-accordion-target">
+                          <ul className="list-unstyled">
+                            <li className={`itemCheckTage mt-2 d-flex`}>
+                              <p className="text-primary-100">
+                                <FaCircle className="mt-2" size={8} />
+                              </p>
+                              <span className="me-2 ms-2">
+                                {`Definition of plants and evolution of the
                             operational organisation to anticipate or face
                             business model issues, growth, PMI, and
                             harmonisation of functioning methods`}
-                          </li>
-                        </ul>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-
-                    <div className="accordion__item">
-                      <div className="accordion__trigger js-accordion-trigger">
-                        <h4 className="accordion__title">
-                          Technology, design and collaboration
-                        </h4>
-                        <div className="accordion__plus js-accordion-plus"></div>
-                      </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header">
+                        <button
+                          className="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree">
+                          <h4 className="accordion__title fw-semibold text-primary-100">
+                            Supply chain optimisation
+                          </h4>
+                        </button>
+                      </h2>
                       <div
-                        className="accordion__content js-accordion-target"
-                        style={{ display: 'none' }}>
-                        <ul>
-                          <li>
-                            {`   Structuration of technological roadmaps and
-                            improving cooperative research and development
-                            program management`}
-                          </li>
-                          <li>
-                            {`                            Design-to-value on programmes between partners
-`}{' '}
-                          </li>
-                          <li>
-                            {`     Supply chain digitalisation and collaboration with
-                            suppliers along the entire product life cycle`}
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                        id="flush-collapseThree"
+                        className="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div className="accordion-body">
+                          <ul className="list-unstyled">
+                            <li className={`itemCheckTage mt-2 d-flex`}>
+                              <p className="text-primary-100">
+                                <FaCircle className="mt-2" size={8} />
+                              </p>
+                              <span className="me-2 ms-2">{`Structuration of technological roadmaps and improving cooperative research and development program management`}</span>
+                            </li>
 
-                    <div className="accordion__item">
-                      <div className="accordion__trigger js-accordion-trigger">
-                        <h4 className="accordion__title">
-                          Supply chain optimisation
-                        </h4>
-                        <div className="accordion__plus js-accordion-plus"></div>
-                      </div>
-                      <div
-                        className="accordion__content js-accordion-target"
-                        style={{ display: 'none' }}>
-                        <ul>
-                          <li>
-                            {`         Optimisation of the upstream supply chain: sourcing
-                            and offset strategy, cycle reduction, inventory and
-                            WIP reduction, master supplier economic performance,
-                            adaptability to demand variations, global supply
-                            chain control tower`}
-                          </li>
-                          <li>
-                            {`     Maintain optimal operational conditions (reduction
-                            of lead times, planning and forecasting of MRO
-                            flows, stock optimisation etc.)`}
-                          </li>
-                          <li>
-                            {`              Optimisation of spare parts distribution (forecasts,
-                            sourcing and distribution networks, stock policies)`}
-                          </li>
-                        </ul>
+                            <li className={`itemCheckTage mt-2 mb-0 d-flex`}>
+                              <p className="text-primary-100">
+                                <FaCircle className="mt-2" size={8} />
+                              </p>
+                              <span className="me-2 ms-2">{`Design-to-value on programmes between partners`}</span>
+                            </li>
+                            <li className={`itemCheckTage mt-2 d-flex`}>
+                              <p className="text-primary-100">
+                                <FaCircle className="mt-2" size={8} />
+                              </p>
+                              <span className="me-2 ms-2">{`Supply chain digitalisation and collaboration with suppliers along the entire product life cycle`}</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-
                   <h2>Our approach</h2>
                   <p>
-                    {`          We apply a combination of technical expertise, operational
+                    {`We apply a combination of technical expertise, operational
                     experience and business knowledge to help our clients solve
                     aerospace and defence issues and deliver lasting results.
                     Our personal and pragmatic approach, with challenge where
@@ -268,11 +312,10 @@ const SingleIndustry = () => {
                     wide range of organisations in the aerospace and defence
                     industry including Thales, Safran Electrical &amp; Power,
                     Nexter Systems, Naval Group, Manchester Airports Group Plc,
-                    Airbus Helicopters, MBDA, Latécoère and Eutelsat.&nbsp;`}
+                    Airbus Helicopters, MBDA, Latécoère and Eutelsat.`}
+                    <br />
                     <u>
-                      <a href="https://www.argonandco.com/en/about/">
-                        Learn more about us here.
-                      </a>
+                      <Link href="/about/">Learn more about us here.</Link>
                     </u>
                   </p>
                 </div>
@@ -320,80 +363,65 @@ const SingleIndustry = () => {
                   </div>
                   <ul>
                     <li className="page_item page-item-42 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/operations-strategy/">
+                      <Link href="/services/operations-strategy/">
                         Operations strategy
-                      </a>
+                      </Link>
                     </li>
                     <li className="page_item page-item-5111 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/sustainability/">
+                      <Link href="/services/sustainability/">
                         Sustainability
-                      </a>
+                      </Link>
                     </li>
                     <li className="page_item page-item-16820 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/operational-performance/">
+                      <Link href="/services/operational-performance/">
                         Operational performance
-                      </a>
+                      </Link>
                     </li>
                     <li className="page_item page-item-43 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/new-products/">
-                        New products
-                      </a>
+                      <Link href="/services/new-products/">New products</Link>
                     </li>
                     <li className="page_item page-item-44 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/procurement/">
-                        Procurement
-                      </a>
+                      <Link href="/services/procurement/">Procurement</Link>
                     </li>
                     <li className="page_item page-item-45 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/supply-chain-planning/">
+                      <Link href="/services/supply-chain-planning/">
                         Supply chain planning
-                      </a>
+                      </Link>
                     </li>
                     <li className="page_item page-item-46 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/manufacturing/">
-                        Manufacturing
-                      </a>
+                      <Link href="/services/manufacturing/">Manufacturing</Link>
                     </li>
                     <li className="page_item page-item-47 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/logistics/">
-                        Logistics
-                      </a>
+                      <Link href="/services/logistics/">Logistics</Link>
                     </li>
                     <li className="page_item page-item-48 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/channels-to-market/">
+                      <Link href="/services/channels-to-market/">
                         Channels to market
-                      </a>
+                      </Link>
                     </li>
                     <li className="page_item page-item-49 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/maintenance-and-after-sales/">
-                        Maintenance and <br />
-                        after sales
-                      </a>
+                      <Link href="/services/maintenance-and-after-sales/">
+                        Maintenance and after sale
+                      </Link>
                     </li>
                     <li className="page_item page-item-50 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/transformation-management/">
+                      <Link href="/services/transformation-management/">
                         Transformation management
-                      </a>
+                      </Link>
                     </li>
                     <li className="page_item page-item-51 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/digital-and-it/">
+                      <Link href="/services/digital-and-it/">
                         Digital and IT
-                      </a>
+                      </Link>
                     </li>
                     <li className="page_item page-item-52 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/finance/">
-                        Finance
-                      </a>
+                      <Link href="/services/finance/">Finance</Link>
                     </li>
                     <li className="page_item page-item-53 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/sga/">
-                        SG&amp;A
-                      </a>
+                      <Link href="/services/sga/">SG&amp;A</Link>
                     </li>
                     <li className="page_item page-item-54 page_item_has_children">
-                      <a href="https://www.argonandco.com/en/services/hr/">
-                        HR
-                      </a>
+                      <Link href="/services/hr/">HR</Link>
                     </li>
                   </ul>
                 </div>
