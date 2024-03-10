@@ -9902,6 +9902,10 @@ a .card.red-5-background:hover {
   position: relative;
   margin-bottom: 30px;
 }
+.contact-card2 {
+  position: relative;
+  margin-bottom: 30px;
+}
 
 .contact-card p {
   margin-bottom: 7px;
@@ -10029,7 +10033,7 @@ a .card.red-5-background:hover {
   top: 40px;
   bottom: auto;
 }
-.contact-card__profile2 {
+.contact-card2 .contact-card__profile2 {
   position: absolute;
   top: 40px;
   right: 65%;

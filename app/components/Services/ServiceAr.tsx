@@ -144,17 +144,14 @@ const ServiceAr = () => {
                     embedding real change and delivering lasting results. Our
                     positive, flexible and personal approach, with challenge
                     where needed, ensures buy-in at all levels of our clients’
-                    businesses and a positive outcome.
-                    <Link href="/about/">
-                      Learn more about us here.
-                    </a>
-                 `}
+                    businesses and a positive outcome.  `}
+                    <Link href="/about/">Learn more about us here.</Link>
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 offset-lg-1 sidebar">
-                <div className="pad-40 light-grey-background red-1-border-top contact-card">
+                <div className="pad-40 light-grey-background red-1-border-top contact-card2">
                   <div className="row align-items-start">
                     <div className="col-md-12">
                       <h4 className="title title--sm red-1-color">
@@ -178,7 +175,7 @@ const ServiceAr = () => {
                         </a>
                       </p>
                     </div>
-                    <div className="contact-card__profile">
+                    <div className="contact-card__profile2">
                       <picture className="circle-img circle-img--small">
                         <source
                           type="image/webp"
@@ -190,8 +187,8 @@ const ServiceAr = () => {
                   </div>
                 </div>
 
-                <div className="pad-40 light-grey-background red-1-border-top contact-card en-contact">
-                  <div className="row align-items-start">
+                <div className="pad-40 light-grey-background red-1-border-top contact-card2 en-contact">
+                  <div className="row align-items-end">
                     <div className="col-md-12">
                       <h4 className="title title--sm red-1-color">
                         Contact our sustainability experts
@@ -215,7 +212,7 @@ const ServiceAr = () => {
                         </a>
                       </p>
                     </div>
-                    <div className="contact-card__profile">
+                    <div className="contact-card__profile2">
                       <img
                         src="https://www.argonandco.com/wp-content/uploads/2020/06/Judith-e1591263832521-300x300.jpg"
                         className="circle-img circle-img--small"
