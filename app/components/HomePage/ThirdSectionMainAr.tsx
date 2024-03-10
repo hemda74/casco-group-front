@@ -23,7 +23,7 @@ const ThirdSectionMainAr = () => {
           <div className="row link-list off-screen off-screen--hide off-screen--link-list">
             <div className="col-md-6 col-lg-4">
               <Link
-                href="/services/operations-strategy/operating-model/"
+                href="/services/operating-model/"
                 className="d-flex align-items-center red-1-color">
                 <div className="title title--sm title title--medium-weight red-1-color">
                   نموذج التشغيل
@@ -32,7 +32,7 @@ const ThirdSectionMainAr = () => {
             </div>
             <div className="col-md-6 col-lg-4">
               <Link
-                href="/services/operations-strategy/organisation-and-people/"
+                href="/services/organisation-and-people/"
                 className="d-flex align-items-center red-1-color">
                 <div className="title title--sm title title--medium-weight red-1-color">
                   التنظيم والناس
@@ -41,7 +41,7 @@ const ThirdSectionMainAr = () => {
             </div>
             <div className="col-md-6 col-lg-4">
               <Link
-                href="/services/operations-strategy/competitiveness/"
+                href="/services/competitiveness/"
                 className="d-flex align-items-center red-1-color">
                 <div className="title title--sm title title--medium-weight red-1-color">
                   القدرة التنافسية
@@ -50,7 +50,7 @@ const ThirdSectionMainAr = () => {
             </div>
             <div className="col-md-6 col-lg-4">
               <Link
-                href="/services/operations-strategy/working-capital-improvement/"
+                href="/services/working-capital-improvement/"
                 className="d-flex align-items-center red-1-color">
                 <div className="title title--sm title title--medium-weight red-1-color">
                   تحسين رأس المال العامل
@@ -59,7 +59,7 @@ const ThirdSectionMainAr = () => {
             </div>
             <div className="col-md-6 col-lg-4">
               <Link
-                href="/services/operations-strategy/mergers-and-acquisitions/"
+                href="/services/mergers-and-acquisitions/"
                 className="d-flex align-items-center red-1-color">
                 <div className="title title--sm title title--medium-weight red-1-color">
                   عمليات الدمج والاستحواذ
@@ -68,7 +68,7 @@ const ThirdSectionMainAr = () => {
             </div>
             <div className="col-md-6 col-lg-4">
               <Link
-                href="/services/operations-strategy/operations-agility/"
+                href="/services/operations-agility/"
                 className="d-flex align-items-center red-1-color">
                 <div className="title title--sm title title--medium-weight red-1-color">
                   خفة العمليات

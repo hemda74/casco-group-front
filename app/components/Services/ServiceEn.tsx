@@ -2,7 +2,7 @@ import React from 'react';
 import MainPageEn from './MainPageEn';
 import Link from 'next/link';
 
-const Service = () => {
+const ServiceEn = () => {
   return (
     <>
       <div id="content-wrap">
@@ -267,4 +267,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default ServiceEn;

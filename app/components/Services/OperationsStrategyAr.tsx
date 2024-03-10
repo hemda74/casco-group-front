@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-const OperationsStrategyEn = () => {
+const OperationsStrategyAr = () => {
   return (
     <>
       <div id="content-wrap">
@@ -20,7 +20,7 @@ const OperationsStrategyEn = () => {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    Operations strategy consulting{' '}
+                    استشارات استراتيجية العمليات
                   </h1>
                 </div>
               </div>
@@ -35,15 +35,15 @@ const OperationsStrategyEn = () => {
             <div className="row off-screen off-screen--fade-up justify-content-center">
               <div className="col-lg-7">
                 <div className="the-content">
-                  <h2>Operations strategy</h2>
+                  <h2>استراتيجية العمليات</h2>
                   <p>
-                    A strong operations strategy delivers the company’s aims
+                    {`   A strong operations strategy delivers the company’s aims
                     while helping the business keep up with market changes and
-                    stay competitive.
+                    stay competitive.`}
                   </p>
                   <h2>Influences on operations strategy</h2>
                   <p>
-                    Organisations need to be more fluid and agile than ever
+                    {`            Organisations need to be more fluid and agile than ever
                     before, rapidly anticipating and reacting to change in every
                     aspect of their operations. The growing list of challenges
                     includes changes in customer preferences, advances in
@@ -51,45 +51,45 @@ const OperationsStrategyEn = () => {
                     competitors, both new and existing. Many industries are also
                     experiencing complete overhauls, with traditional boundaries
                     between customer and supplier constantly evolving due to the
-                    introduction of new technologies and ways of working.
+                    introduction of new technologies and ways of working.`}
                   </p>
                   <p>
-                    Operations strategy focuses on both the existing scope of
+                    {` Operations strategy focuses on both the existing scope of
                     activity and options for moving the frontiers, through
                     acquisitions or by addressing business shifts such as
-                    digital disruption and environmental challenges.
+                    digital disruption and environmental challenges.`}
                   </p>
                   <p>
-                    It is a mistake to think of operations as a back-office
+                    {`   It is a mistake to think of operations as a back-office
                     activity; an operations strategy is how an organisation
                     creates, delivers and captures value. It must link to the
                     overall corporate strategy and consider the end-to-end
-                    activities across all its functions.
+                    activities across all its functions.`}
                   </p>
                   <h2>Operations strategy implementation</h2>
                   <p>
-                    Once a clear strategy is generated, the next challenge is
+                    {`   Once a clear strategy is generated, the next challenge is
                     implementation. The approach may be different depending on
                     whether it’s a new design from scratch or a transformation
                     from an existing model, but a great operations strategy is
                     useless unless the business can set up an environment where
-                    people are motivated to deliver it.
+                    people are motivated to deliver it.`}
                   </p>
                   <h2>Helping with operations strategy challenges</h2>
                   <p>
-                    Our team of operations strategy consultants dig deep to
+                    {`  Our team of operations strategy consultants dig deep to
                     identify the root of complex problems and focus on
                     delivering tangible results for clients. The menu bar on
                     this page provides more detail on a selection of the
-                    operations strategy challenges we regularly work on.
+                    operations strategy challenges we regularly work on.`}
                   </p>
                   <p>
-                    We apply a combination of technical expertise, operational
+                    {` We apply a combination of technical expertise, operational
                     experience, business knowledge and common sense to help our
                     clients solve operations strategy issues and deliver lasting
                     results. Our positive, flexible and personal approach, with
                     challenge where needed, ensures buy-in at all levels of our
-                    clients’ businesses and a positive outcome.{' '}
+                    clients’ businesses and a positive outcome.`}
                     <Link href="/about/">Learn more about us here.</Link>
                   </p>
                 </div>
@@ -400,4 +400,4 @@ const OperationsStrategyEn = () => {
   );
 };
 
-export default OperationsStrategyEn;
+export default OperationsStrategyAr;

@@ -2,10 +2,10 @@ import React from 'react';
 import MainPageEn from './MainPageEn';
 import Link from 'next/link';
 
-const Service = () => {
+const ServiceAr = () => {
   return (
     <>
-      <div id="content-wrap">
+      <div id="content-wrap" dir="rtl">
         <div className="banner  banner--ar banner--full-overlay ">
           <div className="banner__background">
             <picture>
@@ -21,7 +21,7 @@ const Service = () => {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    Sustainability consulting{' '}
+                    Sustainability consulting
                   </h1>
                 </div>
               </div>
@@ -40,8 +40,8 @@ const Service = () => {
                   <span property="name">Home</span>
                 </a>
                 <meta property="position" content="1" />
-              </span>{' '}
-              ›{' '}
+              </span>
+              ›
               <span property="itemListElement" typeof="ListItem">
                 <a
                   property="item"
@@ -52,11 +52,11 @@ const Service = () => {
                   <span property="name">Services</span>
                 </a>
                 <meta property="position" content="2" />
-              </span>{' '}
-              ›{' '}
+              </span>
+              ›
               <span className="post post-page current-item">
                 Sustainability
-              </span>{' '}
+              </span>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ const Service = () => {
                     the agenda for business leaders. Industries where reputation
                     is critical, such as luxury goods, are making this their
                     number one priority.
-                 `}{' '}
+                 `}
                   </p>
                   <p>
                     {`
@@ -88,7 +88,7 @@ const Service = () => {
                     carbon footprint, depth of understanding, with analysis only
                     concerning ‘direct’ impacts, excluding ‘indirect’ impacts
                     like raw materials, or both.
-                 `}{' '}
+                 `}
                   </p>
                   <h2>First steps to sustainability</h2>
                   <p>
@@ -98,7 +98,7 @@ const Service = () => {
                     on all the major indicators like CO2, pollution, and water,
                     from the extraction of raw materials to the sale of the
                     finished product, to identify where to focus efforts
-                 `}{' '}
+                 `}
                   </p>
                   <p>
                     {`
@@ -108,7 +108,7 @@ const Service = () => {
                     eco-design, supplier selection, reduction of impacts in
                     production, transport optimisation, financial reporting, and
                     many more.
-                 `}{' '}
+                 `}
                   </p>
                   <h2>Sustainability transformation</h2>
                   <p>
@@ -117,14 +117,14 @@ const Service = () => {
                     operations to reduce their environmental impact by
                     activating the improvement levers identified – cost,
                     inventory, and service.
-                 `}{' '}
+                 `}
                   </p>
                   <p>
                     {`
                     Like any ambitious and complex transformation, it requires
                     strong technical and business expertise to drive the
                     changes, and to maintain and improve performance.
-                 `}{' '}
+                 `}
                   </p>
                   <h2>Helping with sustainability challenges</h2>
                   <p>
@@ -134,7 +134,7 @@ const Service = () => {
                     delivering tangible results for clients. The menu bar on
                     this page provides more detail on a selection of the
                     sustainability challenges we regularly work on.
-                 `}{' '}
+                 `}
                   </p>
                   <p>
                     {`
@@ -144,11 +144,11 @@ const Service = () => {
                     embedding real change and delivering lasting results. Our
                     positive, flexible and personal approach, with challenge
                     where needed, ensures buy-in at all levels of our clients’
-                    businesses and a positive outcome.{' '}
+                    businesses and a positive outcome.
                     <Link href="/about/">
                       Learn more about us here.
                     </a>
-                 `}{' '}
+                 `}
                   </p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ const Service = () => {
                   <div className="row align-items-start">
                     <div className="col-md-12">
                       <h4 className="title title--sm red-1-color">
-                        Contact our sustainability experts{' '}
+                        Contact our sustainability experts
                       </h4>
                     </div>
                     <div className="col-md-12">
@@ -171,9 +171,6 @@ const Service = () => {
                       <p className="no-wrap">
                         <span className="data-label red-1-color">Phone</span>
                       </p>
-
-                      {/* <!--            <p><span className="data-label red-1-color">Email</span>sustainability@argonandco.com</p>--> */}
-
                       <p className="no-wrap">
                         <span className="data-label red-1-color">Email</span>
                         <a href="mailto: sustainability.france@argonandco.com">
@@ -197,7 +194,7 @@ const Service = () => {
                   <div className="row align-items-start">
                     <div className="col-md-12">
                       <h4 className="title title--sm red-1-color">
-                        Contact our sustainability experts{' '}
+                        Contact our sustainability experts
                       </h4>
                     </div>
                     <div className="col-md-12">
@@ -209,7 +206,7 @@ const Service = () => {
                     <div className="col-md-12 contact-details">
                       <p>
                         <span className="data-label red-1-color">Phone</span>
-                        +44 (0) 845 644 6972{' '}
+                        +44 (0) 845 644 6972
                       </p>
                       <p>
                         <span className="data-label red-1-color">Email</span>
@@ -229,51 +226,51 @@ const Service = () => {
 
                 <div className="sidebar-nav black-background red-4-border-top">
                   <div className="title title--sm title--medium-weight">
-                    Learn more about our{' '}
-                    <span className="lowercase">Sustainability</span> services{' '}
+                    Learn more about our
+                    <span className="lowercase">Sustainability</span> services
                   </div>
                   <ul>
                     <li className="">
-                      <Link href="/services/sustainability/green-operations-strategy/">
+                      <Link href="/services/green-operations-strategy/">
                         Green operations strategy
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/environmental-impact-maturity-analysis/">
+                      <Link href="/services/environmental-impact-maturity-analysis/">
                         Environmental impact &amp; maturity analysis
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-operations-transformation/">
+                      <Link href="/services/sustainable-operations-transformation/">
                         Sustainable operations transformation
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/design-for-sustainability/">
+                      <Link href="/services/design-for-sustainability/">
                         Design for sustainability
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-sourcing-strategy/">
+                      <Link href="/services/sustainable-sourcing-strategy/">
                         Sustainable sourcing strategy
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-manufacturing/">
+                      <Link href="/services/sustainable-manufacturing/">
                         Sustainable manufacturing
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-distribution/">
+                      <Link href="/services/sustainable-distribution/">
                         Sustainable distribution
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-finance/">
+                      <Link href="/services/sustainable-finance/">
                         Sustainable finance
                       </Link>
                     </li>
-                  </ul>{' '}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -284,4 +281,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default ServiceAr;
