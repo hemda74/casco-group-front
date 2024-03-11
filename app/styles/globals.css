@@ -9358,6 +9358,7 @@ ul.gallery li p {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  border: none !important;
 }
 
 .card .title {
@@ -10101,7 +10102,7 @@ a .card.red-5-background:hover {
 .banner__bottom {
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  bottom: 4rem;
   padding-bottom: 40px;
   z-index: 2;
 }
@@ -17294,7 +17295,7 @@ select:focus {
 .carousel-caption2 {
   margin-top: -15rem !important;
 }
-text-primary .dropdown-menu {
+.dropdown-menu {
   border: none !important;
   padding: 0 !important;
 }
