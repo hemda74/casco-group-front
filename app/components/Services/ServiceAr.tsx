@@ -166,11 +166,17 @@ const ServiceAr = () => {
                     </div>
                     <div className="col-md-12 contact-details">
                       <p className="no-wrap">
-                        <span className="data-label red-1-color">Phone</span>
+                        <span className="data-label red-1-color">
+                          الهاتف <br />
+                        </span>
                       </p>
                       <p className="no-wrap">
-                        <span className="data-label red-1-color">Email</span>
-                        <a href="mailto: sustainability.france@argonandco.com">
+                        <span className="data-label red-1-color">
+                          الايميل <br />
+                        </span>
+                        <a
+                          className="text-black"
+                          href="mailto: sustainability.france@argonandco.com">
                           sustainability.france@argonandco.com
                         </a>
                       </p>
@@ -202,12 +208,19 @@ const ServiceAr = () => {
                     </div>
                     <div className="col-md-12 contact-details">
                       <p>
-                        <span className="data-label red-1-color">Phone</span>
+                        <span className="data-label red-1-color">
+                          الهاتف <br />
+                        </span>
                         +44 (0) 845 644 6972
                       </p>
                       <p>
-                        <span className="data-label red-1-color">Email</span>
-                        <a href="mailto: sustainability.uk@argonandco.com">
+                        <span className="data-label red-1-color">
+                          الايميل
+                          <br />
+                        </span>
+                        <a
+                          className="text-black"
+                          href="mailto: sustainability.uk@argonandco.com">
                           sustainability.uk@argonandco.com
                         </a>
                       </p>
@@ -223,8 +236,7 @@ const ServiceAr = () => {
 
                 <div className="sidebar-nav black-background red-4-border-top">
                   <div className="title title--sm title--medium-weight">
-                    Learn more about our
-                    <span className="lowercase">Sustainability</span> services
+                    اعرف المزيد عن خدماتنا
                   </div>
                   <ul>
                     <li className="">

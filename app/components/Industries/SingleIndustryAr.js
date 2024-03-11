@@ -103,35 +103,33 @@ const SingleIndustryAr = () => {
             </div>
           </div>
 
-          <div className="banner__bottom text-center banner__bottom--lower m-auto text-white">
-            <div className="breadcrumb m-auto text-white">
+          <div className="banner__bottom text-center banner__bottom--lower m-auto">
+            <div className=" m-auto text-white">
               <span property="itemListElement" typeof="ListItem">
-                <a
-                  property="item"
-                  typeof="WebPage"
+                <Link
                   title="Go to Home."
-                  href="https://www.argonandco.com/en/"
+                  href="/"
                   className="home m-auto text-white">
-                  <span property="name" className="m-auto text-white">
+                  <span property="name" className="me-2 ms-2 text-white">
                     Home
                   </span>
-                </a>
+                </Link>
                 <meta property="position" content="1" />
               </span>
               ›
               <span property="itemListElement" typeof="ListItem">
                 <Link
-                  property="item"
-                  typeof="WebPage"
                   title="Go to Industries."
                   href="/industries/"
                   className="post post-page">
-                  <span property="name">Industries</span>
+                  <span property="name" className="me-2 ms-2 text-white">
+                    Industries
+                  </span>
                 </Link>
                 <meta property="position" content="2" />
               </span>
               ›
-              <span className="post post-page current-item">
+              <span className="post post-page current-item me-2 ms-2 text-white cursor-pointer">
                 Aerospace and defence
               </span>
             </div>

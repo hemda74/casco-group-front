@@ -28,44 +28,39 @@ const ServiceEn = () => {
             </div>
           </div>
 
-          <div className="banner__bottom text-center ">
-            <div className="breadcrumb ">
+          <div className="banner__bottom text-center banner__bottom--lower m-auto">
+            <div className=" m-auto text-white">
               <span property="itemListElement" typeof="ListItem">
                 <Link
-                  property="item"
-                  typeof="WebPage"
                   title="Go to Home."
-                  href="https://www.argonandco.com/en/"
-                  className="home">
-                  <span property="name">Home</span>
+                  href="/"
+                  className="home m-auto text-white">
+                  <span property="name" className="me-2 ms-2 text-white">
+                    Home
+                  </span>
                 </Link>
                 <meta property="position" content="1" />
               </span>
               ›
               <span property="itemListElement" typeof="ListItem">
                 <Link
-                  property="item"
-                  typeof="WebPage"
                   title="Go to Services."
-                  href="https://www.argonandco.com/en/services/"
+                  href="/services/"
                   className="post post-page">
-                  <span property="name">Services</span>
+                  <span property="name" className="me-2 ms-2 text-white">
+                    Services
+                  </span>
                 </Link>
                 <meta property="position" content="2" />
               </span>
               ›
-              <span className="post post-page current-item">
-                Sustainability
+              <span className="post post-page current-item me-2 ms-2 text-white cursor-pointer">
+                Sustainability consulting
               </span>
             </div>
           </div>
         </div>
 
-        {/* <span style="display:none;">
-            5111Array
-(
-)
-        </span> */}
         <section className="main-page">
           <div className="container">
             <div className="row off-screen off-screen--fade-up justify-content-center">

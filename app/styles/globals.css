@@ -10101,7 +10101,6 @@ a .card.red-5-background:hover {
 .banner__bottom {
   position: absolute;
   width: 100%;
-  left: 0;
   bottom: 0px;
   padding-bottom: 40px;
   z-index: 2;
@@ -10109,6 +10108,7 @@ a .card.red-5-background:hover {
 
 .banner__bottom--lower {
   padding-bottom: 9px;
+  text-align: center;
 }
 
 .banner__bottom--higher {
@@ -17331,14 +17331,8 @@ text-primary .dropdown-menu {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.accordion-button::after {
-  flex-shrink: 0;
-  width: var(--bs-accordion-btn-icon-width);
-  height: var(--bs-accordion-btn-icon-width);
-  margin-left: auto;
-  content: '';
-  background-image: none !important;
-  background-repeat: no-repeat;
-  background-size: var(--bs-accordion-btn-icon-width);
-  transition: var(--bs-accordion-btn-icon-transition);
+
+.titleWord {
+  margin-top: -10rem;
+  margin-bottom: 10rem;
 }
