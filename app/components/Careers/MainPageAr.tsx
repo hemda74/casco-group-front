@@ -776,8 +776,8 @@ const MainPageAr = () => {
                   Join us
                 </h2>
                 <p style={{ textAlign: 'center' }}>
-                  <span className="intro">
-                    {` Learn more about working at Argon &amp; Co, typical projects
+                  <span className="intro text-black">
+                    {` Learn more about working at Argon & Co, typical projects
                     we work on, regular events to get involved in, the exciting
                     career path ahead and how to apply for a position with us.`}
                   </span>
