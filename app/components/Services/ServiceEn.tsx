@@ -149,9 +149,6 @@ const ServiceEn = () => {
                       <p className="no-wrap">
                         <span className="data-label red-1-color">Phone</span>
                       </p>
-
-                      {/* <!--            <p>{`<span className="data-label red-1-color">Email</span>sustainability@argonandco.com`}</p>--> */}
-
                       <p className="no-wrap">
                         <span className="data-label red-1-color">Email</span>
                         <Link href="mailto: sustainability.france@argonandco.com">
@@ -207,47 +204,46 @@ const ServiceEn = () => {
 
                 <div className="sidebar-nav black-background red-4-border-top">
                   <div className="title title--sm title--medium-weight">
-                    Learn more about our
-                    <span className="lowercase">Sustainability</span> services
+                    Learn more about our Sustainability services
                   </div>
                   <ul>
                     <li className="">
-                      <Link href="/services/sustainability/green-operations-strategy/">
+                      <Link href="/services/green-operations-strategy/">
                         Green operations strategy
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/environmental-impact-maturity-analysis/">
+                      <Link href="/services/environmental-impact-maturity-analysis/">
                         Environmental impact &amp; maturity analysis
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-operations-transformation/">
+                      <Link href="/services/sustainable-operations-transformation/">
                         Sustainable operations transformation
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/design-for-sustainability/">
+                      <Link href="/services/design-for-sustainability/">
                         Design for sustainability
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-sourcing-strategy/">
+                      <Link href="/services/sustainable-sourcing-strategy/">
                         Sustainable sourcing strategy
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-manufacturing/">
+                      <Link href="/services/sustainable-manufacturing/">
                         Sustainable manufacturing
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-distribution/">
+                      <Link href="/services/sustainable-distribution/">
                         Sustainable distribution
                       </Link>
                     </li>
                     <li className="">
-                      <Link href="/services/sustainability/sustainable-finance/">
+                      <Link href="/services/sustainable-finance/">
                         Sustainable finance
                       </Link>
                     </li>
