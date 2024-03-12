@@ -10102,6 +10102,13 @@ a .card.red-5-background:hover {
 .banner__bottom {
   position: absolute;
   width: 100%;
+  bottom: 0;
+  padding-bottom: 40px;
+  z-index: 2;
+}
+.banner__bottom2 {
+  position: absolute;
+  width: 100%;
   bottom: 4rem;
   padding-bottom: 40px;
   z-index: 2;
@@ -10285,12 +10292,11 @@ a .card.red-5-background:hover {
 .banner--overlay:before {
   position: absolute;
   content: '';
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 220px;
+
+  height: 100%;
   opacity: 0.75;
   z-index: 1;
+  overflow-y: auto;
   background: -webkit-gradient(
     linear,
     left bottom,
@@ -10298,8 +10304,8 @@ a .card.red-5-background:hover {
     from(rgba(0, 0, 0, 0)),
     to(#000000)
   );
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, #000000 120%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 120%);
 }
 
 .banner--overlay .banner__bottom {
