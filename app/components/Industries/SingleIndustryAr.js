@@ -142,7 +142,7 @@ const SingleIndustryAr = () => {
                 <div className="the-content">
                   <h2>Aerospace and defence</h2>
                   <p>
-                    {`             The defence and aerospace industries are currently going
+                    {`The defence and aerospace industries are currently going
                     through profound and longstanding transformations. The
                     aerospace industry is still in rapid growth mode driven by
                     the demand of emerging countries and new

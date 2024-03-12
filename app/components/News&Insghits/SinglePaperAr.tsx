@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 
-const SinglePaperEn = () => {
+const SinglePaperAr = () => {
   return (
     <>
-      <div id="content-wrap">
+      <div id="content-wrap" dir="rtl">
         <div className="banner  banner--no-image  banner--ar banner--top-overlay  banner--title-overflow banner--single red-5-background background-banner">
           <div className="banner__background"></div>
           <div className="banner__bottom text-center ">
@@ -12,7 +12,7 @@ const SinglePaperEn = () => {
               <div className="row justify-content-center">
                 <div className="col-lg-10 banner__white-overlay">
                   <div className="post-meta off-screen off-screen--rotate-up">
-                    <span>Whitepaper</span>
+                    <span> الورقة البيضاء</span>
                   </div>
 
                   <h1 className="title title--lg title--bold off-screen off-screen--rotate-up">
@@ -60,12 +60,13 @@ const SinglePaperEn = () => {
                 </picture>
               </p>
               <p>
-                {`In the report, we take a close look at our own experiences and
+                {`        In the report, we take a close look at our own experiences and
                 what leading thinkers have to say about the drivers for
                 transformational change. We also look at the critical get rights
                 to succeeding, and the reasons for failing to achieve
                 objectives.`}
               </p>
+              <p>&nbsp;</p>
             </div>
           </div>
         </div>
@@ -137,4 +138,4 @@ const SinglePaperEn = () => {
   );
 };
 
-export default SinglePaperEn;
+export default SinglePaperAr;

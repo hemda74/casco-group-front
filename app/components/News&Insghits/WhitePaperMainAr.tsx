@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 
-const WhitePaperMainEn = () => {
+const WhitePaperMainAr = () => {
   return (
     <>
-      <div id="content-wrap">
+      <div id="content-wrap" dir="rtl">
         <div className="banner  banner--ar banner--full-overlay ">
           <div className="banner__background">
             <picture>
@@ -162,4 +162,4 @@ const WhitePaperMainEn = () => {
   );
 };
 
-export default WhitePaperMainEn;
+export default WhitePaperMainAr;

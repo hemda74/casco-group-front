@@ -264,7 +264,7 @@ const MainPageAr = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/whitepapers/industrial-flexibility-how-new-mathematic-optimisation-methods-can-contribute-to-better-manage-industrial-agility/">
+                <Link href="/news-insights/white-papers/industrial-flexibility-how-new-mathematic-optimisation-methods-can-contribute-to-better-manage-industrial-agility/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
@@ -281,7 +281,7 @@ const MainPageAr = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/whitepapers/70-of-business-transformations-fail-urban-myth-or-worth-another-look/">
+                <Link href="/news-insights/white-papers/70-of-business-transformations-fail-urban-myth-or-worth-another-look/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
@@ -297,7 +297,7 @@ const MainPageAr = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/whitepapers/is-your-forecasting-adding-value/">
+                <Link href="/news-insights/white-papers/is-your-forecasting-adding-value/">
                   <div className="card  card--large  red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
@@ -313,7 +313,7 @@ const MainPageAr = () => {
 
               <div className="col-12 text-center">
                 <Link
-                  href="/news-insights/whitepapers/"
+                  href="/news-insights/white-papers/"
                   className="line-link red-5-color">
                   <span className="red-5-color">View all whitepapers</span>
                 </Link>
