@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Insiders from '../Insiders';
 const MainPageEn = () => {
   return (
     <>
@@ -116,7 +117,7 @@ const MainPageEn = () => {
           </div>
         </div>
 
-        {/* <div className="section section--std pad-80 section-divide off-screen off-screen--hide off-screen--fade-up">
+        <div className="section section--std pad-80 section-divide off-screen off-screen--hide off-screen--fade-up">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8">
@@ -761,8 +762,8 @@ const MainPageEn = () => {
               </div>
             </div>
           </div>
-        </div> */}
-
+        </div>
+        <Insiders />
         <div
           className="section section--std full-image-content off-screen off-screen--hide off-screen--fade-up join-us"
           style={{
@@ -797,7 +798,7 @@ const MainPageEn = () => {
           <div className="container">
             <div className="row small-gutters pad-40-vert">
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/about/what-we-do/">
+                <Link href="/about/what-we-do/">
                   <div className="card card--image red-3-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -816,11 +817,11 @@ const MainPageEn = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/about/our-approach/">
+                <Link href="/about/our-approach/">
                   <div className="card card--image red-3-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -839,11 +840,11 @@ const MainPageEn = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="col-md-4">
-                <a href="https://www.argonandco.com/en/about/our-culture/">
+                <Link href="/about/our-culture/">
                   <div className="card card--image red-3-background white-color card--fixed-sm ">
                     <div className="card__image object-fit">
                       <picture>
@@ -862,7 +863,7 @@ const MainPageEn = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
