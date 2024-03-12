@@ -19,7 +19,7 @@ const Contactus = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Contact Us | CASCO</title>
+        <title>Join Us | CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (

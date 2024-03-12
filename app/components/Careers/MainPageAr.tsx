@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-const MainPageEn = () => {
+const MainPageAr = () => {
   return (
     <>
-      <div id="content-wrap">
+      <div id="content-wrap" dir="rtl">
         <div className="banner  banner--full-height banner--overlay ">
           <div className="banner__background">
             <picture>
@@ -19,10 +19,10 @@ const MainPageEn = () => {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    Careers
+                    الوظائف
                   </h1>
                   <p className="intro off-screen off-screen--rotate-up">
-                    {`  We are always looking for inspirational, driven and expert
+                    {`We are always looking for inspirational, driven and expert
                     people to join our team.`}
                   </p>
                   <div className="down-arrow js-interact js-scroll-height ">
@@ -91,7 +91,7 @@ const MainPageEn = () => {
                   </span>
                 </p>
                 <p>
-                  {` Once someone joins us, we believe it is essential to provide
+                  {`   Once someone joins us, we believe it is essential to provide
                   an environment in which they can continually develop and
                   expand their capabilities. Throughout your career with Argon
                   &amp; Co, our career development model will offer you the
@@ -99,7 +99,7 @@ const MainPageEn = () => {
                 </p>
                 <ul>
                   <li>
-                    {`  Broaden your skills across a number of different business
+                    {`Broaden your skills across a number of different business
                     disciplines`}
                   </li>
                   <li>
@@ -116,7 +116,7 @@ const MainPageEn = () => {
           </div>
         </div>
 
-        {/* <div className="section section--std pad-80 section-divide off-screen off-screen--hide off-screen--fade-up">
+        <div className="section section--std pad-80 section-divide off-screen off-screen--hide off-screen--fade-up">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8">
@@ -157,7 +157,7 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                {`   "Argon &amp; Co combines strong expertise with
+                                {` "Argon &amp; Co combines strong expertise with
                                 an incredible atmosphere; all people matter.
                                 It’s a great combination."`}
                               </p>
@@ -197,7 +197,7 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                {` "Learning is never ending in this firm, and the
+                                {`   "Learning is never ending in this firm, and the
                                 variety of projects which we do is incredible."`}
                               </p>
                               <div className="row align-items-center profile-block">
@@ -236,7 +236,7 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                {`    "As a graduate, I am new to the professional
+                                {`  "As a graduate, I am new to the professional
                                 world, but the company culture has ensured a
                                 seamless and enjoyable transition. The graduate
                                 program has allowed me to experience a variety
@@ -278,7 +278,7 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                {`"We are privileged at Argon &amp; Co to develop
+                                {`  "We are privileged at Argon &amp; Co to develop
                                 our expertise by working with different kinds of
                                 clients while growing professionally in a unique
                                 environment."`}
@@ -318,7 +318,7 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                {`   "The culture is one which prides itself on
+                                {` "The culture is one which prides itself on
                                 delivering the highest possible quality of work
                                 and I feel that our professionalism stands out
                                 as a result of this."`}
@@ -358,7 +358,7 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                {`  "Even as a relatively new Consultant, I’d worked
+                                {`"Even as a relatively new Consultant, I’d worked
                                 on some challenging and interesting projects.
                                 The culture is one in which I am encouraged to
                                 excel and the company has great people, a really
@@ -516,7 +516,7 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                {`"We are privileged at Argon &amp; Co to develop
+                                {`  "We are privileged at Argon &amp; Co to develop
                                 our expertise by working with different kinds of
                                 clients while growing professionally in a unique
                                 environment."`}
@@ -598,7 +598,7 @@ const MainPageEn = () => {
                             style={{ width: '100%', display: 'inline-block' }}>
                             <div className="card__content">
                               <p className="intro">
-                                {`"Even as a relatively new Consultant, I’d worked
+                                {`  "Even as a relatively new Consultant, I’d worked
                                 on some challenging and interesting projects.
                                 The culture is one in which I am encouraged to
                                 excel and the company has great people, a really
@@ -761,7 +761,7 @@ const MainPageEn = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div
           className="section section--std full-image-content off-screen off-screen--hide off-screen--fade-up join-us"
@@ -872,4 +872,4 @@ const MainPageEn = () => {
   );
 };
 
-export default MainPageEn;
+export default MainPageAr;
