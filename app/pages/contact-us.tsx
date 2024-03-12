@@ -1,17 +1,17 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../layouts/ViewerLayout';
-import { NextPageWithLayout } from './_app';
 import { useLanguage } from '../Context/LanguageContext';
 import Layout from '../components/Layout';
 import styles from '../styles/Main.module.css';
-import StackHolders from '../components/Contact Us/ContactUsEn';
 import ContactUsEn from '../components/Contact Us/ContactUsEn';
 import ContactUsAr from '../components/Contact Us/ContactUsAr';
+import Footer from '../components/Footer';
+import OldNavBar from '../components/OldNavBar';
+import FooterAr from '../components/FooterAr';
 
 type Props = {};
 // dymmy data for ui till handle working with api
-const Contactus: NextPageWithLayout = (props: Props) => {
+const Contactus = (props: Props) => {
   const { language } = useLanguage();
   return (
     <>
@@ -21,19 +21,19 @@ const Contactus: NextPageWithLayout = (props: Props) => {
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
-            <ContactUsEn />{' '}
+            <OldNavBar />
+            <ContactUsEn />
+            <Footer />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
+            <OldNavBar />
             <ContactUsAr />
+            <FooterAr />
           </main>
         )}
       </Layout>
     </>
   );
-};
-// adding Layout
-Contactus.getLayout = function getLayout(contactus: ReactElement) {
-  return <ViewerLayout childern={contactus}></ViewerLayout>;
 };
 export default Contactus;
