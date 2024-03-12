@@ -5,9 +5,12 @@ import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
-import Testmonalials from '../../components/About/Testmonalials';
 import WhatWeDoEn from '../../components/About/WhatWeDoEn';
-import WhereIsNext from '../../components/WhereIsNextEn';
+import WhatWeDoAr from '../../components/About/WhatWeDoAr';
+import TestmonalialsEn from '../../components/About/TestmonalialsEn';
+import TestmonalialsAr from '../../components/About/TestmonalialsAr';
+import WhereIsNextEn from '../../components/WhereIsNextEn';
+import WhereIsNextAr from '../../components/WhereIsNextAr';
 
 type Props = {};
 const TeamMemberPage: NextPageWithLayout = (props: Props) => {
@@ -21,12 +24,14 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
             <WhatWeDoEn />
-            <Testmonalials />
-            <WhereIsNext />
+            <TestmonalialsEn />
+            <WhereIsNextEn />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
-            <h1 className="m-auto">Wait For Arabic Content</h1>
+            <WhatWeDoAr />
+            <TestmonalialsAr />
+            <WhereIsNextAr />
           </main>
         )}
       </Layout>

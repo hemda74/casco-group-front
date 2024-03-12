@@ -1,18 +1,18 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../../layouts/ViewerLayout';
-import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import AboutMainSectionAr from '../../components/About/AboutMainSection-ar';
 import AboutMainSectionEn from '../../components/About/AboutMainSection-en';
 import MeetOurTeamEn from '../../components/About/MeetOurTeamEn';
 import Recogention from '../../components/About/Recogention';
-import AccreditedBodiesCompaines from '../../components/About/Recogention';
 import styles from '../../styles/Main.module.css';
+import OldNavBar from '../../components/OldNavBar';
+import Footer from '../../components/Footer';
+import FooterAr from '../../components/FooterAr';
 
 type Props = {};
-const Index: NextPageWithLayout = (props: Props) => {
+const Index = (props: Props) => {
   const { language } = useLanguage();
   return (
     <>
@@ -22,23 +22,24 @@ const Index: NextPageWithLayout = (props: Props) => {
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
+            <OldNavBar />
+
             <AboutMainSectionEn />
             <MeetOurTeamEn />
             <Recogention />
+            <Footer />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
+            <OldNavBar />
             <AboutMainSectionAr />
             <MeetOurTeamEn />
             <Recogention />
+            <FooterAr />
           </main>
         )}
       </Layout>
     </>
   );
-};
-// adding Layout
-Index.getLayout = function getLayout(Index: ReactElement) {
-  return <ViewerLayout childern={Index}></ViewerLayout>;
 };
 export default Index;

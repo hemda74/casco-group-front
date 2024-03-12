@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 
-const WhatWeDoEn = () => {
+const WhatWeDoAr = () => {
   return (
     <>
-      <div id="content-wrap">
+      <div id="content-wrap" dir="rtl">
         <div className="banner  banner--ar banner--full-overlay ">
           <div className="banner__background">
             <picture>
@@ -20,11 +20,11 @@ const WhatWeDoEn = () => {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    What we do
+                    ماذا نفعل فى كاسكو
                   </h1>
-                  <p className="intro off-screen off-screen--rotate-up">
-                    A global management consultancy that specialises in
-                    operations strategy and transformation.
+                  <p className="intro off-screen off-screen--rotate-up mt-3">
+                    شركة استشارات إدارية عالمية متخصصة في استراتيجية العمليات
+                    والتحول.
                   </p>
                 </div>
               </div>
@@ -38,7 +38,7 @@ const WhatWeDoEn = () => {
                   href="/"
                   className="home m-auto text-white">
                   <span property="name" className="me-2 ms-2 text-white">
-                    Home
+                    الرئيسية
                   </span>
                 </Link>
                 <meta property="position" content="1" />
@@ -50,22 +50,20 @@ const WhatWeDoEn = () => {
                   href="/about/"
                   className="post post-page">
                   <span property="name" className="me-2 ms-2 text-white">
-                    About{' '}
+                    عن كاسكو
                   </span>
                 </Link>
                 <meta property="position" content="2" />
               </span>
               ›
               <span className="post post-page current-item me-2 ms-2 text-white cursor-pointer">
-                What We Do{' '}
+                ماذا نفعل فى كاسكو
               </span>
             </div>
           </div>
         </div>
 
-        <div className="half-and-half"></div>
-
-        <div className="section section--std off-screen off-screen--fade-up">
+        <div className="section section--std  off-screen--fade-up">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8">
@@ -75,8 +73,9 @@ const WhatWeDoEn = () => {
                   Transforming operations
                 </h2>
               </div>
-
-              <div className="col-md-5 " style={{ marginBottom: '30px' }}>
+              <div
+                className="col-md-5 offset-md-1"
+                style={{ marginBottom: '30px' }}>
                 <h2 className="title title--md red-1-color ">
                   Operations strategy and transformation
                 </h2>
@@ -95,9 +94,7 @@ const WhatWeDoEn = () => {
                   leads to a substantial improvement in performance.`}
                 </p>
               </div>
-              <div
-                className="col-md-5 offset-md-1"
-                style={{ marginBottom: '30px' }}>
+              <div className="col-md-5" style={{ marginBottom: '30px' }}>
                 <h2 className="title title--md red-2-color ">
                   Technical expertise and operational experience
                 </h2>
@@ -114,7 +111,9 @@ const WhatWeDoEn = () => {
                   talking about.`}
                 </p>
               </div>
-              <div className="col-md-5 " style={{ marginBottom: '30px' }}>
+              <div
+                className="col-md-5 offset-md-1"
+                style={{ marginBottom: '30px' }}>
                 <h2 className="title title--md red-3-color ">
                   Personable with challenge where needed
                 </h2>
@@ -131,9 +130,7 @@ const WhatWeDoEn = () => {
                   is making a real difference for our clients.`}
                 </span>
               </div>
-              <div
-                className="col-md-5 offset-md-1"
-                style={{ marginBottom: '30px' }}>
+              <div className="col-md-5 " style={{ marginBottom: '30px' }}>
                 <h2 className="title title--md red-4-color ">
                   Global footprint with local expertise
                 </h2>
@@ -158,4 +155,4 @@ const WhatWeDoEn = () => {
   );
 };
 
-export default WhatWeDoEn;
+export default WhatWeDoAr;
