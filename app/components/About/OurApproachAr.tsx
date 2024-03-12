@@ -1,13 +1,13 @@
 import React from 'react';
-import WhereIsNextEn from '../WhereIsNextEn';
+import WhereIsNextAr from '../WhereIsNextAr';
 
-const OurApproachEn = () => {
+const OurApproachAr = () => {
   return (
     <>
       <div id="content-wrap">
         <div className="no-image-banner text-center">
           <h1 className="title title--bold title--2xl">
-            <span className="gradient-text">Our approach </span>
+            <span className="gradient-text">نهجنا </span>
           </h1>
         </div>
 
@@ -179,10 +179,10 @@ const OurApproachEn = () => {
             </div>
           </div>
         </section>
-        <WhereIsNextEn />
+        <WhereIsNextAr />
       </div>
     </>
   );
 };
 
-export default OurApproachEn;
+export default OurApproachAr;

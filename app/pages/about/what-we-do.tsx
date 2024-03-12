@@ -18,7 +18,7 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
   return (
     <>
       <Head>
-        <title>About | CASCO</title>
+        <title>What We Do | CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (

@@ -1,36 +1,38 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import ViewerLayout from '../../layouts/ViewerLayout';
-import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
-import OurCulture from '../../components/About/OurCultureEn';
-
+import OurCultureEn from '../../components/About/OurCultureEn';
+import OldNavBar from '../../components/OldNavBar';
+import OurCultureAr from '../../components/About/OurCultureAr';
+import FooterAr from '../../components/FooterAr';
+import Footer from '../../components/Footer';
 type Props = {};
-const TeamMemberPage: NextPageWithLayout = (props: Props) => {
+const TeamMemberPage = (props: Props) => {
   const { language } = useLanguage();
   return (
     <>
       <Head>
-        <title>About | CASCO</title>
+        <title>Our Cluture| CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
-            <OurCulture />
+            <OldNavBar />
+            <OurCultureEn />
+            <Footer />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
-            <h1 className="m-auto">Wait For Arabic Content</h1>
+            <OldNavBar />
+            <OurCultureAr />
+            <FooterAr />
           </main>
         )}
       </Layout>
     </>
   );
-};
-// adding Layout
-TeamMemberPage.getLayout = function getLayout(TeamMemberPage: ReactElement) {
-  return <ViewerLayout childern={TeamMemberPage}></ViewerLayout>;
 };
 export default TeamMemberPage;
