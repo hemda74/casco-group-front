@@ -8,14 +8,14 @@ const SingleIndustryEn = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -143,7 +143,7 @@ const SingleIndustryEn = () => {
                 <div className="the-content">
                   <h2>Aerospace and defence</h2>
                   <p>
-                    {`             The defence and aerospace industries are currently going
+                    {`The defence and aerospace industries are currently going
                     through profound and longstanding transformations. The
                     aerospace industry is still in rapid growth mode driven by
                     the demand of emerging countries and new
@@ -430,7 +430,7 @@ const SingleIndustryEn = () => {
         <section className="section section--std light-grey-background pad-80 section-divide off-screen off-screen--fade-up">
           <div className="row justify-content-center">
             <div className="col-md-8">
-              <h2 className="title title--lg red-2-color text-center">
+              <h2 className="title title--lg red-2-color text-center mb-5">
                 Aerospace and defence case studies
               </h2>
             </div>

@@ -8,14 +8,14 @@ const SingleIndustryAr = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -430,7 +430,7 @@ const SingleIndustryAr = () => {
         <section className="section section--std light-grey-background pad-80 section-divide off-screen off-screen--fade-up">
           <div className="row justify-content-center">
             <div className="col-md-8">
-              <h2 className="title title--lg red-2-color text-center">
+              <h2 className="title title--lg red-2-color text-center mb-5">
                 Aerospace and defence case studies
               </h2>
             </div>

@@ -5,14 +5,14 @@ const Insiders = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -52,17 +52,6 @@ const Insiders = () => {
             <div className="col-md-12">
               <Slider {...settings}>
                 <div>
-                  <div className="me-xl-4">
-                    <div className="card me-1 ms-1 red-2-background card--fixed-sm ">
-                      <div className="card__content">
-                        <h3 className="title title--sm title--medium-weight">
-                          Supply quality management
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
                   <div
                     className="card card--quote red-1-background "
                     style={{ width: '100%', display: 'inline-block' }}>
@@ -79,10 +68,6 @@ const Insiders = () => {
                         <div className="col-auto">
                           <div className="circle-img circle-img--small grayscale object-fit">
                             <picture>
-                              <source
-                                type="image/webp"
-                                srcSet="https://www.argonandco.com/wp-content/uploads/2021/12/Jennifer-2-300x300.jpg.webp"
-                              />
                               <img src="https://www.argonandco.com/wp-content/uploads/2021/12/Jennifer-2-300x300.jpg" />
                             </picture>
                           </div>
@@ -98,16 +83,36 @@ const Insiders = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="me-xl-4">
-                    <div className="card me-1 ms-1 red-2-background card--fixed-sm ">
-                      <div className="card__content">
-                        <h3 className="title title--sm title--medium-weight">
-                          Supply quality management
-                        </h3>
+                  <div className="card card--quote red-1-background ">
+                    <div className="card__content">
+                      <p className="intro">
+                        "As a graduate, I am new to the professional world, but
+                        the company culture has ensured a seamless and enjoyable
+                        transition. The graduate program has allowed me to
+                        experience a variety of industries and learn different
+                        skills on a daily basis – no two days are the same."
+                      </p>
+                      <div className="row align-items-center profile-block">
+                        <div className="col-auto">
+                          <div className="circle-img circle-img--small grayscale object-fit">
+                            <picture>
+                              <img
+                                src="https://www.argonandco.com/wp-content/uploads/2021/12/Jennifer-2-300x300.jpg"
+                                alt="hello"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div className="col">
+                          <div>
+                            <strong>Jennifer</strong>
+                          </div>
+                          London office{' '}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>{' '}
+                </div>
                 <div>
                   <div className="me-xl-4">
                     <div className="card me-1 ms-1 red-2-background card--fixed-sm ">
