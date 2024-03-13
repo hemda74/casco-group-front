@@ -16,7 +16,9 @@ const JoinUsEn = () => {
                   backgroundImage:
                     'url(https://www.argonandco.com/wp-content/uploads/2019/12/who-we-look-for.jpg)',
                 }}>
-                <div className="title title--xl title--bold ">Join us</div>
+                <div className="title title--xl title--bold  d-md-block ">
+                  Join us
+                </div>
               </div>
               <div className="col-md-8 col-sm-8 full-page-scroller__content-contain">
                 <div className="full-page-scroller__content">
