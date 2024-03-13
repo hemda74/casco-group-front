@@ -65,7 +65,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>{' '}
             </div>
@@ -135,7 +135,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>{' '}
             </div>
@@ -205,7 +205,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -233,7 +233,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
@@ -261,7 +261,7 @@ export default class SwipeToSlide extends Component {
                   alt=" "
                 />
                 <p className="fw-semibold">
-                  UK's leading management consultants 2023
+                  {`UK's leading management consultants 2023`}
                 </p>
               </div>
             </div>
