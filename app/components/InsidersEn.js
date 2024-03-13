@@ -43,11 +43,11 @@ export default class SwipeToSlide extends Component {
             <div className="container ">
               <div className="col-md-8 m-auto">
                 <h2 className="title title--lg red-2-color text-center">
-                  Insider's view
+                  {`Insider's view`}
                 </h2>
                 <p className="title title--sm  text-center">
-                  Here is an insider's view of people who work for CASCO and
-                  their personal experiences.
+                  {` Here is an insider's view of people who work for CASCO and
+                  their personal experiences.`}
                 </p>
               </div>
               <div className="col-md-12">
