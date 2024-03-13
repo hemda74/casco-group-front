@@ -34,14 +34,10 @@ const NewsMainPageAr = () => {
                 <div className="card card--image red-1-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2023/12/Campaign-image-website-1024x683.jpg.webp"
-                      />
                       <img src="https://www.argonandco.com/wp-content/uploads/2023/12/Campaign-image-website-1024x683.jpg" />
                     </picture>
                   </div>
-                  <div className="card__category">News </div>
+                  <div className="card__category">الاخبار</div>
                   <div className="position-bottom">
                     <div className="card__content">
                       <h3 className="title title--xs title--medium-weight ">
@@ -58,14 +54,10 @@ const NewsMainPageAr = () => {
                 <div className="card card--image red-1-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2023/12/Campaign-image-website-1024x683.jpg.webp"
-                      />
                       <img src="https://www.argonandco.com/wp-content/uploads/2023/12/Campaign-image-website-1024x683.jpg" />
                     </picture>
                   </div>
-                  <div className="card__category">News </div>
+                  <div className="card__category">الاخبار</div>
                   <div className="position-bottom">
                     <div className="card__content">
                       <h3 className="title title--xs title--medium-weight ">
@@ -82,7 +74,7 @@ const NewsMainPageAr = () => {
                   <div className="card__image object-fit">
                     <img src="https://www.argonandco.com/wp-content/uploads/2023/11/External-announcement-image-V2-1024x683.jpeg" />
                   </div>
-                  <div className="card__category">News </div>
+                  <div className="card__category">الاخبار</div>
                   <div className="position-bottom">
                     <div className="card__content">
                       <h3 className="title title--xs title--medium-weight ">
@@ -98,14 +90,10 @@ const NewsMainPageAr = () => {
                 <div className="card card--image red-1-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2023/09/iStock-863685890-1024x683.jpg.webp"
-                      />
                       <img src="https://www.argonandco.com/wp-content/uploads/2023/09/iStock-863685890-1024x683.jpg" />
                     </picture>
                   </div>
-                  <div className="card__category">News </div>
+                  <div className="card__category">الاخبار</div>
                   <div className="position-bottom">
                     <div className="card__content">
                       <h3 className="title title--xs title--medium-weight ">
@@ -121,14 +109,10 @@ const NewsMainPageAr = () => {
                 <div className="card card--image red-1-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2023/07/argon_and_co_Announcment_global_partner-1024x683.jpg.webp"
-                      />
                       <img src="https://www.argonandco.com/wp-content/uploads/2023/07/argon_and_co_Announcment_global_partner-1024x683.jpg" />
                     </picture>
                   </div>
-                  <div className="card__category">News </div>
+                  <div className="card__category">الاخبار</div>
                   <div className="position-bottom">
                     <div className="card__content">
                       <h3 className="title title--xs title--medium-weight ">
@@ -145,14 +129,10 @@ const NewsMainPageAr = () => {
                 <div className="card card--image red-1-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2023/07/iStock-1423568960-1-1-1024x683.jpg.webp"
-                      />
                       <img src="https://www.argonandco.com/wp-content/uploads/2023/07/iStock-1423568960-1-1-1024x683.jpg" />
                     </picture>
                   </div>
-                  <div className="card__category">News </div>
+                  <div className="card__category">الاخبار</div>
                   <div className="position-bottom">
                     <div className="card__content">
                       <h3 className="title title--xs title--medium-weight ">
