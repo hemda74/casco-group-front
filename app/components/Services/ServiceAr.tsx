@@ -21,41 +21,41 @@ const ServiceAr = () => {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    Sustainability consulting
+                    استشارات الاستدامة
                   </h1>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="banner__bottom text-center ">
-            <div className="breadcrumb ">
+          <div className="banner__bottom text-center banner__bottom--lower m-auto">
+            <div className=" m-auto text-white">
               <span property="itemListElement" typeof="ListItem">
-                <a
-                  property="item"
-                  typeof="WebPage"
+                <Link
                   title="Go to Home."
-                  href="https://www.argonandco.com/en/"
-                  className="home">
-                  <span property="name">Home</span>
-                </a>
+                  href="/"
+                  className="home m-auto text-white">
+                  <span property="name" className="me-2 ms-2 text-white">
+                    الرئيسية
+                  </span>
+                </Link>
                 <meta property="position" content="1" />
               </span>
               ›
               <span property="itemListElement" typeof="ListItem">
-                <a
-                  property="item"
-                  typeof="WebPage"
+                <Link
                   title="Go to Services."
-                  href="https://www.argonandco.com/en/services/"
+                  href="/services/"
                   className="post post-page">
-                  <span property="name">Services</span>
-                </a>
+                  <span property="name" className="me-2 ms-2 text-white">
+                    الخدمات
+                  </span>
+                </Link>
                 <meta property="position" content="2" />
               </span>
               ›
-              <span className="post post-page current-item">
-                Sustainability
+              <span className="post post-page current-item me-2 ms-2 text-white cursor-pointer">
+                استشارات الاستدامة
               </span>
             </div>
           </div>
@@ -71,7 +71,7 @@ const ServiceAr = () => {
             <div className="row off-screen off-screen--fade-up justify-content-center">
               <div className="col-lg-7">
                 <div className="the-content">
-                  <h2>Sustainability</h2>
+                  <h2>الاستدامة</h2>
                   <p>
                     {`
                     Driven by increasing regulation and more environmentally
