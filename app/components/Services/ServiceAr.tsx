@@ -6,13 +6,9 @@ const ServiceAr = () => {
   return (
     <>
       <div id="content-wrap" dir="rtl">
-        <div className="banner  banner--ar banner--full-overlay ">
+        <div className="banner banner--ar banner--full-overlay ">
           <div className="banner__background">
             <picture>
-              <source
-                type="image/webp"
-                srcSet="https://www.argonandco.com/wp-content/uploads/2020/06/man-planting-plant-169523-scaled-e1592389025453.jpg.webp"
-              />
               <img src="https://www.argonandco.com/wp-content/uploads/2020/06/man-planting-plant-169523-scaled-e1592389025453.jpg" />
             </picture>
           </div>

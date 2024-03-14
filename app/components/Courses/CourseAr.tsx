@@ -413,14 +413,10 @@ const CourseAr = () => {
                                   <div className="block col-span-10 xl:col-span-4">
                                     <div className="pl-8 border-l-2 border-primary-100">
                                       <h5 className="text-xl text-primary-100 font-bold">
-                                        You have selected:
+                                        لقد اخترت :{' '}
                                       </h5>
                                       <span className="block mt-2">
-                                        <strong>Course:</strong> ISO 9001:2015
-                                        Lead Auditor
-                                      </span>
-                                      <span className="block mt-2">
-                                        <strong>Number of Candidates:</strong> 1
+                                        ISO 9001:2015 Lead Auditor
                                       </span>
                                     </div>
                                   </div>
@@ -446,13 +442,11 @@ const CourseAr = () => {
                                         value="1"
                                       />
                                       <div>
-                                        <label
-                                          htmlFor="name-input"
-                                          className="hidden lg:block text-sm mb-2 font-medium">
-                                          Name:
+                                        <label htmlFor="" className="">
+                                          الاسم:
                                         </label>
                                         <input
-                                          id="name-input"
+                                          id=""
                                           name="name"
                                           type="text"
                                           placeholder="John Doe"
