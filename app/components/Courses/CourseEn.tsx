@@ -595,8 +595,8 @@ const CourseEn = () => {
                                             htmlFor="documentation_checkbox"
                                             className="ml-2">
                                             <span className="block font-medium text-sm leading-5 text-gray-700">
-                                              {`  Please keep me up to date with CASCO
-                                          Learning’s news and special offers`}
+                                              {`Please keep me up to date with CASCO
+                                                   Learning’s news and special offers`}
                                               (optional)
                                             </span>
                                           </label>

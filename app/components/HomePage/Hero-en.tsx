@@ -97,212 +97,99 @@
 
 // export default HeroEn;
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const HeroEn = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
   return (
-    <>
-      {' '}
-      <div>
-        <section className="banner banner--full-height">
-          <div className="banner__video">
-            <video
-              src="https://www.argonandco.com/wp-content/uploads/2022/05/Argon_V9-2.8mb.mp4"
-              autoPlay
-              muted
-              loop></video>
-          </div>
-          <div className="changing-color"></div>
+    <div>
+      <section className="banner banner--full-height">
+        <div className="banner__video">
+          <video
+            src="https://www.argonandco.com/wp-content/uploads/2022/05/Argon_V9-2.8mb.mp4"
+            autoPlay
+            muted
+            loop></video>
+        </div>
+        <div className="changing-color"></div>
 
-          <div className="banner__center white-color">
-            <div className="container">
-              <div className="row text-center">
-                <div className="col-12">
-                  <div className="slides slick-initialized slick-slider slick-dotted animate-in">
-                    <div className="slick-list draggable">
-                      <div
-                        className="slick-track"
-                        style={{ opacity: 1, width: '3750px' }}>
-                        <div
-                          className="slick-slide slick-current slick-active"
-                          data-slick-index="0"
-                          aria-hidden="false"
-                          role="tabpanel"
-                          id="slick-slide10"
-                          style={{
-                            width: '1250px',
-                            position: 'relative',
-                            left: '0px',
-                            top: '0px',
-                            zIndex: 999,
-                            opacity: 1,
-                          }}
-                          aria-describedby="slick-slide-control10">
-                          <div>
-                            <div
-                              className="slide"
-                              style={{
-                                width: '100%',
-                                display: 'inline-block',
-                              }}>
-                              <div className="banner-title">
-                                <span className="title title--2xl title--bold text-white">
-                                  Transforming operations...
-                                </span>
-                              </div>
-                              <div className="banner-text">
-                                <p className="intro">
-                                  We help clients achieve their strategic and
-                                  operational objectives, working together to
-                                  transform their businesses and generate real
-                                  change.{' '}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="slick-slide"
-                          data-slick-index="1"
-                          aria-hidden="true"
-                          role="tabpanel"
-                          id="slick-slide11"
-                          style={{
-                            width: '1250px',
-                            position: 'relative',
-                            left: '-1250px',
-                            top: '0px',
-                            zIndex: 998,
-                            opacity: 0,
-                            transition: 'opacity 500ms linear 0s',
-                          }}
-                          aria-describedby="slick-slide-control11"
-                          tabIndex={-1}>
-                          <div>
-                            <div
-                              className="slide"
-                              style={{
-                                width: '100%',
-                                display: 'inline-block',
-                              }}>
-                              <div className="banner-title">
-                                <span className="title title--2xl title--bold">
-                                  on a global scale...
-                                </span>
-                              </div>
-                              <div className="banner-text">
-                                <p className="intro">
-                                  With over 500 consultants in 16 offices across
-                                  Europe, Middle East, Asia, Australasia and
-                                  America.{' '}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="slick-slide"
-                          data-slick-index="2"
-                          aria-hidden="true"
-                          role="tabpanel"
-                          id="slick-slide12"
-                          style={{
-                            width: '1250px',
-                            position: 'relative',
-                            left: '-2500px',
-                            top: '0px',
-                            zIndex: 998,
-                            opacity: 0,
-                            transition: 'opacity 500ms linear 0s',
-                          }}
-                          aria-describedby="slick-slide-control12"
-                          tabIndex={-1}>
-                          <div>
-                            <div
-                              className="slide"
-                              style={{
-                                width: '100%',
-                                display: 'inline-block',
-                              }}>
-                              <div className="banner-title">
-                                <span className="title title--2xl title--bold">
-                                  with lasting results.
-                                </span>
-                              </div>
-                              <div className="banner-text">
-                                <p className="intro">
-                                  We apply a combination of deep technical
-                                  expertise, operational experience and broad
-                                  business knowledge to deliver lasting results.{' '}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <div className="banner__center white-color">
+          <div className="container">
+            <Slider {...settings}>
+              <div className="slide">
+                <div className="banner-title">
+                  <span className="title title--2xl title--bold text-white">
+                    Transforming operations...
+                  </span>
+                </div>
+                <div className="banner-text">
+                  <p className="intro">
+                    We help clients achieve their strategic and operational
+                    objectives, working together to transform their businesses
+                    and generate real change.{' '}
+                  </p>
+                </div>
+              </div>
+              <div className="slide">
+                <div className="banner-title">
+                  <span className="title title--2xl title--bold">
+                    on a global scale...
+                  </span>
+                </div>
+                <div className="banner-text">
+                  <p className="intro">
+                    With over 500 consultants in 16 offices across Europe,
+                    Middle East, Asia, Australasia and America.{' '}
+                  </p>
+                </div>
+              </div>
+              <div className="slide">
+                <div className="banner-title">
+                  <span className="title title--2xl title--bold">
+                    with lasting results.
+                  </span>
+                </div>
+                <div className="banner-text">
+                  <p className="intro">
+                    We apply a combination of deep technical expertise,
+                    operational experience and broad business knowledge to
+                    deliver lasting results.{' '}
+                  </p>
+                </div>
+              </div>
+            </Slider>
+          </div>
+        </div>
+
+        <div className="banner__bottom white-color">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-12 text-right">
+                {' '}
+                <a href="#content" className="anchor">
+                  <div className="arrow">
+                    <span className="title title--sm text-white">
+                      Learn more
+                    </span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
-
-          <div className="banner__bottom white-color">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col slider-dots">
-                  <ul className="slick-dots" role="tablist">
-                    <li className="slick-active" role="presentation">
-                      <button
-                        type="button"
-                        role="tab"
-                        id="slick-slide-control10"
-                        aria-controls="slick-slide10"
-                        aria-label="1 of 3"
-                        tabIndex={0}
-                        aria-selected="true">
-                        1
-                      </button>
-                    </li>
-                    <li role="presentation" className="">
-                      <button
-                        type="button"
-                        role="tab"
-                        id="slick-slide-control11"
-                        aria-controls="slick-slide11"
-                        aria-label="2 of 3"
-                        tabIndex={-1}>
-                        2
-                      </button>
-                    </li>
-                    <li role="presentation" className="">
-                      <button
-                        type="button"
-                        role="tab"
-                        id="slick-slide-control12"
-                        aria-controls="slick-slide12"
-                        aria-label="3 of 3"
-                        tabIndex={-1}>
-                        3
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-8 text-right">
-                  {' '}
-                  <a href="#content" className="anchor">
-                    <div className="arrow">
-                      <span className="title title--sm text-white">
-                        Learn more
-                      </span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+    </div>
   );
 };
 
