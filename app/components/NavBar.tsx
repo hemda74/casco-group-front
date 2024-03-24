@@ -7,12 +7,13 @@ import LocalizationBtn from './LocaliazationBtn';
 const NavBar = () => {
   const [navbarColor, setNavbarColor] = useState<string>('bg-transparent');
   const [navlinkColor, setnavlinkColor] = useState<string>('text-white');
-
+  const [logoStyle, setLogoStyle] = useState<string>('whitescale');
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       setNavbarColor(currentScrollPos > 500 ? 'bg-light' : 'bg-transparent');
       setnavlinkColor(currentScrollPos > 500 ? 'text-black' : 'text-white');
+      setLogoStyle(currentScrollPos > 500 ? '' : 'whitescale');
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -28,7 +29,7 @@ const NavBar = () => {
           className={`container-fluid d-flex justify-content-between align-items-center ms-xl-4 ms-lg-4 ms-md-4 `}>
           <Link href={'/'} className="navbar-brand mb-0 mt-0">
             <Image
-              className="me-0 mb-0 mt-0 ms-1"
+              className={`me-0 mb-0 mt-0 ms-1 ${logoStyle}`}
               alt="casco logo"
               src={logo}
               width={150}

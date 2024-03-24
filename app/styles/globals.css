@@ -11636,6 +11636,9 @@ img.responsive {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+.whitescale {
+  filter: saturate(46%) brightness(250%);
+}
 
 input.full-width {
   width: 100%;
