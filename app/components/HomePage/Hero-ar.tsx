@@ -7,7 +7,7 @@ const HeroAr = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2500,
+    speed: 3500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
