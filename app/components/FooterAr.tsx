@@ -106,7 +106,11 @@ const FooterAr = () => {
             <Link className="" href="https://portoflio-drab.vercel.app/">
               تم التطوير بواسطة
             </Link>
-            <Link className="me-2" href="https://portoflio-drab.vercel.app/">
+            <Link
+              className="me-2"
+              href="https://portoflio-drab.vercel.app/"
+              target="_blank"
+              rel="noreferrer">
               احمد حمدان
             </Link>
           </div>

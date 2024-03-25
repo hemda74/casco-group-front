@@ -100,7 +100,11 @@ const Footer = () => {
             <Link className="" href="https://portoflio-drab.vercel.app/">
               Web Development by{' '}
             </Link>{' '}
-            <Link className="" href="https://portoflio-drab.vercel.app/">
+            <Link
+              className=""
+              href="https://portoflio-drab.vercel.app/"
+              target="_blank"
+              rel="noreferrer">
               Ahmed Hemdan
             </Link>
           </div>
