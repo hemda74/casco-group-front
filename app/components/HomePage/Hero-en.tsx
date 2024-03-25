@@ -74,7 +74,7 @@ const HeroEn = () => {
           </div>
         </div>
 
-        <div className="banner__bottom white-color">
+        {/* <div className="banner__bottom white-color">
           <div className="container-fluid">
             <div className="row">
               <div className="col-12 text-right">
@@ -89,7 +89,7 @@ const HeroEn = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );

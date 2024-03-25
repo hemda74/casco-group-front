@@ -74,10 +74,10 @@ const HeroAr = () => {
           </div>
         </div>
 
-        <div className="banner__bottom white-color">
+        {/* <div className="banner__bottom white-color">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-12 text-right">
+              {/* <div className="col-12 text-right">
                 {' '}
                 <a href="#content" className="anchor">
                   <div className="arrow">
@@ -86,10 +86,10 @@ const HeroAr = () => {
                     </span>
                   </div>
                 </a>
-              </div>
+              </div> 
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
