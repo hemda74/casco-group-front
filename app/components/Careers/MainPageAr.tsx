@@ -27,7 +27,7 @@ const MainPageAr = () => {
                     people to join our team.`}
                   </p>
                   <div className="down-arrow js-interact js-scroll-height ">
-                    <Link href="#hiDiv">
+                    <Link href="#culture">
                       <p>.</p>
                     </Link>
                   </div>
@@ -36,7 +36,7 @@ const MainPageAr = () => {
             </div>
           </div>
         </div>
-        <div className="half-and-half" id="hiDiv">
+        <div className="half-and-half" id="culture">
           <div className="row no-gutters">
             <div
               className="col-md-6  half-and-half__image"
