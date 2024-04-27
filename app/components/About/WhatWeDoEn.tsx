@@ -8,11 +8,10 @@ const WhatWeDoEn = () => {
         <div className="banner  banner--ar banner--full-overlay ">
           <div className="banner__background">
             <picture>
-              <source
-                type="image/webp"
-                srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26.jpg.webp"
+              <img
+                src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26.jpg"
+                alt=""
               />
-              <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26.jpg" />
             </picture>
           </div>
           <div className="banner__center text-center ">

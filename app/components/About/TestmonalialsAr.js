@@ -70,7 +70,10 @@ export default class SwipeToSlide extends Component {
                           <div className="row align-items-center profile-block ">
                             <div className="col-auto">
                               <picture className="grayscale circle-img--small circle-img--contain">
-                                <img src="https://www.argonandco.com/wp-content/uploads/2019/12/vallourec-300x300.png" />
+                                <img
+                                  src="https://www.argonandco.com/wp-content/uploads/2019/12/vallourec-300x300.png"
+                                  alt=""
+                                />
                               </picture>
                             </div>
                             <div className="col">
@@ -105,7 +108,10 @@ export default class SwipeToSlide extends Component {
                           <div className="row align-items-center profile-block ">
                             <div className="col-auto">
                               <picture className="grayscale circle-img--small circle-img--contain">
-                                <img src="https://www.argonandco.com/wp-content/uploads/2020/01/pierre-fabre-2.png" />
+                                <img
+                                  src="https://www.argonandco.com/wp-content/uploads/2020/01/pierre-fabre-2.png"
+                                  alt=""
+                                />
                               </picture>
                             </div>
                             <div className="col">
@@ -138,7 +144,10 @@ export default class SwipeToSlide extends Component {
                           <div className="row align-items-center profile-block ">
                             <div className="col-auto">
                               <picture className="grayscale circle-img--small circle-img--contain">
-                                <img src="https://www.argonandco.com/wp-content/uploads/2019/12/novartis-300x300.png" />
+                                <img
+                                  src="https://www.argonandco.com/wp-content/uploads/2019/12/novartis-300x300.png"
+                                  alt=""
+                                />
                               </picture>
                             </div>
                             <div className="col">
@@ -169,7 +178,10 @@ export default class SwipeToSlide extends Component {
                           <div className="row align-items-center profile-block ">
                             <div className="col-auto">
                               <picture className="grayscale circle-img--small circle-img--contain">
-                                <img src="https://www.argonandco.com/wp-content/uploads/2020/10/avon-300x60.png" />
+                                <img
+                                  src="https://www.argonandco.com/wp-content/uploads/2020/10/avon-300x60.png"
+                                  alt=""
+                                />
                               </picture>
                             </div>
                             <div className="col">
@@ -206,7 +218,10 @@ export default class SwipeToSlide extends Component {
                           <div className="row align-items-center profile-block ">
                             <div className="col-auto">
                               <picture className="grayscale circle-img--small circle-img--contain">
-                                <img src="https://www.argonandco.com/wp-content/uploads/2019/12/vallourec-300x300.png" />
+                                <img
+                                  src="https://www.argonandco.com/wp-content/uploads/2019/12/vallourec-300x300.png"
+                                  alt=""
+                                />
                               </picture>
                             </div>
                             <div className="col">
@@ -243,7 +258,10 @@ export default class SwipeToSlide extends Component {
                           <div className="row align-items-center profile-block ">
                             <div className="col-auto">
                               <picture className="grayscale circle-img--small circle-img--contain">
-                                <img src="https://www.argonandco.com/wp-content/uploads/2020/01/Technicolor-Logo-300x138.png" />
+                                <img
+                                  src="https://www.argonandco.com/wp-content/uploads/2020/01/Technicolor-Logo-300x138.png"
+                                  alt=""
+                                />
                               </picture>
                             </div>
                             <div className="col">

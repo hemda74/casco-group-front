@@ -62,11 +62,10 @@ const OurCulture = () => {
                       <div className="row align-items-center">
                         <div className="col-auto">
                           <picture className="circle-img circle-img--small">
-                            <source
-                              type="image/webp"
-                              srcSet="https://www.argonandco.com/wp-content/uploads/2020/01/Christophe-Durcudoy-300x300bw-e1578046895177.jpg.webp"
+                            <img
+                              src="https://www.argonandco.com/wp-content/uploads/2020/01/Christophe-Durcudoy-300x300bw-e1578046895177.jpg"
+                              alt=""
                             />
-                            <img src="https://www.argonandco.com/wp-content/uploads/2020/01/Christophe-Durcudoy-300x300bw-e1578046895177.jpg" />
                           </picture>
                         </div>
                         <div className="col">
@@ -111,11 +110,10 @@ const OurCulture = () => {
                       <div className="row align-items-center">
                         <div className="col-auto">
                           <picture className="circle-img circle-img--small">
-                            <source
-                              type="image/webp"
-                              srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/Kerry-1.png.webp"
+                            <img
+                              src="https://www.argonandco.com/wp-content/uploads/2019/12/Kerry-1.png"
+                              alt=""
                             />
-                            <img src="https://www.argonandco.com/wp-content/uploads/2019/12/Kerry-1.png" />
                           </picture>
                         </div>
                         <div className="col">
@@ -161,11 +159,10 @@ const OurCulture = () => {
                       <div className="row align-items-center">
                         <div className="col-auto">
                           <picture className="circle-img circle-img--small">
-                            <source
-                              type="image/webp"
-                              srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/Lauren-2.jpg.png.webp"
+                            <img
+                              src="https://www.argonandco.com/wp-content/uploads/2019/12/Lauren-2.jpg.png"
+                              alt=""
                             />
-                            <img src="https://www.argonandco.com/wp-content/uploads/2019/12/Lauren-2.jpg.png" />
                           </picture>
                         </div>
                         <div className="col">

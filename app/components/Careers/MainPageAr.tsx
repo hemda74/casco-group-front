@@ -8,11 +8,10 @@ const MainPageAr = () => {
         <div className="banner  banner--full-height banner--overlay ">
           <div className="banner__background">
             <picture>
-              <source
-                type="image/webp"
-                srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-17-1-scaled.jpg.webp"
+              <img
+                src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-17-1-scaled.jpg"
+                alt=""
               />
-              <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-17-1-scaled.jpg" />
             </picture>
           </div>
           <div className="banner__bottom text-center ">

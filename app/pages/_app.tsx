@@ -5,7 +5,6 @@ import type { AppProps } from 'next/app';
 import 'bootstrap/dist/css/bootstrap.min.css'; // impoting bootstrap.css file
 import '../styles/bootstrapClasses.css'; // impoting customized bootstrap.css file
 import { useEffect, ReactElement, ReactNode } from 'react';
-import { Provider } from 'react-redux';
 import transScript from '../helper/transScript';
 import indexTrans from '../localization/index.trans';
 import { NextPage } from 'next';
@@ -49,11 +48,10 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           rel="stylesheet"
         />
       </Head>
-      {/* <AuthGard> */}
+
       <LanguageProvider>
         {getLayout(<Component {...pageProps} />)}
       </LanguageProvider>
-      {/* </AuthGard> */}
     </>
   );
 }
