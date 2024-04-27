@@ -26,7 +26,6 @@ const Contactus = (props: Props) => {
         ) : (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-
             <FooterAr />
           </main>
         )}
