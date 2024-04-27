@@ -11,10 +11,6 @@ const CourseAr = () => {
               <Link
                 href="/"
                 className="lg:hover:underline align-middle inline-block">
-                <svg
-                  className="h-3 w-3 inline-block lg:hidden align-middle"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 250 250"></svg>
                 <span className="inline-block ml-3 align-middle | lg:ml-0">
                   Home
                 </span>
@@ -747,38 +743,40 @@ const CourseAr = () => {
                   <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
                     Other courses you may be interested in
                   </h3>
-                  <a
+                  <Link
                     href="/courses/iso-90012015-foundation-1"
                     className="block">
                     <span className="ml-2">›</span>
                     <span className="underline">ISO 9001:2015 Foundation</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/courses/iso-90012015-internal-auditor-3"
                     className="block mt-2">
                     <span className="ml-2">›</span>
                     <span className="underline">
                       ISO 9001:2015 Internal Auditor
                     </span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/courses/ims-auditor-qualityenvironment-18"
                     className="block mt-2">
                     <span className="ml-2">›</span>
                     <span className="underline">
                       IMS Auditor (Quality/Environment)
                     </span>
-                  </a>
-                  <a href="/courses/ims-auditor-qhse-19" className="block mt-2">
+                  </Link>
+                  <Link
+                    href="/courses/ims-auditor-qhse-19"
+                    className="block mt-2">
                     <span className="ml-2">›</span>
                     <span className="underline">IMS Auditor (QHSE)</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/courses/design-build-a-qms-20"
                     className="block mt-2">
                     <span className="ml-2">›</span>
                     <span className="underline">Design &amp; Build a QMS</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
