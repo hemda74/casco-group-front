@@ -18,6 +18,7 @@ import styles from '../styles/Main.module.css';
 type Props = {};
 const Index: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
+
   return (
     <>
       <Head>

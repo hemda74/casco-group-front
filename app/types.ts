@@ -6,8 +6,8 @@ export interface Product {
   isFeatured: boolean;
   size: Size;
   color: Color;
-  images: Image[]
-};
+  images: Image[];
+}
 
 export interface Image {
   id: string;
@@ -16,25 +16,25 @@ export interface Image {
 
 export interface Billboard {
   id: string;
-  label: string;
-  label_ar:string;
+  name: string;
   imageUrl: string;
-};
+}
 
 export interface Category {
   id: string;
   name: string;
+  name_ar: string;
   billboard: Billboard;
-};
+}
 
 export interface Size {
   id: string;
   name: string;
   value: string;
-};
+}
 
 export interface Color {
   id: string;
   name: string;
   value: string;
-};
+}
