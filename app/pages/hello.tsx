@@ -26,7 +26,7 @@ const YourComponent: React.FC<{ categories: Category[] }> = ({
 export default YourComponent;
 
 export async function getServerSideProps() {
-  const URL = `http://localhost:3000/api/9a7c35de-5997-45ae-885f-237a9eb453a6/courses-categories`;
+  const URL = `http://localhost:3000/api/cdd3614b-ed1e-4f99-bc0e-7d715d630f7b/courses-categories`;
 
   try {
     const response = await axios.get(URL);
