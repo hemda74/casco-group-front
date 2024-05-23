@@ -1,6 +1,29 @@
 import Link from 'next/link';
 import React from 'react';
 
+// Industry data
+const industries = [
+  { name: 'Automotive', link: '/industries/automotive/' },
+  { name: 'Aerospace and defence', link: '/industries/aerospace-and-defence/' },
+  { name: 'Consumer goods', link: '/industries/consumer-goods/' },
+  { name: 'Energy and utilities', link: '/industries/energy-and-utilities/' },
+  { name: 'Fashion', link: '/industries/fashion/' },
+  { name: 'Food and drink', link: '/industries/food-and-drink/' },
+  {
+    name: 'Industrial and chemicals',
+    link: '/industries/industrial-and-chemicals/',
+  },
+  { name: 'Life sciences', link: '/industries/life-sciences/' },
+  { name: 'Luxury goods', link: '/industries/luxury-goods/' },
+  { name: 'Private equity', link: '/industries/private-equity/' },
+  { name: 'Retail and e-commerce', link: '/industries/retail-and-e-commerce/' },
+  { name: 'Services', link: '/industries/services/' },
+  {
+    name: 'Transport and logistics',
+    link: '/industries/transport-and-logistics/',
+  },
+];
+
 const MainPageAr = () => {
   return (
     <>
@@ -10,14 +33,13 @@ const MainPageAr = () => {
             <div className="container">
               <div className="row off-screen off-screen--rotate-up">
                 <div className="col-md-6">
-                  <h1 className="title title--xl title--bold">Industries</h1>
+                  <h1 className="title title--xl title--bold">الصناعات</h1>
                 </div>
                 <div className="col-md-5 the-content">
                   <p>
                     <span className="intro text-white mt-lg-5">
-                      {`    We work across multiple industries, with a range of
-                      organisations from local mid-market companies to some of
-                      the world’s biggest brands.`}
+                      نعمل عبر عدة صناعات مع مجموعة من الشركات المحلية من حجم
+                      السوق المتوسط إلى بعض أكبر العلامات التجارية في العالم.
                     </span>
                   </p>
                 </div>
@@ -28,123 +50,17 @@ const MainPageAr = () => {
           <section className="section section--std">
             <div className="container">
               <div className="row link-list off-screen off-screen--link-list">
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/automotive/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Automotive
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/aerospace-and-defence/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Aerospace and defence
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/consumer-goods/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Consumer goods
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/energy-and-utilities/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Energy and utilities
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/fashion/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Fashion
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/food-and-drink/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Food and drink
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/industrial-and-chemicals/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Industrial and chemicals
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/life-sciences/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Life sciences
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/luxury-goods/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Luxury goods
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/private-equity/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Private equity
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/retail-and-e-commerce/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Retail and e-commerce
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/services/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Services
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <Link
-                    href="/industries/transport-and-logistics/"
-                    className="d-flex align-items-center">
-                    <div className="title title--sm title title--medium-weight">
-                      Transport and logistics
-                    </div>
-                  </Link>
-                </div>
+                {industries.map((industry, index) => (
+                  <div className="col-md-6 col-lg-4" key={index}>
+                    <Link
+                      href={industry.link}
+                      className="d-flex align-items-center">
+                      <div className="title title--sm title title--medium-weight">
+                        {industry.name}
+                      </div>
+                    </Link>
+                  </div>
+                ))}
               </div>
             </div>
           </section>
