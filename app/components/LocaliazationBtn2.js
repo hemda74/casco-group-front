@@ -10,13 +10,13 @@ const LocalizationBtn = () => {
         <button
           onClick={toggleLanguage}
           className={`btn ${styles.localizationBtn}`}>
-          <span className="text-white">ع</span>
+          <span>ع</span>
         </button>
       ) : (
         <button
           onClick={toggleLanguage}
           className={`btn ${styles.localizationBtn}`}>
-          <span className="text-white">E</span>
+          <span>E</span>
         </button>
       )}
     </div>

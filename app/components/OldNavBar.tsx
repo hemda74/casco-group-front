@@ -3,7 +3,7 @@ import styles from '../styles/NavBar.module.css';
 import Image from 'next/image';
 import logo from '../public/logo.png';
 import Link from 'next/link';
-import LocalizationBtn from './LocaliazationBtn';
+import LocalizationBtn from './LocaliazationBtn2';
 const NavBar = () => {
   return (
     //design nav
