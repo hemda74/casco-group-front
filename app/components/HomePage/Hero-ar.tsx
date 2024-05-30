@@ -12,6 +12,7 @@ const HeroAr = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    rtl: true
   };
 
   return (
@@ -73,23 +74,6 @@ const HeroAr = () => {
             </Slider>
           </div>
         </div>
-
-        {/* <div className="banner__bottom white-color">
-          <div className="container-fluid">
-            <div className="row">
-              {/* <div className="col-12 text-right">
-                {' '}
-                <a href="#content" className="anchor">
-                  <div className="arrow">
-                    <span className="title title--sm text-white">
-                      Learn more
-                    </span>
-                  </div>
-                </a>
-              </div> 
-            </div>
-          </div>
-        </div> */}
       </section>
     </div>
   );
