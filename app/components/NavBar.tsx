@@ -51,13 +51,6 @@ const NavBar = () => {
           className="collapse navbar-collapse ms-md-3 ms-lg-4 ms-xl-4 me-md-3 me-lg-4 me-xl-4"
           id="navbarColor01">
           <ul className="navbar-nav m-auto mb-2 ">
-            <li className={`nav-item ms-3 ${styles.navItem}`}>
-              <Link href={'/courses'} className={`nav-link`} id="link">
-                <p
-                  className={`${styles.navLink} ${navlinkColor}  fw-bold mt-1 text-nowrap`}
-                  data-trans="CoursesNav"></p>
-              </Link>
-            </li>
             <li className={`nav-item ms-3 ${styles.navItem} `}>
               <Link href={'/about'} className={`nav-link`} id="link">
                 <p
@@ -65,11 +58,19 @@ const NavBar = () => {
                   data-trans="AboutCascoNav"></p>
               </Link>
             </li>
+
             <li className={`nav-item ms-3 ${styles.navItem}`}>
               <Link href={'/services'} className={`nav-link`} id="link">
                 <p
                   className={`${styles.navLink} ${navlinkColor}  fw-bold mt-1 text-nowrap`}
                   data-trans="ServicesNav"></p>
+              </Link>
+            </li>
+            <li className={`nav-item ms-3 ${styles.navItem}`}>
+              <Link href={'/courses'} className={`nav-link`} id="link">
+                <p
+                  className={`${styles.navLink} ${navlinkColor}  fw-bold mt-1 text-nowrap`}
+                  data-trans="CoursesNav"></p>
               </Link>
             </li>
             <li
