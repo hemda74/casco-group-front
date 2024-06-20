@@ -10,6 +10,7 @@ import indexTrans from '../localization/index.trans';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { LanguageProvider } from '../Context/LanguageContext';
+import TawkTo from '../components/Takwto';
 
 // here we export the alias of next page with layout as optional.
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -51,6 +52,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
       <LanguageProvider>
         {getLayout(<Component {...pageProps} />)}
+        <TawkTo />
       </LanguageProvider>
     </>
   );
