@@ -1,7 +1,8 @@
 import React from 'react';
 import { useLanguage } from '../Context/LanguageContext';
 import styles from '../styles/Localizationbtn.module.css';
-const LocalizationBtn = () => {
+
+const LocalizationBtn: React.FC = () => {
   const { language, toggleLanguage } = useLanguage();
 
   return (
@@ -9,14 +10,12 @@ const LocalizationBtn = () => {
       {language === 'en' ? (
         <button
           onClick={toggleLanguage}
-          className={`btn ${styles.localizationBtn}`}>
-          <span>ع</span>
+          className={`${styles.localizationBtn} ${styles.arBtn}`}>
         </button>
       ) : (
         <button
           onClick={toggleLanguage}
-          className={`btn ${styles.localizationBtn}`}>
-          <span>E</span>
+          className={`${styles.localizationBtn} ${styles.usBtn}`}>
         </button>
       )}
     </div>

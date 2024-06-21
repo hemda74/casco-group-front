@@ -1,18 +1,27 @@
 /* localication Btn at Login page */
 .localizationBtn {
-    margin-top: -1rem;
-    color: white;
-    border: 2px solid #f8f9fa !important;
-    border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
-    -moz-border-radius: 5px !important;
-    -ms-border-radius: 5px !important;
-    -o-border-radius: 5px !important;
+  margin-top: -0.3rem;
+  color: white;
+  border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -ms-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+  width: 2rem;
+  height: 1.5rem;
 }
 
 .localizationBtn:hover {
-    color: black;
+  color: black;
 }
-@media (max-width:1025px){
-    
+@media (max-width: 1025px) {
+}
+.arBtn {
+  background-image: url('../public/ar.png');
+  background-size: cover;
+}
+
+.usBtn {
+  background-image: url('../public/us.png');
+  background-size: cover;
 }

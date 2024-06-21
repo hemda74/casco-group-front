@@ -15,11 +15,8 @@ const WhereIsNextEn = () => {
                 <div className="card card--image red-3-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg.webp"
-                      />
-                      <img src="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg" />
+
+                      <img src="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg" alt='' />
                     </picture>
                   </div>
                   <div className="position-bottom">
@@ -38,7 +35,7 @@ const WhereIsNextEn = () => {
                 <div className="card card--image red-3-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-                      <img src="https://www.argonandco.com/wp-content/uploads/2019/08/image_03.jpg" />
+                      <img src="https://www.argonandco.com/wp-content/uploads/2019/08/image_03.jpg" alt='' />
                     </picture>
                   </div>
                   <div className="position-bottom">
@@ -57,11 +54,7 @@ const WhereIsNextEn = () => {
                 <div className="card card--image red-3-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg.webp"
-                      />
-                      <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg" />
+                      <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg" alt='' />
                     </picture>
                   </div>
                   <div className="position-bottom">
