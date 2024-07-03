@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
 import { IndustryShort } from '../../types';
-
 type Props = {
   industries: IndustryShort[];
 };
 
 
 const MainPageAr: React.FC<Props> = ({ industries }) => {
+
   return (
     <>
       <div id="content-wrap" dir="rtl">
@@ -29,19 +29,20 @@ const MainPageAr: React.FC<Props> = ({ industries }) => {
               </div>
             </div>
           </section>
-
           <section className="section section--std">
             <div className="container">
               <div className="row link-list off-screen off-screen--link-list">
                 {industries.map((industry) => (
                   <div className="col-md-6 col-lg-4" key={industry.id}>
                     <Link
-                      href={`/industries/${industry.name}`}
-                      className="d-flex align-items-center">
+                      href={{
+                        pathname: `/industries/${industry.name_ar}`,
+                        query: { industryid: industry.id }
+                      }}
+                      className="d-flex align-items-center" >
                       <div className="title title--sm title title--medium-weight">
                         {industry.name_ar}
-                      </div>
-                    </Link>
+                      </div></Link>
                   </div>
                 ))}
               </div>

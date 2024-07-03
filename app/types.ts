@@ -45,3 +45,20 @@ export interface IndustryShort {
   name: string;
   name_ar: string;
 }
+export interface ServiceShort {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  name: string;
+  name_ar: string;
+}
+export interface CourseShort {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  c_title: string;
+  c_title_ar: string;
+  imageUrl: string;
+  c_short_intro: string;
+  c_short_intro_ar: string;
+}

@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import MainPageEn from './MainPageEn';
 import { FaCircle } from 'react-icons/fa6';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 const SingleIndustryAr = () => {
   var settings = {
     dots: false,
@@ -38,6 +40,8 @@ const SingleIndustryAr = () => {
       },
     ],
   };
+  const router = useRouter();
+  const { industryid } = router.query;
   return (
     <>
       <div id="content-wrap" dir="rtl">
