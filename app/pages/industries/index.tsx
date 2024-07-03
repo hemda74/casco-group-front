@@ -1,3 +1,4 @@
+// pages/contactus.tsx
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
@@ -7,9 +8,14 @@ import MainPageEn from '../../components/Industries/MainPageEn';
 import MainPageAr from '../../components/Industries/MainPageAr';
 import { NextPageWithLayout } from '../_app';
 import ViewerLayout from '../../layouts/ViewerLayout';
-type Props = {};
-// dymmy data for ui till handle working with api
-const Contactus: NextPageWithLayout = (props: Props) => {
+import { fetchIndustries } from '../../lib/fetchIndustries';
+import { IndustryShort } from '../../types';
+
+type Props = {
+  industries: IndustryShort[];
+};
+
+const Contactus: NextPageWithLayout<Props> = ({ industries }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -18,18 +24,28 @@ const Contactus: NextPageWithLayout = (props: Props) => {
       </Head>
       <Layout>
         {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <MainPageEn />
+          <main className={styles.bodyContainer}>
+            <MainPageEn industries={industries} />
           </main>
         ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <MainPageAr />
+          <main className={styles.bodyContainer}>
+            <MainPageAr industries={industries} />
           </main>
         )}
       </Layout>
     </>
   );
 };
+
+export const getStaticProps = async () => {
+  const industries = await fetchIndustries();
+  return {
+    props: {
+      industries,
+    },
+  };
+};
+
 // adding Layout
 Contactus.getLayout = function getLayout(contactus: ReactElement) {
   return <ViewerLayout childern={contactus}></ViewerLayout>;

@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
-
 import { NextPageWithLayout } from '../_app';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import SingleIndustryEn from '../../components/Industries/SingleIndustryEn';

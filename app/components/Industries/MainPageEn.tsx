@@ -1,30 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
+import { IndustryShort } from '../../types';
 
-// Industry data
-const industries = [
-  { name: 'Automotive', link: '/industries/automotive/' },
-  { name: 'Aerospace and defence', link: '/industries/aerospace-and-defence/' },
-  { name: 'Consumer goods', link: '/industries/consumer-goods/' },
-  { name: 'Energy and utilities', link: '/industries/energy-and-utilities/' },
-  { name: 'Fashion', link: '/industries/fashion/' },
-  { name: 'Food and drink', link: '/industries/food-and-drink/' },
-  {
-    name: 'Industrial and chemicals',
-    link: '/industries/industrial-and-chemicals/',
-  },
-  { name: 'Life sciences', link: '/industries/life-sciences/' },
-  { name: 'Luxury goods', link: '/industries/luxury-goods/' },
-  { name: 'Private equity', link: '/industries/private-equity/' },
-  { name: 'Retail and e-commerce', link: '/industries/retail-and-e-commerce/' },
-  { name: 'Services', link: '/industries/services/' },
-  {
-    name: 'Transport and logistics',
-    link: '/industries/transport-and-logistics/',
-  },
-];
-
-const MainPageEn = () => {
+type Props = {
+  industries: IndustryShort[];
+};
+const MainPageEn: React.FC<Props> = ({ industries = [] }) => {
   return (
     <>
       <div id="content-wrap">
@@ -49,10 +30,10 @@ const MainPageEn = () => {
           <section className="section section--std">
             <div className="container">
               <div className="row link-list off-screen off-screen--link-list">
-                {industries.map((industry, index) => (
-                  <div className="col-md-6 col-lg-4" key={index}>
+                {industries.map((industry) => (
+                  <div className="col-md-6 col-lg-4" key={industry.id}>
                     <Link
-                      href={industry.link}
+                      href={`/industries/${industry.name}`}
                       className="d-flex align-items-center">
                       <div className="title title--sm title title--medium-weight">
                         {industry.name}

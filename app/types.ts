@@ -38,3 +38,10 @@ export interface Color {
   name: string;
   value: string;
 }
+export interface IndustryShort {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  name: string;
+  name_ar: string;
+}
