@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image'; // Import the Image component from next/image
+import Image from 'next/image';
+// Import the Image component from next/image
 import Breadcrumb from './Breadcrumb';
 import CourseDescription from './CourseDescription';
 
@@ -108,6 +109,7 @@ const CourseEn: React.FC = () => {
     },
   ];
   return (
+
     <div className="max-w-content mx-auto px-4 lg:px-12">
       <div className="py-4 lg:py-6">
         <Breadcrumb items={breadcrumbItems} />
@@ -138,8 +140,9 @@ const CourseEn: React.FC = () => {
                     </picture>
                   </div>
                   <div className="md:col-span-6 lg:col-span-5">
-                    <CourseDescription sections={courseSections} />
-                  </div>
+                    {courseSections.map((section, index) => (
+                      <CourseDescription key={index} title={section.title} content={section.content} />
+                    ))}                    </div>
                 </div>
               </div>
             </div>
@@ -230,7 +233,7 @@ const CourseEn: React.FC = () => {
                           </option>
                         </select>
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns="http: www.w3.org/2000/svg"
                           viewBox="0 0 250 250"
                           className="inline-block absolute h-4 w-4 right-0 mr-4 pointer-events-none">
                           <path d="M241.4 69.7c1.1 1.4 1.6 3 1.6 4.8 0 1.8-.5 3.2-1.6 4.3L129.8 190.9c-1.4 1.1-3 1.6-4.8 1.6s-3.2-.5-4.3-1.6L8.6 78.8C7.5 77.7 7 76.3 7 74.5c0-1.8.5-3.4 1.6-4.8L19.3 59c1.1-1.1 2.5-1.6 4.3-1.6s3.4.5 4.8 1.6l96.6 96.6L221.6 59c1.4-1.1 3-1.6 4.8-1.6s3.2.5 4.3 1.6l10.7 10.7z"></path>
@@ -456,7 +459,7 @@ const CourseEn: React.FC = () => {
                                           className="ml-2">
                                           <span className="block font-medium text-sm leading-5 text-gray-700">
                                             {`Please keep me up to date with CASCO
-                                                   Learning’s news and special offers`}
+                                                     Learning’s news and special offers`}
                                             (optional)
                                           </span>
                                         </label>
@@ -472,8 +475,8 @@ const CourseEn: React.FC = () => {
                                     <div className="xl:col-span-2">
                                       <span className="block w-full text-xs text-center mt-3">
                                         {` *By submitting this form and clicking
-                                      submit you are accepting CASCO Learning’s
-                                      privacy policy`}
+                                        submit you are accepting CASCO Learning’s
+                                        privacy policy`}
                                       </span>
                                     </div>
                                   </form>
@@ -488,7 +491,7 @@ const CourseEn: React.FC = () => {
                   </div>
                 </div>
               </div>
-              ////////////////////////////////////////////////
+
               <div className="relative w-full border border-gray-400 rounded-lg mt-8 p-4 | md:text-left | lg:p-8">
                 <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
                   Dates and Venues
@@ -512,7 +515,7 @@ const CourseEn: React.FC = () => {
                 </h3>
                 <div className="flex items-center mt-4">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="http: www.w3.org/2000/svg"
                     aria-hidden="true"
                     data-icon="check-circle"
                     data-prefix="fas"
@@ -528,7 +531,7 @@ const CourseEn: React.FC = () => {
                 </div>
                 <div className="flex items-center mt-4">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="http: www.w3.org/2000/svg"
                     aria-hidden="true"
                     data-icon="check-circle"
                     data-prefix="fas"
@@ -544,7 +547,7 @@ const CourseEn: React.FC = () => {
                 </div>
                 <div className="flex items-center mt-4">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="http: www.w3.org/2000/svg"
                     aria-hidden="true"
                     data-icon="check-circle"
                     data-prefix="fas"
@@ -560,7 +563,7 @@ const CourseEn: React.FC = () => {
                 </div>
                 <div className="flex items-center mt-4">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="http: www.w3.org/2000/svg"
                     aria-hidden="true"
                     data-icon="check-circle"
                     data-prefix="fas"
@@ -619,7 +622,6 @@ const CourseEn: React.FC = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
