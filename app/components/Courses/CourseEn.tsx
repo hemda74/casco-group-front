@@ -1,6 +1,6 @@
-// components/CourseEn.tsx
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image'; // Import the Image component from next/image
 import Breadcrumb from './Breadcrumb';
 import CourseDescription from './CourseDescription';
 
@@ -34,7 +34,7 @@ const CourseEn: React.FC = () => {
       content: (
         <>
           <p>Attendees are expected to have knowledge of the following:</p>
-          <ul className="list-disc ">
+          <ul className="list-disc">
             <li>Quality management principles and concepts</li>
             <li>The Plan, Do, Check, Act (PDCA) cycle</li>
             <li>The relationship between quality management and customer satisfaction</li>
@@ -44,7 +44,7 @@ const CourseEn: React.FC = () => {
             <li>The structure, content and requirements of ISO 9001</li>
           </ul>
           <p>This knowledge can be gained through:</p>
-          <ul className="list-disc ">
+          <ul className="list-disc">
             <li>Previous experience and existing knowledge</li>
             <li>Attending a CQI and IRCA certified training ISO 9001 Foundation course or equivalent</li>
             <li>Reading or self-study</li>
@@ -62,7 +62,7 @@ const CourseEn: React.FC = () => {
           <p>
             The course is delivered by experienced tutors who have extensive practical knowledge of auditing and the implementation of ISO 9001. The delivery style includes presentations, workshops, role-plays, and practical exercises.
           </p>
-          <ul className="list-disc ">
+          <ul className="list-disc">
             <li>Quality management principles and concepts</li>
             <li>The Plan, Do, Check, Act (PDCA) cycle</li>
             <li>The relationship between quality management and customer satisfaction</li>
@@ -72,13 +72,13 @@ const CourseEn: React.FC = () => {
             <li>The structure, content and requirements of ISO 9001</li>
           </ul>
         </>
-      )
+      ),
     },
     {
       title: 'Course content',
       content: (
         <>
-          <ul className="list-disc ">
+          <ul className="list-disc">
             <li>Quality management principles and concepts</li>
             <li>The Plan, Do, Check, Act (PDCA) cycle</li>
             <li>The relationship between quality management and customer satisfaction</li>
@@ -88,9 +88,8 @@ const CourseEn: React.FC = () => {
             <li>The structure, content and requirements of ISO 9001</li>
           </ul>
         </>
-      )
+      ),
     },
-
     {
       title: 'Style of Delivery and Course Leaders',
       content: (
@@ -108,7 +107,6 @@ const CourseEn: React.FC = () => {
       ),
     },
   ];
-
   return (
     <div className="max-w-content mx-auto px-4 lg:px-12">
       <div className="py-4 lg:py-6">
