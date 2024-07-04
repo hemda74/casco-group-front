@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="col-md-7 from-sky-600">
             <Link href="/"> © CASCO Co 2024</Link>
 
-            <ul id="menu-privacy" className="menu">
+            <ul id="menu-privacy" className="">
               <li id="" className="">
                 <Link href="/privacy-policy/" className="">
                   Privacy Policy

@@ -92,7 +92,7 @@ const FooterAr = () => {
         <div className="row copyright-footer no-gutters">
           <div className="col-md-7  from-sky-600">
             © كاسكو 2024
-            <ul id="menu-privacy" className="menu">
+            <ul id="menu-privacy" className="">
               <li
                 id="menu-item-4272"
                 className="menu-item menu-item-type-post_type menu-item-object-page">

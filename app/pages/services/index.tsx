@@ -7,9 +7,12 @@ import MainPageEn from '../../components/Services/MainPageEn';
 import MainPageAr from '../../components/Services/MainPageAr';
 import { NextPageWithLayout } from '../_app';
 import ViewerLayout from '../../layouts/ViewerLayout';
-type Props = {};
+import { ServiceShort } from '../../types';
+type Props = {
+  services: ServiceShort[]
+};
 // dymmy data for ui till handle working with api
-const Contactus: NextPageWithLayout = (props: Props) => {
+const Contactus: NextPageWithLayout<Props> = ({ services }) => {
   const { language } = useLanguage();
   return (
     <>

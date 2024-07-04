@@ -37,7 +37,10 @@ const MainPageEn: React.FC<Props> = ({ industries = [] }) => {
                         pathname: `/industries/${industry.name}`,
                         query: { id: industry.id }
                       }}
-                      className="d-flex align-items-center" />
+                      className="d-flex align-items-center" >
+                      <div className="title title--sm title title--medium-weight">
+                        {industry.name}
+                      </div></Link>
                   </div>
                 ))}
               </div>
