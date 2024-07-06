@@ -3,10 +3,16 @@ import Slider from 'react-slick';
 import MainPageEn from './MainPageEn';
 import { FaCircle } from 'react-icons/fa6';
 import Link from 'next/link';
-const SingleIndustryEn = () => {
+import { Industry } from '../../types';
+
+type Props = {
+  industry: Industry,
+};
+const SingleIndustryEn: React.FC<Props> = ({ industry }) => {
   var settings = {
     dots: false,
     infinite: true,
+    autopaly: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -48,7 +54,7 @@ const SingleIndustryEn = () => {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    Aerospace and defence
+                    {industry.name}
                   </h1>
                 </div>
               </div>
@@ -649,7 +655,6 @@ const SingleIndustryEn = () => {
           </div>
         </div>
       </div>
-      <MainPageEn />
     </>
   );
 };

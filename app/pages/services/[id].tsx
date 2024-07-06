@@ -8,7 +8,6 @@ import ViewerLayout from '../../layouts/ViewerLayout';
 import ServiceAr from '../../components/Services/ServiceAr';
 import ServiceEn from '../../components/Services/ServiceEn';
 type Props = {};
-// dymmy data for ui till handle working with api
 const Contactus: NextPageWithLayout = (props: Props) => {
   const { language } = useLanguage();
   return (

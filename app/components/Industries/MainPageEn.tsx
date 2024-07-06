@@ -33,10 +33,9 @@ const MainPageEn: React.FC<Props> = ({ industries = [] }) => {
                 {industries.map((industry) => (
                   <div className="col-md-6 col-lg-4" key={industry.id}>
                     <Link
-                      href={{
-                        pathname: `/industries/${industry.name}`,
-                        query: { id: industry.id }
-                      }}
+                      href=
+                      {`/industries/${industry.id}`}
+
                       className="d-flex align-items-center" >
                       <div className="title title--sm title title--medium-weight">
                         {industry.name}

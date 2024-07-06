@@ -56,12 +56,6 @@ const ServiceAr = () => {
             </div>
           </div>
         </div>
-
-        {/* <span style="display:none;">
-            5111Array
-(
-)
-        </span> */}
         <section className="main-page">
           <div className="container">
             <div className="row off-screen off-screen--fade-up justify-content-center">

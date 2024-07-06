@@ -4,8 +4,12 @@ import MainPageEn from './MainPageEn';
 import { FaCircle } from 'react-icons/fa6';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Industry } from '../../types';
 
-const SingleIndustryAr = () => {
+type Props = {
+  industry: Industry,
+};
+const SingleIndustryAr: React.FC<Props> = ({ industry }) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -653,7 +657,6 @@ const SingleIndustryAr = () => {
           </div>
         </div>
       </div>
-      <MainPageEn />
     </>
   );
 };

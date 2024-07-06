@@ -1,50 +1,3 @@
-export interface Product {
-  id: string;
-  category: Category;
-  name: string;
-  price: string;
-  isFeatured: boolean;
-  size: Size;
-  color: Color;
-  images: Image[];
-}
-
-export interface Image {
-  id: string;
-  url: string;
-}
-
-export interface Billboard {
-  id: string;
-  name: string;
-  imageUrl: string;
-}
-
-export interface Category {
-  id: string;
-  name: string;
-  name_ar: string;
-  billboard: Billboard;
-}
-
-export interface Size {
-  id: string;
-  name: string;
-  value: string;
-}
-
-export interface Color {
-  id: string;
-  name: string;
-  value: string;
-}
-export interface IndustryShort {
-  id: string;
-  storeId: string;
-  categoryId: string;
-  name: string;
-  name_ar: string;
-}
 export interface ServiceShort {
   id: string;
   storeId: string;
@@ -61,4 +14,65 @@ export interface CourseShort {
   imageUrl: string;
   c_short_intro: string;
   c_short_intro_ar: string;
+}
+/// industry section
+export interface IndustryShort {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  name: string;
+  name_ar: string;
+}
+
+export interface Category {
+  id: string;
+  storeId: string;
+  billboardId: string;
+  name: string;
+  name_ar: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface IndustryDetailesPoint {
+  id: string;
+  industrydetailesId: string;
+  text: string;
+}
+
+export interface IndustryDetailes {
+  id: string;
+  storeId: string;
+  industryId: string;
+  title: string;
+  title_ar: string;
+  industryDetailesPoint: IndustryDetailesPoint[];
+  industryDetailesPointAr: IndustryDetailesPoint[];
+}
+
+export interface IndustryDetailesPoint2 {
+  id: string;
+  detaId: string;
+  text: string;
+}
+
+export interface IndustryDetailes2 {
+  id: string;
+  storeId: string;
+  industryId: string;
+  title: string;
+  title_ar: string;
+  industryDetailesPoint2: IndustryDetailesPoint2[];
+  industryDetailesPointAr2: IndustryDetailesPoint2[];
+}
+
+export interface Industry {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  name: string;
+  name_ar: string;
+  category: Category;
+  industryDetailes: IndustryDetailes[];
+  industryDetailes2: IndustryDetailes2[];
 }

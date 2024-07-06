@@ -4,6 +4,8 @@ import Image from 'next/image';
 // Import the Image component from next/image
 import Breadcrumb from './Breadcrumb';
 import CourseDescription from './CourseDescription';
+import { title } from 'process';
+import JoinCourseModal from './JoinCourseModal';
 
 const CourseEn: React.FC = () => {
   const breadcrumbItems = [
@@ -33,9 +35,9 @@ const CourseEn: React.FC = () => {
     {
       title: 'Who should attend?',
       content: (
-        <>
+        <div className='product__description'>
           <p>Attendees are expected to have knowledge of the following:</p>
-          <ul className="list-disc">
+          <ul className="">
             <li>Quality management principles and concepts</li>
             <li>The Plan, Do, Check, Act (PDCA) cycle</li>
             <li>The relationship between quality management and customer satisfaction</li>
@@ -53,13 +55,13 @@ const CourseEn: React.FC = () => {
           <p>
             If you would like to attend our CQI and IRCA certified training registered ISO 9001 Foundation course at a discounted price to help you prepare for this Lead Auditor course, please contact us.
           </p>
-        </>
+        </div>
       ),
     },
     {
       title: 'Course objectives',
       content: (
-        <>
+        <div className='product__description'>
           <p>
             The course is delivered by experienced tutors who have extensive practical knowledge of auditing and the implementation of ISO 9001. The delivery style includes presentations, workshops, role-plays, and practical exercises.
           </p>
@@ -72,13 +74,13 @@ const CourseEn: React.FC = () => {
             <li>Process Based Quality Management Systems</li>
             <li>The structure, content and requirements of ISO 9001</li>
           </ul>
-        </>
+        </div>
       ),
     },
     {
       title: 'Course content',
       content: (
-        <>
+        <div className='product__description'>
           <ul className="list-disc">
             <li>Quality management principles and concepts</li>
             <li>The Plan, Do, Check, Act (PDCA) cycle</li>
@@ -88,8 +90,32 @@ const CourseEn: React.FC = () => {
             <li>Process Based Quality Management Systems</li>
             <li>The structure, content and requirements of ISO 9001</li>
           </ul>
-        </>
+        </div>
       ),
+    },
+    {
+      title: 'What are the benefits',
+      content: (
+        <div className='product__description'>
+          <ul className="list-disc">
+            <li>Quality management principles and concepts</li>
+            <li>The Plan, Do, Check, Act (PDCA) cycle</li>
+            <li>The relationship between quality management and customer satisfaction</li>
+            <li>Quality management terms and definitions and the 7 Quality Management Principles</li>
+            <li>The process approach used in quality management</li>
+            <li>Process Based Quality Management Systems</li>
+            <li>The structure, content and requirements of ISO 9001</li>
+          </ul>
+        </div>
+      )
+    },
+    {
+      title: 'In-House Courses',
+      content: (<div className='product__description'>
+        <p>
+          The course is delivered by experienced tutors who have extensive practical knowledge of auditing and the implementation of ISO 9001. The delivery style includes presentations, workshops, role-plays, and practical exercises.
+        </p>
+      </div>)
     },
     {
       title: 'Style of Delivery and Course Leaders',
@@ -114,7 +140,6 @@ const CourseEn: React.FC = () => {
       <div className="py-4 lg:py-6">
         <Breadcrumb items={breadcrumbItems} />
       </div>
-
       <div className="lg:px-12 lg:pb-8">
         <div className="pb-4 lg:pb-12">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-8 lg:gap-16">
@@ -123,15 +148,6 @@ const CourseEn: React.FC = () => {
                 <div className=" rounded-lg overflow-hidden mb-4 lg:mb-6">
                   <div className="h-64 relative overflow-hidden">
                     <picture>
-                      <source
-                        media="all"
-                        data-srcSet="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg.webp 1x,https://iqmslearning.co.uk/image-factory/74e6ee9c41134ad75562517cedc40ec0c98041ca~800x500@2x/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        media="all"
-                        data-srcSet="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg 1x,https://iqmslearning.co.uk/image-factory/74e6ee9c41134ad75562517cedc40ec0c98041ca~800x500@2x/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg 2x"
-                      />
                       <img
                         src="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg"
                         alt="ISO 9001:2015 Lead Auditor"
@@ -142,7 +158,8 @@ const CourseEn: React.FC = () => {
                   <div className="md:col-span-6 lg:col-span-5">
                     {courseSections.map((section, index) => (
                       <CourseDescription key={index} title={section.title} content={section.content} />
-                    ))}                    </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -153,26 +170,15 @@ const CourseEn: React.FC = () => {
                 </h1>
                 <div className="w-1/2 blend-multiply py-4">
                   <picture>
-                    <source
-                      data-srcSet="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg.webp 1x,https://iqmslearning.co.uk/image-factory/83edfab644648a1927e570f1e2a85da25c8254ad~175x58.5@2x/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg.webp 2x"
-                      type="image/webp"
-                      srcSet="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg.webp 1x,https://iqmslearning.co.uk/image-factory/83edfab644648a1927e570f1e2a85da25c8254ad~175x58.5@2x/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg.webp 2x"
-                    />
+
                     <img
                       src="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg"
-                      data-src="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg"
-                      data-srcSet="https://iqmslearning.co.uk/image-factory/83edfab644648a1927e570f1e2a85da25c8254ad~175x58.5@2x/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg 2x"
                       alt="CQI-IRCA Certified Courses"
                       className="w-full ls-is-cached lazyloaded"
-                      srcSet="https://iqmslearning.co.uk/image-factory/83edfab644648a1927e570f1e2a85da25c8254ad~175x58.5@2x/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg 2x"
                     />
                   </picture>
-                  <noscript>
-                    <img
-                      src="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg"
-                      alt="CQI-IRCA Certified Courses"
-                    />
-                  </noscript>
+
+
                 </div>
                 <div className="text-xl text-primary-100 | lg:text-2xl">
                   <div>
@@ -180,7 +186,6 @@ const CourseEn: React.FC = () => {
                     <span className="ml-2">ex vat</span>
                   </div>
                 </div>
-                <noscript></noscript>
                 <div className="w-full xl:w-10/12 mt-6">
                   <div
                     id="product-attributes"
@@ -243,252 +248,17 @@ const CourseEn: React.FC = () => {
                   </div>
                 </div>
                 <div className="w-full xl:w-10/12 mt-6 | lg:mt-8">
-                  <div className="w-full">
-                    <div>
-                      <button
-                        type="button"
-                        className="btn block p-5 fs-6 rounded-lg mt-2  uppercase font-light tracking-wide text-center bg-gray myPrimary cursor-pointer  lg:mt-8 "
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Join Course
-                      </button>
-                    </div>
-                    <div
-                      className=" modal  fade contact w-screen  fixed inset-0 mx-auto align-center scrolling-touch overflow-y-auto | lg:h-screen lg:px-8"
-                      id="exampleModal"
-                      tabIndex={-1}
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true">
-                      <div className="modal-dialog">
-                        <div className="">
-                          <div className="modal-content w-full h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
-                            <div className="relative bg-white p-8 pb-32 lg:p-12 lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
-                              <div className="absolute top-0 right-0 m-4 mb-5 cursor-pointer">
-                                {' '}
-                                <button
-                                  type="button"
-                                  className="btn-close m-end"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
-                              </div>
-
-                              <div className="grid grid-cols-10 gap-8">
-                                <div className="block col-span-10 xl:col-span-4">
-                                  <div className="pl-8 border-l-2 border-primary-100">
-                                    <h5 className="text-xl text-primary-100 font-bold">
-                                      You have selected:
-                                    </h5>
-                                    <span className="block mt-2">
-                                      <strong>Course:</strong> ISO 9001:2015
-                                      Lead Auditor
-                                    </span>
-                                    <span className="block mt-2">
-                                      <strong>Number of Candidates:</strong> 1
-                                    </span>
-                                  </div>
-                                </div>
-
-                                <div className="col-span-10 xl:col-span-6">
-                                  <form
-                                    action="https://iqmslearning.co.uk/form/enquire"
-                                    method="post"
-                                    className="grid grid-cols-1 gap-8 | xl:grid-cols-2 lg:gap-4">
-                                    <input
-                                      type="hidden"
-                                      name="_token"
-                                      value="ORYOVSqLIOqOb3enWTQC4Tqz423G1hV2fNqK61Qu"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="Course"
-                                      value="ISO 9001:2015 Lead Auditor"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="Candidates"
-                                      value="1"
-                                    />
-                                    <div>
-                                      <label
-                                        htmlFor="name-input"
-                                        className="hidden lg:block text-sm mb-2 font-medium">
-                                        Name:
-                                      </label>
-                                      <input
-                                        id="name-input"
-                                        name="name"
-                                        type="text"
-                                        placeholder="John Doe"
-                                        value=""
-                                        required
-                                        className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                      />
-                                    </div>
-                                    <div>
-                                      <label
-                                        htmlFor="company-input"
-                                        className="hidden lg:block text-sm mb-2 font-medium">
-                                        Company Name:
-                                      </label>
-                                      <input
-                                        id="company-input"
-                                        name="company"
-                                        type="text"
-                                        placeholder="Your company (optional)"
-                                        value=""
-                                        className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                      />
-                                    </div>
-                                    <div className="xl:col-span-2">
-                                      <label
-                                        htmlFor="address-input"
-                                        className="hidden lg:block text-sm mb-2 font-medium">
-                                        Address:
-                                      </label>
-                                      <input
-                                        id="address-input"
-                                        name="address"
-                                        type="text"
-                                        placeholder="Your address"
-                                        value=""
-                                        className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                      />
-                                    </div>
-                                    <div>
-                                      <label
-                                        htmlFor="tel-input"
-                                        className="hidden lg:block text-sm mb-2 font-medium">
-                                        Tel Number:
-                                      </label>
-                                      <input
-                                        id="tel-input"
-                                        name="telephone"
-                                        type="text"
-                                        placeholder="Your telephone"
-                                        value=""
-                                        required
-                                        className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                      />
-                                    </div>
-                                    <div>
-                                      <label
-                                        htmlFor="email-input"
-                                        className="hidden lg:block text-sm mb-2 font-medium">
-                                        Email Address:
-                                      </label>
-                                      <input
-                                        id="email-input"
-                                        name="email"
-                                        type="text"
-                                        placeholder="Your email"
-                                        value=""
-                                        required
-                                        className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                      />
-                                    </div>
-                                    <div className="xl:col-span-2">
-                                      <label
-                                        htmlFor="enquiry-input"
-                                        className="hidden lg:block text-sm mb-2 font-medium">
-                                        Enquiry:
-                                      </label>
-                                      <input
-                                        id="enquiry-input"
-                                        name="enquiry"
-                                        type="text"
-                                        placeholder="Your enquiry"
-                                        value=""
-                                        required
-                                        className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                      />
-                                    </div>
-                                    <div className="xl:col-span-2">
-                                      <label
-                                        htmlFor="wheredidyou-input"
-                                        className="hidden lg:block text-sm mb-2 font-medium">
-                                        Where did you hear about us?:
-                                      </label>
-                                      <select
-                                        id="wheredidyou-input"
-                                        name="Where_did_you_hear_about_us"
-                                        required
-                                        className="w-full block border rounded py-3 px-4 bg-gray-200">
-                                        <option value="">
-                                          select an option
-                                        </option>
-                                        <option value="I have used iqms Learning before">
-                                          I have used CASCO Learning before
-                                        </option>
-                                        <option value="Google Search">
-                                          Google Search
-                                        </option>
-                                        <option value="LinkedIn">
-                                          LinkedIn
-                                        </option>
-                                        <option value="Facebook">
-                                          Facebook
-                                        </option>
-                                        <option value="Twitter">
-                                          Twitter
-                                        </option>
-                                        <option value="Awarding Body">
-                                          Awarding Body
-                                        </option>
-                                        <option
-                                          value="Colleague or Friend">
-                                          Colleague or Friend
-                                        </option>
-                                        <option
-                                          value="Other">
-                                          Other
-                                        </option>
-                                      </select>
-                                    </div>
-                                    <div className="xl:col-span-2">
-                                      <div className="flex items-center">
-                                        <input
-                                          name="gdpr"
-                                          id="gdpr"
-                                          aria-label="Select all"
-                                          type="checkbox"
-                                          value="Yes"
-                                          className="h-6 w-6 border-gray-300 text-secondary focus:shadow-outline-blue focus:border-blue-300"
-                                        />
-                                        <label
-                                          htmlFor="documentation_checkbox"
-                                          className="ml-2">
-                                          <span className="block font-medium text-sm leading-5 text-gray-700">
-                                            {`Please keep me up to date with CASCO
-                                                     Learning’s news and special offers`}
-                                            (optional)
-                                          </span>
-                                        </label>
-                                      </div>
-                                    </div>
-                                    <div className="flex items-center">
-                                      <button
-                                        type="submit"
-                                        className="w-full block p-4 rounded-lg  text-white fs-4  text-center myPrimary cursor-pointer text-lg">
-                                        Submit Request
-                                      </button>
-                                    </div>
-                                    <div className="xl:col-span-2">
-                                      <span className="block w-full text-xs text-center mt-3">
-                                        {` *By submitting this form and clicking
-                                        submit you are accepting CASCO Learning’s
-                                        privacy policy`}
-                                      </span>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="fixed h-full w-full top-0 left-0 bg-black opacity-50 z-10"></div>
-                    </div>
+                  <div>
+                    <button
+                      type="button"
+                      className="btn block p-5 fs-6 rounded-lg mt-2 uppercase font-light tracking-wide text-center bg-gray myPrimary cursor-pointer lg:mt-8"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Join Course
+                    </button>
                   </div>
+                  <JoinCourseModal />
                 </div>
               </div>
 

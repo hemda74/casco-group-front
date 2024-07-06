@@ -1,9 +1,14 @@
 import axios from 'axios';
-import { IndustryShort } from '../types';
+import { Industry, IndustryShort } from '../types';
 
 const API_URL = `${process.env.NEXT_PUBLIC_API_URL}industries`;
 
 export const fetchIndustries = async (): Promise<IndustryShort[]> => {
   const response = await axios.get(API_URL);
+  return response.data;
+};
+
+export const fetchIndustryById = async (id: string): Promise<Industry> => {
+  const response = await axios.get(`${API_URL}/${id}`);
   return response.data;
 };

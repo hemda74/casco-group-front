@@ -9,10 +9,7 @@ const ServiceEn = () => {
         <div className="banner banner--ar banner--full-overlay ">
           <div className="banner__background">
             <picture>
-              <source
-                type="image/webp"
-                srcSet="https://www.argonandco.com/wp-content/uploads/2020/06/man-planting-plant-169523-scaled-e1592389025453.jpg.webp"
-              />
+
               <img src="https://www.argonandco.com/wp-content/uploads/2020/06/man-planting-plant-169523-scaled-e1592389025453.jpg" />
             </picture>
           </div>
@@ -158,16 +155,11 @@ const ServiceEn = () => {
                     </div>
                     <div className="contact-card__profile">
                       <picture className="circle-img circle-img--small">
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2021/10/Yannick-MIGOTTO-300x300.jpg.webp"
-                        />
                         <img src="https://www.argonandco.com/wp-content/uploads/2021/10/Yannick-MIGOTTO-300x300.jpg" />
                       </picture>
                     </div>
                   </div>
                 </div>
-
                 <div className="pad-40 light-grey-background red-1-border-top contact-card en-contact">
                   <div className="row align-items-start">
                     <div className="col-md-12">
