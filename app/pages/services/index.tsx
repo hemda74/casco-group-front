@@ -8,10 +8,10 @@ import MainPageAr from '../../components/Services/MainPageAr';
 import { NextPageWithLayout } from '../_app';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import { ServiceShort } from '../../types';
+import { fetchServices } from '../../lib/fetchServices';
 type Props = {
   services: ServiceShort[]
 };
-// dymmy data for ui till handle working with api
 const Contactus: NextPageWithLayout<Props> = ({ services }) => {
   const { language } = useLanguage();
   return (
@@ -22,16 +22,24 @@ const Contactus: NextPageWithLayout<Props> = ({ services }) => {
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
-            <MainPageEn />
+            <MainPageEn services={services} />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
-            <MainPageAr />
+            <MainPageAr services={services} />
           </main>
         )}
       </Layout>
     </>
   );
+};
+export const getStaticProps = async () => {
+  const services = await fetchServices();
+  return {
+    props: {
+      services,
+    },
+  };
 };
 // adding Layout
 Contactus.getLayout = function getLayout(contactus: ReactElement) {
