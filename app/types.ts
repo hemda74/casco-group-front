@@ -22,6 +22,7 @@ export interface IndustryShort {
   categoryId: string;
   name: string;
   name_ar: string;
+  category: Category; // Added to match the structure of your API response
 }
 
 export interface Category {
@@ -66,6 +67,19 @@ export interface IndustryDetailes2 {
   industryDetailesPointAr2: IndustryDetailesPoint2[];
 }
 
+export interface ExpertIndustry {
+  id: string;
+  storeId: string;
+  industryId: string;
+  expert_name: string;
+  expert_name_ar: string;
+  expert_title: string;
+  expert_title_ar: string;
+  expert_mail: string;
+  expert_phone: string;
+  imageUrl: string;
+}
+
 export interface Industry {
   id: string;
   storeId: string;
@@ -75,4 +89,5 @@ export interface Industry {
   category: Category;
   industryDetailes: IndustryDetailes[];
   industryDetailes2: IndustryDetailes2[];
+  expertIndustry: ExpertIndustry[];
 }
