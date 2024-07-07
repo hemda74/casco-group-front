@@ -10,13 +10,14 @@ import ViewerLayout from '../../layouts/ViewerLayout';
 import SingleIndustryEn from '../../components/Industries/SingleIndustryEn';
 import SingleIndustryAr from '../../components/Industries/SingleIndustryAr';
 import { fetchIndustryById, fetchIndustries } from '../../lib/fetchIndustries';
-import { Industry } from '../../types';
-
+import { fetchServices, fetchServiceById } from '../../lib/fetchServices';
+import { Industry, ServiceShort } from '../../types';
 type Props = {
   industry: Industry;
+  services: ServiceShort[];
 };
 
-const SingleIndustryPage: NextPageWithLayout<Props> = ({ industry }) => {
+const SingleIndustryPage: NextPageWithLayout<Props> = ({ industry, services }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -26,11 +27,11 @@ const SingleIndustryPage: NextPageWithLayout<Props> = ({ industry }) => {
       <Layout>
         {language === 'en' ? (
           <main className={styles.bodyContainer}>
-            <SingleIndustryEn industry={industry} />
+            <SingleIndustryEn industry={industry} services={services} />
           </main>
         ) : (
           <main className={styles.bodyContainer}>
-            <SingleIndustryAr industry={industry} />
+            <SingleIndustryAr industry={industry} services={services} />
           </main>
         )}
       </Layout>
@@ -49,7 +50,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
   const industry = await fetchIndustryById(id);
-  return { props: { industry } };
+  const services = await fetchServices();
+  return {
+    props: {
+      industry,
+      services,
+    },
+  };
 };
 
 // adding Layout

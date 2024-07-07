@@ -4,12 +4,13 @@ import MainPageEn from './MainPageEn';
 import { FaCircle } from 'react-icons/fa6';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Industry } from '../../types';
+import { Industry, ServiceShort } from '../../types';
 
 type Props = {
   industry: Industry,
+  services: ServiceShort[];
 };
-const SingleIndustryAr: React.FC<Props> = ({ industry }) => {
+const SingleIndustryAr: React.FC<Props> = ({ industry, services }) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -68,7 +69,6 @@ const SingleIndustryAr: React.FC<Props> = ({ industry }) => {
                 <div className="col">
                   <div className="cycling-logos__image object-fit object-fit--contain">
                     <picture className="banner-logo-0">
-                      <source srcSet="https://www.argonandco.com/wp-content/uploads/2020/01/airbu.png" />
                       <img src="https://www.argonandco.com/wp-content/uploads/2020/01/airbu.png" />
                     </picture>
                   </div>

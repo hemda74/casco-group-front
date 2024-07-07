@@ -1,9 +1,14 @@
 import axios from 'axios';
-import { ServiceShort } from '../types';
+import { ServiceShort, Service } from '../types';
 
 const API_URL = `${process.env.NEXT_PUBLIC_API_URL}services`;
 
 export const fetchServices = async (): Promise<ServiceShort[]> => {
   const response = await axios.get(API_URL);
+  return response.data;
+};
+
+export const fetchServiceById = async (id: string): Promise<Service> => {
+  const response = await axios.get(`${API_URL}/${id}`);
   return response.data;
 };

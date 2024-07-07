@@ -125,7 +125,7 @@ function Responsive() {
                     </div>
                   </div>
                 </div>
-              </div>{' '}
+              </div>
               <div>
                 <div className="me-xl-4">
                   <div className="card red-2-background card--fixed-sm ">

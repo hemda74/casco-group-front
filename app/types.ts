@@ -1,3 +1,4 @@
+// services section
 export interface ServiceShort {
   id: string;
   storeId: string;
@@ -5,6 +6,50 @@ export interface ServiceShort {
   name: string;
   name_ar: string;
 }
+interface ServiceDesc {
+  id: string;
+  storeId: string;
+  serviceId: string;
+  title: string;
+  desc_1: string;
+  desc_2: string;
+}
+
+interface ServiceDescAr {
+  id: string;
+  storeId: string;
+  serviceId: string;
+  title_ar: string;
+  desc_1_ar: string;
+  desc_2_ar: string;
+}
+
+interface ExpertService {
+  id: string;
+  storeId: string;
+  serviceId: string;
+  expert_name: string;
+  expert_name_ar: string;
+  expert_title: string;
+  expert_title_ar: string;
+  expert_mail: string;
+  expert_phone: string;
+  imageUrl: string;
+}
+
+export interface Service {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  name: string;
+  name_ar: string;
+  createdAt: string;
+  category: Category;
+  serviceDesc: ServiceDesc[];
+  serviceDescAr: ServiceDescAr[];
+  expertService: ExpertService[];
+}
+
 export interface CourseShort {
   id: string;
   storeId: string;
