@@ -40,7 +40,7 @@ const Banner: React.FC<Props> = ({ industry }) => {
                     </span>
                     {' › '}
                     <span className="post post-page current-item me-2 ms-2 text-white cursor-pointer">
-                        {industry.name}
+                        {industry.name_ar}
                     </span>
                 </div>
             </div>

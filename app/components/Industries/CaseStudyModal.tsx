@@ -1,21 +1,26 @@
 import React from 'react';
-import { Industry } from '../../types';
+import { CaseStudy } from '../../types';
 
 type Props = {
-    industry: Industry,
+    caseStudy: CaseStudy | null;
 };
-const CaseStudyModal: React.FC<Props> = ({ industry }) => {
+
+const CaseStudyModal: React.FC<Props> = ({ caseStudy }) => {
+    if (!caseStudy) return null;
+    const evenPoints = caseStudy.caseStudyPoint.filter((_, index) => index % 2 === 0);
+    const oddPoints = caseStudy.caseStudyPoint.filter((_, index) => index % 2 !== 0);
+
     return (
         <div
-            className="modal fade contact  w-screen fixed inset-0 mx-auto align-center scrolling-touch overflow-y-auto | lg:h-screen lg:px-8 "
+            className="modal fade contact w-screen fixed inset-0 mx-auto align-center scrolling-touch overflow-y-auto lg:h-screen lg:px-8"
             id="exampleModal"
             tabIndex={-1}
             aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div className="modal-dialog bg-white">
-                <div className="modal-content  relative m-auto z-50 | lg:p-8 lg:h-auto">
-                    <div className="relative bg-white  min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
-                        <div className="absolute top-0 right-0 text-lg  cursor-pointer">
+                <div className="modal-content relative m-auto z-50 lg:p-8 lg:h-auto">
+                    <div className="relative bg-white min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
+                        <div className="absolute top-0 right-0 text-lg cursor-pointer">
                             <button
                                 type="button"
                                 className="btn-close m-end p-3"
@@ -27,74 +32,36 @@ const CaseStudyModal: React.FC<Props> = ({ industry }) => {
                                 <div className="row align-items-center">
                                     <div className="col-md-10">
                                         <div className="data-label">
-                                            cold chain logistics
+                                            {caseStudy.industry.name}
                                         </div>
                                         <h2 className="title title--lg">
-                                            WMS recovery and implementation
+                                            {caseStudy.title}
                                         </h2>
                                     </div>
                                     <div className="col-md-2 col-xs-4 col-sm-6 col-8">
                                         <picture>
-                                            <img src="https://www.argonandco.com/wp-content/uploads/2020/11/Swire-grey.png" />
+                                            <img src={caseStudy.imageUrl} alt={caseStudy.title} />
                                         </picture>
                                     </div>
                                     <div className="col-md-10">
-                                        <p>
-                                            Swire Cold Storage is a leading Australian provider
-                                            of cold chain logistics services and supply chain
-                                            solutions, offering temperature-controlled
-                                            warehousing, refrigerated transport and distribution
-                                            services to a broad range of businesses.
-                                        </p>
-                                        <p>
-                                            A previous in-house WMS implementation had not been
-                                            completed. The impact of the part implementation was
-                                            a deterioration of performance from the warehouse
-                                            and cost impacts.
-                                        </p>
+                                        <p>{caseStudy.paragraph_1}</p>
+                                        <p>{caseStudy.paragraph_2}</p>
                                         <p>&nbsp;</p>
                                     </div>
                                 </div>
-                                <div className="row columns">
+                                <div className="row">
                                     <div className="col-md-6">
                                         <ul>
-                                            <li>
-                                                Identify the key issues driving poor warehouse
-                                                performance
-                                            </li>
-                                            <li>
-                                                Work with the DC management team to prioritise and
-                                                resolve issues whilst improving business as usual
-                                            </li>
-                                            <li>
-                                                Project manage the re-implementation of the WMS
-                                                with the IT systems supplier (in Canada)
-                                            </li>
-                                            <li>
-                                                Change manage the implementation of the system,
-                                                improve capability via training, reduce process
-                                                blockages and improve performance to a developed
-                                                schedule
-                                            </li>
+                                            {evenPoints.map((point) => (
+                                                <li className='fw-semibold' key={point.id}> <span className='title'>●</span> {point.p1}</li>
+                                            ))}
                                         </ul>
-                                        <p>&nbsp;</p>
                                     </div>
                                     <div className="col-md-6">
                                         <ul>
-                                            <li>
-                                                Full process re-write and all SCS employees
-                                                trained
-                                            </li>
-                                            <li>
-                                                Increased productivity from warehouse staff and
-                                                increased space availability within the warehouse
-                                            </li>
-                                            <li>
-                                                Improved relationship management with the software
-                                                provider, allowing for further system enhancements
-                                                moving forward
-                                            </li>
-                                            <li>Delivered a reduced cost base warehouse</li>
+                                            {oddPoints.map((point) => (
+                                                <li className='fw-semibold' key={point.id}> <span className='title'>●</span> {point.p1}</li>
+                                            ))}
                                         </ul>
                                     </div>
                                 </div>

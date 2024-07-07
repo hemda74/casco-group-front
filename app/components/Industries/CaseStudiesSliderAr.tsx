@@ -8,7 +8,7 @@ type Props = {
     caseStudies: CaseStudy[];
 };
 
-const CaseStudiesSlider: React.FC<Props> = ({ settings, caseStudies }) => {
+const CaseStudiesSliderAr: React.FC<Props> = ({ settings, caseStudies }) => {
     const [selectedCaseStudy, setSelectedCaseStudy] = useState<CaseStudy | null>(null);
     return (
         <>
@@ -40,4 +40,4 @@ const CaseStudiesSlider: React.FC<Props> = ({ settings, caseStudies }) => {
     );
 };
 
-export default CaseStudiesSlider;
+export default CaseStudiesSliderAr;

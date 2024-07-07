@@ -10,32 +10,33 @@ const Sidebar: React.FC<Props> = ({ industry, services }) => {
         <div className="col-lg-4 offset-lg-1 sidebar">
             {industry.expertIndustry.map((ex, index) => (
 
-                <div className="pad-40 light-grey-background red-1-border-top contact-card">
+                <div className="pad-40 light-grey-background red-1-border-top contact-card2">
                     <div className="row align-items-start" key={index}>
                         <div className="col-md-12">
                             <h4 className="title title--sm red-1-color">
-                                Contact our {industry.name} experts
+                                Contact our {industry.name_ar} experts
                             </h4>
                         </div>
                         <div className="col-md-12">
                             <p className="p--large">
-                                <strong>{ex.expert_name}</strong>
+                                <strong>{ex.expert_name_ar}</strong>
                             </p>
-                            <p>{ex.expert_title} </p>
+                            <p>{ex.expert_title_ar} </p>
                         </div>
-                        <div className="col-md-12 contact-details">
+                        <div className="col-md-12 contact-details ">
                             <p className="no-wrap">
-                                <span className="data-label red-1-color">Phone</span>
+                                <span className="data-label red-1-color">الهاتف</span>
                             </p>
                             <div>{ex.expert_phone}</div>
                             <p className="no-wrap">
-                                <span className="data-label red-1-color">Email</span>
+                                <span className="data-label red-1-color">الايميل</span>
                                 <a href={`mailto: ${ex.expert_mail}`}>
                                     {ex.expert_mail}
                                 </a>
                             </p>
                         </div>
-                        <div className="contact-card__profile">
+
+                        <div className="contact-card__profile2">
                             <picture className="circle-img circle-img--small">
                                 <img src={`${ex.imageUrl}`} />
                             </picture>
@@ -46,13 +47,13 @@ const Sidebar: React.FC<Props> = ({ industry, services }) => {
             ))}
             <div className="sidebar-nav red-4-background color-white">
                 <div className="title title--sm title--medium-weight">
-                    Explore our services
+                    تصفح خدماتنا
                 </div>
                 <ul>
                     {services.map((service, index) => (
                         <li className="page_item page-item-42 page_item_has_children" key={index}>
                             <Link href={`/services/${service.id}`}>
-                                {service.name}
+                                {service.name_ar}
                             </Link>
                         </li>
                     ))}

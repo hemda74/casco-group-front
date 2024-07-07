@@ -18,7 +18,7 @@ const ContentSection: React.FC<Props> = ({ industry, services }) => {
                         <div className="the-content">
                             {industry.industryDetailes.map((detail, index) => (
                                 <div key={index}>
-                                    <h2>{detail.title}</h2>
+                                    <h2>{detail.title_ar}</h2>
                                     {detail.industryDetailesPointAr.map((point, idx) => (
                                         <p className='font-semibold' key={idx}>{point.text}</p>
                                     ))}
@@ -45,7 +45,7 @@ const ContentSection: React.FC<Props> = ({ industry, services }) => {
                                                     aria-expanded="false"
                                                     aria-controls={collapseId}>
                                                     <h4 className="accordion__title fw-semibold text-primary-100">
-                                                        {detail.title}
+                                                        {detail.title_ar}
                                                     </h4>
                                                 </button>
                                             </h2>
@@ -74,7 +74,7 @@ const ContentSection: React.FC<Props> = ({ industry, services }) => {
                     </div>
 
                     {/* Sidebar */}
-                    <Sidebar industry={industry} services={services} />
+                    <SidebarAr industry={industry} services={services} />
                 </div>
             </div>
         </section>
