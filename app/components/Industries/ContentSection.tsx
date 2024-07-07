@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import { Industry, ServiceShort } from '../../types';
+import HowToHelp from './HowToHelp';
 
 type Props = {
     industry: Industry,
@@ -23,6 +24,7 @@ const ContentSection: React.FC<Props> = ({ industry, services }) => {
                                 </div>
                             ))}
                         </div>
+                        <HowToHelp />
                     </div>
 
                     {/* Sidebar */}
