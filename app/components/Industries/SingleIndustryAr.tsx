@@ -4,13 +4,14 @@ import MainPageEn from './MainPageEn';
 import { FaCircle } from 'react-icons/fa6';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Industry, ServiceShort } from '../../types';
+import { Industry, ServiceShort, CaseStudy } from '../../types';
 
 type Props = {
-  industry: Industry,
+  industry: Industry;
   services: ServiceShort[];
+  caseStudies: CaseStudy[];
 };
-const SingleIndustryAr: React.FC<Props> = ({ industry, services }) => {
+const SingleIndustryAr: React.FC<Props> = ({ industry, services, caseStudies }) => {
   var settings = {
     dots: false,
     infinite: true,

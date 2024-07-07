@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { Industry, ServiceShort } from '../../types';
-
 type Props = {
     industry: Industry,
     services: ServiceShort[]

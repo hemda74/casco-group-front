@@ -1,17 +1,18 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { Industry, ServiceShort } from '../../types';
 import Banner from './Banner';
 import Sidebar from './Sidebar';
 import ContentSection from './ContentSection';
 import CaseStudiesSlider from './CaseStudiesSlider';
 import CaseStudyModal from './CaseStudyModal';
+import { Industry, ServiceShort, CaseStudy } from '../../types';
+
 type Props = {
   industry: Industry;
   services: ServiceShort[];
+  caseStudies: CaseStudy[];
 };
-
-const SingleIndustryEn: React.FC<Props> = ({ industry, services }) => {
+const SingleIndustryEn: React.FC<Props> = ({ industry, services, caseStudies }) => {
   // Slider settings
   const sliderSettings = {
     dots: false,

@@ -10,14 +10,17 @@ import ViewerLayout from '../../layouts/ViewerLayout';
 import SingleIndustryEn from '../../components/Industries/SingleIndustryEn';
 import SingleIndustryAr from '../../components/Industries/SingleIndustryAr';
 import { fetchIndustryById, fetchIndustries } from '../../lib/fetchIndustries';
-import { fetchServices, fetchServiceById } from '../../lib/fetchServices';
-import { Industry, ServiceShort } from '../../types';
+import { fetchServices } from '../../lib/fetchServices';
+import { Industry, ServiceShort, CaseStudy } from '../../types';
+import { fetchCaseStudiesByIndustryId } from '../../lib/fetchCaseStudies';
+
 type Props = {
   industry: Industry;
   services: ServiceShort[];
+  caseStudies: CaseStudy[];
 };
 
-const SingleIndustryPage: NextPageWithLayout<Props> = ({ industry, services }) => {
+const SingleIndustryPage: NextPageWithLayout<Props> = ({ industry, services, caseStudies }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -27,11 +30,11 @@ const SingleIndustryPage: NextPageWithLayout<Props> = ({ industry, services }) =
       <Layout>
         {language === 'en' ? (
           <main className={styles.bodyContainer}>
-            <SingleIndustryEn industry={industry} services={services} />
+            <SingleIndustryEn industry={industry} services={services} caseStudies={caseStudies} />
           </main>
         ) : (
           <main className={styles.bodyContainer}>
-            <SingleIndustryAr industry={industry} services={services} />
+            <SingleIndustryAr industry={industry} services={services} caseStudies={caseStudies} />
           </main>
         )}
       </Layout>
@@ -51,17 +54,19 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
   const industry = await fetchIndustryById(id);
   const services = await fetchServices();
+  const caseStudies = await fetchCaseStudiesByIndustryId(id);
   return {
     props: {
       industry,
       services,
+      caseStudies,
     },
   };
 };
-
 // adding Layout
 SingleIndustryPage.getLayout = function getLayout(page: ReactElement) {
   return <ViewerLayout childern={page}></ViewerLayout>;
 };
 
 export default SingleIndustryPage;
+// pages/industries/[id].tsx

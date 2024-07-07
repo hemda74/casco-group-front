@@ -136,3 +136,32 @@ export interface Industry {
   industryDetailes2: IndustryDetailes2[];
   expertIndustry: ExpertIndustry[];
 }
+export interface CaseStudyPoint {
+  id: string;
+  p1: string;
+  caseId: string;
+}
+
+export interface CaseStudyPointAr {
+  id: string;
+  p1: string;
+  caseId: string;
+}
+
+export interface CaseStudy {
+  id: string;
+  storeId: string;
+  title: string;
+  title_ar: string;
+  sub_title: string;
+  sub_title_ar: string;
+  paragraph_1: string;
+  paragraph_1_ar: string;
+  paragraph_2: string;
+  paragraph_2_ar: string;
+  industryId: string;
+  imageUrl: string;
+  industry: Industry;
+  caseStudyPoint: CaseStudyPoint[];
+  caseStudyPointAr: CaseStudyPointAr[];
+}
