@@ -15,7 +15,7 @@ const Sidebar: React.FC<Props> = ({ industry, services }) => {
                     <div className="row align-items-start">
                         <div className="col-md-12">
                             <h4 className="title title--sm red-1-color">
-                                Contact our {industry.name_ar} experts
+                                تواصل مع خبرائنا في  {industry.name_ar}
                             </h4>
                         </div>
                         <div className="col-md-12">
