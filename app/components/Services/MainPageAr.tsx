@@ -7,7 +7,7 @@ type Props = {
 const MainPageEn: React.FC<Props> = ({ services }) => {
   return (
     <>
-      <div id="content-wrap">
+      <div id="content-wrap" dir='rtl'>
         <div className="strip-padding-lg accent-background background ">
           <section className="section section--page-intro">
             <div className="container">
@@ -20,8 +20,8 @@ const MainPageEn: React.FC<Props> = ({ services }) => {
                 <div className="col-md-5 the-content">
                   <p>
                     <span className="intro text-white">
-                      {`نحن نساعد العملاء على تقديم التحولات القائمة على العمليات
- في منطقة وظيفية واحدة أو عبر وظائف متعددة.`}
+                      {`We help clients deliver operations driven transformations
+                      in a single functional area or across multiple functions.`}
                     </span>
                   </p>
                 </div>
@@ -34,10 +34,9 @@ const MainPageEn: React.FC<Props> = ({ services }) => {
                 {services.map((service) => (
                   <div className="col-md-6 col-lg-4" key={service.id}>
                     <Link
-                      href={{
-                        pathname: `/services/${service.name_ar}`,
-                        query: { service_name: service.name }
-                      }}
+                      href=
+                      {`/services/${service.id}`}
+
                       className="d-flex align-items-center" >
                       <div className="title title--sm title title--medium-weight">
                         {service.name_ar}

@@ -20,7 +20,7 @@ const MainPageEn: React.FC<Props> = ({ services }) => {
                 <div className="col-md-5 the-content">
                   <p>
                     <span className="intro text-white">
-                      {`       We help clients deliver operations driven transformations
+                      {`We help clients deliver operations driven transformations
                       in a single functional area or across multiple functions.`}
                     </span>
                   </p>
@@ -34,13 +34,12 @@ const MainPageEn: React.FC<Props> = ({ services }) => {
                 {services.map((service) => (
                   <div className="col-md-6 col-lg-4" key={service.id}>
                     <Link
-                      href={{
-                        pathname: `/services/${service.name_ar}`,
-                        query: { service_name: service.name }
-                      }}
+                      href=
+                      {`/services/${service.id}`}
+
                       className="d-flex align-items-center" >
                       <div className="title title--sm title title--medium-weight">
-                        {service.name_ar}
+                        {service.name}
                       </div></Link>
                   </div>
                 ))}
