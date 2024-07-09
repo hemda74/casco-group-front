@@ -50,16 +50,6 @@ export interface Service {
   expertService: ExpertService[];
 }
 
-export interface CourseShort {
-  id: string;
-  storeId: string;
-  categoryId: string;
-  c_title: string;
-  c_title_ar: string;
-  imageUrl: string;
-  c_short_intro: string;
-  c_short_intro_ar: string;
-}
 /// industry section
 export interface IndustryShort {
   id: string;
@@ -156,7 +146,17 @@ export interface CaseStudy {
   caseStudyPointAr: CaseStudyPointAr[];
 }
 /// courses section ///////////
-interface Course {
+export interface CourseShort {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  c_title: string;
+  c_title_ar: string;
+  imageUrl: string;
+  c_short_intro_en: string;
+  c_short_intro_ar: string;
+}
+export interface Course {
   id: string;
   storeId: string;
   categoryId: string;
@@ -194,14 +194,14 @@ interface Course {
   c_who_should_en: CourseWhoShould[];
 }
 
-interface CourseType {
+export interface CourseType {
   id: string;
   storeId: string;
   name: string;
   name_ar: string;
 }
 
-interface Category {
+export interface Category {
   id: string;
   storeId: string;
   name: string;

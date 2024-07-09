@@ -8,9 +8,13 @@ import Footer from '../../components/Footer';
 import FooterAr from '../../components/FooterAr';
 import MainPageEn from '../../components/Courses/MainPageEn';
 import MainPageAr from '../../components/Courses/MainPageAr';
-type Props = {};
+import { fetchCourses } from '../../lib/fetchCourses';
+import { CourseShort } from '../../types';
+type Props = {
+  courses: CourseShort[]
+};
 // dymmy data for ui till handle working with api
-const Contactus = (props: Props) => {
+const Index: React.FC<Props> = ({ courses }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -21,13 +25,13 @@ const Contactus = (props: Props) => {
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <MainPageEn />
+            <MainPageEn courses={courses} />
             <Footer />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <MainPageAr />
+            <MainPageAr courses={courses} />
             <FooterAr />
           </main>
         )}
@@ -35,5 +39,12 @@ const Contactus = (props: Props) => {
     </>
   );
 };
-
-export default Contactus;
+export const getStaticProps = async () => {
+  const courses = await fetchCourses();
+  return {
+    props: {
+      courses,
+    },
+  };
+};
+export default Index; 

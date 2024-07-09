@@ -15203,58 +15203,7 @@ img {
 
 .border-primary-100 {
   --border-opacity: 1;
-  border-color: #932a33;
-  border-color: rgba(147, 42, 51, var(--border-opacity));
-}
-
-.focus\:border-blue-300:focus {
-  --border-opacity: 1;
-  border-color: #90cdf4;
-  border-color: rgba(144, 205, 244, var(--border-opacity));
-}
-
-.rounded-none {
-  border-radius: 0;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.rounded-r {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-}
-
-.rounded-l {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
-.rounded-r-lg {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-
-.rounded-l-lg {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border {
-  border-width: 1px;
+  border-color: var(--color-links);
 }
 
 .border-t-2 {
@@ -17250,7 +17199,7 @@ select:focus {
 }
 .courses .course .priceBook .book .view-btn {
   color: #fff;
-  background-color: #932a33;
+  background-color: var(--color-links);
   border-radius: 5px;
   padding: 10px;
 }

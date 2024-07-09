@@ -1,7 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import { CourseShort } from '../../types';
 
-const MainPageAr = () => {
+type Props = {
+  courses: CourseShort[];
+};
+const MainPageAr: React.FC<Props> = ({ courses = [] }) => {
   return (
     <>
       <div dir="rtl">
