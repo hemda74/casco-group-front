@@ -28,11 +28,6 @@ const MainPageEn: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
         <div
           id="filters-container"
           className="filters hidden fixed w-full h-screen overflow-y-auto top-0 left-0 bg-white px-4 pb-32 z-40 | lg:static lg:h-auto lg:block lg:col-span-3 lg:p-0 lg:z-0 | xl:col-span-2">
-          <div className="sticky top-0 bg-white py-4 z-10 | lg:hidden">
-            <button className="block w-full bg-gray-800 p-4 rounded text-white text-center | hover:bg-black">
-              Apply Filters
-            </button>
-          </div>
           <Categories cat={cat} onCategorySelect={onCategorySelect} />
           <Types types={types} onTypeSelect={onTypeSelect} />
         </div>
