@@ -70,16 +70,6 @@ export interface IndustryShort {
   category: Category; // Added to match the structure of your API response
 }
 
-export interface Category {
-  id: string;
-  storeId: string;
-  billboardId: string;
-  name: string;
-  name_ar: string;
-  createdAt: string;
-  updatedAt: string;
-}
-
 export interface IndustryDetailesPoint {
   id: string;
   industrydetailesId: string;
@@ -164,4 +154,94 @@ export interface CaseStudy {
   industry: Industry;
   caseStudyPoint: CaseStudyPoint[];
   caseStudyPointAr: CaseStudyPointAr[];
+}
+/// courses section ///////////
+interface Course {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  c_title: string;
+  c_title_ar: string;
+  price_egp: string;
+  price_uae: string;
+  price_ksa: string;
+  price_usd: string;
+  c_short_intro_en: string;
+  c_short_intro_ar: string;
+  c_duration_en: string;
+  c_duration_ar: string;
+  c_in_house_en: string;
+  c_in_house_ar: string;
+  c_delv_and_leaders_en: string;
+  c_delv_and_leaders_ar: string;
+  imageUrl: string;
+  coursetypeId: string;
+  CourseType: CourseType;
+  category: Category;
+  c_benefit_ar: CourseBenefit[];
+  c_benefit_en: CourseBenefit[];
+  c_content2_ar: CourseContent[];
+  c_content2_en: CourseContent[];
+  c_content_ar: CourseContent[];
+  c_content_en: CourseContent[];
+  c_date_ar: CourseDate[];
+  c_date_en: CourseDate[];
+  c_intro_ar: CourseIntro[];
+  c_intro_en: CourseIntro[];
+  c_objective_ar: CourseObjective[];
+  c_objective_en: CourseObjective[];
+  c_who_should_ar: CourseWhoShould[];
+  c_who_should_en: CourseWhoShould[];
+}
+
+interface CourseType {
+  id: string;
+  storeId: string;
+  name: string;
+  name_ar: string;
+}
+
+interface Category {
+  id: string;
+  storeId: string;
+  name: string;
+  name_ar: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+interface CourseBenefit {
+  id: number;
+  text: string;
+  courseId: string;
+}
+
+interface CourseContent {
+  id: number;
+  text: string;
+  courseId: string;
+}
+
+interface CourseDate {
+  id: number;
+  text: string;
+  courseId: string;
+}
+
+interface CourseIntro {
+  id: number;
+  text: string;
+  courseId: string;
+}
+
+interface CourseObjective {
+  id: number;
+  text: string;
+  courseId: string;
+}
+
+interface CourseWhoShould {
+  id: number;
+  text: string;
+  courseId: string;
 }
