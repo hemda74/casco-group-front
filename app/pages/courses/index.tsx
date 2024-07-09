@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
@@ -9,17 +9,57 @@ import FooterAr from '../../components/FooterAr';
 import MainPageEn from '../../components/Courses/MainPageEn';
 import MainPageAr from '../../components/Courses/MainPageAr';
 import { fetchCourses } from '../../lib/fetchCourses';
-import { fetchTypes } from '../../lib/fetchTypes';
-import { Category, CourseShort, CourseType } from '../../types';
-import { fetchCat } from "../../lib/fetchCategory"
+import { fetchCourseTypes } from '../../lib/fetchTypes';
+import { Category, CourseShort, Course, CourseType } from '../../types';
+import { fetchCat } from "../../lib/fetchCategory";
+
 type Props = {
   courses: CourseShort[];
   cat: Category[];
   types: CourseType[];
 };
-// dymmy data for ui till handle working with api
-const Index: React.FC<Props> = ({ courses, cat, types }) => {
+
+const Index: React.FC<Props> = ({ courses: initialCourses, cat, types }) => {
   const { language } = useLanguage();
+  const [courses, setCourses] = useState<CourseShort[]>(initialCourses);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedType, setSelectedType] = useState<string | null>(null);
+  const [forceUpdate, setForceUpdate] = useState<boolean>(false); // State to force update
+
+  // Function to filter courses based on selected category and type
+  const filterCourses = () => {
+    let filteredCourses = initialCourses;
+
+    if (selectedCategory) {
+      filteredCourses = filteredCourses.filter(course => course.categoryId === selectedCategory);
+    }
+
+    if (selectedType) {
+      filteredCourses = filteredCourses.filter(course => course.coursetypeId === selectedType);
+    }
+
+    setCourses(filteredCourses);
+    setForceUpdate(prev => !prev); // Toggle forceUpdate to trigger re-render
+  };
+
+  // Handle category selection
+  const handleCategorySelect = (category: string) => {
+    setSelectedCategory(category);
+    setSelectedType(null); // Reset type selection
+    filterCourses();
+    // reload();
+  };
+
+  // Handle type selection
+  const handleTypeSelect = (type: string) => {
+    setSelectedType(type);
+    setSelectedCategory(null); // Reset category selection
+    filterCourses();
+    // reload();
+  };
+  const reload = () => {
+    window.location.reload()
+  }
   return (
     <>
       <Head>
@@ -29,13 +69,27 @@ const Index: React.FC<Props> = ({ courses, cat, types }) => {
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <MainPageEn courses={courses} types={types} cat={cat} />
+            <MainPageEn
+              key={forceUpdate ? 'forceUpdate' : 'initial'} // Use key to force re-render
+              courses={courses}
+              types={types}
+              cat={cat}
+              onCategorySelect={handleCategorySelect}
+              onTypeSelect={handleTypeSelect}
+            />
             <Footer />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <MainPageAr courses={courses} />
+            <MainPageAr
+              key={forceUpdate ? 'forceUpdate' : 'initial'} // Use key to force re-render
+              courses={courses}
+              types={types}
+              cat={cat}
+              onCategorySelect={handleCategorySelect}
+              onTypeSelect={handleTypeSelect}
+            />
             <FooterAr />
           </main>
         )}
@@ -43,9 +97,10 @@ const Index: React.FC<Props> = ({ courses, cat, types }) => {
     </>
   );
 };
+
 export const getStaticProps = async () => {
   const courses = await fetchCourses();
-  const types = await fetchTypes();
+  const types = await fetchCourseTypes();
   const cat = await fetchCat();
 
   return {
@@ -56,4 +111,5 @@ export const getStaticProps = async () => {
     },
   };
 };
-export default Index; 
+
+export default Index;

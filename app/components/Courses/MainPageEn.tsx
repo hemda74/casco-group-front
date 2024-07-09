@@ -3,12 +3,16 @@ import Link from 'next/link';
 import { Category, CourseShort, CourseType } from '../../types';
 import Types from './Types';
 import Categories from './Categories';
+
 type Props = {
   courses: CourseShort[];
   cat: Category[];
   types: CourseType[];
+  onCategorySelect: (category: string) => void;
+  onTypeSelect: (type: string) => void;
 };
-const MainPageEn: React.FC<Props> = ({ courses, cat, types }) => {
+
+const MainPageEn: React.FC<Props> = ({ courses, cat, types, onCategorySelect, onTypeSelect }) => {
   return (
     <>
       <div className="w-full bg-gray-200 rounded-lg overflow-hidden mb-4 grid grid-cols-1 | lg:grid-cols-12 lg:mb-6">
@@ -29,8 +33,8 @@ const MainPageEn: React.FC<Props> = ({ courses, cat, types }) => {
               Apply Filters
             </button>
           </div>
-          <Categories cat={cat} />
-          <Types types={types} />
+          <Categories cat={cat} onCategorySelect={onCategorySelect} />
+          <Types types={types} onTypeSelect={onTypeSelect} />
         </div>
 
         <div className="lg:col-span-9 | xl:col-span-10">
@@ -88,7 +92,6 @@ const MainPageEn: React.FC<Props> = ({ courses, cat, types }) => {
                 </div>
               </div>
             ))}
-
           </div>
           <div className="description mt-6 text-sm text-left | lg:mt-8"></div>
         </div>

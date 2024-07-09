@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
 import { Category } from '../../types';
+
 type Props = {
     cat: Category[];
-}
-const Categories: React.FC<Props> = ({ cat }) => {
+    onCategorySelect: (category: string) => void;
+};
+
+const Categories: React.FC<Props> = ({ cat, onCategorySelect }) => {
     return (
         <div>
             <div className="filter accordion--open list-reset mb-2 | lg:mb-6 dropdown">
@@ -19,10 +22,11 @@ const Categories: React.FC<Props> = ({ cat }) => {
                 </button>
                 <ul className="facets hidden dropdown-menu">
                     {cat.map((c) => (
-                        <li className="" >
+                        <li className="" key={c.id}>
                             <Link
-                                href="/coursess/environmental"
-                                className="dropdown-item block w-full text-sm truncate accordion__header--open">
+                                href="#"
+                                className="dropdown-item block w-full text-sm truncate accordion__header--open"
+                                onClick={() => onCategorySelect(c.name)}>
                                 {c.name}
                             </Link>
                         </li>
@@ -30,7 +34,7 @@ const Categories: React.FC<Props> = ({ cat }) => {
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Categories
+export default Categories;

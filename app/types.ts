@@ -155,6 +155,9 @@ export interface CourseShort {
   imageUrl: string;
   c_short_intro_en: string;
   c_short_intro_ar: string;
+  CourseType: CourseType;
+  category: Category;
+  coursetypeId: string;
 }
 export interface Course {
   id: string;

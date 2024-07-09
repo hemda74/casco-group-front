@@ -1,10 +1,13 @@
-import React from 'react'
-import Link from 'next/link'
-import { CourseType } from '../../types'
+import React from 'react';
+import Link from 'next/link';
+import { CourseType } from '../../types';
+
 type Props = {
     types: CourseType[];
-}
-const Types: React.FC<Props> = ({ types }) => {
+    onTypeSelect: (type: string) => void;
+};
+
+const Types: React.FC<Props> = ({ types, onTypeSelect }) => {
     return (
         <div>
             <div className="filter accordion--open list-reset mb-2 | lg:mb-6 dropdown">
@@ -17,13 +20,13 @@ const Types: React.FC<Props> = ({ types }) => {
                         Level
                     </div>
                 </button>
-
                 <ul className="facets hidden dropdown-menu">
                     {types.map((type) => (
-                        <li className="">
+                        <li className="" key={type.id}>
                             <Link
-                                href="/courses/foundation"
-                                className="dropdown-item block w-full text-sm  truncate accordion__header--open">
+                                href="#"
+                                className="dropdown-item block w-full text-sm  truncate accordion__header--open"
+                                onClick={() => onTypeSelect(type.name)}>
                                 {type.name}
                             </Link>
                         </li>
@@ -31,7 +34,7 @@ const Types: React.FC<Props> = ({ types }) => {
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Types
+export default Types;
