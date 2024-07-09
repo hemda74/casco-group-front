@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link';
 import { Category } from '../../types';
 type Props = {
-    categories: Category[];
+    cat: Category[];
 }
-const Categories: React.FC<Props> = ({ categories }) => {
+const Categories: React.FC<Props> = ({ cat }) => {
     return (
         <div>
             <div className="filter accordion--open list-reset mb-2 | lg:mb-6 dropdown">
@@ -18,7 +18,7 @@ const Categories: React.FC<Props> = ({ categories }) => {
                     </div>
                 </button>
                 <ul className="facets hidden dropdown-menu">
-                    {categories?.map((c) => (
+                    {cat.map((c) => (
                         <li className="" >
                             <Link
                                 href="/coursess/environmental"

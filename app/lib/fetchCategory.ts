@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { CourseShort, Course, Category } from '../types';
+import { Category } from '../types';
 
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}courses`;
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}courses-categories`;
 
-export const fetchCoursesCategories = async (): Promise<Category[]> => {
+export const fetchCat = async (): Promise<Category[]> => {
   const response = await axios.get(API_URL);
   return response.data;
 };

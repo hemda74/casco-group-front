@@ -5,10 +5,10 @@ import Types from './Types';
 import Categories from './Categories';
 type Props = {
   courses: CourseShort[];
-  categoris: Category[];
+  cat: Category[];
   types: CourseType[];
 };
-const MainPageEn: React.FC<Props> = ({ courses, categoris, types }) => {
+const MainPageEn: React.FC<Props> = ({ courses, cat, types }) => {
   return (
     <>
       <div className="w-full bg-gray-200 rounded-lg overflow-hidden mb-4 grid grid-cols-1 | lg:grid-cols-12 lg:mb-6">
@@ -29,7 +29,7 @@ const MainPageEn: React.FC<Props> = ({ courses, categoris, types }) => {
               Apply Filters
             </button>
           </div>
-          <Categories categories={categoris} />
+          <Categories cat={cat} />
           <Types types={types} />
         </div>
 
@@ -71,7 +71,7 @@ const MainPageEn: React.FC<Props> = ({ courses, categoris, types }) => {
                         </h2>
                       </Link>
                     </div>
-                    <p className="description | shave"> {course.c_short_intro_en}</p>
+                    <p className="description | shave">{course.c_short_intro_en}</p>
                     <div className="priceBook">
                       <div className="price">
 
