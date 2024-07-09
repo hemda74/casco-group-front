@@ -786,5 +786,4 @@ const CourseAr = () => {
     </>
   );
 };
-
 export default CourseAr;
