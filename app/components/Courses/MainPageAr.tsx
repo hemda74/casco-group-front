@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { Category, CourseShort, CourseType } from '../../types';
-import Types from './Types';
-import Categories from './Categories';
-
+import CategoriesAr from './CategoriesAr';
+import TypesAr from './TypesAr';
 type Props = {
   courses: CourseShort[];
   cat: Category[];
@@ -29,15 +28,15 @@ const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
           id="filters-container"
           className="filters hidden fixed w-full h-screen overflow-y-auto top-0 left-0 bg-white px-4 pb-32 z-40 | lg:static lg:h-auto lg:block lg:col-span-3 lg:p-0 lg:z-0 | xl:col-span-2">
 
-          <Categories cat={cat} onCategorySelect={onCategorySelect} />
-          <Types types={types} onTypeSelect={onTypeSelect} />
+          <CategoriesAr cat={cat} onCategorySelect={onCategorySelect} />
+          <TypesAr types={types} onTypeSelect={onTypeSelect} />
         </div>
 
         <div className="lg:col-span-9 | xl:col-span-10">
           <div className="w-full grid gap-2 mb-2 | lg:mb-4 grid-cols-2">
             <span className="flex items-center justify-center col-span-2 text-center | lg:col-span-1 lg:justify-start lg:text-left">
               <span className="text-sm font-bold">
-                Showing {courses.length} courses
+                عرض {courses.length}دورة
               </span>
             </span>
           </div>
@@ -45,7 +44,7 @@ const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
             {courses.map((course) => (
               <div className="course" key={course.id}>
                 <div
-                  title={`${course.c_title}`}
+                  title={`${course.c_title_ar}`}
                   className="content">
                   <div className="image">
                     <Link
@@ -55,7 +54,7 @@ const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
 
                         <img
                           src={`${course.imageUrl}`}
-                          alt={`${course.c_title} Image`}
+                          alt={`${course.c_title_ar} Image`}
                           className="block w-full animate lazyloaded"
                         />
                       </picture>
@@ -67,11 +66,11 @@ const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
                         href={`/courses/${course.id}`}
                         className="inline-block">
                         <h2 className="title text-primary-100">
-                          {course.c_title}
+                          {course.c_title_ar}
                         </h2>
                       </Link>
                     </div>
-                    <p className="description | shave">{course.c_short_intro_en}</p>
+                    <p className="description | shave">{course.c_short_intro_ar}</p>
                     <div className="priceBook">
                       <div className="price">
 
@@ -80,7 +79,7 @@ const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
                         <Link
                           href={`/courses/${course.id}`}
                           className="view-btn">
-                          View Course
+                          عرض الدورة
                         </Link>
                       </div>
                     </div>
@@ -89,7 +88,6 @@ const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
               </div>
             ))}
           </div>
-          <div className="description mt-6 text-sm text-left | lg:mt-8"></div>
         </div>
       </div>
     </>

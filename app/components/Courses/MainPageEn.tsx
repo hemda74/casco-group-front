@@ -93,7 +93,6 @@ const MainPageEn: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
               </div>
             ))}
           </div>
-          <div className="description mt-6 text-sm text-left | lg:mt-8"></div>
         </div>
       </div>
     </>
