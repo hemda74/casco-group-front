@@ -1,0 +1,36 @@
+import React from 'react'
+import Link from 'next/link';
+import { Category } from '../../types';
+type Props = {
+    categories: Category[];
+}
+const Categories: React.FC<Props> = ({ categories }) => {
+    return (
+        <div>
+            <div className="filter accordion--open list-reset mb-2 | lg:mb-6 dropdown">
+                <button
+                    className=" w-full"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div className="relative flex items-center mb-3 border-b-2 border-primary-100 cursor-pointer | accordion__header--open">
+                        Categories
+                    </div>
+                </button>
+                <ul className="facets hidden dropdown-menu">
+                    {categories?.map((c) => (
+                        <li className="" >
+                            <Link
+                                href="/coursess/environmental"
+                                className="dropdown-item block w-full text-sm truncate accordion__header--open">
+                                {c.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+export default Categories

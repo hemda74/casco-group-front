@@ -1,12 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import { CourseShort } from '../../types';
+import { Category, CourseShort, CourseType } from '../../types';
 import Types from './Types';
-
+import Categories from './Categories';
 type Props = {
   courses: CourseShort[];
+  categoris: Category[];
+  types: CourseType[];
 };
-const MainPageEn: React.FC<Props> = ({ courses = [] }) => {
+const MainPageEn: React.FC<Props> = ({ courses, categoris, types }) => {
   return (
     <>
       <div className="w-full bg-gray-200 rounded-lg overflow-hidden mb-4 grid grid-cols-1 | lg:grid-cols-12 lg:mb-6">
@@ -27,63 +29,8 @@ const MainPageEn: React.FC<Props> = ({ courses = [] }) => {
               Apply Filters
             </button>
           </div>
-          <div className="filter accordion--open list-reset mb-2 | lg:mb-6 dropdown">
-            <button
-              className=" w-full"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <div className="relative flex items-center mb-3 border-b-2 border-primary-100 cursor-pointer | accordion__header--open">
-                Categories
-              </div>
-            </button>
-
-            <ul className="facets hidden dropdown-menu">
-              <li className="">
-                <Link
-                  href="/coursess/environmental"
-                  className="dropdown-item block w-full text-sm truncate accordion__header--open">
-                  Environmental
-                </Link>
-              </li>
-              <li className="">
-                <Link
-                  href="/coursess/food-safety"
-                  className="dropdown-item block w-full text-sm truncate accordion__header--open">
-                  Food Safety
-                </Link>
-              </li>
-              <li className="">
-                <Link
-                  href="/coursess/brcgs"
-                  className="dropdown-item block w-full text-sm  truncate accordion__header--open">
-                  BRCGS
-                </Link>
-              </li>
-              <li className="">
-                <Link
-                  href="/coursess/health-and-safety"
-                  className="dropdown-item block w-full text-sm  truncate accordion__header--open">
-                  Health And Safety
-                </Link>
-              </li>
-              <li className="">
-                <Link
-                  href="/coursess/quality"
-                  className="dropdown-item block w-full text-sm  truncate accordion__header--open">
-                  Quality
-                </Link>
-              </li>
-              <li className="">
-                <Link
-                  href="/coursess/business-improvement"
-                  className="dropdown-item block w-full text-sm  truncate accordion__header--open">
-                  Business Improvement
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <Types />
+          <Categories categories={categoris} />
+          <Types types={types} />
         </div>
 
         <div className="lg:col-span-9 | xl:col-span-10">
@@ -124,11 +71,7 @@ const MainPageEn: React.FC<Props> = ({ courses = [] }) => {
                         </h2>
                       </Link>
                     </div>
-                    <p className="description | shave">{`
-                  IntroductionThis intensive one-day course is designed to equip
-                  delegates with an appreciation and understanding of the basics
-  
-                `} {course.c_short_intro_en}</p>
+                    <p className="description | shave"> {course.c_short_intro_en}</p>
                     <div className="priceBook">
                       <div className="price">
 

@@ -9,12 +9,16 @@ import FooterAr from '../../components/FooterAr';
 import MainPageEn from '../../components/Courses/MainPageEn';
 import MainPageAr from '../../components/Courses/MainPageAr';
 import { fetchCourses } from '../../lib/fetchCourses';
-import { CourseShort } from '../../types';
+import { fetchTypes } from '../../lib/fetchTypes';
+import { Category, CourseShort, CourseType } from '../../types';
+import { fetchCoursesCategories } from "../../lib/fetchCategory"
 type Props = {
-  courses: CourseShort[]
+  courses: CourseShort[];
+  categoris: Category[];
+  types: CourseType[];
 };
 // dymmy data for ui till handle working with api
-const Index: React.FC<Props> = ({ courses }) => {
+const Index: React.FC<Props> = ({ courses, categoris, types }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -25,7 +29,7 @@ const Index: React.FC<Props> = ({ courses }) => {
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <MainPageEn courses={courses} />
+            <MainPageEn courses={courses} types={types} categoris={categoris} />
             <Footer />
           </main>
         ) : (
@@ -41,9 +45,13 @@ const Index: React.FC<Props> = ({ courses }) => {
 };
 export const getStaticProps = async () => {
   const courses = await fetchCourses();
+  const types = await fetchTypes();
+  const categories = await fetchCoursesCategories();
   return {
     props: {
       courses,
+      types,
+      categories
     },
   };
 };

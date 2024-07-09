@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
-const Types = () => {
+import { CourseType } from '../../types'
+type Props = {
+    types: CourseType[];
+}
+const Types: React.FC<Props> = ({ types }) => {
     return (
         <div>
             <div className="filter accordion--open list-reset mb-2 | lg:mb-6 dropdown">
@@ -15,27 +19,15 @@ const Types = () => {
                 </button>
 
                 <ul className="facets hidden dropdown-menu">
-                    <li className="">
-                        <Link
-                            href="/coursess/foundation"
-                            className="dropdown-item block w-full text-sm  truncate accordion__header--open">
-                            Foundation
-                        </Link>
-                    </li>
-                    <li className="">
-                        <Link
-                            href="/coursess/practitioner"
-                            className="dropdown-item block w-full text-sm  truncate accordion__header--open">
-                            Practitioner
-                        </Link>
-                    </li>
-                    <li className="">
-                        <Link
-                            href="/coursess/professional"
-                            className="dropdown-item block w-full text-sm  truncate accordion__header--open">
-                            Professional
-                        </Link>
-                    </li>
+                    {types.map((type) => (
+                        <li className="">
+                            <Link
+                                href="/courses/foundation"
+                                className="dropdown-item block w-full text-sm  truncate accordion__header--open">
+                                {type.name}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
