@@ -8,9 +8,16 @@ import Footer from '../../components/Footer';
 import FooterAr from '../../components/FooterAr';
 import CourseEn from '../../components/Courses/CourseEn';
 import CourseAr from '../../components/Courses/CourseAr';
-type Props = {};
+import { CourseShort, Course } from '../../types';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { fetchCourses, fetchCourseById } from '../../lib/fetchCourses';
+type Props = {
+  course: Course;
+  courses: CourseShort[];
+};
+
 // dymmy data for ui till handle working with api
-const Contactus = (props: Props) => {
+const Contactus: React.FC<Props> = ({ course, courses }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -27,7 +34,7 @@ const Contactus = (props: Props) => {
         ) : (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <CourseAr />
+            <CourseAr course={course} courses={courses} />
             <FooterAr />
           </main>
         )}
@@ -35,5 +42,23 @@ const Contactus = (props: Props) => {
     </>
   );
 };
+export const getStaticPaths: GetStaticPaths = async () => {
+  const courses = await fetchCourses();
+  const paths = courses.map((course) => ({
+    params: { id: course.id },
+  }));
+  return { paths, fallback: false };
+};
 
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const { id } = params as { id: string };
+  const course = await fetchCourseById(id);
+  const courses = await fetchCourses();
+  return {
+    props: {
+      course,
+      courses,
+    },
+  };
+};
 export default Contactus;

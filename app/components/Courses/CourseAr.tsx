@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
+import { CourseShort, Course } from '../../types';
 
-const CourseAr = () => {
+type Props = {
+  course: Course;
+  courses: CourseShort[];
+};
+
+const CourseAr: React.FC<Props> = ({ course, courses }) => {
   return (
     <>
       <div className="max-w-content mx-auto px-4 | lg:px-12" dir="rtl">
