@@ -17286,3 +17286,6 @@ select:focus {
 .slick-next {
   display: none !important; /* Hide the arrows */
 }
+.price-img{
+  display: inline !important;
+}
