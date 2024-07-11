@@ -35,24 +35,23 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
             </li>
             <li className="text-sm  lg:inline-block align-middle">
               <Link
-                href="/courses/quality"
+                href={`${course.category.name}`}
                 className="lg:hover:underline align-middle inline-block">
-                <span className="inline-block  align-middle | lg:ml-0 text-black">
-                  Quality
+                <span className="inline-block align-middle | lg:ml-0 text-black">
+                  {course.category.name}
                 </span>
               </Link>
               <span className="me-1 ms-1 hidden lg:inline-block align-middle">
                 /
               </span>
             </li>
-            <li className="text-sm hidden   lg:inline-block align-middle">
-              <span className="disabled  lg:inline-block inline-block align-middle">
-                ISO 9001:2015 Lead Auditor
+            <li className="text-sm hidden lg:inline-block align-middle">
+              <span className="disabled lg:inline-block inline-block align-middle">
+                {course.c_title}
               </span>
             </li>
           </ul>
         </div>
-
         <div className="max-w-content | lg:px-12 lg:pb-8">
           <div className="pb-4 | lg:pb-12 ">
             <div className="w-full grid grid-cols-1 gap-4 | md:grid-cols-12 md:gap-8 lg:gap-16">
@@ -101,12 +100,9 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                         </span>
                       </b>
                     </h1>
-                    This&nbsp;intensive ISO&nbsp;9001 lead auditor course, is a
-                    challenging and highly interactive CQI and IRCA certified
-                    training program is for those people who require an in-depth
-                    understanding of the range of auditing techniques and
-                    protocols associated with the Lead Auditor role.
-                    <div style={{ height: '22px' }}></div>
+                    {course.c_intro_ar.map((i) => (
+                      <p> {i.text} </p>
+                    ))}
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
@@ -116,99 +112,64 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                         </span>
                       </b>
                     </h1>
-                    5 Days, 08.30 – 17.30 (days 1-3) 08.30 – 17.45 (day 4) 08.30
-                    – 16.15 (day 5)<div style={{ height: '22px' }}></div>
+                    {course.c_duration_ar}
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          Who should attend?
+                          من يجب ان يحضر الدورة
                         </span>
                       </b>
                     </h1>
                     <p>
-                      Those attending this course are expected to have knowledge
-                      of the following:
+                      ومن المتوقع أن يكون لدى المشاركين في هذه الدورة المعرفة
+                      من التالي:
                     </p>
                     <ul>
-                      <li>Quality management principles and concepts:</li>
-                      <li>The Plan, Do, Check, Act (PDCA) cycle</li>
-                      <li>
-                        The relationship between quality management and customer
-                        satisfaction
-                      </li>
-                      <li>
-                        Quality management terms and definitions and the 7
-                        Quality Management Principles
-                      </li>
-                      <li>The process approach used in quality management</li>
-                      <li>Process Based Quality Management Systems</li>
-                      <li>
-                        The structure, content and requirements of ISO 9001
-                      </li>
+                      {course.c_who_should_ar.map((i) => (
+                        <li>
+                          <p className='me-1'>{i.text}</p>
+                        </li>
+                      ))}
                     </ul>
-                    <p>
-                      <br />
-                      This knowledge can be gained in a number of ways:
-                    </p>
-                    <ul>
-                      <li>Previous experience and existing knowledge</li>
-                      <li>
-                        Attending a CQI and IRCA certified training ISO 9001
-                        Foundation course – or equivalent
-                      </li>
-                      <li>Reading or self-study</li>
-                    </ul>
-                    <p>
-                      <br />
-                      If you would like to attend our CQI and IRCA certified
-                      training registered ISO 9001 Foundation course at a
-                      discounted price to help you prepare for this Lead Auditor
-                      course please contact us.
-                    </p>
-                    <div style={{ height: '22px' }}></div>
+
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          Course objectives
+                          اهداف الدورة
                         </span>
                       </b>
                     </h1>
                     <ul>
-                      <li>To enable you to lead an audit team</li>
-                      <li>
-                        Audit the quality management system of an organisation
-                        to the requirements of ISO 9001:2015.
-                      </li>
+                      {course.c_objective_ar.map((i) => (
+
+                        <li>
+                          <p className='me-1'>{i.text}</p>
+                        </li>
+
+                      ))}
                     </ul>
-                    <div style={{ height: '22px' }}></div>
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          Course content
+                          محتوى الدورة
                         </span>
                       </b>
                     </h1>
                     <ul>
-                      <li>ISO 9001:2015 – evidence required for conformity</li>
-                      <li>
-                        Roles and responsibilities of auditors and lead auditors
-                      </li>
-                      <li>
-                        Processes and techniques for planning, conducting &amp;
-                        reporting audits
-                      </li>
-                      <li>
-                        Audit follow-up activities and auditing for continual
-                        improvement
-                      </li>
+                      {course.c_content_ar.map((i) => (
+
+                        <li>
+                          <p className='me-1'>{i.text}</p>
+                        </li>
+
+                      ))}
                     </ul>
-                    <div style={{ height: '22px' }}></div>
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
@@ -235,7 +196,6 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                     training requirements for those wishing to register as an
                     auditor, lead auditor or principal auditor with the CQI and
                     IRCA Certified training scheme.`}
-                    <div style={{ height: '22px' }}></div>
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
@@ -247,7 +207,6 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                     </h1>
                     Offering better value for money, they can be designed to
                     closely match your specific requirements.
-                    <div style={{ height: '22px' }}></div>
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
@@ -267,7 +226,6 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                     technical, legislative and people challenges that face those
                     with a responsibility for delivering real quality
                     improvements.
-                    <div style={{ height: '22px' }}></div>
                     <h1>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
