@@ -18,7 +18,7 @@ interface FormData {
     gdpr: boolean;
 }
 
-const RegistrationModal: React.FC<Props> = ({ course }) => {
+const RegistrationModalAr: React.FC<Props> = ({ course }) => {
     const [formData, setFormData] = useState<FormData>({
         name: '',
         company: '',
@@ -265,4 +265,4 @@ const RegistrationModal: React.FC<Props> = ({ course }) => {
     );
 };
 
-export default RegistrationModal;
+export default RegistrationModalAr;

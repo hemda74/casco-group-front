@@ -28,13 +28,13 @@ const Contactus: React.FC<Props> = ({ course, courses }) => {
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <CourseAr course={course} courses={courses} />
+            <CourseEn course={course} courses={courses} />
             <Footer />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <CourseEn course={course} courses={courses} />
+            <CourseAr course={course} courses={courses} />
             <FooterAr />
           </main>
         )}

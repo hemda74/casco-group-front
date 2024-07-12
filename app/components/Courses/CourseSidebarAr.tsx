@@ -1,13 +1,13 @@
 import React from 'react';
 import { Course, CourseShort } from '../../types';
 import Link from 'next/link';
-import RegistrationModal from './JoinCourseModal';
+import RegistrationModalAr from './JoinCourseModalAr';
 type Props = {
     course: Course;
     courses: CourseShort[];
 };
 
-const CourseSidebar: React.FC<Props> = ({ course, courses }) => {
+const CourseSidebarAr: React.FC<Props> = ({ course, courses }) => {
     return (
         <div>
             <div className="relative w-full bg-gray-200 rounded-lg p-4 | md:text-left | lg:p-8">
@@ -27,7 +27,7 @@ const CourseSidebar: React.FC<Props> = ({ course, courses }) => {
                                 التسجيل في الدورة
                             </button>
                         </div>
-                        <RegistrationModal course={course} />
+                        <RegistrationModalAr course={course} />
                     </div>
                 </div>
             </div>
@@ -158,4 +158,4 @@ const WhyTrainWithUs: React.FC = () => (
     </div>
 );
 
-export default CourseSidebar;
+export default CourseSidebarAr;
