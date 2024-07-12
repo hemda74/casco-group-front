@@ -16550,10 +16550,6 @@ select:focus {
     padding-right: 3rem;
   }
 
-  .md\:text-left {
-    text-align: left;
-  }
-
   .md\:w-1\/12 {
     width: 8.333333%;
   }
@@ -17286,6 +17282,6 @@ select:focus {
 .slick-next {
   display: none !important; /* Hide the arrows */
 }
-.price-img{
+.price-img {
   display: inline !important;
 }

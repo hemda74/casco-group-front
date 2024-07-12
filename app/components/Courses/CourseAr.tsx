@@ -18,7 +18,7 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                 href="/"
                 className="lg:hover:underline align-middle inline-block">
                 <span className="inline-block ml-3 align-middle | lg:ml-0">
-                  Home
+                  الرئيسية
                 </span>
               </Link>
               <span className="px-1 lg:inline-block align-middle">/</span>
@@ -28,17 +28,17 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                 href="/courses"
                 className="lg:hover:underline align-middle inline-block">
                 <span className="inline-block  align-middle | lg:ml-0">
-                  Courses
+                  الدورات التدريبية
                 </span>
               </Link>
               <span className="me-1 ms-1 lg:inline-block align-middle">/</span>
             </li>
             <li className="text-sm  lg:inline-block align-middle">
               <Link
-                href={`${course.category.name}`}
+                href={`${course.id}`}
                 className="lg:hover:underline align-middle inline-block">
                 <span className="inline-block align-middle | lg:ml-0 text-black">
-                  {course.category.name}
+                  {course.category.name_ar}
                 </span>
               </Link>
               <span className="me-1 ms-1 hidden lg:inline-block align-middle">
@@ -47,7 +47,7 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
             </li>
             <li className="text-sm hidden lg:inline-block align-middle">
               <span className="disabled lg:inline-block inline-block align-middle">
-                {course.c_title}
+                {course.c_title_ar}
               </span>
             </li>
           </ul>
@@ -60,38 +60,17 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                   <div className="w-full bg-gray-200 rounded-lg overflow-hidden mb-4 lg:mb-6">
                     <div className="h-64 relative overflow-hidden">
                       <div className="w-full absolute">
-                        <picture>
-                          <source
-                            media="all"
-                            data-srcSet="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg.webp 1x,https://iqmslearning.co.uk/image-factory/74e6ee9c41134ad75562517cedc40ec0c98041ca~800x500@2x/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg.webp 2x"
-                            type="image/webp"
-                            srcSet="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg.webp 1x,https://iqmslearning.co.uk/image-factory/74e6ee9c41134ad75562517cedc40ec0c98041ca~800x500@2x/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg.webp 2x"
-                          />
-                          <source
-                            media="all"
-                            data-srcSet="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg 1x,https://iqmslearning.co.uk/image-factory/74e6ee9c41134ad75562517cedc40ec0c98041ca~800x500@2x/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg 2x"
-                            srcSet="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg 1x,https://iqmslearning.co.uk/image-factory/74e6ee9c41134ad75562517cedc40ec0c98041ca~800x500@2x/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg 2x"
-                          />
-                          <img
-                            src="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg"
-                            data-src="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg"
-                            data-srcSet="https://iqmslearning.co.uk/image-factory/74e6ee9c41134ad75562517cedc40ec0c98041ca~800x500@2x/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg 2x"
-                            alt=""
-                            className="w-full lazyloaded"
-                            srcSet="https://iqmslearning.co.uk/image-factory/74e6ee9c41134ad75562517cedc40ec0c98041ca~800x500@2x/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg 2x"
-                          />
-                        </picture>
-                        <noscript>
-                          <img
-                            src="https://iqmslearning.co.uk/image-factory/d733a9f582b80626f42db7cbcbc9a3b358bc22be~800x500/images/blocks/3BSwgf23ko4cYqh9YL7qGmDi3oXUKcn3VUsHOM7C.jpeg"
-                            alt=""
-                          />
-                        </noscript>
+
+                        <img
+                          src={course.imageUrl}
+                          alt={course.c_title_ar}
+                          className="w-full lazyloaded"
+                        />
                       </div>
                     </div>
                   </div>
                   <div className="product__description">
-                    <h1>
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
@@ -99,11 +78,11 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                           المقدمة
                         </span>
                       </b>
-                    </h1>
+                    </p>
                     {course.c_intro_ar.map((i) => (
-                      <p> {i.text} </p>
+                      <p key={i.id}> {i.text} </p>
                     ))}
-                    <h1>
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
@@ -111,9 +90,9 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                           المدة
                         </span>
                       </b>
-                    </h1>
+                    </p>
                     {course.c_duration_ar}
-                    <h1>
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
@@ -121,20 +100,18 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                           من يجب ان يحضر الدورة
                         </span>
                       </b>
-                    </h1>
+                    </p>
                     <p>
                       ومن المتوقع أن يكون لدى المشاركين في هذه الدورة المعرفة
                       من التالي:
                     </p>
                     <ul>
                       {course.c_who_should_ar.map((i) => (
-                        <li>
+                        <li key={i.id}>
                           <p className='me-1'>{i.text}</p>
-                        </li>
-                      ))}
+                        </li>))}
                     </ul>
-
-                    <h1>
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
@@ -142,17 +119,16 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                           اهداف الدورة
                         </span>
                       </b>
-                    </h1>
+                    </p>
                     <ul>
                       {course.c_objective_ar.map((i) => (
 
-                        <li>
+                        <li key={i.id}>
                           <p className='me-1'>{i.text}</p>
                         </li>
-
                       ))}
                     </ul>
-                    <h1>
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
@@ -160,183 +136,97 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                           محتوى الدورة
                         </span>
                       </b>
-                    </h1>
+                    </p>
                     <ul>
                       {course.c_content_ar.map((i) => (
 
-                        <li>
+                        <li key={i.id}>
                           <p className='me-1'>{i.text}</p>
                         </li>
-
                       ))}
                     </ul>
-                    <h1>
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          What are the benefits
+                          ما هي المنافع من الدورة
                         </span>
                       </b>
-                    </h1>
-                    {`
-                    The ISO&nbsp;9001 training course is designed not only to
-                    help people perform value-adding quality audits but also to
-                    develop delegates’ wider understanding of quality management
-                    systems design and implementation. In particular, it will
-                    help delegates get to grips with those issues of
-                    ever-increasing importance, such as risk-based thinking,
-                    understanding how internal and external issues are managed
-                    by an effective management system, customer satisfaction,
-                    continual improvement and the management of processes. It
-                    will help delegates understand how these critical issues can
-                    be embedded into the quality management system of an
-                    organisation. Successful completion of the course and the
-                    achievement of the 50% pass mark will satisfy the formal
-                    training requirements for those wishing to register as an
-                    auditor, lead auditor or principal auditor with the CQI and
-                    IRCA Certified training scheme.`}
-                    <h1>
+                    </p>
+                    <ul>
+                      {course.c_benefit_ar.map((i) => (
+
+                        <li key={i.id}>
+                          <p className='me-1'>{i.text}</p>
+                        </li>
+                      ))}
+                    </ul>
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          In-House Courses
+                          الدورات الداخلية
                         </span>
                       </b>
-                    </h1>
-                    Offering better value for money, they can be designed to
-                    closely match your specific requirements.
-                    <h1>
+                    </p>
+                    <p>{course.c_in_house_ar}</p>
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          Style of Delivery and Course Leaders
+                          أسلوب التسليم وقادة الدورة
                         </span>
                       </b>
-                    </h1>
-                    Our course leaders are quality management professionals, as
-                    well as being qualified, registered and experienced
-                    auditors. They have extensive knowledge across a wide range
-                    of sectors including manufacturing, finance,
-                    pharmaceuticals, local and national government. They have
-                    all cut their teeth as successful change agents within high
-                    profile organisations, and fully understand the range of
-                    technical, legislative and people challenges that face those
-                    with a responsibility for delivering real quality
-                    improvements.
-                    <h1>
+                    </p>
+                    {course.c_delv_and_leaders_ar}
+                    <p>
                       <b style={{ color: 'rgb(149, 55, 52)' }}>
                         <span
                           className="text-primary-100"
                           style={{ fontSize: '30px' }}>
-                          Certification
+                          شهادة الدورة
                         </span>
                       </b>
-                    </h1>
-                    Delegates successfully completing the course, including
-                    examination, will be awarded a CQI and IRCA Certified
-                    training accredited certificate. (2352).
+                    </p>
+                    <ul>
+                      {course.c_content2_ar.map((i) => (
+
+                        <li key={i.id}>
+                          <p className='me-1'>{i.text}</p>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
               <div className="md:col-span-6 | lg:col-start-9 lg:col-span-4">
                 <div className="relative w-full bg-gray-200 rounded-lg p-4 | md:text-left | lg:p-8">
-                  <h1 className="text-xl font-bold mb-1 | lg:text-2xl text-end">
-                    ISO 9001:2015 Lead Auditor
-                  </h1>
-                  <div className="w-1/2 blend-multiply py-4">
-                    <picture>
-                      <source
-                        data-srcSet="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg.webp 1x,https://iqmslearning.co.uk/image-factory/83edfab644648a1927e570f1e2a85da25c8254ad~175x58.5@2x/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg.webp 2x"
-                        type="image/webp"
-                        srcSet="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg.webp 1x,https://iqmslearning.co.uk/image-factory/83edfab644648a1927e570f1e2a85da25c8254ad~175x58.5@2x/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg.webp 2x"
-                      />
-                      <img
-                        src="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg"
-                        data-src="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg"
-                        data-srcSet="https://iqmslearning.co.uk/image-factory/83edfab644648a1927e570f1e2a85da25c8254ad~175x58.5@2x/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg 2x"
-                        alt="CQI-IRCA Certified Courses"
-                        className="w-full ls-is-cached lazyloaded"
-                        srcSet="https://iqmslearning.co.uk/image-factory/83edfab644648a1927e570f1e2a85da25c8254ad~175x58.5@2x/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg 2x"
-                      />
-                    </picture>
-                    <noscript>
-                      <img
-                        src="https://iqmslearning.co.uk/image-factory/aa3ff33a11d9588d4a5abc7441bb302b6a21cc16~175x58.5/images/pages/ngDbeBtW4FsL2KrowBKarKHnFIRnDEbCWW2N0b7c.jpeg"
-                        alt="CQI-IRCA Certified Courses"
-                      />
-                    </noscript>
-                  </div>
-                  <div className="text-xl text-primary-100 | lg:text-2xl text-end">
-                    <div>
-                      <span className="font-bold">£1,445.00</span>
-                      <span className="ml-2">ex vat</span>
-                    </div>
-                  </div>
+                  <p className="text-xl text-primary-100  font-bold mb-1 | lg:text-2xl text-end">
+                    {course.c_title_ar}
+                  </p>
 
-                  <div className="w-full xl:w-10/12 mt-6">
-                    <div
-                      id="product-attributes"
-                      className="grid grid-cols-1 gap-4">
-                      <div className="product-attribute text-end">
-                        <div className="text-lg font-bold mb-2">
-                          موعد الكورس:
-                        </div>
-                        <div
-                          className="w-full relative flex items-center justify-start"
-                          dir="rtl">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 250 250"
-                            className="inline-block absolute h-4 w-4 left-0 ml-4 pointer-events-none">
-                            <path d="M241.4 69.7c1.1 1.4 1.6 3 1.6 4.8 0 1.8-.5 3.2-1.6 4.3L129.8 190.9c-1.4 1.1-3 1.6-4.8 1.6s-3.2-.5-4.3-1.6L8.6 78.8C7.5 77.7 7 76.3 7 74.5c0-1.8.5-3.4 1.6-4.8L19.3 59c1.1-1.1 2.5-1.6 4.3-1.6s3.4.5 4.8 1.6l96.6 96.6L221.6 59c1.4-1.1 3-1.6 4.8-1.6s3.2.5 4.3 1.6l10.7 10.7z"></path>
-                          </svg>
-                          <select
-                            id="id-course-date-select"
-                            aria-label="Select Course Date"
-                            className="w-full h-full border border-gray-400 bg-white p-4 pr-12 rounded">
-                            <option value="">اختيار موعد الكورس</option>
-                            <option
-                              data-title="Course Date: 18th-22nd March 2024 - Sunderland"
-                              dante-shedule-id="157491"
-                              value="8727">
-                              18th-22nd March 2024 - Sunderland
-                            </option>
-                            <option
-                              data-title="Course Date: 13th-17th May 2024 - Virtual"
-                              dante-shedule-id="201970"
-                              value="8728">
-                              13th-17th May 2024 - Virtual
-                            </option>
-                            <option
-                              data-title="Course Date: 20th-24th May 2024 - Virtual"
-                              dante-shedule-id="157476"
-                              value="8729">
-                              20th-24th May 2024 - Virtual
-                            </option>
-                            <option
-                              data-title="Course Date: 1st-5th July 2024 - COVENTRY"
-                              dante-shedule-id="157496"
-                              value="8730">
-                              1st-5th July 2024 - COVENTRY
-                            </option>
-                            <option
-                              data-title="Course Date: 16th-20th September 2024 - Virtual"
-                              dante-shedule-id="157481"
-                              value="8731">
-                              16th-20th September 2024 - Virtual
-                            </option>
-                            <option
-                              data-title="Course Date: 11th-15th November 2024 - Sunderland"
-                              dante-shedule-id="157486"
-                              value="8732">
-                              11th-15th November 2024 - Sunderland
-                            </option>
-                          </select>
-                        </div>
-                      </div>
+                  <div className="text-xl | lg:text-2xl text-end">
+                    <div className="text-lg font-bold mb-2 ">
+                      سعر الدورة
+                    </div>
+                    <div className='d-flex justify-content-start mt-2'>
+                      <img src='/eg.png' className='price-img' width={40} />
+                      <span className='me-2 text-bold '>{course.price_egp}EGP</span>
+                    </div>
+                    <div className='d-flex justify-content-start mt-2'>
+                      <img src='/sa.png' className='price-img' width={40} />
+                      <span className='me-2'>{course.price_ksa}SAR</span>
+                    </div>
+                    <div className='d-flex justify-content-start mt-2'>
+                      <img src='/ae.png' className='price-img' width={40} />
+                      <span className='me-2'>{course.price_uae}AED</span>
+                    </div>
+                    <div className='d-flex justify-content-start mt-2'>
+                      <img src='/usa.png' className='price-img' width={40} />
+                      <span className='me-2'>{course.price_usd}USD</span>
                     </div>
                   </div>
                   <div className="w-full xl:w-10/12 mt-6 | lg:mt-8">
@@ -347,21 +237,22 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                           className="btn block p-5 fs-6 rounded-lg mt-2  uppercase font-light tracking-wide text-center bg-gray myPrimary cursor-pointer  lg:mt-8 "
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal">
-                          Join Course
+                          التسجيل في الدورة
                         </button>
                       </div>
                       <div
                         className=" modal  fade contact w-screen  fixed inset-0 mx-auto align-center scrolling-touch overflow-y-auto | lg:h-screen lg:px-8"
                         id="exampleModal"
+                        dir='rtl'
                         tabIndex={-1}
                         aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div className="modal-dialog">
                           <div className="">
                             <div className="modal-content w-full h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
-                              <div className="relative bg-white p-8 pb-32 lg:p-12 lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg lg:mx-auto">
+                              <div className="relative bg-white p-8 pb-32 lg:p-12 lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg ">
                                 <div className="absolute top-0 right-0 m-4 mb-5 cursor-pointer">
-                                  {' '}
+
                                   <button
                                     type="button"
                                     className="btn-close m-end"
@@ -373,43 +264,27 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                                   <div className="block col-span-10 xl:col-span-4">
                                     <div className="pl-8 border-l-2 border-primary-100">
                                       <h5 className="text-xl text-primary-100 font-bold">
-                                        لقد اخترت :{' '}
+                                        لقد اخترت :
                                       </h5>
                                       <span className="block mt-2">
-                                        ISO 9001:2015 Lead Auditor
+                                        {course.c_title_ar}
                                       </span>
                                     </div>
                                   </div>
 
-                                  <div className="col-span-10 xl:col-span-6">
+                                  <div className="col-span-10 xl:col-span-6" dir='rtl'>
                                     <form
-                                      action="https://iqmslearning.co.uk/form/enquire"
-                                      method="post"
+                                      dir='rtl'
                                       className="grid grid-cols-1 gap-8 | xl:grid-cols-2 lg:gap-4">
-                                      <input
-                                        type="hidden"
-                                        name="_token"
-                                        value="ORYOVSqLIOqOb3enWTQC4Tqz423G1hV2fNqK61Qu"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="Course"
-                                        value="ISO 9001:2015 Lead Auditor"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="Candidates"
-                                        value="1"
-                                      />
                                       <div>
-                                        <label htmlFor="" className="">
+                                        <label className="text-end">
                                           الاسم:
                                         </label>
                                         <input
                                           id=""
                                           name="name"
                                           type="text"
-                                          placeholder="John Doe"
+                                          placeholder="Your Name"
                                           value=""
                                           required
                                           className="w-full block border rounded py-3 px-4 bg-gray-200"
@@ -418,14 +293,14 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                                       <div>
                                         <label
                                           htmlFor="company-input"
-                                          className="hidden lg:block text-sm mb-2 font-medium">
-                                          Company Name:
+                                          className="">
+                                          اسم الشركة :
                                         </label>
                                         <input
                                           id="company-input"
                                           name="company"
                                           type="text"
-                                          placeholder="Your company (optional)"
+                                          placeholder="Your company (اختياري)"
                                           value=""
                                           className="w-full block border rounded py-3 px-4 bg-gray-200"
                                         />
@@ -433,8 +308,8 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                                       <div className="xl:col-span-2">
                                         <label
                                           htmlFor="address-input"
-                                          className="hidden lg:block text-sm mb-2 font-medium">
-                                          Address:
+                                          className="">
+                                          العنوان:
                                         </label>
                                         <input
                                           id="address-input"
@@ -448,8 +323,9 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                                       <div>
                                         <label
                                           htmlFor="tel-input"
-                                          className="hidden lg:block text-sm mb-2 font-medium">
-                                          Tel Number:
+
+                                          className="">
+                                          الهاتف:
                                         </label>
                                         <input
                                           id="tel-input"
@@ -464,8 +340,8 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                                       <div>
                                         <label
                                           htmlFor="email-input"
-                                          className="hidden lg:block text-sm mb-2 font-medium">
-                                          Email Address:
+                                          className="">
+                                          الايميل:
                                         </label>
                                         <input
                                           id="email-input"
@@ -477,63 +353,45 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                                           className="w-full block border rounded py-3 px-4 bg-gray-200"
                                         />
                                       </div>
-                                      <div className="xl:col-span-2">
-                                        <label
-                                          htmlFor="enquiry-input"
-                                          className="hidden lg:block text-sm mb-2 font-medium">
-                                          Enquiry:
-                                        </label>
-                                        <input
-                                          id="enquiry-input"
-                                          name="enquiry"
-                                          type="text"
-                                          placeholder="Your enquiry"
-                                          value=""
-                                          required
-                                          className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                        />
-                                      </div>
+
                                       <div className="xl:col-span-2">
                                         <label
                                           htmlFor="wheredidyou-input"
-                                          className="hidden lg:block text-sm mb-2 font-medium">
-                                          Where did you hear about us?:
-                                        </label>
+                                          className="">
+                                          مين اين عرفت كاسكو؟                                        </label>
                                         <select
                                           id="wheredidyou-input"
                                           name="Where_did_you_hear_about_us"
                                           required
                                           className="w-full block border rounded py-3 px-4 bg-gray-200">
                                           <option value="">
-                                            select an option
+                                            اختر من التالى
                                           </option>
                                           <option value="I have used iqms Learning before">
-                                            I have used CASCO Learning before
-                                          </option>
+                                            لقد استخدمت CASCO Learning من قبل                                          </option>
                                           <option value="Google Search">
-                                            Google Search
+                                            بحث جوجل
                                           </option>
                                           <option value="LinkedIn">
-                                            LinkedIn
+                                            لينكدان
                                           </option>
                                           <option value="Facebook">
-                                            Facebook
+                                            فيسبوك
                                           </option>
                                           <option value="Twitter">
-                                            Twitter
+                                            تويتر
                                           </option>
                                           <option value="Awarding Body">
-                                            Awarding Body
+                                            الهيئة المانحة
                                           </option>
                                           <option
-                                            value="Colleague or Friend
-">
-                                            Colleague or Friend
+                                            value="Colleague or Friend">
+                                            زميل او صديق
                                           </option>
                                           <option
                                             value="Other
 ">
-                                            Other
+                                            اخرى
                                           </option>
                                         </select>
                                       </div>
@@ -551,58 +409,24 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                                             htmlFor="documentation_checkbox"
                                             className="ml-2">
                                             <span className="block font-medium text-sm leading-5 text-gray-700">
-                                              {`  Please keep me up to date with CASCO
-                                          Learning’s news and special offers`}
-                                              (optional)
+                                              {` يرجى إطلاعي على آخر المستجدات مع CASCO أخبار التعلم والعروض الخاصة`}
+                                              (اختياري)
                                             </span>
                                           </label>
-                                        </div>
-                                      </div>
-                                      <div className="flex items-center">
-                                        <div
-                                          data-sitekey="6LfR78gZAAAAAFdtTqrlIZ-S0O-Ff4dPc0seOjxr"
-                                          data-size="normal"
-                                          data-theme="light"
-                                          id="recaptcha-element"
-                                          className="g-recaptcha">
-                                          <div
-                                            style={{
-                                              width: '304px',
-                                              height: '78px',
-                                            }}>
-                                            {/* <textarea
-                                              id="g-recaptcha-response"
-                                              name="g-recaptcha-response"
-                                              className="g-recaptcha-response"
-                                              style={{
-                                                width: '250px',
-                                                height: '40px',
-                                                border:
-                                                  '1px solid rgb(193, 193, 193)',
-                                                margin: '10px 25px',
-                                                padding: '0px',
-                                                resize: 'none',
-                                                display: 'none',
-                                              }}></textarea> */}
-                                          </div>
-                                          {/* <iframe
-                                            style={{
-                                              display: 'none',
-                                            }}></iframe> */}
                                         </div>
                                       </div>
                                       <div className="flex items-center">
                                         <button
                                           type="submit"
                                           className="w-full block p-4 rounded-lg  text-white fs-4  text-center myPrimary cursor-pointer text-lg">
-                                          Submit Request
+                                          تسجيل الطلب
                                         </button>
                                       </div>
                                       <div className="xl:col-span-2">
                                         <span className="block w-full text-xs text-center mt-3">
-                                          {` *By submitting this form and clicking
-                                      submit you are accepting CASCO Learning’s
-                                      privacy policy`}
+                                          {` * عن طريق إرسال هذا النموذج والنقر عليه
+ أرسل أنك تقبل CASCO Learning
+ سياسة الخصوصية`}
                                         </span>
                                       </div>
                                     </form>
@@ -619,24 +443,24 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                 </div>
                 <div className="relative w-full border border-gray-400 rounded-lg mt-8 p-4 | md:text-left | lg:p-8 text-end">
                   <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
-                    Dates and Venues
+                    التواريخ والأماكن
                   </h3>
                   <div className="flex items-center mt-4">
                     <div className="flex-1 text-sm me-2 text-gray-800">
                       <ul>
-                        <li>18th-22nd March 2024 - Sunderland</li>
-                        <li>13th-17th May 2024 - Virtual</li>
-                        <li>20th-24th May 2024 - Virtual</li>
-                        <li>1st-5th July 2024 - COVENTRY</li>
-                        <li>16th-20th September 2024 - Virtual</li>
-                        <li>11th-15th November 2024 - Sunderland</li>
+                        {course.c_date_ar.map((i) => (
+
+                          <li key={i.id}>
+                            <p className='me-1'>{i.text}</p>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div className="text-end  relative w-full border border-gray-400 rounded-lg mt-8 p-4 | md:text-left | lg:p-8 ">
                   <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
-                    Why train with CASCO
+                    لماذا التدرب مع كاسكو
                   </h3>
                   <div className="flex items-center mt-4">
                     <svg
@@ -661,14 +485,13 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                       data-icon="check-circle"
                       data-prefix="fas"
                       viewBox="0 0 512 512"
-                      className="h-6 w-6 text-gray-600 mr-2">
+                      className="h-6 w-6  mr-2">
                       <path
                         fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                     </svg>
                     <div className="flex-1 text-sm me-2 text-gray-800">
-                      Flexible training options: classroom, in-house, and online
-                    </div>
+                      خيارات تدريب مرنة: الفصول الدراسية، وداخل الشركة، وعبر الإنترنت                    </div>
                   </div>
                   <div className="flex items-center mt-4">
                     <svg
@@ -683,8 +506,7 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                     </svg>
                     <div className="flex-1 text-sm me-2 text-gray-800">
-                      Learn from top auditing and quality practitioners
-                    </div>
+                      تعلم من كبار ممارسي التدقيق والجودة                    </div>
                   </div>
                   <div className="flex items-center mt-4">
                     <svg
@@ -699,48 +521,22 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                     </svg>
                     <div className="flex-1 text-sm me-2 text-gray-800">
-                      Internationally accredited courses
+                      الدورات المعتمدة دوليا
                     </div>
                   </div>
                 </div>
                 <div className="relative w-full bg-gray-200 rounded-lg p-4 mt-8 | md:text-left | lg:p-8 text-end">
                   <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
-                    Other courses you may be interested in
-                  </h3>
-                  <Link
-                    href="/courses/iso-90012015-foundation-1"
-                    className="block">
-                    <span className="ml-2">›</span>
-                    <span className="underline">ISO 9001:2015 Foundation</span>
-                  </Link>
-                  <Link
-                    href="/courses/iso-90012015-internal-auditor-3"
-                    className="block mt-2">
-                    <span className="ml-2">›</span>
-                    <span className="underline">
-                      ISO 9001:2015 Internal Auditor
-                    </span>
-                  </Link>
-                  <Link
-                    href="/courses/ims-auditor-qualityenvironment-18"
-                    className="block mt-2">
-                    <span className="ml-2">›</span>
-                    <span className="underline">
-                      IMS Auditor (Quality/Environment)
-                    </span>
-                  </Link>
-                  <Link
-                    href="/courses/ims-auditor-qhse-19"
-                    className="block mt-2">
-                    <span className="ml-2">›</span>
-                    <span className="underline">IMS Auditor (QHSE)</span>
-                  </Link>
-                  <Link
-                    href="/courses/design-build-a-qms-20"
-                    className="block mt-2">
-                    <span className="ml-2">›</span>
-                    <span className="underline">Design &amp; Build a QMS</span>
-                  </Link>
+                    دورات أخرى قد تكون مهتم بها                  </h3>
+                  {courses.map((c) => (
+                    <Link
+                      href={`/courses/${c.id}`}
+                      className="block">
+                      <span className="ml-2">›</span>
+                      <span className="underline">{c.c_title_ar}</span>
+                    </Link>
+                  ))}
+
                 </div>
               </div>
             </div>
