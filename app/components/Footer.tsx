@@ -79,7 +79,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer">
                 <BsLinkedin size={20} />
-              </a>{' '}
+              </a>
             </div>
           </div>
         </div>
@@ -96,10 +96,10 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-md-5 text-right">
-            {' '}
+
             <Link className="" href="https://portoflio-drab.vercel.app/">
-              Web Development by{' '}
-            </Link>{' '}
+              Web Development by
+            </Link>
             <Link
               className=""
               href="https://portoflio-drab.vercel.app/"

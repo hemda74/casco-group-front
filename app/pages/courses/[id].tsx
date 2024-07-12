@@ -28,13 +28,13 @@ const Contactus: React.FC<Props> = ({ course, courses }) => {
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <CourseEn />
+            <CourseAr course={course} courses={courses} />
             <Footer />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <CourseAr course={course} courses={courses} />
+            <CourseEn course={course} courses={courses} />
             <FooterAr />
           </main>
         )}
@@ -49,7 +49,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }));
   return { paths, fallback: false };
 };
-
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
   const course = await fetchCourseById(id);

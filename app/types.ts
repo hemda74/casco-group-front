@@ -165,10 +165,10 @@ export interface Course {
   categoryId: string;
   c_title: string;
   c_title_ar: string;
-  price_egp: string;
-  price_uae: string;
-  price_ksa: string;
-  price_usd: string;
+  price_egp: number;
+  price_uae: number;
+  price_ksa: number;
+  price_usd: number;
   c_short_intro_en: string;
   c_short_intro_ar: string;
   c_duration_en: string;
