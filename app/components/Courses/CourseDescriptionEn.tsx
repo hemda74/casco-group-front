@@ -20,50 +20,56 @@ const CourseDescriptionEn: React.FC<Props> = ({ course }) => {
                 </div>
             </div>
             <div className="product__description">
-                <Section title="المقدمة">
+                <Section title="Introduction">
                     {course.c_intro_en.map((i) => (
-                        <p key={i.id}>{i.text}</p>
+                        <p className='ms-2' key={i.id}>{i.text}</p>
                     ))}
                 </Section>
-                <Section title="المدة">
-                    <p>{course.c_duration_en}</p>
+                <Section title="Duration
+">
+                    <p className='ms-2'>{course.c_duration_en}</p>
                 </Section>
-                <Section title="من يجب ان يحضر الدورة">
-                    <p>ومن المتوقع أن يكون لدى المشاركين في هذه الدورة المعرفة من التالي:</p>
+                <Section title="Who should attend?
+">
                     <ul>
                         {course.c_who_should_en.map((i) => (
                             <li key={i.id}><p className='me-1'>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
-                <Section title="اهداف الدورة">
+                <Section title="Course objectives
+">
                     <ul>
                         {course.c_objective_en.map((i) => (
                             <li key={i.id}><p className='me-1'>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
-                <Section title="محتوى الدورة">
+                <Section title="Course content
+">
                     <ul>
                         {course.c_content_en.map((i) => (
                             <li key={i.id}><p className='me-1'>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
-                <Section title="ما هي المنافع من الدورة">
+                <Section title="What are the benefits
+">
                     <ul>
                         {course.c_benefit_en.map((i) => (
                             <li key={i.id}><p className='me-1'>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
-                <Section title="الدورات الداخلية">
-                    <p>{course.c_in_house_en}</p>
+                <Section title="In-House Courses
+">
+                    <p className='ms-2'>{course.c_in_house_en}</p>
                 </Section>
-                <Section title="أسلوب التسليم وقادة الدورة">
-                    <p>{course.c_delv_and_leaders_en}</p>
+                <Section title="Style of Delivery and Course Leaders
+">
+                    <p className='ms-2'>{course.c_delv_and_leaders_en}</p>
                 </Section>
-                <Section title="شهادة الدورة">
+                <Section title="Certification">
                     <ul>
                         {course.c_content2_en.map((i) => (
                             <li key={i.id}><p className='me-1'>{i.text}</p></li>

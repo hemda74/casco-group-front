@@ -22,14 +22,13 @@ const CourseDescriptionAr: React.FC<Props> = ({ course }) => {
             <div className="product__description">
                 <Section title="المقدمة">
                     {course.c_intro_ar.map((i) => (
-                        <p key={i.id}>{i.text}</p>
+                        <p className='me-2' key={i.id}>{i.text}</p>
                     ))}
                 </Section>
                 <Section title="المدة">
-                    <p>{course.c_duration_ar}</p>
+                    <p className='me-2'>{course.c_duration_ar}</p>
                 </Section>
                 <Section title="من يجب ان يحضر الدورة">
-                    <p>ومن المتوقع أن يكون لدى المشاركين في هذه الدورة المعرفة من التالي:</p>
                     <ul>
                         {course.c_who_should_ar.map((i) => (
                             <li key={i.id}><p className='me-1'>{i.text}</p></li>
@@ -58,10 +57,10 @@ const CourseDescriptionAr: React.FC<Props> = ({ course }) => {
                     </ul>
                 </Section>
                 <Section title="الدورات الداخلية">
-                    <p>{course.c_in_house_ar}</p>
+                    <p className='me-2'>{course.c_in_house_ar}</p>
                 </Section>
                 <Section title="أسلوب التسليم وقادة الدورة">
-                    <p>{course.c_delv_and_leaders_ar}</p>
+                    <p className='me-2'>{course.c_delv_and_leaders_ar}</p>
                 </Section>
                 <Section title="شهادة الدورة">
                     <ul>
@@ -77,7 +76,7 @@ const CourseDescriptionAr: React.FC<Props> = ({ course }) => {
 
 const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
     <>
-        <p>
+        <p className=''>
             <b style={{ color: 'rgb(149, 55, 52)' }}>
                 <span className="text-primary-100" style={{ fontSize: '30px' }}>
                     {title}

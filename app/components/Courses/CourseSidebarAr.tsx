@@ -53,7 +53,7 @@ const CourseSidebarAr: React.FC<Props> = ({ course, courses }) => {
 
 const CoursePrice: React.FC<{ course: Course }> = ({ course }) => (
     <div className="text-xl | lg:text-2xl text-end">
-        <div className="text-lg font-bold mb-2">سعر الدورة</div>
+        <div className="     font-bold mb-2">سعر الدورة</div>
         <PriceItem country="eg" price={course.price_egp} currency="EGP" />
         <PriceItem country="sa" price={course.price_ksa} currency="SAR" />
         <PriceItem country="ae" price={course.price_uae} currency="AED" />
