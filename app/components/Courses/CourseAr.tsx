@@ -531,6 +531,7 @@ const CourseAr: React.FC<Props> = ({ course, courses }) => {
                   {courses.map((c) => (
                     <Link
                       href={`/courses/${c.id}`}
+                      key={c.id}
                       className="block">
                       <span className="ml-2">›</span>
                       <span className="underline">{c.c_title_ar}</span>
