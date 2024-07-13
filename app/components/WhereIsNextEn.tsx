@@ -11,7 +11,7 @@ const WhereIsNextEn = () => {
         <div className="container">
           <div className="row small-gutters pad-40-vert">
             <div className="col-md-4">
-              <Link href="news-insights/">
+              <Link href="/news-insights/">
                 <div className="card card--image red-3-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
