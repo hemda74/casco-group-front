@@ -18,9 +18,7 @@ const Footer = () => {
         <div className="row mb-5">
           <div className="col-md-3">
             <Image alt="casco logo" src={logo} width={200} height={100} />
-            <form action="/" id="searchform" method="get">
-              <input type="search" id="s" name="s" placeholder="Search..." />
-            </form>
+
           </div>
           <div className="col-md-4 offset-md-2">
             <div className="heading">Quick links</div>
@@ -87,7 +85,7 @@ const Footer = () => {
           <div className="col-md-7 from-sky-600">
             <Link href="/"> © CASCO Co 2024</Link>
 
-            <ul id="menu-privacy" className="">
+            <ul id="menu-privacy" className="m-0">
               <li id="" className="">
                 <Link href="/privacy-policy/" className="">
                   Privacy Policy
@@ -101,7 +99,7 @@ const Footer = () => {
               Web Development by
             </Link>
             <Link
-              className=""
+              className="ms-1"
               href="https://portoflio-drab.vercel.app/"
               target="_blank"
               rel="noreferrer">

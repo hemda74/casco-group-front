@@ -18,15 +18,7 @@ const FooterAr = () => {
         <div className="row mb-5">
           <div className="col-md-3 offset-md-2">
             <Image alt="casco logo" src={logo} width={200} height={100} />
-            <form action="/" id="searchform" method="get">
-              <input
-                type="search"
-                id="s"
-                name="s"
-                value=""
-                placeholder="بحث ..."
-              />
-            </form>
+
           </div>
           <div className="col-md-4 ">
             <div className="heading">روابط سريعة</div>
@@ -92,7 +84,7 @@ const FooterAr = () => {
         <div className="row copyright-footer no-gutters">
           <div className="col-md-7  from-sky-600">
             © كاسكو 2024
-            <ul id="menu-privacy" className="">
+            <ul id="menu-privacy" className="m-1">
               <li
                 id="menu-item-4272"
                 className="menu-item menu-item-type-post_type menu-item-object-page">
@@ -107,7 +99,7 @@ const FooterAr = () => {
               تم التطوير بواسطة
             </Link>
             <Link
-              className="me-2"
+              className="me-1"
               href="https://portoflio-drab.vercel.app/"
               target="_blank"
               rel="noreferrer">
