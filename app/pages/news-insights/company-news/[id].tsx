@@ -10,11 +10,11 @@ import ViewerLayout from '../../../layouts/ViewerLayout';
 import SingleNewsAr from '../../../components/News&Insghits/SingleNewsAr';
 import SingleNewsEn from '../../../components/News&Insghits/SingleNewsEn';
 import { fetchNews, fetchNewsById } from '../../../lib/fetchNews';
-import { Event } from '../../../types';
+import { News } from '../../../types';
 
 type Props = {
-  news: Event;
-  newss: Event[];
+  news: News;
+  newss: News[];
 };
 
 const SinglenewsPage: NextPageWithLayout<Props> = ({ news, newss }) => {

@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
-import { Event } from '../../types';
+import { News } from '../../types';
 type Props = {
-  news: Event;
-  newss: Event[];
+  news: News;
+  newss: News[];
 };
 
 const SingleEventEn: React.FC<Props> = ({ news, newss }) => {
-  const [firstEvent, ...restEvents] = news.paragraph_event;
+  const [firstEvent, ...restEvents] = news.paragraph_news;
   const firstThreeEvents = newss.slice(0, 3);
 
   return (
@@ -20,8 +20,8 @@ const SingleEventEn: React.FC<Props> = ({ news, newss }) => {
               <div className="row justify-content-center">
                 <div className="col-lg-10 banner__white-overlay">
                   <div className="post-meta off-screen off-screen--rotate-up">
-                    <span>Event</span>
-                    <span>{news.date_of_event}</span>
+                    <span>News</span>
+                    <span>{news.date_of_news}</span>
 
                   </div>
                   <h1 className="title title--lg title--bold off-screen off-screen--rotate-up">
@@ -54,14 +54,14 @@ const SingleEventEn: React.FC<Props> = ({ news, newss }) => {
         </div>
         <section className="pad-100-vert off-screen off-screen--fade-up">
           <h2 className="title title--lg red-1-color text-center color-red-1">
-            More Events          </h2>
+            More News          </h2>
           <div className="container">
             <div className="row small-gutters pad-40-vert">
               {firstThreeEvents.map((h) => (
                 <div className="col-md-4" key={h.id}>
                   <Link href={`/news-insights/events/${h.id}/`}>
                     <div className="card  red-2-background card--fixed-sm ">
-                      <div className="card__category">Event </div>
+                      <div className="card__category">News</div>
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
@@ -78,9 +78,9 @@ const SingleEventEn: React.FC<Props> = ({ news, newss }) => {
           </div>
           <div className="text-center">
             <Link
-              href="/news-insights/events/"
+              href="/news-insights/news/"
               className="line-link red-3-color">
-              <span className="red-3-color">Back to all Events</span>
+              <span className="red-3-color">Back to all News</span>
             </Link>
           </div>
         </section>

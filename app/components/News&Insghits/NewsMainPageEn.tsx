@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { Event } from '../../types';
+import { News } from '../../types';
 type Props = {
-  newss: Event[]
+  newss: News[]
 }
 const NewsMainPageEn: React.FC<Props> = ({ newss }) => {
   return (

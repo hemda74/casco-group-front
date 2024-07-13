@@ -5,12 +5,12 @@ import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
 import { NextPageWithLayout } from '../../_app';
 import ViewerLayout from '../../../layouts/ViewerLayout';
-import { Event } from '../../../types';
+import { News } from '../../../types';
 import { fetchNews } from '../../../lib/fetchNews';
 import NewsMainPageEn from '../../../components/News&Insghits/NewsMainPageEn';
 import NewsMainPageAr from '../../../components/News&Insghits/NewsMainPageAr';
 type Props = {
-  newss: Event[]
+  newss: News[]
 };
 const Contactus: NextPageWithLayout<Props> = ({ newss }) => {
   const { language } = useLanguage();
