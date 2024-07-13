@@ -8,7 +8,7 @@ type Props = {
   events: Event[];
 };
 
-const SingleEventEn: React.FC<Props> = ({ event, events }) => {
+const SingleEventAr: React.FC<Props> = ({ event, events }) => {
   const [firstEvent, ...restEvents] = event.paragraph_event_ar;
   const firstThreeEvents = events.slice(0, 3);
 
@@ -89,4 +89,4 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
   );
 };
 
-export default SingleEventEn;
+export default SingleEventAr;

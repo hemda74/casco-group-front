@@ -17,7 +17,7 @@ const Contactus: NextPageWithLayout<Props> = ({ events }) => {
   return (
     <>
       <Head>
-        <title>Services | CASCO</title>
+        <title>White Papaers | CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (

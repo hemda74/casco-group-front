@@ -3,30 +3,30 @@ import Head from 'next/head';
 import { useLanguage } from '../../../Context/LanguageContext';
 import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
-import EventsEn from '../../../components/News&Insghits/EventsEn';
-import EventsAr from '../../../components/News&Insghits/EventsAr';
 import { NextPageWithLayout } from '../../_app';
 import ViewerLayout from '../../../layouts/ViewerLayout';
 import { Event } from '../../../types';
-import { fetchEvents } from '../../../lib/fetchEvents';
+import { fetchNews } from '../../../lib/fetchNews';
+import NewsMainPageEn from '../../../components/News&Insghits/NewsMainPageEn';
+import NewsMainPageAr from '../../../components/News&Insghits/NewsMainPageAr';
 type Props = {
-  events: Event[]
+  newss: Event[]
 };
-const Contactus: NextPageWithLayout<Props> = ({ events }) => {
+const Contactus: NextPageWithLayout<Props> = ({ newss }) => {
   const { language } = useLanguage();
   return (
     <>
       <Head>
-        <title>Services | CASCO</title>
+        <title>News | CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
-            <EventsEn events={events} />
+            <NewsMainPageEn newss={newss} />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
-            <EventsAr events={events} />
+            <NewsMainPageAr newss={newss} />
           </main>
         )}
       </Layout>
@@ -34,10 +34,10 @@ const Contactus: NextPageWithLayout<Props> = ({ events }) => {
   );
 };
 export const getStaticProps = async () => {
-  const events = await fetchEvents();
+  const newss = await fetchNews();
   return {
     props: {
-      events,
+      newss,
     },
   };
 };

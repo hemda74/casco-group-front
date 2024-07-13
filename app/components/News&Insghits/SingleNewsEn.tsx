@@ -2,13 +2,13 @@ import Link from 'next/link';
 import React from 'react';
 import { Event } from '../../types';
 type Props = {
-  event: Event;
-  events: Event[];
+  news: Event;
+  newss: Event[];
 };
 
-const SingleEventEn: React.FC<Props> = ({ event, events }) => {
-  const [firstEvent, ...restEvents] = event.paragraph_event;
-  const firstThreeEvents = events.slice(0, 3);
+const SingleEventEn: React.FC<Props> = ({ news, newss }) => {
+  const [firstEvent, ...restEvents] = news.paragraph_event;
+  const firstThreeEvents = newss.slice(0, 3);
 
   return (
     <>
@@ -21,11 +21,11 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
                 <div className="col-lg-10 banner__white-overlay">
                   <div className="post-meta off-screen off-screen--rotate-up">
                     <span>Event</span>
-                    <span>{event.date_of_event}</span>
+                    <span>{news.date_of_event}</span>
 
                   </div>
                   <h1 className="title title--lg title--bold off-screen off-screen--rotate-up">
-                    {event.title}
+                    {news.title}
                   </h1>
                 </div>
               </div>
@@ -40,7 +40,7 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
                   <div className="column">
                     <p><span className="intro text-black">{firstEvent.text}</span></p>
                     <p><picture className="size-medium wp-image-4530 alignright">
-                      <img src={event.imageUrl} alt="" width="214" height="300" srcSet={event.imageUrl} />
+                      <img src={news.imageUrl} alt="" width="214" height="300" srcSet={news.imageUrl} />
                     </picture>
                     </p>
                     {restEvents.map((e) => (

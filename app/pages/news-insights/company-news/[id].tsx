@@ -1,38 +1,67 @@
+// pages/newss/[id].tsx
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { useLanguage } from '../../../Context/LanguageContext';
 import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
 import { NextPageWithLayout } from '../../_app';
 import ViewerLayout from '../../../layouts/ViewerLayout';
-import SingleNewsEn from '../../../components/News&Insghits/SingleNewsEn';
 import SingleNewsAr from '../../../components/News&Insghits/SingleNewsAr';
-type Props = {};
-// dymmy data for ui till handle working with api
-const Contactus: NextPageWithLayout = (props: Props) => {
+import SingleNewsEn from '../../../components/News&Insghits/SingleNewsEn';
+import { fetchNews, fetchNewsById } from '../../../lib/fetchNews';
+import { Event } from '../../../types';
+
+type Props = {
+  news: Event;
+  newss: Event[];
+};
+
+const SinglenewsPage: NextPageWithLayout<Props> = ({ news, newss }) => {
   const { language } = useLanguage();
   return (
     <>
       <Head>
-        <title>Industries | CASCO</title>
+        <title>{news.title} | CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <SingleNewsEn />
+          <main className={styles.bodyContainer}>
+            <SingleNewsEn news={news} newss={newss} />
           </main>
         ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <SingleNewsAr />
+          <main className={styles.bodyContainer}>
+            <SingleNewsAr news={news} newss={newss} />
           </main>
         )}
       </Layout>
     </>
   );
 };
-// adding Layout
-Contactus.getLayout = function getLayout(contactus: ReactElement) {
-  return <ViewerLayout childern={contactus}></ViewerLayout>;
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const newss = await fetchNews();
+  const paths = newss.map((news) => ({
+    params: { id: news.id },
+  }));
+  return { paths, fallback: false };
 };
 
-export default Contactus;
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const { id } = params as { id: string };
+  const news = await fetchNewsById(id);
+  const newss = await fetchNews();
+  return {
+    props: {
+      news,
+      newss,
+    },
+  };
+};
+// adding Layout
+SinglenewsPage.getLayout = function getLayout(page: ReactElement) {
+  return <ViewerLayout childern={page}></ViewerLayout>;
+};
+
+export default SinglenewsPage;
+// pages/newss/[id].tsx
