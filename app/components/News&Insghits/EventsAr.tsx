@@ -7,8 +7,8 @@ type Props = {
 const EventsEn: React.FC<Props> = ({ events }) => {
   return (
     <>
-      <div id="content-wrap">
-        <div className="banner  banner--ar banner--full-overlay ">
+      <div id="content-wrap" dir='rtl'>
+        <div className="banner banner--ar banner--full-overlay ">
           <div className="banner__background">
             <img src="https://www.argonandco.com/wp-content/uploads/2019/11/careers_banner-scaled.jpg" />
           </div>
@@ -30,11 +30,10 @@ const EventsEn: React.FC<Props> = ({ events }) => {
               <div className="col-md-4">
                 <Link href={`/news-insights/events/${e.id}`}>
                   <div className="card  red-2-background  card--fixed-sm ">
-                    <div className="card__category">Event</div>
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--xs title--medium-weight ">
-                          {e.title}
+                          {e.title_ar}
                         </h3>
                       </div>
                     </div>

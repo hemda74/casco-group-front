@@ -1,25 +1,48 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../../../layouts/ViewerLayout';
-import { NextPageWithLayout } from '../../_app';
+import { useLanguage } from '../../../Context/LanguageContext';
+import Layout from '../../../components/Layout';
+import styles from '../../../styles/Main.module.css';
 import EventsEn from '../../../components/News&Insghits/EventsEn';
-
-type Props = {};
-// dymmy data for ui till handle working with api
-const services: NextPageWithLayout = (props: Props) => {
+import EventsAr from '../../../components/News&Insghits/EventsAr';
+import { NextPageWithLayout } from '../../_app';
+import ViewerLayout from '../../../layouts/ViewerLayout';
+import { Event } from '../../../types';
+import { fetchEvents } from '../../../lib/fetchEvents';
+type Props = {
+  events: Event[]
+};
+const Contactus: NextPageWithLayout<Props> = ({ events }) => {
+  const { language } = useLanguage();
   return (
     <>
       <Head>
-        <title>Events | CASCO</title>
+        <title>Services | CASCO</title>
       </Head>
-      <main>
-        <EventsEn />
-      </main>
+      <Layout>
+        {language === 'en' ? (
+          <main className={`${styles.bodyContainer}`}>
+            <EventsEn events={events} />
+          </main>
+        ) : (
+          <main className={`${styles.bodyContainer}`}>
+            <EventsAr events={events} />
+          </main>
+        )}
+      </Layout>
     </>
   );
 };
+export const getStaticProps = async () => {
+  const events = await fetchEvents();
+  return {
+    props: {
+      events,
+    },
+  };
+};
 // adding Layout
-services.getLayout = function getLayout(contactus: ReactElement) {
+Contactus.getLayout = function getLayout(contactus: ReactElement) {
   return <ViewerLayout childern={contactus}></ViewerLayout>;
 };
-export default services;
+export default Contactus;

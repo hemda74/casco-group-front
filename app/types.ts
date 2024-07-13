@@ -248,3 +248,24 @@ interface CourseWhoShould {
   text: string;
   courseId: string;
 }
+// events
+interface ParagraphEvent {
+  id: string;
+  eventId: string;
+  text: string;
+}
+
+export interface Event {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  title: string;
+  title_ar: string;
+  imageUrl: string;
+  createdAt: string;
+  date_of_event: string;
+  date_of_event_ar: string;
+  paragraph_event: ParagraphEvent[];
+  paragraph_event_ar: ParagraphEvent[];
+  category: Category;
+}
