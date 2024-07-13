@@ -27,7 +27,7 @@ const EventsEn: React.FC<Props> = ({ events }) => {
         <div className="container card-grid">
           <div className="row pad-40-vert">
             {events.map((e) => (
-              <div className="col-md-4">
+              <div className="col-md-4" key={e.id}>
                 <Link href={`/news-insights/events/${e.id}`}>
                   <div className="card  red-2-background  card--fixed-sm ">
                     <div className="card__category">Event</div>
