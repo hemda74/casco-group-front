@@ -269,3 +269,23 @@ export interface Event {
   paragraph_event_ar: ParagraphEvent[];
   category: Category;
 }
+interface ParagraphNews {
+  id: string;
+  newsId: string;
+  text: string;
+}
+
+export interface News {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  title: string;
+  title_ar: string;
+  imageUrl: string;
+  createdAt: string;
+  date_of_news: string;
+  date_of_news_ar: string;
+  paragraph_news: ParagraphNews[];
+  paragraph_news_ar: ParagraphNews[];
+  category: Category;
+}
