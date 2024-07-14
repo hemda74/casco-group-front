@@ -1,16 +1,14 @@
 import Link from 'next/link';
 import React from 'react';
-import { BsLinkedin, BsTwitter } from 'react-icons/bs';
-import { IoMdMail } from 'react-icons/io';
-import { Event } from '../../types';
+import { Event2 } from '../../types';
 type Props = {
-  event: Event;
-  events: Event[];
+  paper: Event2;
+  papers: Event2[];
 };
 
-const SingleEventEn: React.FC<Props> = ({ event, events }) => {
-  const [firstEvent, ...restEvents] = event.paragraph_event_ar;
-  const firstThreeEvents = events.slice(0, 3);
+const SinglePaperAr: React.FC<Props> = ({ paper, papers }) => {
+  const [firstEvent, ...restEvents] = paper.paragraph_event_ar2;
+  const firstThreeEvents = papers.slice(0, 3);
 
   return (
     <>
@@ -22,10 +20,10 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
                 <div dir='rtl' className="col-lg-10 banner__white-overlay">
                   <div dir='rtl' className="post-meta off-screen off-screen--rotate-up">
                     <span>فاعلية</span>
-                    <span>{event.date_of_event_ar}</span>
+                    <span>{paper.date_of_event_ar}</span>
                   </div>
                   <h1 className="title title--lg title--bold off-screen off-screen--rotate-up">
-                    {event.title}
+                    {paper.title}
                   </h1>
                 </div>
               </div>
@@ -40,7 +38,7 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
                   <div dir='rtl' className="column">
                     <p><span className="intro text-black">{firstEvent.text}</span></p>
                     <p><picture className="size-medium wp-image-4530 alignright">
-                      <img src={event.imageUrl} alt="" width="214" height="300" srcSet={event.imageUrl} />
+                      <img src={paper.imageUrl} alt="" width="214" height="300" srcSet={paper.imageUrl} />
                     </picture>
                     </p>
                     {restEvents.map((e) => (
@@ -54,15 +52,15 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
         </div>
         <section className="pad-100-vert off-screen off-screen--fade-up">
           <h2 className="title title--lg red-1-color text-center color-red-1">
-            المزيد من الفاعليات
+            المزيد من الاوراق البيضاء
           </h2>
           <div dir='rtl' className="container">
             <div dir='rtl' className="row small-gutters pad-40-vert">
               {firstThreeEvents.map((h) => (
                 <div dir='rtl' className="col-md-4" key={h.id}>
-                  <Link href={`/news-insights/events/${h.id}/`}>
+                  <Link href={`/news-insights/white-papers/${h.id}/`}>
                     <div dir='rtl' className="card  red-2-background card--fixed-sm ">
-                      <div dir='rtl' className="card__category">فاعلية </div>
+                      <div dir='rtl' className="card__category">ورقة بيضاء</div>
                       <div dir='rtl' className="position-bottom">
                         <div dir='rtl' className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
@@ -78,9 +76,9 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
           </div>
           <div dir='rtl' className="text-center">
             <Link
-              href="/news-insights/events/"
+              href="/news-insights/white-papers/"
               className="line-link red-3-color">
-              <span className="red-3-color">العودة الى الفاعليات</span>
+              <span className="red-3-color">العودة الى الاوراق البيضاء</span>
             </Link>
           </div>
         </section>
@@ -89,4 +87,4 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
   );
 };
 
-export default SingleEventEn;
+export default SinglePaperAr;

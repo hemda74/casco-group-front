@@ -285,8 +285,8 @@ export interface Event2 {
   createdAt: string;
   date_of_event: string;
   date_of_event_ar: string;
-  paragraph_event: ParagraphEvent2[];
-  paragraph_event_ar: ParagraphEvent2[];
+  paragraph_event2: ParagraphEvent2[];
+  paragraph_event_ar2: ParagraphEvent2[];
   category: Category;
 }
 interface ParagraphEvent3 {

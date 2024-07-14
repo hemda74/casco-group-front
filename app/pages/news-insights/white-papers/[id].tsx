@@ -7,31 +7,31 @@ import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
 import { NextPageWithLayout } from '../../_app';
 import ViewerLayout from '../../../layouts/ViewerLayout';
-import { fetchEventById, fetchEvents } from '../../../lib/fetchEvents';
-import SingleEventAr from '../../../components/News&Insghits/SingleEventAr';
-import SingleEventEn from '../../../components/News&Insghits/SingleEventEn';
-import { Event } from '../../../types';
+import { fetchPaperById, fetchPapers } from '../../../lib/fetchWhitePapers';
+import { Event2 } from '../../../types';
+import SinglePaperAr from '../../../components/News&Insghits/SinglePaperAr';
+import SinglePaperEn from '../../../components/News&Insghits/SinglePaperEn';
 
 type Props = {
-  event: Event;
-  events: Event[];
+  paper: Event2;
+  papers: Event2[];
 };
 
-const SingleeventPage: NextPageWithLayout<Props> = ({ event, events }) => {
+const SingleeventPage: NextPageWithLayout<Props> = ({ paper, papers }) => {
   const { language } = useLanguage();
   return (
     <>
       <Head>
-        <title>{event.title} | CASCO</title>
+        <title>{paper.title} | CASCO</title>
       </Head>
       <Layout>
         {language === 'en' ? (
           <main className={styles.bodyContainer}>
-            <SingleEventEn event={event} events={events} />
+            <SinglePaperEn paper={paper} papers={papers} />
           </main>
         ) : (
           <main className={styles.bodyContainer}>
-            <SingleEventAr event={event} events={events} />
+            <SinglePaperAr paper={paper} papers={papers} />
           </main>
         )}
       </Layout>
@@ -40,21 +40,21 @@ const SingleeventPage: NextPageWithLayout<Props> = ({ event, events }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const events = await fetchEvents();
-  const paths = events.map((event) => ({
-    params: { id: event.id },
+  const papers = await fetchPapers();
+  const paths = papers.map((paper) => ({
+    params: { id: paper.id },
   }));
   return { paths, fallback: false };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
-  const event = await fetchEventById(id);
-  const events = await fetchEvents();
+  const paper = await fetchPaperById(id);
+  const papers = await fetchPapers();
   return {
     props: {
-      event,
-      events,
+      paper,
+      papers,
     },
   };
 };

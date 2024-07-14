@@ -3,16 +3,16 @@ import Head from 'next/head';
 import { useLanguage } from '../../../Context/LanguageContext';
 import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
-import EventsEn from '../../../components/News&Insghits/EventsEn';
-import EventsAr from '../../../components/News&Insghits/EventsAr';
 import { NextPageWithLayout } from '../../_app';
 import ViewerLayout from '../../../layouts/ViewerLayout';
-import { Event } from '../../../types';
-import { fetchEvents } from '../../../lib/fetchEvents';
+import { Event2 } from '../../../types';
+import { fetchPapers } from '../../../lib/fetchWhitePapers';
+import WhitePaperMainAr from '../../../components/News&Insghits/WhitePaperMainAr';
+import WhitePaperMainEn from '../../../components/News&Insghits/WhitePaperMainEn';
 type Props = {
-  events: Event[]
+  papers: Event2[]
 };
-const Contactus: NextPageWithLayout<Props> = ({ events }) => {
+const Contactus: NextPageWithLayout<Props> = ({ papers }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -22,11 +22,11 @@ const Contactus: NextPageWithLayout<Props> = ({ events }) => {
       <Layout>
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
-            <EventsEn events={events} />
+            <WhitePaperMainEn papers={papers} />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
-            <EventsAr events={events} />
+            <WhitePaperMainAr papers={papers} />
           </main>
         )}
       </Layout>
@@ -34,10 +34,10 @@ const Contactus: NextPageWithLayout<Props> = ({ events }) => {
   );
 };
 export const getStaticProps = async () => {
-  const events = await fetchEvents();
+  const papers = await fetchPapers();
   return {
     props: {
-      events,
+      papers,
     },
   };
 };

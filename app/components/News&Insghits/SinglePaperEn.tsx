@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import React from 'react';
-import { Event } from '../../types';
+import { Event2 } from '../../types';
 type Props = {
-  event: Event;
-  events: Event[];
+  paper: Event2;
+  papers: Event2[];
 };
 
-const SingleEventEn: React.FC<Props> = ({ event, events }) => {
-  const [firstEvent, ...restEvents] = event.paragraph_event;
-  const firstThreeEvents = events.slice(0, 3);
+const SingleEventEn: React.FC<Props> = ({ paper, papers }) => {
+  const [firstEvent, ...restEvents] = paper.paragraph_event2;
+  const firstThreeEvents = papers.slice(0, 3);
 
   return (
     <>
@@ -21,11 +21,11 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
                 <div className="col-lg-10 banner__white-overlay">
                   <div className="post-meta off-screen off-screen--rotate-up">
                     <span>Event</span>
-                    <span>{event.date_of_event}</span>
+                    <span>{paper.date_of_event}</span>
 
                   </div>
                   <h1 className="title title--lg title--bold off-screen off-screen--rotate-up">
-                    {event.title}
+                    {paper.title}
                   </h1>
                 </div>
               </div>
@@ -40,7 +40,7 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
                   <div className="column">
                     <p><span className="intro text-black">{firstEvent.text}</span></p>
                     <p><picture className="size-medium wp-image-4530 alignright">
-                      <img src={event.imageUrl} alt="" width="214" height="300" srcSet={event.imageUrl} />
+                      <img src={paper.imageUrl} alt="" width="214" height="300" srcSet={paper.imageUrl} />
                     </picture>
                     </p>
                     {restEvents.map((e) => (
@@ -59,9 +59,9 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
             <div className="row small-gutters pad-40-vert">
               {firstThreeEvents.map((h) => (
                 <div className="col-md-4" key={h.id}>
-                  <Link href={`/news-insights/events/${h.id}/`}>
+                  <Link href={`/news-insights/white-papers/${h.id}/`}>
                     <div className="card  red-2-background card--fixed-sm ">
-                      <div className="card__category">Event </div>
+                      <div className="card__category">White Paper</div>
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
@@ -78,9 +78,9 @@ const SingleEventEn: React.FC<Props> = ({ event, events }) => {
           </div>
           <div className="text-center">
             <Link
-              href="/news-insights/events/"
+              href="/news-insights/white-papers/"
               className="line-link red-3-color">
-              <span className="red-3-color">Back to all Events</span>
+              <span className="red-3-color">Back to all Papers</span>
             </Link>
           </div>
         </section>
