@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../../layouts/ViewerLayout';
 import { useLanguage } from '../../Context/LanguageContext';
 import Layout from '../../components/Layout';
 import MainPageAr from '../../components/News&Insghits/MainPageAr';
@@ -8,8 +7,19 @@ import styles from '../../styles/Main.module.css';
 import MainPageEn from '../../components/News&Insghits/MainPageEn';
 import OldNavBar from '../../components/OldNavBar';
 import FooterAr from '../../components/FooterAr';
-type Props = {};
-const Index = (props: Props) => {
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { fetchNews } from '../../lib/fetchNews';
+import { fetchArticles } from '../../lib/fetchArticles';
+import { fetchEvents } from '../../lib/fetchEvents';
+import { fetchPapers } from '../../lib/fetchWhitePapers';
+import { News, Event, Event2, Event3 } from '../../types';
+type Props = {
+  newss: News[],
+  events: Event[],
+  papers: Event2[],
+  articles: Event3[],
+};
+const Index: React.FC<Props> = ({ newss, events, articles, papers }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -20,18 +30,34 @@ const Index = (props: Props) => {
         {language === 'en' ? (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <MainPageEn />
+            <MainPageEn newss={newss} papers={papers} articles={articles} events={events} />
             <FooterAr />
           </main>
         ) : (
           <main className={`${styles.bodyContainer}`}>
             <OldNavBar />
-            <MainPageAr />
+            <MainPageAr newss={newss} papers={papers} articles={articles} events={events} />
             <FooterAr />
           </main>
         )}
       </Layout>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const newss = await fetchNews();
+  const articles = await fetchArticles();
+  const events = await fetchEvents();
+  const papers = await fetchPapers();
+
+  return {
+    props: {
+      newss,
+      papers,
+      articles,
+      events
+    },
+  };
 };
 export default Index;

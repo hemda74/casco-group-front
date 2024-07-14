@@ -1,6 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-const MainPageAr = () => {
+import { News, Event, Event2, Event3 } from '../../types';
+type Props = {
+  newss: News[],
+  events: Event[],
+  papers: Event2[],
+  articles: Event3[],
+};
+const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
   return (
     <>
       <div id="content-wrap" dir="rtl">
@@ -322,79 +329,7 @@ const MainPageAr = () => {
           </div>
         </section>
 
-        <section className="bg-white pad-80">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 text-center">
-                <h2
-                  className="title title--md red-2-color"
-                  style={{ marginBottom: '60px' }}>
-                  Our publications
-                </h2>
-              </div>
-              <div className="col-lg-5 ">
-                <div className="row pad-sm-btm">
-                  <div className="col-lg-5 col-sm-4 text-sm-right text-center pad-30-mob">
-                    <picture style={{ height: '170px' }}>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2020/08/SCPrime-front-cover-210x300.png.webp"
-                      />
-                      <img src="https://www.argonandco.com/wp-content/uploads/2020/08/SCPrime-front-cover-210x300.png" />
-                    </picture>
-                  </div>
-                  <div className="col-lg-7 col-sm-8 text-sm-left text-center">
-                    <img
-                      src="https://www.argonandco.com/wp-content/uploads/2019/09/scprime®-300x68.png"
-                      style={{ height: '50px', marginBottom: '10px' }}
-                    />
-                    <p>
-                      {` Discover Argon & Co’s powerful improvement approach,
-                      combining process and people capabilities to ensure that
-                      the right people are in the right jobs, consistently doing
-                      the right things.`}
-                    </p>
-                    <Link href="/scprime/" className="line-link red-2-color">
-                      <span className="red-2-color">Learn more</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-5 offset-lg-1">
-                <div className="row pad-sm-btm">
-                  <div className="col-lg-5 col-sm-4 text-sm-right text-center pad-30-mob">
-                    <picture style={{ height: '170px' }}>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2023/04/Screenshot-2023-04-03-at-12.00.47-211x300.png.webp"
-                      />
-                      <img src="https://www.argonandco.com/wp-content/uploads/2023/04/Screenshot-2023-04-03-at-12.00.47-211x300.png" />
-                    </picture>
-                  </div>
-                  <div className="col-lg-7 col-sm-8 text-sm-left text-center">
-                    <picture style={{ height: '50px', marginBottom: '10px' }}>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/09/ADD.png.webp"
-                      />
-                      <img src="https://www.argonandco.com/wp-content/uploads/2019/09/ADD.png" />
-                    </picture>
 
-                    <p>
-                      {`     Argon & Co's biannual magazine, focusing on operational
-                      performance in business.`}
-                    </p>
-                    <Link
-                      href="/news-insights/add-magazine/"
-                      className="line-link red-2-color">
-                      <span className="red-2-color">LEARN MORE</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </>
   );
