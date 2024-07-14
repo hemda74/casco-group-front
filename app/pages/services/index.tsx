@@ -14,7 +14,6 @@ type Props = {
 };
 const Contactus: NextPageWithLayout<Props> = ({ services }) => {
   const { language } = useLanguage();
-  console.log(services);
   return (
     <>
       <Head>
