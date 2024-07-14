@@ -8,12 +8,15 @@ type Props = {
   articles: Event3[],
 };
 const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
+  const j = newss[0];
+  const [firstEvent, secondEvent] = events;
+  const [f, s, t] = papers;
   return (
     <>
-      <div id="content-wrap" dir="rtl">
+      <div id="content-wrap" dir='rtl'>
         <div className="no-image-banner text-center">
           <h1 className="title title--2xl title--bold">
-            <span className="gradient-text">الأخبار والرؤى</span>
+            <span className="gradient-text">الاخبار والرؤى</span>
           </h1>
         </div>
         <section className="off-screen off-screen--fade-up">
@@ -21,49 +24,43 @@ const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
             <div className="row">
               <div className="col-12">
                 <div className="grid-3">
-                  <Link href="/news-insights/events/roundtable-the-art-of-procurement-london/">
+                  <Link href={`/news-insights/company-news/${j.id}`}>
                     <div className="card ">
                       <div className="card__image object-fit">
                         <picture>
-                          <source
-                            type="image/webp"
-                            srcSet="https://www.argonandco.com/wp-content/uploads/2024/02/iStock-147036034-1024x683.jpg.webp"
-                          />
-                          <img src="https://www.argonandco.com/wp-content/uploads/2024/02/iStock-147036034-1024x683.jpg" />
+                          <img src={j.imageUrl} />
                         </picture>
                       </div>
-                      <div className="card__category">News</div>
+                      <div className="card__category">خبر</div>
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
-                            {`Roundtable: The art of Procurement, London`}
-                          </h3>
+                            {j.title_ar}                          </h3>
                         </div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link href="/news-insights/events/conference-eu-uk-dynamics-2025-jointly-achieving-net-zero-brussels/">
+                  <Link href={`/news-insights/events/${firstEvent.id}`}>
                     <div className="card  red-2-background  card--fixed-sm ">
-                      <div className="card__category">Event</div>
+                      <div className="card__category">فاعلية</div>
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
-                            {`  Conference: EU-UK Dynamics 2025+: Jointly Achieving
-                            Net Zero, Brussels`}
+                            {firstEvent.title_ar}
                           </h3>
                         </div>
                       </div>
                     </div>
                   </Link>
 
-                  <Link href="/news-insights/events/roundtable-the-art-of-procurement-london/">
+                  <Link href={`/news-insights/events/${secondEvent.id}`}>
                     <div className="card red-2-background card--fixed-sm">
-                      <div className="card__category">Event</div>
+                      <div className="card__category">فاعلية</div>
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
-                            {`Roundtable: The art of Procurement, London`}
+                            {secondEvent.title_ar}
                           </h3>
                         </div>
                       </div>
@@ -79,14 +76,14 @@ const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
                     <Link
                       href="/news-insights/company-news/"
                       className="line-link red-3-color">
-                      <span className="red-3-color">View all news</span>
+                      <span className="red-3-color">رؤية جميع الاخبار</span>
                     </Link>
                   </div>
                   <div className="col-xl-3 col-lg-4 col-xs-6 text-center">
                     <Link
                       href="/news-insights/events/"
                       className="line-link red-3-color">
-                      <span className="red-3-color">View all events</span>
+                      <span className="red-3-color">رؤيةجميع الفاعليات</span>
                     </Link>
                   </div>
                 </div>
@@ -98,188 +95,85 @@ const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
           <div className="container card-grid">
             <div className="row">
               <div className="col-12 text-center">
-                <h2 className="title title--md red-1-color">Latest articles</h2>
+                <h2 className="title title--md red-1-color">احدث المقالات</h2>
               </div>
+              {articles.map((a) => (
+                <div className="col-lg-4 col-md-6" key={a.id}>
+                  <Link href="/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
+                    <div className="card card--image red-1-background white-color card--fixed-sm ">
+                      <div className="card__image object-fit">
 
-              <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/articles/navigating-through-uncertainty-a-2024-outlook-on-commodities-and-global-inflation/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2024/02/iStock-147036034-1024x683.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2024/02/iStock-147036034-1024x683.jpg" />
-                      </picture>
-                    </div>
-                    <div className="card__category">Article </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          {`   Navigating Through Uncertainty: A 2024 outlook on
-                          commodities and global inflation`}
-                        </h3>
+                        <img src={a.imageUrl} alt={a.title_ar} />
+                        <div className="argon-star-overlay"></div>
+                      </div>
+                      <div className="card__category">مقال</div>
+                      <div className="position-bottom">
+                        <div className="card__content">
+                          <h3 className="title title--xs title--medium-weight ">
+                            {a.title_ar}
+                          </h3>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
+                  </Link>
+                </div>
+              ))}
 
-              <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2024/01/iStock-1406838996-1-1024x683.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2024/01/iStock-1406838996-1-1024x683.jpg" />
-                      </picture>
-                      <div className="argon-star-overlay"></div>{' '}
-                    </div>
-                    <div className="card__category">Article </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          {`  Data science and data platforms: unlocking new
-                          possibilities for the supply chain`}
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/articles/data-driven-leadership/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2023/10/data-drive-featured@2x-1024x578.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2023/10/data-drive-featured@2x-1024x578.jpg" />
-                      </picture>
-                    </div>
-                    <div className="card__category">Article </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          {`Data-Driven Leadership: the shortest route to
-                          performance`}
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/articles/digital-manufacturing-series-are-you-ready-for-digital-transformation/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2023/08/Digital-manufacturing-website-template-23-August-2023-2-1024x608.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2023/08/Digital-manufacturing-website-template-23-August-2023-2-1024x608.jpg" />
-                      </picture>
-                    </div>
-                    <div className="card__category">Article </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          {`   Digital manufacturing series: are you ready for
-                          digital transformation?`}
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/articles/digital-manufacturing-series-smarter-manufacturing/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2023/07/Smarter-manufacturing-website-template-1024x608.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2023/07/Smarter-manufacturing-website-template-1024x608.jpg" />
-                      </picture>
-                    </div>
-                    <div className="card__category">Article </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          {`   Digital manufacturing series: smarter manufacturing`}
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/articles/truly-sustainable-operations-what-does-it-look-like-and-how-to-make-it-happen/">
-                  <div className="card card--image red-1-background white-color card--fixed-sm ">
-                    <div className="card__image object-fit">
-                      <picture>
-                        <source
-                          type="image/webp"
-                          srcSet="https://www.argonandco.com/wp-content/uploads/2022/08/iStock-908729382-1024x614.jpg.webp"
-                        />
-                        <img src="https://www.argonandco.com/wp-content/uploads/2022/08/iStock-908729382-1024x614.jpg" />
-                      </picture>
-                    </div>
-                    <div className="card__category">Article </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--xs title--medium-weight ">
-                          {` Truly sustainable operations – what does it look like
-                          and how to make it happen`}
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
               <div className="col-12 text-center">
                 <Link
                   href="/news-insights/articles/"
                   className="line-link red-1-color">
-                  <span className="red-1-color">View all articles</span>
+                  <span className="red-1-color">عرض جميع المقالات</span>
                 </Link>
               </div>
             </div>
           </div>
         </section>
-
         <section className="bg-white pad-80-top">
           <div className="container card-grid">
             <div className="row justify-content-center">
               <div className="col-12 text-center">
                 <h2 className="title title--md red-5-color">
-                  Latest whitepapers
+                  اخر الابحاث
                 </h2>
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/white-papers/industrial-flexibility-how-new-mathematic-optimisation-methods-can-contribute-to-better-manage-industrial-agility/">
+                <Link href={`/news-insights/white-papers/${f.id}`}>
                   <div className="card  card--large  red-5-background">
-                    <div className="card__category">Whitepaper </div>
+                    <div className="card__category">ورقة بحثية </div>
                     <div className="position-bottom">
                       <div className="card__content">
                         <h3 className="title title--sm title--medium-weight">
-                          {` Industrial flexibility : How new mathematic
-                          optimisation methods can contribute to better manage
-                          Industrial Agility?`}
+                          {f.title_ar}
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <Link href={`/news-insights/white-papers/${s.id}`}>
+                  <div className="card  card--large  red-5-background">
+                    <div className="card__category">ورقة بحثية </div>
+                    <div className="position-bottom">
+                      <div className="card__content">
+                        <h3 className="title title--sm title--medium-weight">
+                          {s.title_ar}
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <Link href={`/news-insights/white-papers/${t.id}`}>
+                  <div className="card  card--large  red-5-background">
+                    <div className="card__category">ورقة بحثية </div>
+                    <div className="position-bottom">
+                      <div className="card__content">
+                        <h3 className="title title--sm title--medium-weight">
+                          {t.title_ar}
                         </h3>
                       </div>
                     </div>
@@ -287,49 +181,17 @@ const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
                 </Link>
               </div>
 
-              <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/white-papers/70-of-business-transformations-fail-urban-myth-or-worth-another-look/">
-                  <div className="card  card--large  red-5-background">
-                    <div className="card__category">Whitepaper </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--sm title--medium-weight">
-                          {`“70% of business transformations fail” – urban myth or
-                          worth another look?`}
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="col-lg-4 col-md-6">
-                <Link href="/news-insights/white-papers/is-your-forecasting-adding-value/">
-                  <div className="card  card--large  red-5-background">
-                    <div className="card__category">Whitepaper </div>
-                    <div className="position-bottom">
-                      <div className="card__content">
-                        <h3 className="title title--sm title--medium-weight">
-                          Is your forecasting adding value?
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
 
               <div className="col-12 text-center">
                 <Link
                   href="/news-insights/white-papers/"
                   className="line-link red-5-color">
-                  <span className="red-5-color">View all whitepapers</span>
+                  <span className="red-5-color">الذهاب الى الابحاث</span>
                 </Link>
               </div>
             </div>
           </div>
         </section>
-
-
       </div>
     </>
   );

@@ -98,7 +98,7 @@ const MainPageEn: React.FC<Props> = ({ newss, events, articles, papers }) => {
                 <h2 className="title title--md red-1-color">Latest articles</h2>
               </div>
               {articles.map((a) => (
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6" key={a.id}>
                   <Link href="/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
                     <div className="card card--image red-1-background white-color card--fixed-sm ">
                       <div className="card__image object-fit">
