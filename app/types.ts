@@ -269,6 +269,47 @@ export interface Event {
   paragraph_event_ar: ParagraphEvent[];
   category: Category;
 }
+interface ParagraphEvent2 {
+  id: string;
+  eventId: string;
+  text: string;
+}
+
+export interface Event2 {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  title: string;
+  title_ar: string;
+  imageUrl: string;
+  createdAt: string;
+  date_of_event: string;
+  date_of_event_ar: string;
+  paragraph_event: ParagraphEvent2[];
+  paragraph_event_ar: ParagraphEvent2[];
+  category: Category;
+}
+interface ParagraphEvent3 {
+  id: string;
+  eventId: string;
+  text: string;
+}
+
+export interface Event3 {
+  id: string;
+  storeId: string;
+  categoryId: string;
+  title: string;
+  title_ar: string;
+  imageUrl: string;
+  createdAt: string;
+  date_of_event: string;
+  date_of_event_ar: string;
+  paragraph_event3: ParagraphEvent3[];
+  paragraph_event_ar3: ParagraphEvent3[];
+  category: Category;
+}
+
 interface ParagraphNews {
   id: string;
   newsId: string;
