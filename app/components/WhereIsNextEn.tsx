@@ -15,7 +15,6 @@ const WhereIsNextEn = () => {
                 <div className="card card--image red-3-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
                     <picture>
-
                       <img src="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg" alt='' />
                     </picture>
                   </div>

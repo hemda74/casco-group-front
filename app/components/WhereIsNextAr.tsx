@@ -14,13 +14,7 @@ const WhereIsNextAr = () => {
               <Link href="/news-insights/">
                 <div className="card card--image red-3-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg.webp"
-                      />
-                      <img src="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg" />
-                    </picture>
+                    <img src="https://www.argonandco.com/wp-content/uploads/2019/08/image_01-1024x584.jpg" />
                   </div>
                   <div className="position-bottom">
                     <div className="card__content">
@@ -56,13 +50,7 @@ const WhereIsNextAr = () => {
               <Link href="/about/our-approach/">
                 <div className="card card--image red-3-background white-color card--fixed-sm ">
                   <div className="card__image object-fit">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg.webp"
-                      />
-                      <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg" />
-                    </picture>
+                    <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-15-1024x736.jpg" />
                   </div>
                   <div className="position-bottom">
                     <div className="card__content">

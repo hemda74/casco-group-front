@@ -3,11 +3,7 @@ import Head from 'next/head';
 import ViewerLayout from '../layouts/ViewerLayout';
 import { NextPageWithLayout } from './_app';
 import { useLanguage } from '../Context/LanguageContext';
-import Layout from '../components/Layout';
 import styles from '../styles/Main.module.css';
-import StackHolders from '../components/Contact Us/ContactUsEn';
-import ContactUsEn from '../components/Contact Us/ContactUsEn';
-import ContactUsAr from '../components/Contact Us/ContactUsAr';
 import PraivacyPolicyEn from '../components/PraivacyPolicyEn';
 import PraivacyPolicyAr from '../components/PraivacyPolicyAr';
 
@@ -18,19 +14,19 @@ const Contactus: NextPageWithLayout = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Contact Us | CASCO</title>
+        <title>Privacy Poicly | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <PraivacyPolicyEn />{' '}
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <PraivacyPolicyAr />
-          </main>
-        )}
-      </Layout>
+
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <PraivacyPolicyEn />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <PraivacyPolicyAr />
+        </main>
+      )}
+
     </>
   );
 };
