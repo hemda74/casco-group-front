@@ -227,7 +227,7 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                                                             className="ml-2"
                                                         >
                                                             <span className="block font-medium text-sm leading-5 text-gray-700">
-                                                                {`                                                                Please keep me up to date with CASCO Learning’s news and special offers (optional)
+                                                                {`Please keep me up to date with CASCO Learning’s news and special offers (optional)
 `}
                                                             </span>
                                                         </label>
@@ -242,8 +242,7 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                                                 </div>
                                                 <div className="xl:col-span-2">
                                                     <span className="block w-full text-xs text-center mt-3">
-                                                        {`                                                        *By submitting this form and clicking submit you are accepting CASCO Learning’s privacy policy
-`}                                                    </span>
+                                                        {`*By submitting this form and clicking submit you are accepting CASCO Learning’s privacy policy`}                                                    </span>
                                                 </div>
                                             </form>
                                         </div>

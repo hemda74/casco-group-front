@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Category, CourseShort, CourseType } from '../../types';
-import Types from './Types';
-import Filter from './filter';
+import Filter from './FilterEn';
 
 type Props = {
   courses: CourseShort[];
@@ -14,16 +13,26 @@ type Props = {
 
 const MainPageEn: React.FC<Props> = ({ courses, cat, types, onCategorySelect, onTypeSelect }) => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedType, setSelectedType] = useState<string | null>(null);
 
   // Function to handle category selection
   const handleCategorySelect = (categoryId: string) => {
     setSelectedCategory(categoryId === selectedCategory ? null : categoryId);
   };
+  const handleTypeSelect = (coursetypeId: string) => {
+    setSelectedType(coursetypeId === selectedType ? null : coursetypeId);
+  };
+  // Filter courses based on selected category and type
+  const filteredCourses = courses.filter(course => {
+    if (selectedCategory) {
+      return course.categoryId === selectedCategory;
+    }
+    if (selectedType) {
+      return course.coursetypeId === selectedType;
+    }
+    return true; // Return all courses if no filter is selected
+  });
 
-  // Filter courses based on selected category
-  const filteredCourses = selectedCategory
-    ? courses.filter(course => course.categoryId === selectedCategory)
-    : courses;
 
   return (
     <>
@@ -47,8 +56,12 @@ const MainPageEn: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
             valueKey="id"
             onSelect={handleCategorySelect}
           />
-          <Types types={types} onTypeSelect={onTypeSelect} />
-        </div>
+          <Filter
+            data={types}
+            name="Types"
+            valueKey="id"
+            onSelect={handleTypeSelect}
+          />        </div>
 
         <div className="lg:col-span-9 xl:col-span-10">
           <div className="w-full grid gap-2 mb-2 lg:mb-4 grid-cols-2">

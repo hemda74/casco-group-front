@@ -3943,11 +3943,17 @@ button.bg-dark:focus {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
+.text-no-wrap {
+  display: inline-block;
+  white-space: nowrap;
+}
 
 .w-25 {
   width: 25% !important;
 }
-
+.w-45 {
+  width: 45% !important;
+}
 .w-50 {
   width: 50% !important;
 }
@@ -15383,7 +15389,7 @@ img {
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .text-base {

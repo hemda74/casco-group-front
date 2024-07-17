@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ className, onClick, children }) => {
     return (
         <button
             type="button"
-            className={`btn ${className}`}
+            className={`rounded-lg ${className}`}
             onClick={onClick}
         >
             {children}

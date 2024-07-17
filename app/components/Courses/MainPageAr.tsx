@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Category, CourseShort, CourseType } from '../../types';
-import CategoriesAr from './CategoriesAr';
-import TypesAr from './TypesAr';
+import Filter from './FilterAr';
+
 type Props = {
   courses: CourseShort[];
   cat: Category[];
@@ -12,6 +12,27 @@ type Props = {
 };
 
 const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, onTypeSelect }) => {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedType, setSelectedType] = useState<string | null>(null);
+
+  // Function to handle category selection
+  const handleCategorySelect = (categoryId: string) => {
+    setSelectedCategory(categoryId === selectedCategory ? null : categoryId);
+  };
+  const handleTypeSelect = (coursetypeId: string) => {
+    setSelectedType(coursetypeId === selectedType ? null : coursetypeId);
+  };
+  // Filter courses based on selected category and type
+  const filteredCourses = courses.filter(course => {
+    if (selectedCategory) {
+      return course.categoryId === selectedCategory;
+    }
+    if (selectedType) {
+      return course.coursetypeId === selectedType;
+    }
+    return true; // Return all courses if no filter is selected
+  });
+
   return (
     <>
       <div className="w-full bg-gray-200 rounded-lg overflow-hidden mb-4 grid grid-cols-1 | lg:grid-cols-12 lg:mb-6">
@@ -28,20 +49,30 @@ const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
           id="filters-container"
           className="filters hidden fixed w-full h-screen overflow-y-auto top-0 left-0 bg-white px-4 pb-32 z-40 | lg:static lg:h-auto lg:block lg:col-span-3 lg:p-0 lg:z-0 | xl:col-span-2">
 
-          <CategoriesAr cat={cat} onCategorySelect={onCategorySelect} />
-          <TypesAr types={types} onTypeSelect={onTypeSelect} />
+          <Filter
+            data={cat}
+            name_ar="التصنيفات"
+            valueKey="id"
+            onSelect={handleCategorySelect}
+          />
+          <Filter
+            data={types}
+            name_ar="الانواع"
+            valueKey="id"
+            onSelect={handleTypeSelect}
+          />
         </div>
 
         <div className="lg:col-span-9 | xl:col-span-10">
           <div className="w-full grid gap-2 mb-2 | lg:mb-4 grid-cols-2">
             <span className="flex items-center justify-center col-span-2 text-center | lg:col-span-1 lg:justify-start lg:text-left">
               <span className="text-sm font-bold">
-                عرض {courses.length}دورة
+                عرض {filteredCourses.length}دورة
               </span>
             </span>
           </div>
           <div className="courses">
-            {courses.map((course) => (
+            {filteredCourses.map((course) => (
               <div className="course" key={course.id}>
                 <div
                   title={`${course.c_title_ar}`}

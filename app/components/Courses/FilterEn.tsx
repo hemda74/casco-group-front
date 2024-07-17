@@ -41,15 +41,15 @@ const Filter: React.FC<FilterProps> = ({
 
     router.push(url, undefined, { shallow: true }).then(() => onSelect(id));
   };
-
   return (
     <div className="mb-4">
-      <h3 className="mb-2">{name}</h3>
-      <div className="btn-group">
+      <span className="mb-2 fs-6 relative flex items-center border-b-2 border-primary-100 ">{name}</span>
+      <div className="btn-group row ms-1">
         {data?.map(filter => (
           <Button
             key={filter.id}
-            className={`btn ${filter.id === selectedValue ? 'btn-primary' : 'btn-secondary'}`}
+            className={`w-45 text-sm text-no-wrap me-1 block text-white text-center myPrimary cursor-pointer mt-2 ${filter.id === selectedValue ? 'btn-primary' : 'btn-secondary'}`}
+
             onClick={() => onClick(filter.id)}
           >
             {filter.name}
