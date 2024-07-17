@@ -12,7 +12,9 @@ import Head from 'next/head';
 import { LanguageProvider } from '../Context/LanguageContext';
 import TawkTo from '../components/Takwto';
 import { ToastProvider } from '../providers/toast-provider';
-
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { Hydrate } from 'react-query/hydration';
+import React from 'react';
 // here we export the alias of next page with layout as optional.
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -40,6 +42,11 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       transScript(indexTrans);
     }
   });
+  const queryClientRef = React.useRef<QueryClient>();
+
+  if (!queryClientRef.current) {
+    queryClientRef.current = new QueryClient();
+  }
   return (
     <>
       <Head>
@@ -53,7 +60,12 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
       <LanguageProvider>
         <ToastProvider />
-        {getLayout(<Component {...pageProps} />)}
+        <QueryClientProvider client={queryClientRef.current}>
+          {/* If you are using server-side rendering, include Hydrate */}
+          <Hydrate state={pageProps.dehydratedState}>
+            {getLayout(<Component {...pageProps} />)}
+          </Hydrate>
+        </QueryClientProvider>
         <TawkTo />
       </LanguageProvider>
     </>

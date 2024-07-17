@@ -1,16 +1,9 @@
 import axios from 'axios';
 import { CourseShort, Course } from '../types';
-
+import { useQuery } from 'react-query';
 const API_URL = `${process.env.NEXT_PUBLIC_API_URL}courses`;
-
-export const fetchCourses = async (): Promise<CourseShort[]> => {
-  try {
-    const response = await axios.get(API_URL);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching courses:', error);
-    throw error; // Propagate the error back to the caller
-  }
+export const useCourses = () => {
+  return useQuery<CourseShort[], Error>('courses', fetchCourses);
 };
 
 export const fetchCourseById = async (id: string): Promise<Course> => {
@@ -19,6 +12,15 @@ export const fetchCourseById = async (id: string): Promise<Course> => {
     return response.data;
   } catch (error) {
     console.error(`Error fetching course with id ${id}:`, error);
+    throw error; // Propagate the error back to the caller
+  }
+};
+export const fetchCourses = async (): Promise<CourseShort[]> => {
+  try {
+    const response = await axios.get(API_URL);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching courses:', error);
     throw error; // Propagate the error back to the caller
   }
 };

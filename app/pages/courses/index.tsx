@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
 import styles from '../../styles/Main.module.css';
@@ -7,10 +7,10 @@ import Footer from '../../components/Footer';
 import FooterAr from '../../components/FooterAr';
 import MainPageEn from '../../components/Courses/MainPageEn';
 import MainPageAr from '../../components/Courses/MainPageAr';
-import { fetchCourses } from '../../lib/fetchCourses';
 import { fetchCourseTypes } from '../../lib/fetchTypes';
-import { Category, CourseShort, Course, CourseType } from '../../types';
+import { Category, CourseShort, CourseType } from '../../types';
 import { fetchCat } from "../../lib/fetchCategory";
+import { fetchCourses } from '../../lib/fetchCourses';
 
 type Props = {
   courses: CourseShort[];
@@ -20,14 +20,12 @@ type Props = {
 
 const Index: React.FC<Props> = ({ courses: initialCourses, cat, types }) => {
   const { language } = useLanguage();
-  const [courses, setCourses] = useState<CourseShort[]>(initialCourses);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedType, setSelectedType] = useState<string | null>(null);
-  const [forceUpdate, setForceUpdate] = useState<boolean>(false); // State to force update
+  const [selectedCategory, setSelectedCategory] = React.useState<string | null>(null);
+  const [selectedType, setSelectedType] = React.useState<string | null>(null);
 
   // Function to filter courses based on selected category and type
-  const filterCourses = () => {
-    let filteredCourses = initialCourses;
+  const filterCourses = (initialCourses: CourseShort[]) => {
+    let filteredCourses = [...initialCourses]; // Make a copy of initialCourses
 
     if (selectedCategory) {
       filteredCourses = filteredCourses.filter(course => course.categoryId === selectedCategory);
@@ -37,77 +35,80 @@ const Index: React.FC<Props> = ({ courses: initialCourses, cat, types }) => {
       filteredCourses = filteredCourses.filter(course => course.coursetypeId === selectedType);
     }
 
-    setCourses(filteredCourses);
-    setForceUpdate(prev => !prev); // Toggle forceUpdate to trigger re-render
+    return filteredCourses;
   };
 
   // Handle category selection
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category);
     setSelectedType(null); // Reset type selection
-    filterCourses();
-    // reload();
   };
 
   // Handle type selection
   const handleTypeSelect = (type: string) => {
     setSelectedType(type);
     setSelectedCategory(null); // Reset category selection
-    filterCourses();
-    // reload();
   };
-  const reload = () => {
-    window.location.reload()
-  }
+
+  // Determine which courses to display based on filters
+  const filteredCourses = filterCourses(initialCourses);
+
   return (
     <>
       <Head>
         <title>Courses | CASCO</title>
       </Head>
 
-      {language === 'en' ? (
-        <main className={`${styles.bodyContainer}`}>
-          <OldNavBar />
+      <main className={`${styles.bodyContainer}`}>
+        <OldNavBar />
+        {language === 'en' ? (
           <MainPageEn
-            key={forceUpdate ? 'forceUpdate' : 'initial'} // Use key to force re-render
-            courses={courses}
+            courses={filteredCourses}
             types={types}
             cat={cat}
             onCategorySelect={handleCategorySelect}
             onTypeSelect={handleTypeSelect}
           />
-          <Footer />
-        </main>
-      ) : (
-        <main className={`${styles.bodyContainer}`}>
-          <OldNavBar />
+        ) : (
           <MainPageAr
-            key={forceUpdate ? 'forceUpdate' : 'initial'} // Use key to force re-render
-            courses={courses}
+            courses={filteredCourses}
             types={types}
             cat={cat}
             onCategorySelect={handleCategorySelect}
             onTypeSelect={handleTypeSelect}
           />
-          <FooterAr />
-        </main>
-      )}
+        )}
+        {language === 'en' ? <Footer /> : <FooterAr />}
+      </main>
     </>
   );
 };
 
 export const getStaticProps = async () => {
-  const courses = await fetchCourses();
-  const types = await fetchCourseTypes();
-  const cat = await fetchCat();
+  try {
+    const [courses, types, cat] = await Promise.all([
+      fetchCourses(),
+      fetchCourseTypes(),
+      fetchCat()
+    ]);
 
-  return {
-    props: {
-      courses,
-      types,
-      cat
-    },
-  };
+    return {
+      props: {
+        courses,
+        types,
+        cat
+      },
+    };
+  } catch (error) {
+    console.error('Error fetching initial data:', error);
+    return {
+      props: {
+        courses: [],
+        types: [],
+        cat: []
+      },
+    };
+  }
 };
 
 export default Index;
