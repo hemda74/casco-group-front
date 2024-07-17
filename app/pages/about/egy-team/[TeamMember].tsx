@@ -3,7 +3,6 @@ import Head from 'next/head';
 import ViewerLayout from '../../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../../_app';
 import { useLanguage } from '../../../Context/LanguageContext';
-import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
 
 type Props = {};
@@ -14,13 +13,12 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
       <Head>
         <title>Team Member | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}></main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}></main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}></main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}></main>
+      )}
+
     </>
   );
 };

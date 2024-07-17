@@ -3,7 +3,6 @@ import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import { NextPageWithLayout } from '../_app';
 import ViewerLayout from '../../layouts/ViewerLayout';
@@ -24,17 +23,15 @@ const SingleservicePage: NextPageWithLayout<Props> = ({ service, services }) => 
       <Head>
         <title>{service.name} | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={styles.bodyContainer}>
-            <ServiceEn service={service} services={services} />
-          </main>
-        ) : (
-          <main className={styles.bodyContainer}>
-            <ServiceAr service={service} services={services} />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={styles.bodyContainer}>
+          <ServiceEn service={service} services={services} />
+        </main>
+      ) : (
+        <main className={styles.bodyContainer}>
+          <ServiceAr service={service} services={services} />
+        </main>
+      )}
     </>
   );
 };

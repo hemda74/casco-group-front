@@ -1,9 +1,7 @@
-// pages/newss/[id].tsx
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useLanguage } from '../../../Context/LanguageContext';
-import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
 import { NextPageWithLayout } from '../../_app';
 import ViewerLayout from '../../../layouts/ViewerLayout';
@@ -24,17 +22,15 @@ const SinglenewsPage: NextPageWithLayout<Props> = ({ news, newss }) => {
       <Head>
         <title>{news.title} | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={styles.bodyContainer}>
-            <SingleNewsEn news={news} newss={newss} />
-          </main>
-        ) : (
-          <main className={styles.bodyContainer}>
-            <SingleNewsAr news={news} newss={newss} />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={styles.bodyContainer}>
+          <SingleNewsEn news={news} newss={newss} />
+        </main>
+      ) : (
+        <main className={styles.bodyContainer}>
+          <SingleNewsAr news={news} newss={newss} />
+        </main>
+      )}
     </>
   );
 };

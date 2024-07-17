@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import ApplicationJobEn from '../../components/Careers/ApplicationJobEn';
 import ApplicationJobAr from '../../components/Careers/ApplicationJobAr';
@@ -21,25 +20,23 @@ const Contactus = (props: Props) => {
       <Head>
         <title>Join Us | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <JoinUsEn />
-            <ApplicationJobEn />
-            <WhereIsNextEn />
-            <Footer />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <JoinUsAr />
-            <ApplicationJobAr />
-            <WhereIsNextAr />
-            <FooterAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <JoinUsEn />
+          <ApplicationJobEn />
+          <WhereIsNextEn />
+          <Footer />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <JoinUsAr />
+          <ApplicationJobAr />
+          <WhereIsNextAr />
+          <FooterAr />
+        </main>
+      )}
     </>
   );
 };

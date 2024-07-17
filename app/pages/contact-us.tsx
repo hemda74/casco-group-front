@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../Context/LanguageContext';
-import Layout from '../components/Layout';
 import styles from '../styles/Main.module.css';
 import ContactUsEn from '../components/Contact Us/ContactUsEn';
 import ContactUsAr from '../components/Contact Us/ContactUsAr';
@@ -18,21 +17,19 @@ const Contactus = (props: Props) => {
       <Head>
         <title>Contact Us | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <ContactUsEn />
-            <Footer />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <ContactUsAr />
-            <FooterAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <ContactUsEn />
+          <Footer />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <ContactUsAr />
+          <FooterAr />
+        </main>
+      )}
     </>
   );
 };

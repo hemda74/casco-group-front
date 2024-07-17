@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import MainPageAr from '../../components/News&Insghits/MainPageAr';
 import styles from '../../styles/Main.module.css';
 import MainPageEn from '../../components/News&Insghits/MainPageEn';
@@ -26,21 +25,19 @@ const Index: React.FC<Props> = ({ newss, events, articles, papers }) => {
       <Head>
         <title>NEWS & INSIGITHS | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <MainPageEn newss={newss} papers={papers} articles={articles} events={events} />
-            <FooterAr />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <MainPageAr newss={newss} papers={papers} articles={articles} events={events} />
-            <FooterAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <MainPageEn newss={newss} papers={papers} articles={articles} events={events} />
+          <FooterAr />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <MainPageAr newss={newss} papers={papers} articles={articles} events={events} />
+          <FooterAr />
+        </main>
+      )}
     </>
   );
 };

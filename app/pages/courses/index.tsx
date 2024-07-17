@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import OldNavBar from '../../components/OldNavBar';
 import Footer from '../../components/Footer';
@@ -65,35 +64,34 @@ const Index: React.FC<Props> = ({ courses: initialCourses, cat, types }) => {
       <Head>
         <title>Courses | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <MainPageEn
-              key={forceUpdate ? 'forceUpdate' : 'initial'} // Use key to force re-render
-              courses={courses}
-              types={types}
-              cat={cat}
-              onCategorySelect={handleCategorySelect}
-              onTypeSelect={handleTypeSelect}
-            />
-            <Footer />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <MainPageAr
-              key={forceUpdate ? 'forceUpdate' : 'initial'} // Use key to force re-render
-              courses={courses}
-              types={types}
-              cat={cat}
-              onCategorySelect={handleCategorySelect}
-              onTypeSelect={handleTypeSelect}
-            />
-            <FooterAr />
-          </main>
-        )}
-      </Layout>
+
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <MainPageEn
+            key={forceUpdate ? 'forceUpdate' : 'initial'} // Use key to force re-render
+            courses={courses}
+            types={types}
+            cat={cat}
+            onCategorySelect={handleCategorySelect}
+            onTypeSelect={handleTypeSelect}
+          />
+          <Footer />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <MainPageAr
+            key={forceUpdate ? 'forceUpdate' : 'initial'} // Use key to force re-render
+            courses={courses}
+            types={types}
+            cat={cat}
+            onCategorySelect={handleCategorySelect}
+            onTypeSelect={handleTypeSelect}
+          />
+          <FooterAr />
+        </main>
+      )}
     </>
   );
 };

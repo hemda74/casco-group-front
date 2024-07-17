@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../../Context/LanguageContext';
-import Layout from '../../../components/Layout';
 import styles from '../../../styles/Main.module.css';
 import EventsEn from '../../../components/News&Insghits/EventsEn';
 import EventsAr from '../../../components/News&Insghits/EventsAr';
@@ -19,17 +18,15 @@ const Contactus: NextPageWithLayout<Props> = ({ events }) => {
       <Head>
         <title>Events | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <EventsEn events={events} />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <EventsAr events={events} />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <EventsEn events={events} />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <EventsAr events={events} />
+        </main>
+      )}
     </>
   );
 };

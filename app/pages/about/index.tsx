@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import AboutMainSectionAr from '../../components/About/AboutMainSection-ar';
 import AboutMainSectionEn from '../../components/About/AboutMainSection-en';
 import MeetOurTeamEn from '../../components/About/MeetOurTeamEn';
@@ -19,26 +18,26 @@ const Index = (props: Props) => {
       <Head>
         <title>About | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
 
-            <AboutMainSectionEn />
-            <MeetOurTeamEn />
-            <Recogention />
-            <Footer />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <AboutMainSectionAr />
-            <MeetOurTeamEn />
-            <Recogention />
-            <FooterAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+
+          <AboutMainSectionEn />
+          <MeetOurTeamEn />
+          <Recogention />
+          <Footer />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <AboutMainSectionAr />
+          <MeetOurTeamEn />
+          <Recogention />
+          <FooterAr />
+        </main>
+      )}
+
     </>
   );
 };

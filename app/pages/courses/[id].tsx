@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import OldNavBar from '../../components/OldNavBar';
 import Footer from '../../components/Footer';
@@ -24,21 +23,19 @@ const Contactus: React.FC<Props> = ({ course, courses }) => {
       <Head>
         <title>Courses | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <CourseEn course={course} courses={courses} />
-            <Footer />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <CourseAr course={course} courses={courses} />
-            <FooterAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <CourseEn course={course} courses={courses} />
+          <Footer />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <CourseAr course={course} courses={courses} />
+          <FooterAr />
+        </main>
+      )}
     </>
   );
 };

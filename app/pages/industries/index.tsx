@@ -2,7 +2,6 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import MainPageEn from '../../components/Industries/MainPageEn';
 import MainPageAr from '../../components/Industries/MainPageAr';
@@ -22,17 +21,15 @@ const Contactus: NextPageWithLayout<Props> = ({ industries }) => {
       <Head>
         <title>Industries | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={styles.bodyContainer}>
-            <MainPageEn industries={industries} />
-          </main>
-        ) : (
-          <main className={styles.bodyContainer}>
-            <MainPageAr industries={industries} />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={styles.bodyContainer}>
+          <MainPageEn industries={industries} />
+        </main>
+      ) : (
+        <main className={styles.bodyContainer}>
+          <MainPageAr industries={industries} />
+        </main>
+      )}
     </>
   );
 };

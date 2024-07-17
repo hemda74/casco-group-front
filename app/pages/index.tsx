@@ -3,7 +3,6 @@ import Head from 'next/head';
 import ViewerLayout from '../layouts/ViewerLayout';
 import { NextPageWithLayout } from './_app';
 import { useLanguage } from '../Context/LanguageContext';
-import Layout from '../components/Layout';
 import HeroEn from '../components/HomePage/Hero-en';
 import HeroAr from '../components/HomePage/Hero-ar';
 import CompaniesSectionEn from '../components/HomePage/Companies-Section-En';
@@ -24,25 +23,23 @@ const Index: NextPageWithLayout = (props: Props) => {
       <Head>
         <title>Home | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <HeroEn />
-            <SecondElementEn />
-            <CompaniesSectionEn />
-            <ThirdSectionMainEn />
-            <FourthSectionMainEn />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <HeroAr />
-            <SecondElementAr />
-            <CompaniesSectionAr />
-            <ThirdSectionMainAr />
-            <FourthSectionMainAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <HeroEn />
+          <SecondElementEn />
+          <CompaniesSectionEn />
+          <ThirdSectionMainEn />
+          <FourthSectionMainEn />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <HeroAr />
+          <SecondElementAr />
+          <CompaniesSectionAr />
+          <ThirdSectionMainAr />
+          <FourthSectionMainAr />
+        </main>
+      )}
     </>
   );
 };

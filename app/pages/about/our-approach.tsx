@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import OurApproachEn from '../../components/About/OurApproachEn';
 import OurApproachAr from '../../components/About/OurApproachAr';
@@ -17,21 +16,20 @@ const TeamMemberPage = (props: Props) => {
       <Head>
         <title>Our Approach | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <OurApproachEn />
-            <Footer />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <OurApproachAr />
-            <FooterAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <OurApproachEn />
+          <Footer />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <OurApproachAr />
+          <FooterAr />
+        </main>
+      )}
+
     </>
   );
 };

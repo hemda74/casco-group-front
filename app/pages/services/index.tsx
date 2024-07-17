@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import MainPageEn from '../../components/Services/MainPageEn';
 import MainPageAr from '../../components/Services/MainPageAr';
@@ -19,17 +18,15 @@ const Contactus: NextPageWithLayout<Props> = ({ services }) => {
       <Head>
         <title>Services | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <MainPageEn services={services} />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <MainPageAr services={services} />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <MainPageEn services={services} />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <MainPageAr services={services} />
+        </main>
+      )}
     </>
   );
 };
