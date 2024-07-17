@@ -3,7 +3,6 @@ import Head from 'next/head';
 import ViewerLayout from '../../layouts/ViewerLayout';
 import { NextPageWithLayout } from '../_app';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import WhatWeDoEn from '../../components/About/WhatWeDoEn';
 import WhatWeDoAr from '../../components/About/WhatWeDoAr';
@@ -20,21 +19,19 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
       <Head>
         <title>What We Do | CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <WhatWeDoEn />
-            <TestmonalialsEn />
-            <WhereIsNextEn />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <WhatWeDoAr />
-            <TestmonalialsAr />
-            <WhereIsNextAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <WhatWeDoEn />
+          <TestmonalialsEn />
+          <WhereIsNextEn />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <WhatWeDoAr />
+          <TestmonalialsAr />
+          <WhereIsNextAr />
+        </main>
+      )}
     </>
   );
 };

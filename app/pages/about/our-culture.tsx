@@ -1,8 +1,6 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../../layouts/ViewerLayout';
 import { useLanguage } from '../../Context/LanguageContext';
-import Layout from '../../components/Layout';
 import styles from '../../styles/Main.module.css';
 import OurCultureEn from '../../components/About/OurCultureEn';
 import OldNavBar from '../../components/OldNavBar';
@@ -17,21 +15,19 @@ const TeamMemberPage = (props: Props) => {
       <Head>
         <title>Our Cluture| CASCO</title>
       </Head>
-      <Layout>
-        {language === 'en' ? (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <OurCultureEn />
-            <Footer />
-          </main>
-        ) : (
-          <main className={`${styles.bodyContainer}`}>
-            <OldNavBar />
-            <OurCultureAr />
-            <FooterAr />
-          </main>
-        )}
-      </Layout>
+      {language === 'en' ? (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <OurCultureEn />
+          <Footer />
+        </main>
+      ) : (
+        <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
+          <OurCultureAr />
+          <FooterAr />
+        </main>
+      )}
     </>
   );
 };
