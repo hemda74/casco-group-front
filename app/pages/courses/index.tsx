@@ -9,23 +9,23 @@ import MainPageEn from '../../components/Courses/MainPageEn';
 import MainPageAr from '../../components/Courses/MainPageAr';
 import { fetchCourseTypes } from '../../lib/fetchTypes';
 import { Category, CourseShort, CourseType } from '../../types';
-import { fetchCat } from "../../lib/fetchCategory";
+import { fetchCat } from '../../lib/fetchCategory';
 import { fetchCourses } from '../../lib/fetchCourses';
 
 type Props = {
-  courses: CourseShort[];
-  cat: Category[];
-  types: CourseType[];
+  initialCourses: CourseShort[];
+  initialCat: Category[];
+  initialTypes: CourseType[];
 };
 
-const Index: React.FC<Props> = ({ courses: initialCourses, cat, types }) => {
+const Index: React.FC<Props> = ({ initialCourses, initialCat, initialTypes }) => {
   const { language } = useLanguage();
   const [selectedCategory, setSelectedCategory] = React.useState<string | null>(null);
   const [selectedType, setSelectedType] = React.useState<string | null>(null);
 
   // Function to filter courses based on selected category and type
-  const filterCourses = (initialCourses: CourseShort[]) => {
-    let filteredCourses = [...initialCourses]; // Make a copy of initialCourses
+  const filterCourses = (courses: CourseShort[]) => {
+    let filteredCourses = [...courses];
 
     if (selectedCategory) {
       filteredCourses = filteredCourses.filter(course => course.categoryId === selectedCategory);
@@ -59,21 +59,21 @@ const Index: React.FC<Props> = ({ courses: initialCourses, cat, types }) => {
         <title>Courses | CASCO</title>
       </Head>
 
-      <main className={`${styles.bodyContainer}`}>
+      <main className={styles.bodyContainer}>
         <OldNavBar />
         {language === 'en' ? (
           <MainPageEn
             courses={filteredCourses}
-            types={types}
-            cat={cat}
+            types={initialTypes}
+            cat={initialCat}
             onCategorySelect={handleCategorySelect}
             onTypeSelect={handleTypeSelect}
           />
         ) : (
           <MainPageAr
             courses={filteredCourses}
-            types={types}
-            cat={cat}
+            types={initialTypes}
+            cat={initialCat}
             onCategorySelect={handleCategorySelect}
             onTypeSelect={handleTypeSelect}
           />
@@ -86,7 +86,7 @@ const Index: React.FC<Props> = ({ courses: initialCourses, cat, types }) => {
 
 export const getStaticProps = async () => {
   try {
-    const [courses, types, cat] = await Promise.all([
+    const [initialCourses, initialTypes, initialCat] = await Promise.all([
       fetchCourses(),
       fetchCourseTypes(),
       fetchCat()
@@ -94,19 +94,21 @@ export const getStaticProps = async () => {
 
     return {
       props: {
-        courses,
-        types,
-        cat
+        initialCourses,
+        initialTypes,
+        initialCat
       },
+      revalidate: 60 * 60 * 24 // Revalidate every 24 hours
     };
   } catch (error) {
     console.error('Error fetching initial data:', error);
     return {
       props: {
-        courses: [],
-        types: [],
-        cat: []
+        initialCourses: [],
+        initialTypes: [],
+        initialCat: []
       },
+      revalidate: 60 * 60 // Retry every hour if there's an error
     };
   }
 };

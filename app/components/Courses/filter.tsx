@@ -46,7 +46,7 @@ const Filter: React.FC<FilterProps> = ({
     <div className="mb-4">
       <h3 className="mb-2">{name}</h3>
       <div className="btn-group">
-        {data.map(filter => (
+        {data?.map(filter => (
           <Button
             key={filter.id}
             className={`btn ${filter.id === selectedValue ? 'btn-primary' : 'btn-secondary'}`}

@@ -21,7 +21,7 @@ const TypesAr: React.FC<Props> = ({ types, onTypeSelect }) => {
                     </div>
                 </button>
                 <ul className="facets hidden dropdown-menu">
-                    {types.map((type) => (
+                    {types?.map((type) => (
                         <li className="" key={type.id}>
                             <Link
                                 href="#"
