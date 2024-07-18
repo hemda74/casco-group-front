@@ -330,3 +330,10 @@ export interface News {
   paragraph_news_ar: ParagraphNews[];
   category: Category;
 }
+export interface Reco {
+  id: string;
+  storeId: string;
+  imageUrl: string;
+  title: string;
+  title_ar: string;
+}
