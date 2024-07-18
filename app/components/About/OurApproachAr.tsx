@@ -1,7 +1,11 @@
 import React from 'react';
 import WhereIsNextAr from '../WhereIsNextAr';
-
-const OurApproachAr = () => {
+import TestimonialsAr from './TestmonalialsAr';
+import { Test } from '../../types';
+type Props = {
+  test: Test[];
+}
+const OurApproachAr: React.FC<Props> = ({ test }) => {
   return (
     <>
       <div id="content-wrap">
@@ -103,78 +107,7 @@ const OurApproachAr = () => {
                     }}></div>
                 </div>
 
-                <div className="grid-testimonials">
-                  <div className="grid-card grid-card--testimonial white-color red-4-background">
-                    <div className="grid-card__container">
-                      <blockquote className="intro intro--medium">
-                        {` "I was immediately impressed with the collegiate nature
-                        of the company. I have been encouraged by the way
-                        consultants from multiple countries come together to
-                        deliver the best possible outcome for our clients. This
-                        firm has developed a strong culture of clearly
-                        identifying best practice and helping clients achieve it
-                        through collaborative working."`}
-                      </blockquote>
-                      <div className="author-card">
-                        <div
-                          className="author-card__image"
-                          style={{
-                            backgroundImage:
-                              ' url(https://www.argonandco.com/wp-content/uploads/2019/12/Chris-2-300x259.png)',
-                          }}></div>
-                        <div className="author-card__info">
-                          <cite>Chris</cite>
-                          <p>Singapore office</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-card grid-card--testimonial white-color red-2-background">
-                    <div className="grid-card__container">
-                      <blockquote className="intro intro--medium">
-                        {`       "Clients comment on how enjoyable we are to work with,
-                        which I think is largely due to the fact that we are
-                        honest and open, as well as maintaining objectivity and
-                        having a high sense of integrity."`}
-                      </blockquote>
-                      <div className="author-card">
-                        <div
-                          className="author-card__image"
-                          style={{
-                            backgroundImage:
-                              ' url(https://www.argonandco.com/wp-content/uploads/2019/12/Crispin.png)',
-                          }}></div>
-                        <div className="author-card__info">
-                          <cite>Crispin</cite>
-                          <p>London office</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid-card grid-card--testimonial white-color red-6-background">
-                    <div className="grid-card__container">
-                      <blockquote className="intro intro--medium">
-                        {`    "Feedback from clients consistently points to the value
-                        we deliver through our knowledge, analytics and thinking
-                        process. They appreciate our effort to structure highly
-                        integrated client/consulting teams to blend inside and
-                        outside perspective to every project."`}
-                      </blockquote>
-                      <div className="author-card">
-                        <div
-                          className="author-card__image"
-                          style={{
-                            backgroundImage:
-                              ' url(https://www.argonandco.com/wp-content/uploads/2019/12/Bruce.png)',
-                          }}></div>
-                        <div className="author-card__info">
-                          <cite>Bruce</cite>
-                          <p>Atlanta office</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <TestimonialsAr test={test} />
               </div>
             </div>
           </div>

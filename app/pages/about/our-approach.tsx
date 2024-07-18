@@ -7,9 +7,13 @@ import OurApproachAr from '../../components/About/OurApproachAr';
 import OldNavBar from '../../components/OldNavBar';
 import Footer from '../../components/Footer';
 import FooterAr from '../../components/FooterAr';
+import { fetchTest } from '../../lib/fetchTest';
+import { Test } from '../../types';
 
-type Props = {};
-const TeamMemberPage = (props: Props) => {
+type Props = {
+  test: Test[]
+}
+const IndexPage: React.FC<Props> = ({ test }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -19,13 +23,13 @@ const TeamMemberPage = (props: Props) => {
       {language === 'en' ? (
         <main className={`${styles.bodyContainer}`}>
           <OldNavBar />
-          <OurApproachEn />
+          <OurApproachEn test={test} />
           <Footer />
         </main>
       ) : (
         <main className={`${styles.bodyContainer}`}>
           <OldNavBar />
-          <OurApproachAr />
+          <OurApproachAr test={test} />
           <FooterAr />
         </main>
       )}
@@ -33,4 +37,12 @@ const TeamMemberPage = (props: Props) => {
     </>
   );
 };
-export default TeamMemberPage;
+export const getStaticProps = async () => {
+  const test = await fetchTest();
+  return {
+    props: {
+      test,
+    },
+  };
+};
+export default IndexPage;

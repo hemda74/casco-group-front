@@ -337,3 +337,14 @@ export interface Reco {
   title: string;
   title_ar: string;
 }
+export interface Test {
+  id: string;
+  storeId: string;
+  imageUrl: string;
+  text: string;
+  name: string;
+  title: string;
+  text_ar: string;
+  name_ar: string;
+  title_ar: string;
+}
