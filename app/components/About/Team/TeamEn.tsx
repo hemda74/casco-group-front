@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
 import Recogention from '../Recogention';
-const MainTeamPageEn = () => {
+import { Reco, Teams } from '../../../types';
+type Props = {
+  reco: Reco[];
+  teams: Teams[]
+}
+const MainTeamPageEn: React.FC<Props> = ({ reco, teams }) => {
   return (
     <>
       <div className="no-image-banner text-center">
@@ -433,7 +438,7 @@ const MainTeamPageEn = () => {
         </div>
       </section>
 
-      <Recogention />
+      <Recogention reco={reco} />
     </>
   );
 };

@@ -348,3 +348,14 @@ export interface Test {
   name_ar: string;
   title_ar: string;
 }
+export interface Teams {
+  id: string;
+  storeId: string;
+  name: string;
+  name_ar: string;
+  address: string;
+  address_ar: string;
+  linkedin: string;
+  phone: string;
+  imageUrl: string;
+}

@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
-import Recogention from '../Recogention';
-const MainTeamPageAr = () => {
+import RecogentionAr from '../RecogentionAr';
+import { Reco, Teams } from '../../../types';
+type Props = {
+  reco: Reco[];
+  teams: Teams[];
+}
+const MainTeamPageAr: React.FC<Props> = ({ reco }) => {
   return (
     <>
       <div dir="rel">
@@ -30,6 +35,7 @@ const MainTeamPageAr = () => {
                           <h3 className="title title--xs title--medium-weight">
                             ماذا نعمل في كاسكو
                           </h3>
+                          <p></p>
                         </div>
                       </div>
                     </div>
@@ -85,9 +91,7 @@ const MainTeamPageAr = () => {
           <div className="container card-grid">
             <div className="row">
               <div className="col-12 text-center">
-                <h2 className="title title--lg red-1-color">
-                  فريقنا في الأمارات العربية المتحدة
-                </h2>
+                <h2 className="title title--lg red-1-color">فريقنا في مصر</h2>
               </div>
             </div>
             <div className="row js-team-top-level p-4">
@@ -100,13 +104,12 @@ const MainTeamPageAr = () => {
                     <div className=" card--person">
                       <div className="card--person__image grayscale">
                         <picture>
-                          <img
-                            src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg"
-                            alt=""
-                          />
+                          <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-2315 alt=''60-e1571821250814-959x1024.jpg" />
                         </picture>
                       </div>
-                      <strong className=" text-primary-100">طه اشرف</strong>
+                      <strong className=" text-primary-100">
+                        محمود عبد المغني
+                      </strong>
                     </div>
                   </a>
                   <div className="w-full">
@@ -129,7 +132,7 @@ const MainTeamPageAr = () => {
                             <div className="row mt-5">
                               <div className="col-md-8">
                                 <h2 className="title title--lg p-2 text-primary-100 ">
-                                  طه اشرف
+                                  محمود عبد المغني
                                 </h2>
                                 <ul>
                                   <li>
@@ -161,10 +164,7 @@ const MainTeamPageAr = () => {
                                       type="image/webp"
                                       srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
                                     />
-                                    <img
-                                      src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg"
-                                      alt=""
-                                    />
+                                    <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
                                   </picture>
                                 </div>
                               </div>
@@ -185,13 +185,12 @@ const MainTeamPageAr = () => {
                     <div className=" card--person">
                       <div className="card--person__image grayscale">
                         <picture>
-                          <img
-                            src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg"
-                            alt=""
-                          />
+                          <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-2315 alt=''60-e1571821250814-959x1024.jpg" />
                         </picture>
                       </div>
-                      <strong className=" text-primary-100">طه اشرف</strong>
+                      <strong className=" text-primary-100">
+                        محمود عبد المغني
+                      </strong>
                     </div>
                   </a>
                   <div className="w-full">
@@ -214,7 +213,7 @@ const MainTeamPageAr = () => {
                             <div className="row mt-5">
                               <div className="col-md-8">
                                 <h2 className="title title--lg p-2 text-primary-100 ">
-                                  طه اشرف
+                                  محمود عبد المغني
                                 </h2>
                                 <ul>
                                   <li>
@@ -246,10 +245,7 @@ const MainTeamPageAr = () => {
                                       type="image/webp"
                                       srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
                                     />
-                                    <img
-                                      src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg"
-                                      alt=""
-                                    />
+                                    <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
                                   </picture>
                                 </div>
                               </div>
@@ -270,13 +266,12 @@ const MainTeamPageAr = () => {
                     <div className=" card--person">
                       <div className="card--person__image grayscale">
                         <picture>
-                          <img
-                            src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg"
-                            alt=""
-                          />
+                          <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-2315 alt=''60-e1571821250814-959x1024.jpg" />
                         </picture>
                       </div>
-                      <strong className=" text-primary-100">طه اشرف</strong>
+                      <strong className=" text-primary-100">
+                        محمود عبد المغني
+                      </strong>
                     </div>
                   </a>
                   <div className="w-full">
@@ -299,7 +294,7 @@ const MainTeamPageAr = () => {
                             <div className="row mt-5">
                               <div className="col-md-8">
                                 <h2 className="title title--lg p-2 text-primary-100 ">
-                                  طه اشرف
+                                  محمود عبد المغني
                                 </h2>
                                 <ul>
                                   <li>
@@ -331,10 +326,7 @@ const MainTeamPageAr = () => {
                                       type="image/webp"
                                       srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
                                     />
-                                    <img
-                                      src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg"
-                                      alt=""
-                                    />
+                                    <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
                                   </picture>
                                 </div>
                               </div>
@@ -355,13 +347,12 @@ const MainTeamPageAr = () => {
                     <div className=" card--person">
                       <div className="card--person__image grayscale">
                         <picture>
-                          <img
-                            src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg"
-                            alt=""
-                          />
+                          <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-2315 alt=''60-e1571821250814-959x1024.jpg" />
                         </picture>
                       </div>
-                      <strong className=" text-primary-100">طه اشرف</strong>
+                      <strong className=" text-primary-100">
+                        محمود عبد المغني
+                      </strong>
                     </div>
                   </a>
                   <div className="w-full">
@@ -384,7 +375,7 @@ const MainTeamPageAr = () => {
                             <div className="row mt-5">
                               <div className="col-md-8">
                                 <h2 className="title title--lg p-2 text-primary-100 ">
-                                  طه اشرف
+                                  محمود عبد المغني
                                 </h2>
                                 <ul>
                                   <li>
@@ -416,10 +407,7 @@ const MainTeamPageAr = () => {
                                       type="image/webp"
                                       srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
                                     />
-                                    <img
-                                      src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg"
-                                      alt=""
-                                    />
+                                    <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
                                   </picture>
                                 </div>
                               </div>
@@ -434,7 +422,7 @@ const MainTeamPageAr = () => {
             </div>
           </div>
         </section>
-        <Recogention />
+        <RecogentionAr reco={reco} />
       </div>
     </>
   );

@@ -33,7 +33,6 @@ const AboutMainSectionEn = () => {
                     </div>
                   </div>
                 </Link>
-
                 <Link href="/about/our-culture/">
                   <div className="card card--image red-3-background white-color card--fixed-sm">
                     <div className="card__image object-fit">
