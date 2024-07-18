@@ -10,9 +10,13 @@ import TestmonalialsEn from '../../components/About/TestmonalialsEn';
 import TestmonalialsAr from '../../components/About/TestmonalialsAr';
 import WhereIsNextEn from '../../components/WhereIsNextEn';
 import WhereIsNextAr from '../../components/WhereIsNextAr';
+import { fetchTest } from '../../lib/fetchTest';
+import { Test } from '../../types';
 
-type Props = {};
-const TeamMemberPage: NextPageWithLayout = (props: Props) => {
+type Props = {
+  test: Test[]
+}
+const IndexPage: NextPageWithLayout<Props> = ({ test }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -22,21 +26,30 @@ const TeamMemberPage: NextPageWithLayout = (props: Props) => {
       {language === 'en' ? (
         <main className={`${styles.bodyContainer}`}>
           <WhatWeDoEn />
-          <TestmonalialsEn />
+          <TestmonalialsEn test={test} />
           <WhereIsNextEn />
         </main>
       ) : (
         <main className={`${styles.bodyContainer}`}>
           <WhatWeDoAr />
-          <TestmonalialsAr />
+          <TestmonalialsAr test={test} />
           <WhereIsNextAr />
         </main>
       )}
     </>
   );
 };
-// adding Layout
-TeamMemberPage.getLayout = function getLayout(TeamMemberPage: ReactElement) {
-  return <ViewerLayout childern={TeamMemberPage}></ViewerLayout>;
+export const getStaticProps = async () => {
+  const test = await fetchTest();
+  return {
+    props: {
+      test,
+    },
+  };
 };
-export default TeamMemberPage;
+// adding Layout
+IndexPage.getLayout = function getLayout(IndexPage: ReactElement) {
+  return <ViewerLayout childern={IndexPage}></ViewerLayout>;
+};
+
+export default IndexPage;
