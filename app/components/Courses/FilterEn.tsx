@@ -48,7 +48,7 @@ const Filter: React.FC<FilterProps> = ({
         {data?.map(filter => (
           <Button
             key={filter.id}
-            className={`w-45 text-sm text-no-wrap me-1 block text-white text-center myPrimary cursor-pointer mt-2 ${filter.id === selectedValue ? 'btn-primary' : 'btn-secondary'}`}
+            className={`w-full text-sm text-no-wrap me-1 block text-white text-center myPrimary cursor-pointer mt-2 ${filter.id === selectedValue ? 'btn-primary' : 'btn-secondary'}`}
 
             onClick={() => onClick(filter.id)}
           >

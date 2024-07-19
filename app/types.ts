@@ -359,3 +359,20 @@ export interface Teams {
   phone: string;
   imageUrl: string;
 }
+export interface Member {
+  id: string;
+  storeId: string;
+  teamId: string;
+  name: string;
+  name_ar: string;
+  title: string;
+  title_ar: string;
+  brief_1: string;
+  brief_2: string;
+  brief_3: string;
+  brief_1_ar: string;
+  brief_2_ar: string;
+  brief_3_ar: string;
+  imageUrl: string;
+  team: Teams;
+}

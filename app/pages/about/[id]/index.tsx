@@ -1,14 +1,14 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import ViewerLayout from '../../layouts/ViewerLayout';
-import { NextPageWithLayout } from '../_app';
-import { useLanguage } from '../../Context/LanguageContext';
+import ViewerLayout from '../../../layouts/ViewerLayout';
+import { NextPageWithLayout } from '../../_app';
+import { useLanguage } from '../../../Context/LanguageContext';
 import styles from '../../../styles/Main.module.css';
-import MainTeamPageEn from '../../components/About/Team/TeamEn';
-import MainTeamPageAr from '../../components/About/Team/TeamAr';
-import { fetchReco } from '../../lib/fetchRecogentions';
-import { Reco, Teams } from '../../types';
-import { fetchTeams } from '../../lib/fetchTeams';
+import MainTeamPageEn from '../../../components/About/Team/TeamEn';
+import MainTeamPageAr from '../../../components/About/Team/TeamAr';
+import { fetchReco } from '../../../lib/fetchRecogentions';
+import { Reco, Teams } from '../../../types';
+import { fetchTeams } from '../../../lib/fetchTeams';
 
 type Props = {
   reco: Reco[];
@@ -42,6 +42,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       reco,
+      teams
     },
   };
 };

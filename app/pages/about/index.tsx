@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { useLanguage } from '../../Context/LanguageContext';
 import AboutMainSectionAr from '../../components/About/AboutMainSection-ar';
@@ -12,12 +12,16 @@ import FooterAr from '../../components/FooterAr';
 import RecogentionAr from '../../components/About/RecogentionAr';
 import MeetOurTeamAr from '../../components/About/MeetOurTeamAr';
 import { fetchReco } from '../../lib/fetchRecogentions';
-import { Reco } from '../../types';
+import { Reco, Teams } from '../../types';
+import { NextPageWithLayout } from '../_app';
+import ViewerLayout from '../../layouts/ViewerLayout';
+import { fetchTeams } from '../../lib/fetchTeams';
 
 type Props = {
-  reco: Reco[]
+  reco: Reco[];
+  teams: Teams[]
 };
-const Index: React.FC<Props> = ({ reco }) => {
+const Index: NextPageWithLayout<Props> = ({ reco, teams }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -27,15 +31,14 @@ const Index: React.FC<Props> = ({ reco }) => {
 
       {language === 'en' ? (
         <main className={`${styles.bodyContainer}`}>
-          <OldNavBar />
+
           <AboutMainSectionEn />
-          <MeetOurTeamEn />
+          <MeetOurTeamEn teams={teams} />
           <Recogention reco={reco} />
           <Footer />
         </main>
       ) : (
         <main className={`${styles.bodyContainer}`}>
-          <OldNavBar />
           <AboutMainSectionAr />
           <MeetOurTeamAr />
           <RecogentionAr reco={reco} />
@@ -48,10 +51,17 @@ const Index: React.FC<Props> = ({ reco }) => {
 };
 export const getStaticProps = async () => {
   const reco = await fetchReco();
+  const teams = await fetchTeams();
   return {
     props: {
       reco,
+      teams
     },
   };
+};
+// ad
+// adding Layout
+Index.getLayout = function getLayout(Index: ReactElement) {
+  return <ViewerLayout childern={Index}></ViewerLayout>;
 };
 export default Index;
