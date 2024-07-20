@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { Reco, Teams } from '../../types';
+import { Teams } from '../../types';
 type Props = {
   teams: Teams[];
 }

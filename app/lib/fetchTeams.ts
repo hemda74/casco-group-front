@@ -8,7 +8,7 @@ export const fetchTeams = async (): Promise<Teams[]> => {
   return response.data;
 };
 
-export const fetchTeamsById = async (id: string): Promise<Teams> => {
+export const fetchTeamById = async (id: string): Promise<Teams> => {
   const response = await axios.get(`${API_URL}/${id}`);
   return response.data;
 };

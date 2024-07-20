@@ -13,15 +13,13 @@ import RecogentionAr from '../../components/About/RecogentionAr';
 import MeetOurTeamAr from '../../components/About/MeetOurTeamAr';
 import { fetchReco } from '../../lib/fetchRecogentions';
 import { Reco, Teams } from '../../types';
-import { NextPageWithLayout } from '../_app';
-import ViewerLayout from '../../layouts/ViewerLayout';
 import { fetchTeams } from '../../lib/fetchTeams';
 
 type Props = {
   reco: Reco[];
   teams: Teams[]
 };
-const Index: NextPageWithLayout<Props> = ({ reco, teams }) => {
+const Index: React.FC<Props> = ({ reco, teams }) => {
   const { language } = useLanguage();
   return (
     <>
@@ -31,7 +29,7 @@ const Index: NextPageWithLayout<Props> = ({ reco, teams }) => {
 
       {language === 'en' ? (
         <main className={`${styles.bodyContainer}`}>
-
+          <OldNavBar />
           <AboutMainSectionEn />
           <MeetOurTeamEn teams={teams} />
           <Recogention reco={reco} />
@@ -39,8 +37,9 @@ const Index: NextPageWithLayout<Props> = ({ reco, teams }) => {
         </main>
       ) : (
         <main className={`${styles.bodyContainer}`}>
+          <OldNavBar />
           <AboutMainSectionAr />
-          <MeetOurTeamAr />
+          <MeetOurTeamAr teams={teams} />
           <RecogentionAr reco={reco} />
           <FooterAr />
         </main>
@@ -58,10 +57,5 @@ export const getStaticProps = async () => {
       teams
     },
   };
-};
-// ad
-// adding Layout
-Index.getLayout = function getLayout(Index: ReactElement) {
-  return <ViewerLayout childern={Index}></ViewerLayout>;
 };
 export default Index;

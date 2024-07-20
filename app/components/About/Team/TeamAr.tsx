@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import React from 'react';
 import RecogentionAr from '../RecogentionAr';
-import { Reco, Teams } from '../../../types';
+import { Member, Reco, Teams } from '../../../types';
 type Props = {
   reco: Reco[];
-  teams: Teams[];
+  members: Member[];
+  team: Teams;
+
 }
-const MainTeamPageAr: React.FC<Props> = ({ reco, teams }) => {
+const MainTeamPageAr: React.FC<Props> = ({ reco, members, team }) => {
   return (
     <>
       <div dir="rel">
@@ -91,31 +93,33 @@ const MainTeamPageAr: React.FC<Props> = ({ reco, teams }) => {
           <div className="container card-grid">
             <div className="row">
               <div className="col-12 text-center">
-                <h2 className="title title--lg red-1-color">فريقنا في مصر</h2>
+                <h2 className="title title--lg red-1-color">{`فريقنا في ${team.name_ar}`}</h2>
               </div>
             </div>
             <div className="row js-team-top-level p-4">
-              {teams?.map((t => (
-                <div className="col-xl-3 col-md-6 order-1" key={t.id}>
+              {members.map((m) => (
+                <div className="col-xl-3 col-md-6 order-1" key={m.id}>
                   <div className="">
                     <a
                       className=" cursor-pointer"
                       data-bs-toggle="modal"
-                      data-bs-target="#exampleModal">
+                      data-bs-target={`#example${m.id}Modal`}>
                       <div className=" card--person">
                         <div className="card--person__image grayscale">
                           <picture>
-                            <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-2315 alt=''60-e1571821250814-959x1024.jpg" />
+                            <img
+                              src={m.imageUrl}
+                              alt=""
+                            />
                           </picture>
                         </div>
-                        <strong className=" text-primary-100">
-                          {t.name}                     </strong>
+                        <strong className=" text-primary-100">{m.name_ar}</strong>
                       </div>
                     </a>
                     <div className="w-full">
                       <div
                         className=" modal  fade contact w-screen  fixed inset-0 mx-auto align-center scrolling-touch overflow-y-auto | lg:h-screen lg:px-8"
-                        id="exampleModal"
+                        id={`example${m.id}Modal`}
                         tabIndex={-1}
                         aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
@@ -132,40 +136,26 @@ const MainTeamPageAr: React.FC<Props> = ({ reco, teams }) => {
                               <div className="row mt-5">
                                 <div className="col-md-8">
                                   <h2 className="title title--lg p-2 text-primary-100 ">
-                                    محمود عبد المغني
+                                    {m.name_ar}
                                   </h2>
                                   <ul>
                                     <li>
-                                      {`       Board level operational experience in management
-                          consultancy focusing on logistics and supply chain
-                          functions within the retail and FMCG sectors`}
+                                      {m.brief_1_ar}
                                     </li>
                                     <li>
-                                      {`    Particular expertise in automated warehouse design,
-                          distribution network strategies, last mile logistics,
-                          warehouse management systems (WMS) and multi-channel
-                          logistics operations`}
+                                      {m.brief_2_ar}
                                     </li>
                                     <li>
-                                      {`    With significant experience across the UK, Europe,
-                          Asia, USA and Australia, previous projects include
-                          design and tendering for the worlds largest automated
-                          multi-channel grocery warehouse, global network
-                          rationalisations, Brexit-driven European distribution
-                          strategies and grocery home shopping operational
-                          improvements`}
+                                      {m.brief_3_ar}
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="col-md-4">
                                   <div className="card--person__image ">
-                                    <picture>
-                                      <source
-                                        type="image/webp"
-                                        srcSet="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg.webp"
-                                      />
-                                      <img src="https://www.argonandco.com/wp-content/uploads/2019/10/190517_Crimson-Co-231560-e1571821250814-959x1024.jpg" />
-                                    </picture>
+                                    <img
+                                      src={m.imageUrl}
+                                      alt=""
+                                    />
                                   </div>
                                 </div>
                               </div>
@@ -176,9 +166,7 @@ const MainTeamPageAr: React.FC<Props> = ({ reco, teams }) => {
                     </div>
                   </div>
                 </div>
-              )))}
-
-
+              ))}
             </div>
           </div>
         </section>
