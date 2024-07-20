@@ -1,8 +1,6 @@
-import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Course } from '../../types';
 import { toast } from 'react-hot-toast';
-import Modal from 'bootstrap/js/dist/modal'; // Corrected import
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 type Props = {
     course: Course;
@@ -45,24 +43,42 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
         }
     };
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         console.log(formData);
-        toast.success("Request Sent Successfully");
 
-        // Close the modal using Bootstrap's data-bs-target and data-bs-toggle
-        const modalElement = document.getElementById('exampleModal');
-        if (modalElement) {
-            modalElement.classList.remove('show'); // Manually remove 'show' class
-            modalElement.setAttribute('aria-hidden', 'true');
-            modalElement.setAttribute('style', 'display: none');
-            document.body.classList.remove('modal-open');
-            const modalBackdrop = document.getElementsByClassName('modal-backdrop')[0];
-            if (modalBackdrop) {
-                document.body.removeChild(modalBackdrop);
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ course, formData }),
+            });
+
+            if (response.ok) {
+                toast.success('Request Sent Successfully');
+                // Close the modal
+                const modalElement = document.getElementById('exampleModal');
+                if (modalElement) {
+                    modalElement.classList.remove('show'); // Manually remove 'show' class
+                    modalElement.setAttribute('aria-hidden', 'true');
+                    modalElement.setAttribute('style', 'display: none');
+                    document.body.classList.remove('modal-open');
+                    const modalBackdrop = document.getElementsByClassName('modal-backdrop')[0];
+                    if (modalBackdrop) {
+                        document.body.removeChild(modalBackdrop);
+                    }
+                }
+            } else {
+                toast.error('Failed to send request');
             }
+        } catch (error) {
+            console.error(error);
+            toast.error('Failed to send request');
         }
     };
+
     return (
         <div className="w-full xl:w-10/12 mt-6 | lg:mt-8">
             <div className="w-full">
@@ -96,9 +112,8 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className="col-span-10 xl:col-span-6" >
+                                        <div className="col-span-10 xl:col-span-6">
                                             <form
-
                                                 className="grid grid-cols-1 gap-8 | xl:grid-cols-2 lg:gap-4"
                                                 onSubmit={handleSubmit}
                                             >
@@ -153,7 +168,7 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                                                         id="tel-input"
                                                         name="telephone"
                                                         type="text"
-                                                        placeholder="Your telephone"
+                                                        placeholder="Telephone"
                                                         value={formData.telephone}
                                                         onChange={handleChange}
                                                         required
@@ -162,12 +177,12 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                                                 </div>
                                                 <div>
                                                     <label htmlFor="email-input" className="">
-                                                        Email Address:
+                                                        Email:
                                                     </label>
                                                     <input
                                                         id="email-input"
                                                         name="email"
-                                                        type="text"
+                                                        type="email"
                                                         placeholder="Your email"
                                                         value={formData.email}
                                                         onChange={handleChange}
@@ -176,73 +191,40 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                                                     />
                                                 </div>
                                                 <div className="xl:col-span-2">
-                                                    <label htmlFor="wheredidyou-input" className="">
-                                                        Where did you hear about us?:
+                                                    <label htmlFor="whereDidYouHear-input" className="">
+                                                        Where did you hear about us?
                                                     </label>
-                                                    <select
-                                                        id="wheredidyou-input"
+                                                    <input
+                                                        id="whereDidYouHear-input"
                                                         name="whereDidYouHear"
+                                                        type="text"
+                                                        placeholder="Source"
                                                         value={formData.whereDidYouHear}
                                                         onChange={handleChange}
-                                                        required
                                                         className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                                    >
-                                                        <option value="">
-                                                            select an option                                                        </option>
-                                                        <option value="I have used iqms Learning before">
-                                                            I have used CASCO Learning Before                                                        </option>
-                                                        <option value="Google Search">
-                                                            Google Search                                                        </option>
-                                                        <option value="LinkedIn">
-                                                            Linkedin
-                                                        </option>
-                                                        <option value="Facebook">
-                                                            Facebook
-                                                        </option>
-                                                        <option value="Twitter">
-                                                            Twitter
-                                                        </option>
-                                                        <option value="Awarding Body">
-                                                            Awarding Body                                                        </option>
-                                                        <option value="Colleague or Friend">
-                                                            Colleague or Friend                                                        </option>
-                                                        <option value="Other">
-                                                            Other
-                                                        </option>
-                                                    </select>
+                                                    />
                                                 </div>
                                                 <div className="xl:col-span-2">
-                                                    <div className="flex items-center">
+                                                    <label className="inline-flex items-center mt-3">
                                                         <input
-                                                            name="gdpr"
-                                                            id="gdpr"
-                                                            aria-label="Select all"
                                                             type="checkbox"
+                                                            name="gdpr"
                                                             checked={formData.gdpr}
                                                             onChange={handleChange}
-                                                            className="h-6 w-6 border-gray-300 text-secondary focus:shadow-outline-blue focus:border-blue-300"
+                                                            className="form-checkbox h-5 w-5 text-primary-100"
                                                         />
-                                                        <label
-                                                            htmlFor="documentation_checkbox"
-                                                            className="ml-2"
-                                                        >
-                                                            <span className="block font-medium text-sm leading-5 text-gray-700">
-                                                                {`Please keep me up to date with CASCO Learning’s news and special offers (optional)
-`}
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div className="flex items-center">
-                                                    <button
-                                                        type="submit"
-                                                        className="w-full block p-4 rounded-lg text-white fs-4 text-center myPrimary cursor-pointer text-lg">
-                                                        Submit
-                                                    </button>
+                                                        <span className="ml-2 text-gray-700">
+                                                            I consent to GDPR terms.
+                                                        </span>
+                                                    </label>
                                                 </div>
                                                 <div className="xl:col-span-2">
-                                                    <span className="block w-full text-xs text-center mt-3">
-                                                        {`*By submitting this form and clicking submit you are accepting CASCO Learning’s privacy policy`}                                                    </span>
+                                                    <button
+                                                        type="submit"
+                                                        className="w-full bg-primary-100 text-white rounded py-3 px-4"
+                                                    >
+                                                        Submit
+                                                    </button>
                                                 </div>
                                             </form>
                                         </div>

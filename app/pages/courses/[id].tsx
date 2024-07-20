@@ -41,7 +41,7 @@ const Contactus: React.FC<Props> = ({ course, courses }) => {
 };
 export const getStaticPaths: GetStaticPaths = async () => {
   const courses = await fetchCourses();
-  const paths = courses.map((course) => ({
+  const paths = courses?.map((course) => ({
     params: { id: course.id },
   }));
   return { paths, fallback: false };

@@ -36,7 +36,7 @@ const CourseSidebarEn: React.FC<Props> = ({ course, courses }) => {
                 <h3 className="text-lg font-bold mb-1 text-primary-100 | lg:text-xl">
                     Other courses you may be interested in
                 </h3>
-                {courses.map((c) => (
+                {courses?.map((c) => (
                     <Link
                         href={`/courses/${c.id}`}
                         key={c.id}
