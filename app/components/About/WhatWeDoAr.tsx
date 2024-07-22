@@ -5,7 +5,7 @@ const WhatWeDoAr = () => {
   return (
     <>
       <div id="content-wrap" dir="rtl">
-        <div className="banner  banner--ar banner--full-overlay ">
+        <div className="banner banner--ar banner--full-overlay">
           <div className="banner__background">
             <picture>
               <source
@@ -15,26 +15,25 @@ const WhatWeDoAr = () => {
               <img src="https://www.argonandco.com/wp-content/uploads/2019/12/ARGON-26.jpg" />
             </picture>
           </div>
-          <div className="banner__center text-center ">
+          <div className="banner__center text-center">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <h1 className="title title--xl title--bold off-screen off-screen--rotate-up">
-                    ماذا نفعل فى كاسكو
+                    ماذا نفعل في كاسكو
                   </h1>
                   <p className="intro off-screen off-screen--rotate-up mt-3">
-                    شركة استشارات إدارية عالمية متخصصة في استراتيجية العمليات
-                    والتحول.
+                    شركة استشارات إدارية عالمية متخصصة في استراتيجية العمليات والتحول.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div className="banner__bottom text-center banner__bottom--lower m-auto">
-            <div className=" m-auto text-white">
+            <div className="m-auto text-white">
               <span property="itemListElement" typeof="ListItem">
                 <Link
-                  title="Go to Home."
+                  title="الذهاب إلى الصفحة الرئيسية"
                   href="/"
                   className="home m-auto text-white">
                   <span property="name" className="me-2 ms-2 text-white">
@@ -46,7 +45,7 @@ const WhatWeDoAr = () => {
               ›
               <span property="itemListElement" typeof="ListItem">
                 <Link
-                  title="Go to About."
+                  title="الذهاب إلى صفحة عن كاسكو"
                   href="/about/"
                   className="post post-page">
                   <span property="name" className="me-2 ms-2 text-white">
@@ -57,94 +56,88 @@ const WhatWeDoAr = () => {
               </span>
               ›
               <span className="post post-page current-item me-2 ms-2 text-white cursor-pointer">
-                ماذا نفعل فى كاسكو
+                ماذا نفعل في كاسكو
               </span>
             </div>
           </div>
         </div>
 
-        <div className="section section--std  off-screen--fade-up">
+        <div className="section section--std off-screen--fade-up">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8">
                 <h2
                   className="title title--lg red-2-color text-center"
                   style={{ marginBottom: '40px' }}>
-                  Transforming operations
+                  تحويل العمليات
                 </h2>
               </div>
               <div
                 className="col-md-5 offset-md-1"
                 style={{ marginBottom: '30px' }}>
-                <h2 className="title title--md red-1-color ">
-                  Operations strategy and transformation
+                <h2 className="title title--md red-1-color">
+                  استراتيجية وتحول العمليات
                 </h2>
                 <p>
                   <span className="intro text-black-50">
-                    {`  With expertise spanning supply chain planning,
-                    manufacturing, logistics, procurement, finance, and shared
-                    services, we work together with clients to transform their
-                    businesses and generate real change.`}
+                    {`بفضل الخبرة التي تمتد إلى تخطيط سلسلة الإمداد، التصنيع، اللوجستيات،
+                    المشتريات، المالية، والخدمات المشتركة، نعمل مع العملاء لتحويل
+                    أعمالهم وتحقيق تغيير حقيقي.`}
                   </span>
                 </p>
                 <p className="intro text-black-50">
-                  {`A transformation involves making a step-change to the way a
-                  company operates, allowing it to make better use of existing
-                  competencies and infrastructure or to develop new ones. It
-                  leads to a substantial improvement in performance.`}
+                  {`التحول يتضمن إجراء تغيير كبير في طريقة تشغيل الشركة، مما يتيح لها
+                  الاستفادة بشكل أفضل من الكفاءات والبنية التحتية الحالية أو تطوير
+                  جديدة. يؤدي ذلك إلى تحسين كبير في الأداء.`}
                 </p>
               </div>
               <div className="col-md-5" style={{ marginBottom: '30px' }}>
-                <h2 className="title title--md red-2-color ">
-                  Technical expertise and operational experience
+                <h2 className="title title--md red-2-color">
+                  الخبرة التقنية والخبرة التشغيلية
                 </h2>
                 <p>
                   <span className="intro text-black-50">
-                    {` We apply a combination of deep technical expertise,
-                      operational experience and broad business knowledge to
-                      deliver lasting results.`}
+                    {`نطبق مزيجًا من الخبرة التقنية العميقة، والخبرة التشغيلية،
+                      والمعرفة التجارية الواسعة لتحقيق نتائج مستدامة.`}
                   </span>
                 </p>
                 <p className="intro text-black-50">
-                  {`  All our people come from operational backgrounds and have been
-                  through rigorous training, so we really know what we’re
-                  talking about.`}
+                  {`جميع أفراد فريقنا يأتون من خلفيات تشغيلية وقد مروا بتدريب صارم،
+                  لذا نحن نعرف حقًا ما نتحدث عنه.`}
                 </p>
               </div>
               <div
                 className="col-md-5 offset-md-1"
                 style={{ marginBottom: '30px' }}>
-                <h2 className="title title--md red-3-color ">
-                  Personable with challenge where needed
+                <h2 className="title title--md red-3-color">
+                  الودّ مع التحدي عند الحاجة
                 </h2>
                 <p>
                   <span className="intro text-black-50">
-                    {`Our positive, flexible and personal approach, with challenge
-                    where needed, ensures buy-in at all levels of our clients’
-                    businesses and a positive outcome.`}
+                    {`نهجنا الإيجابي، المرن، والشخصي، مع التحدي عند الحاجة، يضمن
+                    الحصول على دعم من جميع مستويات أعمال عملائنا وتحقيق نتيجة إيجابية.`}
                   </span>
                 </p>
                 <span className="intro text-black-50">
-                  {`    We are engaging to work with and trusted by clients to get the
-                  job done, and share a belief that the only thing that matters
-                  is making a real difference for our clients.`}
+                  {`نحن ممتعون في العمل معنا ويثق بنا العملاء لإنجاز المهمة، ونشترك
+                  في الاعتقاد بأن الشيء الوحيد الذي يهم هو تحقيق فرق حقيقي لعملائنا.`}
                 </span>
               </div>
-              <div className="col-md-5 " style={{ marginBottom: '30px' }}>
-                <h2 className="title title--md red-4-color ">
-                  Global footprint with local expertise
+              <div className="col-md-5" style={{ marginBottom: '30px' }}>
+                <h2 className="title title--md red-4-color">
+                  وجود عالمي مع خبرة محلية
                 </h2>
                 <p>
                   <span className="intro text-black-50">
-                    {`      We have offices in Paris, London, Abu Dhabi, Amsterdam,
-                    Atlanta, Auckland, Chicago, Dusseldorf, Hong Kong, Lausanne,
-                    Melbourne, Mumbai, Riyadh, São Paulo, Singapore and Sydney.`}
+                    {`لدينا مكاتب في باريس، لندن، أبوظبي، أمستردام، أتلانتا، أوكلاند،
+                    شيكاغو، دوسلدورف، هونغ كونغ، لوزان، ملبورن، مومباي، الرياض،
+                    ساو باولو، سنغافورة، وسيدني.`}
                   </span>
                 </p>
                 <span className="intro text-black-50">
-                  {`   With over 500 consultants worldwide in 16 offices, we have the
-                  ability to provide our clients with local support coupled with
-                  our renowned understanding of global best practice.`}
+                  {`مع أكثر من 500 استشاري على مستوى العالم في 16 مكتبًا، لدينا القدرة
+                  على تقديم الدعم المحلي لعملائنا جنبًا إلى جنب مع فهمنا المشهور
+                  لأفضل الممارسات العالمية.`}
                 </span>
               </div>
             </div>

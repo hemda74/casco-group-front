@@ -2,16 +2,18 @@ import React from 'react';
 import WhereIsNextAr from '../WhereIsNextAr';
 import TestimonialsAr from './TestmonalialsAr';
 import { Test } from '../../types';
+
 type Props = {
   test: Test[];
 }
+
 const OurApproachAr: React.FC<Props> = ({ test }) => {
   return (
     <>
-      <div id="content-wrap">
+      <div id="content-wrap" dir="rtl">
         <div className="no-image-banner text-center">
           <h1 className="title title--bold title--2xl">
-            <span className="gradient-text">نهجنا </span>
+            <span className="gradient-text">نهجنا</span>
           </h1>
         </div>
 
@@ -20,39 +22,33 @@ const OurApproachAr: React.FC<Props> = ({ test }) => {
             <div className="row">
               <div className="col-12">
                 <div className="grid-9">
-                  <div className="grid-card  red-3-background intro text-white">
+                  <div className="grid-card red-3-background intro text-white">
                     <span className="text-white">
                       <p>
                         <span className="intro--medium text-white">
-                          {`Our diverse experience, deep understanding and
-                          awareness of the bigger picture means we solve complex
-                          business problems in creative and innovative ways.`}
+                          {`تجربتنا المتنوعة، وفهمنا العميق ووعينا بالصورة الأكبر يعني أننا
+                          نحُل المشكلات التجارية المعقدة بطرق إبداعية ومبتكرة.`}
                         </span>
                       </p>
                       <p className="fs-6">
-                        {`  Working at all levels, we transform the operations of
-                        clients using our unique Assess Design Embed® approach,
-                        which is applied at each stage of a project to reduce
-                        risk and achieve better results, faster, and in a
-                        sustainable way:`}
+                        {`من خلال العمل على جميع المستويات، نقوم بتحويل عمليات العملاء
+                        باستخدام نهجنا الفريد Assess Design Embed®، والذي يتم تطبيقه في
+                        كل مرحلة من مراحل المشروع لتقليل المخاطر وتحقيق نتائج أفضل، بشكل
+                        أسرع، وبطريقة مستدامة:`}
                       </p>
                       <ul>
                         <li>
-                          {`We work strategically with Boards and senior
-                          management, identifying high impact levers and
-                          combining a broad vision of the issues with our deep
-                          functional expertise`}
+                          {`نعمل استراتيجيًا مع مجالس الإدارة والإدارة العليا، ونتعرف على
+                          العوامل ذات التأثير الكبير ونجمع بين رؤية واسعة للقضايا وخبرتنا
+                          العميقة في المجالات الوظيفية`}
                         </li>
                         <li>
-                          {` We provide specialist input, using our experience
-                          across many industries to design pragmatic solutions
-                          to achieve the strategic objectives`}
+                          {`نقدم مدخلات متخصصة، مستخدمين خبرتنا عبر العديد من الصناعات لتصميم
+                          حلول عملية لتحقيق الأهداف الاستراتيجية`}
                         </li>
                         <li>
-                          {`  We implement operational change, managing
-                          transformation programmes to deliver a sustainable
-                          shift in market approach, process, organisation,
-                          culture and systems`}
+                          {`نقوم بتنفيذ التغيير التشغيلي، وندير برامج التحول لتحقيق تغيير
+                          مستدام في النهج السوقي، العمليات، التنظيم، الثقافة، والأنظمة`}
                         </li>
                       </ul>
                     </span>
@@ -61,35 +57,30 @@ const OurApproachAr: React.FC<Props> = ({ test }) => {
                     className="grid-card grid-card--image"
                     style={{
                       backgroundImage:
-                        ' url(https://www.argonandco.com/wp-content/uploads/2019/12/approach-2.png)',
+                        'url(https://www.argonandco.com/wp-content/uploads/2019/12/approach-2.png)',
                     }}></div>
                   <div
                     className="grid-card grid-card--image"
                     style={{
                       backgroundImage:
-                        ' url(https://www.argonandco.com/wp-content/uploads/2019/12/approach-1.png)',
+                        'url(https://www.argonandco.com/wp-content/uploads/2019/12/approach-1.png)',
                     }}></div>
                   <div className="grid-card red-5-background white-color">
                     <span>
                       <p>
                         <span className="intro intro--medium">
-                          {`  Challenges drive us, and we thrive on answering the
-                          questions that keep our clients awake at night. We dig
-                          deep to identify the root of the problem, applying a
-                          combination of scientific analysis, business acumen
-                          and common-sense.`}
+                          {`التحديات تحفزنا، ونزدهر عند الإجابة على الأسئلة التي تبقي عملائنا
+                          مستيقظين في الليل. نحن نحفر عميقًا لتحديد جذور المشكلة، ونطبق
+                          مزيجًا من التحليل العلمي، وفطنة الأعمال، والفطرة السليمة.`}
                         </span>
                       </p>
                       <p className="text-white">
-                        {`  Creative and thorough in our approach, and focused in
-                        delivery, we identify and implement practical business
-                        solutions.`}
+                        {`إبداعيون ودقيقون في نهجنا، ومركزون في التنفيذ، نقوم بتحديد وتنفيذ
+                        حلول تجارية عملية.`}
                       </p>
                       <p className="text-white">
-                        {` Our clients trust us to get the job done wherever we are
-                        in the world, with a common consulting approach and
-                        belief that the only thing that matters is making a real
-                        difference for our clients.`}
+                        {`يثق عملاؤنا بنا لإنجاز المهمة أينما كنا في العالم، مع نهج استشاري
+                        مشترك واعتقاد بأن الشيء الوحيد الذي يهم هو تحقيق فرق حقيقي لعملائنا.`}
                       </p>
                     </span>
                   </div>
@@ -97,13 +88,13 @@ const OurApproachAr: React.FC<Props> = ({ test }) => {
                     className="grid-card grid-card--image"
                     style={{
                       backgroundImage:
-                        ' url(https://www.argonandco.com/wp-content/uploads/2020/01/Our-Approach-e1578996335572.jpg)',
+                        'url(https://www.argonandco.com/wp-content/uploads/2020/01/Our-Approach-e1578996335572.jpg)',
                     }}></div>
                   <div
                     className="grid-card grid-card--image"
                     style={{
                       backgroundImage:
-                        ' url(https://www.argonandco.com/wp-content/uploads/2020/01/No-text-Smart-Office-5.jpg)',
+                        'url(https://www.argonandco.com/wp-content/uploads/2020/01/No-text-Smart-Office-5.jpg)',
                     }}></div>
                 </div>
 

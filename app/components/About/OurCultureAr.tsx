@@ -16,25 +16,23 @@ const OurCultureAr = () => {
             <div className="row">
               <div className="col-12">
                 <div className="culture-grid culture-grid--en">
-                  <div className="red-1-background white-color  card--large d-flex align-items-center">
+                  <div className="red-1-background white-color card--large d-flex align-items-center">
                     <div className="card__content">
-                      <h2>Our people are our business</h2>
+                      <h2>أناسنا هم أعمالنا</h2>
                       <p>
-                        <span className="intro  intro--medium">
-                          {` We care about each other and our clients. We are real
-                          people, dealing with real people. Our positive,
-                          flexible and personal approach, with challenge where
-                          needed, ensures buy-in at all levels of our clients’
-                          businesses and a positive outcome.`}
+                        <span className="intro intro--medium">
+                          {`نعتني ببعضنا البعض وبعملائنا. نحن أشخاص حقيقيون، نتعامل مع
+                          أشخاص حقيقيين. نهجنا الإيجابي والمرن والشخصي، مع التحدي
+                          عند الحاجة، يضمن الحصول على تأييد من جميع مستويات أعمال
+                          عملائنا ونتيجة إيجابية.`}
                         </span>
                       </p>
                       <p>
                         <span className="intro intro--medium">
-                          {` A tight-knit team, like a family, we stand side by
-                          side with both colleagues and clients. We share a
-                          belief that the only thing that matters is making a
-                          real difference for our clients. We are engaging to
-                          work with and trusted by clients to get the job done.`}
+                          {`فريق مترابط، مثل العائلة، نقف جنبًا إلى جنب مع زملائنا وعملائنا.
+                          نشارك في اعتقاد أن الشيء الوحيد الذي يهم هو تحقيق فرق حقيقي
+                          لعملائنا. نحن مشوقون للعمل معهم ويثق بنا العملاء لإنجاز
+                          المهمة.`}
                         </span>
                       </p>
                     </div>
@@ -51,13 +49,12 @@ const OurCultureAr = () => {
                       backgroundImage:
                         'url(https://www.argonandco.com/wp-content/uploads/2019/11/careers_banner-1024x635.jpg)',
                     }}></div>
-                  <div className="red-1-background white-color  card--large d-flex align-items-center">
+                  <div className="red-1-background white-color card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
-                        {`"Argon & Co brings me a great deal on a daily basis.
-                        The list of rewards is extensive, but the two main
-                        points are the constant intellectual stimulation and the
-                        pleasure of team work."`}
+                        {`"تقدم لي Argon & Co الكثير على أساس يومي. قائمة المكافآت واسعة
+                        النطاق، لكن النقاط الرئيسية هي التحفيز الفكري المستمر ومتعة
+                        العمل الجماعي."`}
                       </p>
                       <div className="row align-items-center">
                         <div className="col-auto">
@@ -70,9 +67,9 @@ const OurCultureAr = () => {
                         </div>
                         <div className="col">
                           <div>
-                            <strong>Christophe</strong>
+                            <strong>كريستوف</strong>
                           </div>
-                          Paris office
+                          مكتب باريس
                         </div>
                       </div>
                     </div>
@@ -95,17 +92,14 @@ const OurCultureAr = () => {
                       backgroundImage:
                         'url(https://www.argonandco.com/wp-content/uploads/2019/11/9.png)',
                     }}></div>
-                  <div className="red-1-background white-color  card--large d-flex align-items-center">
+                  <div className="red-1-background white-color card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
-                        {` "On joining the company I was very interested in working
-                        overseas and within the first 18 months I had worked in
-                        Poland, Russia, Venezuela and the UK. The client base
-                        provides great global opportunities with some really
-                        unique challenges. The team is extremely supportive and
-                        fun to work with, and there is a constant drive to
-                        deliver excellent results for the client from every
-                        level of the organisation."`}
+                        {`"عند انضمامي إلى الشركة كنت مهتمًا جدًا بالعمل في الخارج وخلال
+                        أول 18 شهرًا عملت في بولندا وروسيا وفنزويلا والمملكة المتحدة.
+                        قاعدة العملاء توفر فرصًا عالمية رائعة مع بعض التحديات الفريدة.
+                        الفريق داعم للغاية ومرح العمل معه، وهناك دافع دائم لتحقيق نتائج
+                        ممتازة للعميل من جميع مستويات المنظمة."`}
                       </p>
                       <div className="row align-items-center">
                         <div className="col-auto">
@@ -118,9 +112,9 @@ const OurCultureAr = () => {
                         </div>
                         <div className="col">
                           <div>
-                            <strong>Kerry</strong>
+                            <strong>كيري</strong>
                           </div>
-                          London office
+                          مكتب لندن
                         </div>
                       </div>
                     </div>
@@ -149,12 +143,11 @@ const OurCultureAr = () => {
                       backgroundImage:
                         'url(https://www.argonandco.com/wp-content/uploads/2019/11/3.png)',
                     }}></div>
-                  <div className="red-1-background white-color  card--large d-flex align-items-center">
+                  <div className="red-1-background white-color card--large d-flex align-items-center">
                     <div className="card__content">
                       <p className="intro intro--medium">
-                        {`"The diversity of clients and assignments means that I'm
-                        constantly developing new skills, working with different
-                        people and finding new ways to challenge myself."`}
+                        {`"تنوع العملاء والمهام يعني أنني أطور باستمرار مهارات جديدة،
+                        أعمل مع أشخاص مختلفين وأجد طرقًا جديدة لتحدي نفسي."`}
                       </p>
                       <div className="row align-items-center">
                         <div className="col-auto">
@@ -167,9 +160,9 @@ const OurCultureAr = () => {
                         </div>
                         <div className="col">
                           <div>
-                            <strong>Lauren</strong>
+                            <strong>لورين</strong>
                           </div>
-                          Sydney office
+                          مكتب سيدني
                         </div>
                       </div>
                     </div>
