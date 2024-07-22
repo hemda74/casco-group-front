@@ -262,7 +262,7 @@ export default async function handler(
                         <p>Name: ${formData.name}</p>
                         <p>Email: ${formData.email}</p>
                         <p>Phone: ${formData.telephone}</p>
-                         <p>Phone: ${formData.address}</p>
+                         <p>Address: ${formData.address}</p>
                          <p>Company: ${formData.company}</p>
                     </div>
                 </div>
