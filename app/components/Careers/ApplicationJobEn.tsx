@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
 import styles from '../../styles/ContactUs.module.css';
+import toast from 'react-hot-toast';
 
 const ApplicationJobEn: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -11,17 +12,12 @@ const ApplicationJobEn: React.FC = () => {
     message: ''
   });
 
-  const [status, setStatus] = useState({
-    loading: false,
-    error: '',
-    success: ''
-  });
+
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
 
     if (e.target instanceof HTMLInputElement && e.target.type === 'file') {
-      const file = (e.target.files && e.target.files[0]) || null;
       setFormData({
         ...formData,
       });
@@ -32,10 +28,9 @@ const ApplicationJobEn: React.FC = () => {
       });
     }
   };
-
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus({ loading: true, error: '', success: '' });
+    const loadingToastId = toast.loading('Submitting...');
 
     try {
       const formDataObj = new FormData();
@@ -52,7 +47,7 @@ const ApplicationJobEn: React.FC = () => {
         }
       });
 
-      setStatus({ loading: false, error: '', success: 'Your message has been sent. Thank you!' });
+      toast.success('Your message has been sent. Thank you!', { id: loadingToastId });
       setFormData({
         title: '',
         name: '',
@@ -61,9 +56,11 @@ const ApplicationJobEn: React.FC = () => {
         message: ''
       });
     } catch (error) {
-      setStatus({ loading: false, error: 'There was an error sending your message. Please try again.', success: '' });
+      console.error(error);
+      toast.error('There was an error sending your message. Please try again.', { id: loadingToastId });
     }
   };
+
 
   return (
     <div className={` ${styles.mainApplication} apply-section`}>
@@ -176,11 +173,7 @@ const ApplicationJobEn: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="my-3">
-                  {status.loading && <div className={`loading ${styles.loadingMassage}`}>Loading</div>}
-                  {status.error && <div className={`error-message ${styles.errorMassage}`}>{status.error}</div>}
-                  {status.success && <div className={`sent-message ${styles.sentMassage}`}>{status.success}</div>}
-                </div>
+
                 <div className="text-center">
                   <button
                     className={`myInfo p-3 rounded fs-6 ${styles.btnClass}`}
