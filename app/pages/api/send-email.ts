@@ -181,16 +181,16 @@ export default async function handler(
             <div style="text-align: left;">
                 <h2>Dear ${formData.name},</h2>
                 <h4>Thank you for enrolling in the course "${course.c_title}". We have received your enrollment and our team will review it shortly.</h4>
-                <p>We Will Contact You Soon</p>
-                <p>For more infomation Please contact <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a></p>
+                <h4>We Will Contact You Soon</h4>
+                <h4>For more infomation Please contact <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a></h4>
                 <p>Best regards,<br/>Casco Group</p>
             </div>
             <div style="text-align: right;">
                 <h2>, ${formData.name} السيد/ة</h2>
-                <p><br/>${course.c_title_ar}لقد تلقينا طليكم للانضمام للدورة</p>
-                <p>سيتم التواصل معكم في اقرب وقت </p>
-                 <p>     لمزيد من المعلومات : يرجى التواصل مع
-                  <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a> </p>
+                <h4><br/>${course.c_title_ar}لقد تلقينا طليكم للانضمام للدورة</h4>
+                <h4>سيتم التواصل معكم في اقرب وقت </h4>
+                 <h4>     لمزيد من المعلومات : يرجى التواصل مع
+                  <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a> </h4>
                 <p>اطيب التحيات<br/>كاسكو</p>
             </div>
           </div>`,
