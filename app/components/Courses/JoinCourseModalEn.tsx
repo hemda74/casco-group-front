@@ -12,7 +12,6 @@ interface FormData {
     address: string;
     telephone: string;
     email: string;
-    whereDidYouHear: string;
     gdpr: boolean;
 }
 
@@ -23,7 +22,6 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
         address: '',
         telephone: '',
         email: '',
-        whereDidYouHear: '',
         gdpr: false,
     });
 
@@ -45,7 +43,7 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        console.log(formData);
+        const loadingToastId = toast.loading('Submitting...');
 
         try {
             const response = await fetch('/api/send-email', {
@@ -57,7 +55,7 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
             });
 
             if (response.ok) {
-                toast.success('Request Sent Successfully');
+                toast.success('Request Sent Successfully', { id: loadingToastId });
                 // Close the modal
                 const modalElement = document.getElementById('exampleModal');
                 if (modalElement) {
@@ -71,11 +69,11 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                     }
                 }
             } else {
-                toast.error('Failed to send request');
+                toast.error('Failed to send request', { id: loadingToastId });
             }
         } catch (error) {
             console.error(error);
-            toast.error('Failed to send request');
+            toast.error('Failed to send request', { id: loadingToastId });
         }
     };
 
@@ -190,20 +188,7 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                                                         className="w-full block border rounded py-3 px-4 bg-gray-200"
                                                     />
                                                 </div>
-                                                <div className="xl:col-span-2">
-                                                    <label htmlFor="whereDidYouHear-input" className="">
-                                                        Where did you hear about us?
-                                                    </label>
-                                                    <input
-                                                        id="whereDidYouHear-input"
-                                                        name="whereDidYouHear"
-                                                        type="text"
-                                                        placeholder="Source"
-                                                        value={formData.whereDidYouHear}
-                                                        onChange={handleChange}
-                                                        className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                                    />
-                                                </div>
+
                                                 <div className="xl:col-span-2">
                                                     <label className="inline-flex items-center mt-3">
                                                         <input
@@ -211,17 +196,17 @@ const RegistrationModalEn: React.FC<Props> = ({ course }) => {
                                                             name="gdpr"
                                                             checked={formData.gdpr}
                                                             onChange={handleChange}
-                                                            className="form-checkbox h-5 w-5 text-primary-100"
+                                                            className="form-checkbox h-10  w-10 text-primary-100"
                                                         />
                                                         <span className="ml-2 text-gray-700">
-                                                            I consent to GDPR terms.
+                                                            I want to subscrip casco newsletter.
                                                         </span>
                                                     </label>
                                                 </div>
                                                 <div className="xl:col-span-2">
                                                     <button
                                                         type="submit"
-                                                        className="w-full bg-primary-100 text-white rounded py-3 px-4"
+                                                        className="w-50 bg-primary-100 text-white myPrimary rounded py-3 px-4"
                                                     >
                                                         Submit
                                                     </button>

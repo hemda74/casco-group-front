@@ -1,8 +1,6 @@
-import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Course } from '../../types';
 import { toast } from 'react-hot-toast';
-import Modal from 'bootstrap/js/dist/modal'; // Corrected import
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 type Props = {
     course: Course;
@@ -14,18 +12,16 @@ interface FormData {
     address: string;
     telephone: string;
     email: string;
-    whereDidYouHear: string;
     gdpr: boolean;
 }
 
-const RegistrationModalAr: React.FC<Props> = ({ course }) => {
+const RegistrationModalEn: React.FC<Props> = ({ course }) => {
     const [formData, setFormData] = useState<FormData>({
         name: '',
         company: '',
         address: '',
         telephone: '',
         email: '',
-        whereDidYouHear: '',
         gdpr: false,
     });
 
@@ -45,37 +41,54 @@ const RegistrationModalAr: React.FC<Props> = ({ course }) => {
         }
     };
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        console.log(formData);
-        toast.success("Request Sent Successfully");
+        const loadingToastId = toast.loading('جاري التسجيل...');
 
-        // Close the modal using Bootstrap's data-bs-target and data-bs-toggle
-        const modalElement = document.getElementById('exampleModal');
-        if (modalElement) {
-            modalElement.classList.remove('show'); // Manually remove 'show' class
-            modalElement.setAttribute('aria-hidden', 'true');
-            modalElement.setAttribute('style', 'display: none');
-            document.body.classList.remove('modal-open');
-            const modalBackdrop = document.getElementsByClassName('modal-backdrop')[0];
-            if (modalBackdrop) {
-                document.body.removeChild(modalBackdrop);
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ course, formData }),
+            });
+
+            if (response.ok) {
+                toast.success('تم ارسال الطلب بنجاح', { id: loadingToastId });
+                // Close the modal
+                const modalElement = document.getElementById('exampleModal');
+                if (modalElement) {
+                    modalElement.classList.remove('show'); // Manually remove 'show' class
+                    modalElement.setAttribute('aria-hidden', 'true');
+                    modalElement.setAttribute('style', 'display: none');
+                    document.body.classList.remove('modal-open');
+                    const modalBackdrop = document.getElementsByClassName('modal-backdrop')[0];
+                    if (modalBackdrop) {
+                        document.body.removeChild(modalBackdrop);
+                    }
+                }
+            } else {
+                toast.error('خطأ في التسجيل', { id: loadingToastId });
             }
+        } catch (error) {
+            console.error(error);
+            toast.error('خطأ في التسجيل', { id: loadingToastId });
         }
     };
+
     return (
         <div className="w-full xl:w-10/12 mt-6 | lg:mt-8">
             <div className="w-full">
                 <div
                     className="modal fade contact w-screen fixed inset-0 mx-auto align-center scrolling-touch overflow-y-auto | lg:h-screen lg:px-8"
                     id="exampleModal"
-                    dir="rtl"
                     tabIndex={-1}
                     aria-labelledby="exampleModalLabel"
                     aria-hidden="true"
                 >
                     <div className="modal-dialog">
-                        <div className="">
+                        <div className="" dir='rtl'>
                             <div className="modal-content w-full h-screen relative m-auto z-50 | lg:p-8 lg:h-auto">
                                 <div className="relative bg-white p-8 pb-32 lg:p-12 lg:max-w-content min-h-full lg:min-h-0 pointer-events-auto lg:rounded-lg">
                                     <div className="absolute top-0 right-0 m-4 mb-5 cursor-pointer">
@@ -90,16 +103,15 @@ const RegistrationModalAr: React.FC<Props> = ({ course }) => {
                                         <div className="block col-span-10 xl:col-span-4">
                                             <div className="pl-8 border-l-2 border-primary-100">
                                                 <h5 className="text-xl text-primary-100 font-bold">
-                                                    لقد اخترت :
+                                                    لقد اخترت
                                                 </h5>
                                                 <span className="block mt-2">
                                                     {course.c_title_ar}
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className="col-span-10 xl:col-span-6" dir="rtl">
+                                        <div className="col-span-10 xl:col-span-6">
                                             <form
-                                                dir="rtl"
                                                 className="grid grid-cols-1 gap-8 | xl:grid-cols-2 lg:gap-4"
                                                 onSubmit={handleSubmit}
                                             >
@@ -120,7 +132,7 @@ const RegistrationModalAr: React.FC<Props> = ({ course }) => {
                                                 </div>
                                                 <div>
                                                     <label htmlFor="company-input" className="">
-                                                        اسم الشركة :
+                                                        اسم الشركة:
                                                     </label>
                                                     <input
                                                         id="company-input"
@@ -148,13 +160,13 @@ const RegistrationModalAr: React.FC<Props> = ({ course }) => {
                                                 </div>
                                                 <div>
                                                     <label htmlFor="tel-input" className="">
-                                                        الهاتف:
+                                                        رقم الهاتف:
                                                     </label>
                                                     <input
                                                         id="tel-input"
                                                         name="telephone"
                                                         type="text"
-                                                        placeholder="Your telephone"
+                                                        placeholder="Telephone"
                                                         value={formData.telephone}
                                                         onChange={handleChange}
                                                         required
@@ -168,7 +180,7 @@ const RegistrationModalAr: React.FC<Props> = ({ course }) => {
                                                     <input
                                                         id="email-input"
                                                         name="email"
-                                                        type="text"
+                                                        type="email"
                                                         placeholder="Your email"
                                                         value={formData.email}
                                                         onChange={handleChange}
@@ -176,81 +188,28 @@ const RegistrationModalAr: React.FC<Props> = ({ course }) => {
                                                         className="w-full block border rounded py-3 px-4 bg-gray-200"
                                                     />
                                                 </div>
+
                                                 <div className="xl:col-span-2">
-                                                    <label htmlFor="wheredidyou-input" className="">
-                                                        مين اين عرفت كاسكو؟
-                                                    </label>
-                                                    <select
-                                                        id="wheredidyou-input"
-                                                        name="whereDidYouHear"
-                                                        value={formData.whereDidYouHear}
-                                                        onChange={handleChange}
-                                                        required
-                                                        className="w-full block border rounded py-3 px-4 bg-gray-200"
-                                                    >
-                                                        <option value="">
-                                                            اختر من التالى
-                                                        </option>
-                                                        <option value="I have used iqms Learning before">
-                                                            لقد استخدمت CASCO Learning من قبل
-                                                        </option>
-                                                        <option value="Google Search">
-                                                            بحث جوجل
-                                                        </option>
-                                                        <option value="LinkedIn">
-                                                            لينكدان
-                                                        </option>
-                                                        <option value="Facebook">
-                                                            فيسبوك
-                                                        </option>
-                                                        <option value="Twitter">
-                                                            تويتر
-                                                        </option>
-                                                        <option value="Awarding Body">
-                                                            الهيئة المانحة
-                                                        </option>
-                                                        <option value="Colleague or Friend">
-                                                            زميل او صديق
-                                                        </option>
-                                                        <option value="Other">
-                                                            اخرى
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                                <div className="xl:col-span-2">
-                                                    <div className="flex items-center">
+                                                    <label className="inline-flex items-center mt-3">
                                                         <input
-                                                            name="gdpr"
-                                                            id="gdpr"
-                                                            aria-label="Select all"
                                                             type="checkbox"
+                                                            name="gdpr"
                                                             checked={formData.gdpr}
                                                             onChange={handleChange}
-                                                            className="h-6 w-6 border-gray-300 text-secondary focus:shadow-outline-blue focus:border-blue-300"
+                                                            className="form-checkbox h-10  w-10 text-primary-100"
                                                         />
-                                                        <label
-                                                            htmlFor="documentation_checkbox"
-                                                            className="ml-2"
-                                                        >
-                                                            <span className="block font-medium text-sm leading-5 text-gray-700">
-                                                                {` يرجى إطلاعي على آخر المستجدات مع CASCO أخبار التعلم والعروض الخاصة`}
-                                                                (اختياري)
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div className="flex items-center">
-                                                    <button
-                                                        type="submit"
-                                                        className="w-full block p-4 rounded-lg text-white fs-4 text-center myPrimary cursor-pointer text-lg"
-                                                    >
-                                                        تسجيل الطلب
-                                                    </button>
+                                                        <span className="ml-2 text-gray-700">
+                                                            اريد ع اخر الاخبار والفاعليات في كاسكو.
+                                                        </span>
+                                                    </label>
                                                 </div>
                                                 <div className="xl:col-span-2">
-                                                    <span className="block w-full text-xs text-center mt-3">
-                                                        {` * عن طريق إرسال هذا النموذج والنقر عليه أرسل أنك تقبل CASCO Learning سياسة الخصوصية`}
-                                                    </span>
+                                                    <button
+                                                        type="submit"
+                                                        className="w-50 bg-primary-100 text-white myPrimary rounded py-3 px-4"
+                                                    >
+                                                        تسجيل
+                                                    </button>
                                                 </div>
                                             </form>
                                         </div>
@@ -265,4 +224,4 @@ const RegistrationModalAr: React.FC<Props> = ({ course }) => {
     );
 };
 
-export default RegistrationModalAr;
+export default RegistrationModalEn;
