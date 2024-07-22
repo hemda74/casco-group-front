@@ -1,16 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
 import { News, Event, Event2, Event3 } from '../../types';
+
 type Props = {
   newss: News[],
   events: Event[],
   papers: Event2[],
   articles: Event3[],
 };
+
 const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
+  if (newss.length === 0 || events.length === 0 || papers.length === 0 || articles.length === 0) {
+    return <div>انتظار البيانات...</div>; // "Waiting for data" in Arabic
+  }
+
   const j = newss[0];
   const [firstEvent, secondEvent] = events;
   const [f, s, t] = papers;
+
   return (
     <>
       <div id="content-wrap" dir='rtl'>
@@ -35,7 +42,8 @@ const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
-                            {j.title_ar}                          </h3>
+                            {j.title_ar}
+                          </h3>
                         </div>
                       </div>
                     </div>
@@ -99,10 +107,9 @@ const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
               </div>
               {articles.map((a) => (
                 <div className="col-lg-4 col-md-6" key={a.id}>
-                  <Link href="/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
+                  <Link href={`/news-insights/articles/${a.id}`}>
                     <div className="card card--image red-1-background white-color card--fixed-sm ">
                       <div className="card__image object-fit">
-
                         <img src={a.imageUrl} alt={a.title_ar} />
                         <div className="argon-star-overlay"></div>
                       </div>
@@ -180,7 +187,6 @@ const MainPageAr: React.FC<Props> = ({ newss, events, articles, papers }) => {
                   </div>
                 </Link>
               </div>
-
 
               <div className="col-12 text-center">
                 <Link

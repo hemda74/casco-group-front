@@ -1,16 +1,26 @@
 import React from 'react';
 import Link from 'next/link';
 import { News, Event, Event2, Event3 } from '../../types';
+
 type Props = {
   newss: News[],
   events: Event[],
   papers: Event2[],
   articles: Event3[],
 };
+
 const MainPageEn: React.FC<Props> = ({ newss, events, articles, papers }) => {
+  // Check if there's no data in the props
+  const isDataEmpty = !newss.length || !events.length || !papers.length || !articles.length;
+
+  if (isDataEmpty) {
+    return <div>Waiting for data...</div>;
+  }
+
   const j = newss[0];
   const [firstEvent, secondEvent] = events;
   const [f, s, t] = papers;
+
   return (
     <>
       <div id="content-wrap">
@@ -35,14 +45,15 @@ const MainPageEn: React.FC<Props> = ({ newss, events, articles, papers }) => {
                       <div className="position-bottom">
                         <div className="card__content">
                           <h3 className="title title--xs title--medium-weight ">
-                            {j.title}                          </h3>
+                            {j.title}
+                          </h3>
                         </div>
                       </div>
                     </div>
                   </Link>
 
                   <Link href={`/news-insights/events/${firstEvent.id}`}>
-                    <div className="card  red-2-background  card--fixed-sm ">
+                    <div className="card red-2-background card--fixed-sm ">
                       <div className="card__category">Event</div>
                       <div className="position-bottom">
                         <div className="card__content">
@@ -99,10 +110,9 @@ const MainPageEn: React.FC<Props> = ({ newss, events, articles, papers }) => {
               </div>
               {articles.map((a) => (
                 <div className="col-lg-4 col-md-6" key={a.id}>
-                  <Link href="/news-insights/articles/data-science-and-data-platforms-unlocking-new-possibilities-for-the-supply-chain/">
+                  <Link href={`/news-insights/articles/${a.id}`}>
                     <div className="card card--image red-1-background white-color card--fixed-sm ">
                       <div className="card__image object-fit">
-
                         <img src={a.imageUrl} alt={a.title} />
                         <div className="argon-star-overlay"></div>
                       </div>
@@ -140,7 +150,7 @@ const MainPageEn: React.FC<Props> = ({ newss, events, articles, papers }) => {
 
               <div className="col-lg-4 col-md-6">
                 <Link href={`/news-insights/white-papers/${f.id}`}>
-                  <div className="card  card--large  red-5-background">
+                  <div className="card card--large red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
                       <div className="card__content">
@@ -154,7 +164,7 @@ const MainPageEn: React.FC<Props> = ({ newss, events, articles, papers }) => {
               </div>
               <div className="col-lg-4 col-md-6">
                 <Link href={`/news-insights/white-papers/${s.id}`}>
-                  <div className="card  card--large  red-5-background">
+                  <div className="card card--large red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
                       <div className="card__content">
@@ -168,7 +178,7 @@ const MainPageEn: React.FC<Props> = ({ newss, events, articles, papers }) => {
               </div>
               <div className="col-lg-4 col-md-6">
                 <Link href={`/news-insights/white-papers/${t.id}`}>
-                  <div className="card  card--large  red-5-background">
+                  <div className="card card--large red-5-background">
                     <div className="card__category">Whitepaper </div>
                     <div className="position-bottom">
                       <div className="card__content">
@@ -180,7 +190,6 @@ const MainPageEn: React.FC<Props> = ({ newss, events, articles, papers }) => {
                   </div>
                 </Link>
               </div>
-
 
               <div className="col-12 text-center">
                 <Link
