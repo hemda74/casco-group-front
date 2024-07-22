@@ -176,53 +176,24 @@ export default async function handler(
       to: formData.email,
       subject: `Thank you for your interest in ${course.c_title}`,
       html: `
-      <table id="x_templateContainer" cellspacing="0" cellpadding="0" border="0">
-      <tbody>
-      <tr>
-      <td valign="top" align="center">
-      <table id="x_templateHeader" width="100%" cellspacing="0" cellpadding="0" border="0">
-      <tbody>
-      <tr><td class="x_headerContent" valign="top">
-      <a data-auth="NotApplicable" rel="noopener noreferrer" target="_blank" href="https://casco.com.eg/" data-linkindex="0">
-      <img style="max-width:600px; padding:20px" alt="Sahara Net" id="x_headerImage" data-imageproxyendpoint="/actions/ei" originalsrc="https://www.casco.com.eg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.60cc985c.png&w=256&q=75" src="https://www.casco.com.eg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.60cc985c.png&w=256&q=75" data-imagetype="External"> </a>
-      </td>
-      </tr>
-      </tbody>
-      </table>
-      </td>
-      </tr>
-      <tr>
-      <td valign="top" align="center"><table id="x_templateBody" width="100%" cellspacing="0" cellpadding="0" border="0">
-      <tbody>
-      <tr>
-      <td class="x_bodyContent" valign="top"><p>Dear ${formData.name}</p>
-      <p>Your Request To Join ${course.c_title}</p>
-      <p>Has been approved</p>
-      <p>One of our will contact you soon</p>
-      <p>For more infomation please contact : <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a>
-      </p>
-     </td>
-     </tr>
-      <tr>
-      <td class="x_bodyContent" valign="top"  dir="rtl" style="">
-      <p> السيد /ة: ${formData.name}  </p>
-      <p>لقد تمت المواقة ع طلبكم للتسجيل في دورة  ${course.c_title} </p>
-      <p>سيقوم احد ممثلينا بالتواصل معكم في اقرب وقت</p>
-      <p>     لمزيد من المعلومات : يرجى التواصل مع
-     <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a> </p>
-     </td>
-     </tr>
-     </tbody>
-     </table>
-     </td>
-     </tr>
-     <tr>
-     <td valign="top" align="center">
-     <table id="x_templateFooter" width="100%" cellspacing="0" cellpadding="0" border="0">
-       <tbody><tr>
-         <td class="x_footerContent" valign="top">
-           <br>Copyright © casco, All rights reserved. </td></tr></tbody></table></td></tr></tbody>
-     </table>`,
+       <div style="text-align: center;">
+            <img src="https://www.casco.com.eg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.60cc985c.png&w=256&q=75" alt="logo" />
+            <div style="text-align: left;">
+                <h2>Dear ${formData.name},</h2>
+                <h4>Thank you for enrolling in the course "${course.c_title}". We have received your enrollment and our team will review it shortly.</h4>
+                <p>We Will Contact You Soon</p>
+                <p>For more infomation Please contact <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a></p>
+                <p>Best regards,<br/>Casco Group</p>
+            </div>
+            <div style="text-align: right;">
+                <h2>, ${formData.name} السيد/ة</h2>
+                <p><br/>${course.c_title_ar}لقد تلقينا طليكم للانضمام للدورة</p>
+                <p>سيتم التواصل معكم في اقرب وقت </p>
+                 <p>     لمزيد من المعلومات : يرجى التواصل مع
+                  <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a> </p>
+                <p>اطيب التحيات<br/>كاسكو</p>
+            </div>
+          </div>`,
     };
 
     const mailOptionsToAdmin = {
