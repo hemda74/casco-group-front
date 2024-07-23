@@ -22,50 +22,50 @@ const CourseDescriptionAr: React.FC<Props> = ({ course }) => {
             <div className="product__description">
                 <Section title="المقدمة">
                     {course.c_intro_ar.map((i) => (
-                        <p className='me-2' key={i.id}>{i.text}</p>
+                        <p className='' key={i.id}>{i.text}</p>
                     ))}
                 </Section>
                 <Section title="المدة">
-                    <p className='me-2'>{course.c_duration_ar}</p>
+                    <p className=''>{course.c_duration_ar}</p>
                 </Section>
                 <Section title="من يجب ان يحضر الدورة">
                     <ul>
                         {course.c_who_should_ar.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
                 <Section title="اهداف الدورة">
                     <ul>
                         {course.c_objective_ar.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
                 <Section title="محتوى الدورة">
                     <ul>
                         {course.c_content_ar.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
                 <Section title="ما هي المنافع من الدورة">
                     <ul>
                         {course.c_benefit_ar.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
                 <Section title="الدورات الداخلية">
-                    <p className='me-2'>{course.c_in_house_ar}</p>
+                    <p className=''>{course.c_in_house_ar}</p>
                 </Section>
                 <Section title="أسلوب التسليم وقادة الدورة">
-                    <p className='me-2'>{course.c_delv_and_leaders_ar}</p>
+                    <p className=''>{course.c_delv_and_leaders_ar}</p>
                 </Section>
                 <Section title="شهادة الدورة">
                     <ul>
                         {course.c_content2_ar.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>

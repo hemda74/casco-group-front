@@ -33,7 +33,7 @@ const CourseDescriptionEn: React.FC<Props> = ({ course }) => {
 ">
                     <ul>
                         {course.c_who_should_en.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
@@ -41,7 +41,7 @@ const CourseDescriptionEn: React.FC<Props> = ({ course }) => {
 ">
                     <ul>
                         {course.c_objective_en.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
@@ -49,7 +49,7 @@ const CourseDescriptionEn: React.FC<Props> = ({ course }) => {
 ">
                     <ul>
                         {course.c_content_en.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
@@ -57,7 +57,7 @@ const CourseDescriptionEn: React.FC<Props> = ({ course }) => {
 ">
                     <ul>
                         {course.c_benefit_en.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
@@ -72,7 +72,7 @@ const CourseDescriptionEn: React.FC<Props> = ({ course }) => {
                 <Section title="Certification">
                     <ul>
                         {course.c_content2_en.map((i) => (
-                            <li key={i.id}><p className='me-1'>{i.text}</p></li>
+                            <li key={i.id}><p className=''>{i.text}</p></li>
                         ))}
                     </ul>
                 </Section>
