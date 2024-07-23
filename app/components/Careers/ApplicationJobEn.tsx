@@ -70,7 +70,7 @@ const ApplicationJobEn: React.FC = () => {
             <div className="text-center">
               <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <div className="row">
-                  <h2 className="title title--lg red-1-color">Apply now</h2>
+                  <h2 className="title title--lg red-1-color">Apply Now</h2>
                   <p className="">
                     We are always looking to hire talented people with relevant experience who share our values. Please use the application form, or alternatively email a CV to the office you are interested in joining.
                   </p>
