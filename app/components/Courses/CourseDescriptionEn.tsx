@@ -22,12 +22,12 @@ const CourseDescriptionEn: React.FC<Props> = ({ course }) => {
             <div className="product__description">
                 <Section title="Introduction">
                     {course.c_intro_en.map((i) => (
-                        <p className='ms-2' key={i.id}>{i.text}</p>
+                        <p className='' key={i.id}>{i.text}</p>
                     ))}
                 </Section>
                 <Section title="Duration
 ">
-                    <p className='ms-2'>{course.c_duration_en}</p>
+                    <p className=''>{course.c_duration_en}</p>
                 </Section>
                 <Section title="Who should attend?
 ">
@@ -63,11 +63,11 @@ const CourseDescriptionEn: React.FC<Props> = ({ course }) => {
                 </Section>
                 <Section title="In-House Courses
 ">
-                    <p className='ms-2'>{course.c_in_house_en}</p>
+                    <p className=''>{course.c_in_house_en}</p>
                 </Section>
                 <Section title="Style of Delivery and Course Leaders
 ">
-                    <p className='ms-2'>{course.c_delv_and_leaders_en}</p>
+                    <p className=''>{course.c_delv_and_leaders_en}</p>
                 </Section>
                 <Section title="Certification">
                     <ul>
