@@ -61,7 +61,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       <LanguageProvider>
         <ToastProvider />
         <QueryClientProvider client={queryClientRef.current}>
-          {/* If you are using server-side rendering, include Hydrate */}
+          {/* If you are using server-side rendering, include Hydrate fr */}
           <Hydrate state={pageProps.dehydratedState}>
             {getLayout(<Component {...pageProps} />)}
           </Hydrate>
