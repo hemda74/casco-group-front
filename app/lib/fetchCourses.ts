@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { CourseShort, Course } from '../types';
 import { useQuery } from 'react-query';
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}courses`;
+const API_URL =
+  `${process.env.NEXT_PUBLIC_API_URL}courses` || 'http://127.0.0.1:80';
 export const useCourses = () => {
   return useQuery<CourseShort[], Error>('courses', fetchCourses);
 };

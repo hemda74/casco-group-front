@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { Test } from '../types';
 
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}testimonials`;
+const API_URL =
+  `${process.env.NEXT_PUBLIC_API_URL}testimonials` || 'http://127.0.0.1:80';
 
 export const fetchTest = async (): Promise<Test[]> => {
   try {

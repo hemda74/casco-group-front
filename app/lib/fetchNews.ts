@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { Event } from '../types';
 
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}news`;
+const API_URL =
+  `${process.env.NEXT_PUBLIC_API_URL}news` || 'http://127.0.0.1:80';
 
 export const fetchNews = async (): Promise<Event[]> => {
   try {

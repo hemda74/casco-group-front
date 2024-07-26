@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { CourseType } from '../types';
 
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}course-type`;
+const API_URL =
+  `${process.env.NEXT_PUBLIC_API_URL}course-type` || 'http://127.0.0.1:80';
 
 export const fetchCourseTypes = async (): Promise<CourseType[]> => {
   try {

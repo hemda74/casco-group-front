@@ -1,7 +1,9 @@
 import axios from 'axios';
 import { Category } from '../types';
 
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}courses-categories`;
+const API_URL =
+  `${process.env.NEXT_PUBLIC_API_URL}courses-categories` ||
+  'http://127.0.0.1:80';
 
 export const fetchCat = async (): Promise<Category[]> => {
   try {

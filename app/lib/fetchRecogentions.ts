@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { Reco } from '../types';
 
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}recognitions`;
+const API_URL =
+  `${process.env.NEXT_PUBLIC_API_URL}recognitions` || 'http://127.0.0.1:80';
 
 export const fetchReco = async (): Promise<Reco[]> => {
   try {
