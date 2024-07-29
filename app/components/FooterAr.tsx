@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import styels from '../styles/Footer.module.css';
 import logo from '../public/images/footer.png';
 import {
-  BsFacebook,
-  BsTwitter,
   BsLinkedin,
-  BsYoutube,
-  BsInstagram,
 } from 'react-icons/bs';
 // footer Component design
 const FooterAr = () => {
@@ -95,9 +90,9 @@ const FooterAr = () => {
             </ul>
           </div>
           <div className="col-md-5 text-left">
-            <Link className="" href="https://portoflio-drab.vercel.app/">
+            <span className="text-white">
               تم التطوير بواسطة
-            </Link>
+            </span>
             <Link
               className="me-1"
               href="https://portoflio-drab.vercel.app/"

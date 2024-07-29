@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import styels from '../styles/Footer.module.css';
 import logo from '../public/images/footer.png';
 import {
-  BsFacebook,
-  BsTwitter,
   BsLinkedin,
-  BsYoutube,
-  BsInstagram,
 } from 'react-icons/bs';
 // footer Component design
 const Footer = () => {
@@ -95,9 +90,9 @@ const Footer = () => {
           </div>
           <div className="col-md-5 text-right">
 
-            <Link className="" href="https://portoflio-drab.vercel.app/">
+            <span className="text-white">
               Web Development by
-            </Link>
+            </span>
             <Link
               className="ms-1"
               href="https://portoflio-drab.vercel.app/"
