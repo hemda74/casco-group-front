@@ -11,7 +11,7 @@ interface FilterProps {
   onSelect: (id: string) => void;
 }
 
-const Filter: React.FC<FilterProps> = ({
+const FilterEn: React.FC<FilterProps> = ({
   data,
   name,
   valueKey,
@@ -49,7 +49,6 @@ const Filter: React.FC<FilterProps> = ({
           <Button
             key={filter.id}
             className={`w-full text-sm text-no-wrap me-1 block text-white text-center myPrimary cursor-pointer mt-2 ${filter.id === selectedValue ? 'btn-primary' : 'btn-secondary'}`}
-
             onClick={() => onClick(filter.id)}
           >
             {filter.name}
@@ -60,4 +59,4 @@ const Filter: React.FC<FilterProps> = ({
   );
 };
 
-export default Filter;
+export default FilterEn;

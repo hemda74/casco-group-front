@@ -11,7 +11,7 @@ interface FilterProps {
   onSelect: (id: string) => void;
 }
 
-const Filter: React.FC<FilterProps> = ({
+const FilterAr: React.FC<FilterProps> = ({
   data,
   name_ar,
   valueKey,
@@ -60,4 +60,4 @@ const Filter: React.FC<FilterProps> = ({
   );
 };
 
-export default Filter;
+export default FilterAr;

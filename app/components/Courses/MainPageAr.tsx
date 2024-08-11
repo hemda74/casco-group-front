@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Category, CourseShort, CourseType } from '../../types';
-import Filter from './FilterAr';
+import FilterAr from './FilterAr';
 
 type Props = {
   courses: CourseShort[];
@@ -47,15 +47,15 @@ const MainPageAr: React.FC<Props> = ({ courses, cat, types, onCategorySelect, on
       <div className="grid grid-cols-1 | lg:grid-cols-12 lg:gap-12">
         <div
           id="filters-container"
-          className="filters hidden fixed w-full h-screen overflow-y-auto top-0 left-0 bg-white px-4 pb-32 z-40 | lg:static lg:h-auto lg:block lg:col-span-3 lg:p-0 lg:z-0 | xl:col-span-2">
+          className="filters fixed w-full h-screen overflow-y-auto top-0 left-0 bg-white px-4 pb-32 z-40 | lg:static lg:h-auto lg:block lg:col-span-3 lg:p-0 lg:z-0 | xl:col-span-2">
 
-          <Filter
+          <FilterAr
             data={cat}
             name_ar="التصنيفات"
             valueKey="id"
             onSelect={handleCategorySelect}
           />
-          <Filter
+          <FilterAr
             data={types}
             name_ar="الانواع"
             valueKey="id"

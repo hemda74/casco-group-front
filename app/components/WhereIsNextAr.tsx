@@ -26,7 +26,6 @@ const WhereIsNextAr = () => {
                 </div>
               </Link>
             </div>
-
             <div className="col-md-4">
               <Link href="/services/">
                 <div className="card card--image red-3-background white-color card--fixed-sm ">
