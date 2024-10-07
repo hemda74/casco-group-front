@@ -22,7 +22,7 @@ const Banner: React.FC<Props> = ({ industry }) => {
                     </div>
                 </div>
             </div>
-            {/* Breadcrumb */}
+
             <div className="banner__bottom text-center banner__bottom--lower m-auto">
                 <div className="m-auto text-white">
                     <span property="itemListElement" typeof="ListItem">
