@@ -44,7 +44,7 @@ export default async function handler(
                 <h2>Dear ${formData.name},</h2>
                 <h4>Thank you for enrolling in the course "${course.c_title}". We have received your enrollment and our team will review it shortly.</h4>
                 <h4>We Will Contact You Soon</h4>
-                <h4>For more infomation Please contact <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a></h4>
+                <h4>For more infomation Please contact <a href="mailto:egy@casco.com.eg">ahmedashrafhemdan74@gmail.com</a></h4>
                 <p>Best regards,<br/>Casco Group</p>
             </div>
             <div style="text-align: right;">
@@ -52,7 +52,7 @@ export default async function handler(
                 <h4><br/>${course.c_title_ar}لقد تلقينا طليكم للانضمام للدورة</h4>
                 <h4>سيتم التواصل معكم في اقرب وقت </h4>
                  <h4>     لمزيد من المعلومات : يرجى التواصل مع
-                  <a href="mailto:egy@casco.com.eg">mohamed@cascotec.com</a> </h4>
+                  <a href="mailto:egy@casco.com.eg">ahmedashrafhemdan74@gmail.com</a> </h4>
                 <p>اطيب التحيات<br/>كاسكو</p>
             </div>
           </div>`,
@@ -60,7 +60,7 @@ export default async function handler(
 
     const mailOptionsToAdmin = {
       from: `"Casco Group" <${smtpUser}>`,
-      to: 'mohamed@cascotec.com',
+      to: 'ahmedashrafhemdan74@gmail.com',
       subject: `New submission for ${course.c_title}`,
       html: `<div id=":nb" class="ii gt" jslog="20277; u014N:xr6bB; 1:WyIjdGhyZWFkLWY6MTgwNTEzMDYzNDgwMjE5MjI2OCJd; 4:WyIjbXNnLWY6MTgwNTEzMDYzNDgwMjE5MjI2OCJd">
     <div id=":mj" class="a3s aiL msg-818784179456676395" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">

@@ -55,16 +55,12 @@ const FooterAr = () => {
           <div className="col-md-3">
             <div className="heading">كن عن تواصل</div>
             <address>
-              61 الفلكي <br />
-              باب اللوق
-              <br />
-              عابدين
-              <br />
+
               القاهرة مصر
               <br />
-              <Link href="mailto:egy@casco.com.eg">egy@casco.com.eg</Link>
+              <Link href="mailto:ahmedashrafhemdan74@gmail.com">ahmedashrafhemdan74@gmail.com</Link>
               <br />
-              23963913 02+
+              1121900466 02+
             </address>
             <div className="social-links">
               <a

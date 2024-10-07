@@ -62,7 +62,7 @@ export default async function handler(
 
       const mailOptionsToAdmin = {
         from: `"Casco Group" <${smtpUser}>`,
-        to: 'mohamed@cascotec.com',
+        to: 'ahmedashrafhemdan74@gmail.com',
         subject: `New job application from ${name}`,
         html: `
           <div>

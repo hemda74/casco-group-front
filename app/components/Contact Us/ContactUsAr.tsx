@@ -26,18 +26,18 @@ const ContactUsAr: React.FC = () => {
               <div className="row mt-5">
                 <div className="col-lg-5 mt-4">
                   <div className="intro">
-                    61 الفلكي, باب اللوق, عابدين , القاهرة 11513, مصر
+                    القاهرة 11513, مصر
                   </div>
-                  <div className="intro">23963913 02+</div>
+                  <div className="intro">01121900466</div>
                 </div>
                 <div className="col-lg-7 mt-4">
-                  <a className="intro" href="mailto:egy@casco.com.eg">
-                    egy@casco.com.eg
+                  <a className="intro" href="mailto:ahmedashrafhemdan74@gmail.com">
+                    ahmedashrafhemdan74@gmail.com
                   </a>
                 </div>
                 <div className="col-12 mt-4">
                   <div className="linkedin-icon2 ">
-                    <a href="https://www.linkedin.com/company/cascogroup/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/in/ahmed-hemdan-695408201/">
                       <div className="text-white ms-5">
                         <BsLinkedin size={25} />
                       </div>
@@ -69,16 +69,16 @@ const ContactUsAr: React.FC = () => {
                   <div className="intro">
                     مكتب 506 , برج الانامر, شارع موسى بن نصير, الرياض , السعودية
                   </div>
-                  <div className="intro">1017 195 50 966+</div>
+                  <div className="intro">01121900466</div>
                 </div>
                 <div className="col-lg-7 mt-4">
-                  <a className="intro" href="mailto:egy@casco.com.eg">
-                    me@casco.com.eg
+                  <a className="intro" href="mailto:ahmedashrafhemdan74@gmail.com">
+                    ahmedashrafhemdan74@gmail.com
                   </a>
                 </div>
                 <div className="col-12 mt-4">
                   <div className="linkedin-icon2 ">
-                    <a href="https://www.linkedin.com/company/cascogroup/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/in/ahmed-hemdan-695408201/">
                       <div className="text-white ms-5">
                         <BsLinkedin size={25} />
                       </div>
@@ -110,16 +110,16 @@ const ContactUsAr: React.FC = () => {
                   <div className="intro">
                     دور 13 برج ميلينيوم بلازا - دبي - الإمارات
                   </div>
-                  <div className="intro">1012 526 52 917+</div>
+                  <div className="intro">01121900466</div>
                 </div>
                 <div className="col-lg-7 mt-4">
-                  <a className="intro" href="mailto:egy@casco.com.eg">
-                    me@casco.com.eg
+                  <a className="intro" href="mailto:ahmedashrafhemdan74@gmail.com">
+                    ahmedashrafhemdan74@gmail.com
                   </a>
                 </div>
                 <div className="col-12 mt-4">
                   <div className="linkedin-icon2 ">
-                    <a href="https://www.linkedin.com/company/cascogroup/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/in/ahmed-hemdan-695408201/">
                       <div className="text-white ms-5">
                         <BsLinkedin size={25} />
                       </div>
@@ -168,9 +168,8 @@ const ContactUsAr: React.FC = () => {
                     {tabs.map(tab => (
                       <li className="nav-item col-12 col-sm" key={tab.id}>
                         <a
-                          className={`text-black-50 intro ${
-                            activeTab === tab.id ? 'active' : ''
-                          }`}
+                          className={`text-black-50 intro ${activeTab === tab.id ? 'active' : ''
+                            }`}
                           onClick={() => handleTabClick(tab.id)}>
                           {tab.id}
                         </a>
@@ -181,9 +180,8 @@ const ContactUsAr: React.FC = () => {
                   <div className="tab-content mt-2">
                     {tabs.map(tab => (
                       <div
-                        className={`tab-pane ${
-                          activeTab === tab.id ? 'active' : ''
-                        }`}
+                        className={`tab-pane ${activeTab === tab.id ? 'active' : ''
+                          }`}
                         id={tab.id}
                         key={tab.id}>
                         {tab.content}

@@ -55,16 +55,12 @@ const Footer = () => {
           <div className="col-md-3">
             <div className="heading">Get in touch</div>
             <address>
-              61 Al Falki <br />
-              Bab Al Louq
-              <br />
-              Abdeen
-              <br />
+
               Cairo Governorate 11513, Egypt
               <br />
-              <Link href="mailto:egy@casco.com.eg">egy@casco.com.eg</Link>
+              <Link href="mailto:ahmedashrafhemdan74@gmail.com">ahmedashrafhemdan74@gmail.com</Link>
               <br />
-              +20 23963913
+              +20 1121900466
             </address>
             <div className="social-links">
               <a

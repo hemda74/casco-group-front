@@ -26,19 +26,20 @@ const ContactUsEn: React.FC = () => {
               <div className="row mt-5">
                 <div className="col-lg-5 mt-4">
                   <div className="intro">
-                    61 Al Falki, Bab Al Louq, Abdeen, Cairo Governorate 11513,
+                    {/* 61 Al Falki, Bab Al Louq, Abdeen, */}
+                    Cairo Governorate 11513,
                     Egypt
                   </div>
-                  <div className="intro">+20 23963913</div>
+                  <div className="intro">+20 1121900466</div>
                 </div>
                 <div className="col-lg-7 mt-4">
-                  <a className="intro" href="mailto:egy@casco.com.eg">
-                    egy@casco.com.eg
+                  <a className="intro" href="mailto:ahmedashrafhemdan74@gmail.com">
+                    ahmedashrafhemdan74@gmail.com
                   </a>
                 </div>
                 <div className="col-12 mt-4">
                   <div className="linkedin-icon ">
-                    <a href="https://www.linkedin.com/company/cascogroup/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/in/ahmed-hemdan-695408201/">
                       <div className="text-white">
                         <BsLinkedin size={25} />
                       </div>
@@ -71,16 +72,16 @@ const ContactUsEn: React.FC = () => {
                     KSA - Riyadh - Mosa Bin Nasser St. Borj Alnamer - office No:
                     506
                   </div>
-                  <div className="intro">+966 50 195 1017</div>
+                  <div className="intro">+20 1121900466</div>
                 </div>
                 <div className="col-lg-7 mt-4">
-                  <a className="intro" href="mailto:egy@casco.com.eg">
-                    me@casco.com.eg
+                  <a className="intro" href="mailto:ahmedashrafhemdan74@gmail.com">
+                    ahmedashrafhemdan74@gmail.com
                   </a>
                 </div>
                 <div className="col-12 mt-4">
                   <div className="linkedin-icon ">
-                    <a href="https://www.linkedin.com/company/cascogroup/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/in/ahmed-hemdan-695408201/">
                       <div className="text-white">
                         <BsLinkedin size={25} />
                       </div>
@@ -113,16 +114,16 @@ const ContactUsEn: React.FC = () => {
                     13th Floors, Millennium Plaza Tower - Dubai - United Arab
                     Emirates
                   </div>
-                  <div className="intro">+971 52 526 1012</div>
+                  <div className="intro">+20 1121900466</div>
                 </div>
                 <div className="col-lg-7 mt-4">
-                  <a className="intro" href="mailto:egy@casco.com.eg">
-                    me@casco.com.eg
+                  <a className="intro" href="mailto:ahmedashrafhemdan74@gmail.com">
+                    ahmedashrafhemdan74@gmail.com
                   </a>
                 </div>
                 <div className="col-12 mt-4">
                   <div className="linkedin-icon">
-                    <a href="https://www.linkedin.com/company/cascogroup/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/in/ahmed-hemdan-695408201/">
                       <div className="text-white">
                         <BsLinkedin size={25} />
                       </div>
@@ -171,9 +172,8 @@ const ContactUsEn: React.FC = () => {
                     {tabs.map(tab => (
                       <li className="nav-item col-12 col-sm" key={tab.id}>
                         <a
-                          className={`text-black-50 intro ${
-                            activeTab === tab.id ? 'active' : ''
-                          }`}
+                          className={`text-black-50 intro ${activeTab === tab.id ? 'active' : ''
+                            }`}
                           onClick={() => handleTabClick(tab.id)}>
                           {tab.id}
                         </a>
@@ -184,9 +184,8 @@ const ContactUsEn: React.FC = () => {
                   <div className="tab-content mt-2">
                     {tabs.map(tab => (
                       <div
-                        className={`tab-pane ${
-                          activeTab === tab.id ? 'active' : ''
-                        }`}
+                        className={`tab-pane ${activeTab === tab.id ? 'active' : ''
+                          }`}
                         id={tab.id}
                         key={tab.id}>
                         {tab.content}
