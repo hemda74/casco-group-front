@@ -7,7 +7,6 @@ import styles from '../styles/Main.module.css';
 import FooterAr from '../components/FooterAr';
 
 // decaling an alias for layout childern
-// decaling an alias for layout childern
 type LayoutProps = {
   childern: React.ReactNode;
 };
