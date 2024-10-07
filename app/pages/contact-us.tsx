@@ -9,7 +9,6 @@ import OldNavBar from '../components/OldNavBar';
 import FooterAr from '../components/FooterAr';
 
 type Props = {};
-// dymmy data for ui till handle working with api
 const Contactus = (props: Props) => {
   const { language } = useLanguage();
   return (

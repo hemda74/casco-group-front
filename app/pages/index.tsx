@@ -23,7 +23,7 @@ const Index: NextPageWithLayout = (props: Props) => {
       <Head>
         <title>Home | CASCO</title>
       </Head>
-      {/* {language === 'en' ? (
+      {language === 'en' ? (
         <main className={`${styles.bodyContainer}`}>
           <HeroEn />
           <SecondElementEn />
@@ -39,8 +39,7 @@ const Index: NextPageWithLayout = (props: Props) => {
           <ThirdSectionMainAr />
           <FourthSectionMainAr />
         </main>
-      )} */}
-      <div>Hello World</div>
+      )}
     </>
   );
 };
