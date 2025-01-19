@@ -12,7 +12,6 @@ import WhereIsNextEn from '../../components/WhereIsNextEn';
 import WhereIsNextAr from '../../components/WhereIsNextAr';
 import { fetchTest } from '../../lib/fetchTest';
 import { Test } from '../../types';
-
 type Props = {
   test: Test[]
 }
