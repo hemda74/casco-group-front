@@ -15,7 +15,7 @@ const transScript = (transObj: translataionContainer) => {
         en: 'ltr',
         ar: 'rtl'
     };
-    // getting selected lang from local storage.
+    // getting selected lang from local storage
     let lang: keyof typeof langDir;
     lang = localStorage.getItem('lang') as any;
     // Check if selected language is valid.
