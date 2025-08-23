@@ -2,15 +2,14 @@ import '../styles/globals.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import type { AppProps } from 'next/app';
-import 'bootstrap/dist/css/bootstrap.min.css'; // impoting bootstrap.css file
-import '../styles/bootstrapClasses.css'; // impoting customized bootstrap.css file
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/bootstrapClasses.css';
 import { useEffect, ReactElement, ReactNode } from 'react';
 import transScript from '../helper/transScript';
 import indexTrans from '../localization/index.trans';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { LanguageProvider } from '../Context/LanguageContext';
-import TawkTo from '../components/Takwto';
 import { ToastProvider } from '../providers/toast-provider';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Hydrate } from 'react-query/hydration';
@@ -29,11 +28,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available.
   const getLayout = Component.getLayout ?? (page => page);
 
-  // on first render import bootstrapfile.
   useEffect(() => {
     require('bootstrap/dist/js/bootstrap.js');
   }, []);
-  // on every render make sure that web app is localized.
   useEffect(() => {
     let lang = localStorage.getItem('lang');
     if (lang === null || lang === undefined) {
@@ -61,12 +58,10 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       <LanguageProvider>
         <ToastProvider />
         <QueryClientProvider client={queryClientRef.current}>
-          {/* If you are using server-side rendering, include Hydrate fr */}
           <Hydrate state={pageProps.dehydratedState}>
             {getLayout(<Component {...pageProps} />)}
           </Hydrate>
         </QueryClientProvider>
-        <TawkTo />
       </LanguageProvider>
     </>
   );
