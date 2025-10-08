@@ -1,76 +1,178 @@
+/* ========================================
+   STAKEHOLDERS SECTION STYLES
+   ======================================== */
+
+/* Main Container */
 .mainContainer {
   width: 100%;
 }
+
+/* Title Section */
 .titleWord {
   margin-top: -10rem;
   margin-bottom: 10rem;
 }
+
+/* Circle Components */
 .biggerCircle {
   padding-top: 0.5rem;
   width: 3rem;
   border-radius: 50%;
-  border: solid 1px #05a9f5;
+  border: solid 1px var(--color-primary);
   height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
 }
+
+.biggerCircle:hover {
+  background-color: var(--color-primary);
+  transform: scale(1.1);
+}
+
 .numbersCircle {
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #05a9f5;
+  background: var(--color-primary);
   height: 2rem;
-  color: #fff;
+  color: var(--color-white);
   width: 2rem;
   border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
 }
+
+.numbersCircle:hover {
+  background: var(--color-primary-dark);
+  transform: scale(1.1);
+}
+
+/* CTA Section */
 .ctA {
   margin-top: 4rem;
   background: var(--color-secondary);
   background-size: cover;
   padding: 120px 0;
   margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
 }
+
+.ctA::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--color-primary-rgb), 0.8),
+    rgba(var(--color-secondary-rgb), 0.8)
+  );
+  z-index: 1;
+}
+
+/* Title Styling */
 .titleStackH {
-  color: #eee;
+  color: var(--color-white);
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/* List Group Items */
 .listGroupItem {
   background: none;
   border: none;
-  color: #fff;
+  color: var(--color-white);
   padding: 0;
   margin: 0;
   text-align: start;
+  transition: all var(--transition-fast);
 }
+
+.listGroupItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+}
+
+/* Navigation Links */
 .navLink {
   background: transparent;
   border: none;
-  margin-bottom: 0.5555555556rem;
+  margin-bottom: 0.56rem;
   display: block;
   width: 100%;
-  color: #eee !important;
+  color: var(--color-white) !important;
+  text-decoration: none;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
 }
+
 .navLink:hover {
-  color: #eee !important;
+  color: var(--color-white) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
 }
+
+/* List Items */
 .ulLi {
-  margin-top: 0rem;
-  color: #fff;
+  margin-top: 0;
+  color: var(--color-white);
+  list-style: none;
+  padding: var(--spacing-sm) 0;
 }
+
+/* Container Layouts */
 .innerContainer {
-  margin: 0 0 0 0;
+  margin: 0;
 }
+
 .listinnerContainer1 {
   text-align: start;
   text-overflow: ellipsis;
   width: 14rem;
+  overflow: hidden;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .titleWord {
+    margin-top: -6rem;
+    margin-bottom: 6rem;
+  }
+
+  .ctA {
+    padding: 80px 0;
+  }
+
+  .biggerCircle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .numbersCircle {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 480px) {
   .listContainer {
     display: flex;
     justify-content: space-between;
     padding: 0;
     flex-direction: row;
+    gap: var(--spacing-sm);
   }
+
   .listinnerContainer1 {
     width: 9rem;
     position: relative;
@@ -78,9 +180,31 @@
   }
 
   .listinnerContainer2 {
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem;
+    flex: 1;
   }
+
   .innerContainer {
-    margin: 1.5rem 1.5rem 0 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .titleWord {
+    margin-top: -4rem;
+    margin-bottom: 4rem;
+  }
+
+  .ctA {
+    padding: 60px 0;
+  }
+
+  .biggerCircle {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .numbersCircle {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.7rem;
   }
 }

@@ -1,6 +1,37 @@
+/* ========================================
+   PAGES HEADER STYLES
+   ======================================== */
+
 .aboutHeader {
   background: url('../public/images/layouts_images/Contact-Us.png') center
     center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 10rem 0;
   z-index: -1;
+  position: relative;
+}
+
+.aboutHeader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutHeader {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutHeader {
+    padding: 4rem 0;
+  }
 }

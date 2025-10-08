@@ -1,11 +1,31 @@
-.bodyContainer{
-    box-sizing: border-box;
-    font-size: .8888888889rem;
-    line-height: 1.7;
-    color: #333;
-    font-family: "Cairo",sans-serif;
-    background-color: #fff;
-    font-weight: 400;
-    position: relative;
-    overflow-x: hidden;
+/* ========================================
+   MAIN LAYOUT STYLES
+   ======================================== */
+
+.bodyContainer {
+  box-sizing: border-box;
+  font-size: 0.89rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--color-background);
+  font-weight: 400;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .bodyContainer {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .bodyContainer {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
 }

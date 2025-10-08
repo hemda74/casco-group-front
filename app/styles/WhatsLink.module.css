@@ -1,22 +1,120 @@
+/* ========================================
+   WHATSAPP LINK FLOATING BUTTON STYLES
+   ======================================== */
+
 .mainDiv {
   position: fixed;
   bottom: 0;
   left: 0;
-  margin: 1.1111111111rem;
+  margin: 1.11rem;
   z-index: 9999;
   padding: 0.8rem;
   border-radius: 50%;
   background: #13f195;
+  box-shadow: var(--shadow);
+  transition: all var(--transition-fast);
+  cursor: pointer;
 }
+
+.mainDiv:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-lg);
+  background: #10d880;
+}
+
+.mainDiv:active {
+  transform: scale(0.95);
+}
+
 .iconStyle {
   overflow: hidden;
   vertical-align: middle;
-  color: #fff;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
+
 .secondDiv {
   display: none;
   white-space: nowrap;
   position: absolute;
   bottom: 100%;
   right: 0;
+  background: var(--color-white);
+  color: var(--color-text);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: var(--spacing-sm);
+  border: 1px solid var(--color-gray-200);
+  transition: all var(--transition-fast);
+}
+
+.secondDiv::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  border: 5px solid transparent;
+  border-top-color: var(--color-white);
+}
+
+.mainDiv:hover .secondDiv {
+  display: block;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainDiv {
+    margin: 1rem;
+    padding: 0.7rem;
+  }
+
+  .iconStyle {
+    font-size: 1.3rem;
+  }
+
+  .secondDiv {
+    font-size: 0.8rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .mainDiv {
+    margin: 0.8rem;
+    padding: 0.6rem;
+  }
+
+  .iconStyle {
+    font-size: 1.2rem;
+  }
+
+  .secondDiv {
+    right: -10px;
+    font-size: 0.75rem;
+  }
+
+  .secondDiv::after {
+    right: 15px;
+  }
 }

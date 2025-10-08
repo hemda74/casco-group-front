@@ -1,47 +1,80 @@
-/* Contact Section*/
+/* ========================================
+   CONTACT US SECTION STYLES
+   ======================================== */
+
+/* Main Application Section */
 .mainApplication {
-  background: #76cfff8a;
+  background: rgba(var(--color-primary-rgb), 0.1);
+  padding: var(--spacing-xl) 0;
 }
-.iconsColor {
-  color: #0f8eef;
-  transition: all 0.3s ease-in-out;
-  margin-right: 20px;
-}
+
+/* Icon Styles */
+.iconsColor,
 .iconsColor2 {
-  color: #0f8eef;
-  transition: all 0.3s ease-in-out;
+  color: var(--color-primary);
+  transition: all var(--transition-fast);
   margin-right: 20px;
+}
+
+.iconsColor2 {
   margin-bottom: 0.6rem;
 }
+
+.iconsColor:hover,
+.iconsColor2:hover {
+  color: var(--color-primary-dark);
+  transform: scale(1.1);
+}
+
+/* Post Title */
 .postTitle {
   font-size: 24px;
   color: var(--color-secondary);
   font-weight: 700;
   margin: 15px 0 0 0;
   position: relative;
-  transition: 0.3s;
+  transition: var(--transition-fast);
 }
+
+.postTitle:hover {
+  color: var(--color-primary);
+}
+
+/* Map Contact */
 .mapContact iframe {
   border: 0;
   width: 100%;
   height: 400px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
 }
 
+/* Info Contact Card */
 .infoContact {
   padding: 40px;
-  box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
+  box-shadow: var(--shadow);
   overflow: hidden;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  transition: transform var(--transition-fast);
+}
+
+.infoContact:hover {
+  transform: translateY(-5px);
 }
 
 .infoContact h3 {
   font-weight: 600;
   font-size: 24px;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
 }
 
 .infoContact p {
-  color: var(--color-secondary-light);
+  color: var(--color-text-light);
   margin-bottom: 30px;
   font-size: 15px;
+  line-height: 1.6;
 }
 
 .infoContact + .infoContact {
@@ -50,23 +83,48 @@
   border-top: 1px solid rgba(var(--color-secondary-rgb), 0.15);
 }
 
+/* Form Styles */
 .phpEmailForm {
   width: 100%;
 }
 
 .formGroup {
   padding-bottom: 8px;
+  margin-bottom: var(--spacing-md);
 }
 
+.formControl {
+  height: 3.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-gray-300);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 14px;
+  transition: border-color var(--transition-fast);
+}
+
+.formControl:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-primary-rgb), 0.25);
+  outline: none;
+}
+
+.phpEmailForm textarea {
+  padding: 10px 12px;
+  resize: none;
+  min-height: 120px;
+}
+
+/* Form Messages */
 .errorMessage {
   display: none;
   text-align: left;
   padding: 15px;
   font-weight: 600;
-}
-
-.sentMassage br + br {
-  margin-top: 25px;
+  color: var(--color-danger);
+  background-color: rgba(var(--color-danger-rgb), 0.1);
+  border: 1px solid var(--color-danger);
+  border-radius: var(--radius-sm);
+  margin-top: var(--spacing-sm);
 }
 
 .sentMassage {
@@ -74,6 +132,15 @@
   text-align: center;
   padding: 15px;
   font-weight: 600;
+  color: var(--color-success);
+  background-color: rgba(var(--color-success-rgb), 0.1);
+  border: 1px solid var(--color-success);
+  border-radius: var(--radius-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.sentMassage br + br {
+  margin-top: 25px;
 }
 
 .loadingMassage {
@@ -81,84 +148,132 @@
   background: var(--color-white);
   text-align: center;
   padding: 15px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
 }
 
-.loadingMassage:before {
+.loadingMassage::before {
   content: '';
   display: inline-block;
   border-radius: 50%;
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--color-green);
+  border: 3px solid var(--color-success);
   border-top-color: var(--color-white);
-  -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
+
+/* Button Styles */
 .enrollButton {
-  padding: 0.4rem 3rem 0.4rem;
+  padding: 0.4rem 3rem;
   border: none;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+  transition: all var(--transition-fast);
 }
 
-.contact .php-email-form input[type='text'],
-.contact .php-email-form input[type='email'],
-.contact .php-email-form textarea {
-  border-radius: 0px;
-  box-shadow: none;
-  font-size: 14px;
+.enrollButton:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
-.formControl {
-  height: 3.5rem;
+
+.btnClass {
+  border: solid 1px var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  transition: all var(--transition-fast);
 }
+
+.btnClass:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Contact Card */
 .contactCard {
   padding-top: 3rem;
   padding-bottom: 2rem;
-  box-shadow: 0 0.8333333333rem 1.1111111111rem rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
   margin-bottom: 2rem;
-}
-.phpEmailForm textarea {
-  padding: 10px 12px;
-  resize: none;
-}
-.btnClass {
-  border: solid 1px;
+  background-color: var(--color-white);
+  transition: transform var(--transition-fast);
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.contactCard:hover {
+  transform: translateY(-5px);
 }
 
+/* Loading Animation */
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainApplication {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .infoContact {
+    padding: 30px 20px;
+  }
+
+  .infoContact h3 {
+    font-size: 20px;
+  }
+
+  .postTitle {
+    font-size: 20px;
+  }
+
+  .mapContact iframe {
+    height: 300px;
+  }
+
+  .formControl {
+    height: 3rem;
+  }
+}
+
 @media (max-width: 480px) {
-  .cardBobyIcons {
+  .cardBodyIcons {
     display: flex;
     flex-direction: column;
+    gap: var(--spacing-sm);
   }
-  .firstIcons {
+
+  .firstIcons,
+  .firstIcons2 {
     margin-left: 0;
     padding-left: 0;
     margin-right: 0;
     padding-right: 0;
   }
+
   .firstIcons2 {
-    margin-left: 0;
-    padding-left: 0;
     margin-right: 1rem;
-    padding-right: 0;
+  }
+
+  .infoContact {
+    padding: 20px 15px;
+  }
+
+  .enrollButton {
+    padding: 0.3rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .mapContact iframe {
+    height: 250px;
   }
 }
